@@ -40,8 +40,7 @@ iframe {
   max-width: 900px;
 }
 
-a,
-.heti a heti-spacing {
+a {
   color: #1d9bf0;
   cursor: pointer;
 }
@@ -54,6 +53,7 @@ a,
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
+  text-autospace: ideograph-alpha ideograph-numeric;
 }
 
 .heti::before,
@@ -935,35 +935,6 @@ blockquote blockquote {
   margin-bottom: -4px;
   line-height: 1;
   text-align: center;
-}
-
-.heti heti-spacing {
-  display: inline;
-}
-
-.heti heti-spacing + sup,
-.heti heti-spacing + sub {
-  margin-inline-start: 0;
-}
-
-.heti .heti-spacing-start {
-  margin-inline-end: 4px;
-}
-
-.heti .heti-spacing-end {
-  margin-inline-start: 4px;
-}
-
-.heti heti-adjacent {
-  display: inline;
-}
-
-.heti .heti-adjacent-half {
-  margin-inline-end: -8px;
-}
-
-.heti .heti-adjacent-quarter {
-  margin-inline-end: -4px;
 }
 
 .heti ul.cb {

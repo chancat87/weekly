@@ -2,7 +2,6 @@
 // Client-side scripts for image optimization and interactions
 ---
 
-<script type='text/javascript' src='https://gw.alipayobjects.com/os/k/h3/heti-addon.min.js' is:inline></script>
 <script type='text/javascript' src='https://gw.alipayobjects.com/os/k/3j/lozad.min.js' is:inline></script>
 <script type='text/javascript' src='https://gw.alipayobjects.com/os/k/s3/lightense.min.js' is:inline></script>
 
@@ -17,12 +16,6 @@
 
 <script is:inline>
   document.addEventListener('DOMContentLoaded', () => {
-    // Optimization of letter spacing
-    if (typeof Heti !== 'undefined') {
-      const heti = new Heti('.heti');
-      heti.autoSpacing();
-    }
-
     // Lazy loading of images
     if (typeof lozad !== 'undefined') {
       const observer = lozad('.lozad', {
