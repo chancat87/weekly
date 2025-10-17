@@ -53,7 +53,7 @@ a {
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
-  text-autospace: ideograph-alpha ideograph-numeric;
+  text-autospace: normal;
 }
 
 .heti::before,
