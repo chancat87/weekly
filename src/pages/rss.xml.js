@@ -1,13 +1,10 @@
 import rss from "@astrojs/rss";
+import { getIndex, parseTitle, toNumericUrl } from "@/util";
 export async function GET() {
   let allPosts = import.meta.glob("./posts/*.md", { eager: true });
   let posts = Object.values(allPosts);
 
-  posts = posts.sort((a, b) => {
-    const getPostNumber = (url) =>
-      parseInt(url.split("/posts/")[1].split("-")[0]);
-    return getPostNumber(b.url) - getPostNumber(a.url);
-  });
+  posts = posts.sort((a, b) => getIndex(b.url) - getIndex(a.url));
 
   // Only 12 are kept
   posts = posts.slice(0, 12);
@@ -25,12 +22,14 @@ export async function GET() {
     customData: `<image><url>https://gw.alipayobjects.com/zos/k/qv/coffee-2-icon.png</url></image><follow_challenge><feedId>41147805276726275</feedId><userId>42909600318350336</userId></follow_challenge>`,
     items: await Promise.all(
       posts.map(async (item) => {
-        const [issueNumber, issueTitle] = item.url
-          .split("/posts/")[1]
-          .split("-");
-        const title = `第${issueNumber}期 - ${issueTitle}`;
+        const numericLink = item.frontmatter.numericUrl ?? toNumericUrl(item.url);
+        const title = parseTitle(
+          numericLink,
+          item.frontmatter.legacySlug,
+          item.frontmatter.issueTitle,
+        );
         return {
-          link: item.url,
+          link: numericLink,
           title,
           description: await processContent(item),
           pubDate: item.frontmatter.date,

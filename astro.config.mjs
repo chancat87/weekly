@@ -44,6 +44,26 @@ function defaultLayoutPlugin() {
     const { frontmatter } = file.data.astro;
     frontmatter.layout = "@layouts/post.astro";
 
+    const relativePath =
+      filePath.split(/[\/\\]posts[\/\\]/)[1]?.replace(/\.md$/, "");
+
+    if (relativePath) {
+      frontmatter.legacySlug = relativePath;
+      const [numberPart, ...nameParts] = relativePath.split("-");
+      if (numberPart) {
+        const numericIndex = Number.parseInt(numberPart, 10);
+        if (!Number.isNaN(numericIndex)) {
+          frontmatter.issueNumber = numericIndex;
+          frontmatter.numericUrl = `/posts/${numericIndex}`;
+        } else {
+          frontmatter.numericUrl = `/posts/${numberPart}`;
+        }
+      }
+      if (nameParts.length > 0) {
+        frontmatter.issueTitle = decodeURIComponent(nameParts.join("-"));
+      }
+    }
+
     if (tree.children[0]?.value && !frontmatter.image) {
       const imageElement = parse(tree.children[0].value).querySelector("img");
       frontmatter.image = imageElement.getAttribute("src");

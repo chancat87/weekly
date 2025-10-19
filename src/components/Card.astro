@@ -1,5 +1,5 @@
 ---
-import { parseTitle } from '@/util';
+import { parseTitle, toNumericUrl } from '@/util';
 
 export interface Props {
   post: {
@@ -8,17 +8,23 @@ export interface Props {
       image: string;
       description: string;
       date: string;
+      legacySlug?: string;
+      issueTitle?: string;
+      numericUrl?: string;
     };
   };
 }
 
 const { post } = Astro.props;
-const title = parseTitle(post.url);
+const legacySlug = post.frontmatter?.legacySlug;
+const issueTitle = post.frontmatter?.issueTitle;
+const link = post.frontmatter?.numericUrl ?? toNumericUrl(post.url);
+const title = parseTitle(link, legacySlug, issueTitle);
 const { image, description, date } = post.frontmatter;
 ---
 
 <a
-  href={post.url}
+  href={link}
   data-astro-prefetch
   data-image={image}
   class="pb-3 md:mt-5 mt-4 md:mr-4 flex flex-col justify-center rounded-b-md shadow-md overflow-hidden mx-auto md:w-80 sm:w-96 w-full card-content preload-link"

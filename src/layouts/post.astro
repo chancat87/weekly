@@ -5,7 +5,7 @@ import AstroLogo from "../components/Header/AstroLogo.astro";
 import LeftSidebar from "../components/LeftSidebar.astro";
 import Search from "../components/Header/Search.astro";
 import { SITE } from "@/config";
-import { parseTitle, sortPosts, getIndex } from "@/util";
+import { parseTitle, sortPosts, getIndex, toNumericUrl } from "@/util";
 
 export interface Props {
   frontmatter: {
@@ -14,28 +14,51 @@ export interface Props {
     description: string;
     url: string;
     socialImage: string;
+    numericUrl?: string;
+    legacySlug?: string;
+    issueTitle?: string;
+    issueNumber?: number;
   };
 }
 
 const pageUrl = new URL(Astro.request.url);
 const currentPage = pageUrl.pathname;
-let title = parseTitle(currentPage);
+const normalize = (path: string | undefined) => {
+  if (!path) return path;
+  return path !== "/" && path.endsWith("/") ? path.slice(0, -1) : path;
+};
+const {
+  date,
+  image,
+  description,
+  url,
+  socialImage,
+  numericUrl,
+  legacySlug,
+  issueTitle
+} = Astro.props.frontmatter;
 
-const { date, image, description, url, socialImage } = Astro.props.frontmatter;
+const normalizedCurrent = normalize(currentPage) ?? currentPage;
+const normalizedNumeric = normalize(numericUrl);
+const effectivePath = normalizedNumeric ?? normalizedCurrent;
+let title = parseTitle(effectivePath, legacySlug, issueTitle);
+
 const content = {
   title,
   image: image,
   description,
   socialImage,
 };
-const currentUrl = `${SITE.homePage}${currentPage}`;
+const currentUrl = `${SITE.homePage}${effectivePath}`;
 
 // The next article
 const posts = Object.values(import.meta.glob('../pages/posts/*.md', { eager: true }));
 const allPosts = sortPosts(posts);
-const postIndex = getIndex(currentPage);
-let nextUrl = postIndex > 2 ? allPosts[allPosts.length - postIndex + 1].url : "";
-let prevUrl = postIndex < allPosts.length ? allPosts[allPosts.length - postIndex - 1].url : "";
+const postIndex = getIndex(effectivePath);
+const toNavUrl = (post: any) =>
+  post ? post.frontmatter?.numericUrl ?? toNumericUrl(post.url) : "";
+let nextUrl = postIndex > 2 ? toNavUrl(allPosts[allPosts.length - postIndex + 1]) : "";
+let prevUrl = postIndex < allPosts.length ? toNavUrl(allPosts[allPosts.length - postIndex - 1]) : "";
 ---
 
 <BaseLayout
@@ -187,7 +210,7 @@ let prevUrl = postIndex < allPosts.length ? allPosts[allPosts.length - postIndex
   <!-- Post layout -->
   <main class="layout">
     <aside id="grid-left" class="grid-sidebar" title="Site Navigation">
-      <LeftSidebar currentPage={currentPage} />
+      <LeftSidebar currentPage={effectivePath} />
     </aside>
     <div id="grid-main">
       <div

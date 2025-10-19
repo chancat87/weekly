@@ -1,29 +1,42 @@
 // Helper function to extract and decode the title part from the URL
 const extractTitlePart = (currentPage: string) => {
-  return decodeURIComponent(currentPage.split("/posts/")[1]);
+  const [, raw = ""] = currentPage.split("/posts/");
+  return decodeURIComponent(raw.replace(/\/$/, ""));
+};
+
+const getSlugParts = (slug: string) => {
+  const [numberPart = "", ...nameParts] = slug.split("-");
+  return {
+    numberPart,
+    name: nameParts.join("-"),
+  };
 };
 
 // Convert to title
-export const parseTitle = (currentPage: string) => {
-  const oldTitle = extractTitlePart(currentPage);
-  let title = `第${oldTitle.split("-")[0]}期 - ${oldTitle.split("-")[1]}`;
-  if (title.endsWith("/")) {
-    title = title.slice(0, -1);
+export const parseTitle = (currentPage: string, legacySlug?: string, fallbackName = "") => {
+  const slug = legacySlug ?? extractTitlePart(currentPage);
+  const { numberPart, name } = getSlugParts(slug);
+  const displayName = name || fallbackName;
+  let title = `第${numberPart}期`;
+  if (displayName) {
+    title += ` - ${displayName}`;
   }
   return title;
 };
 
 // Get the current article number.
 export const getIndex = (currentPage: string) => {
-  const oldTitle = extractTitlePart(currentPage);
-  return parseInt(oldTitle.split("-")[0]);
+  const { numberPart } = getSlugParts(extractTitlePart(currentPage));
+  return Number.parseInt(numberPart, 10);
+};
+
+// Normalize URL to numeric form.
+export const toNumericUrl = (currentPage: string) => {
+  const index = getIndex(currentPage);
+  return Number.isNaN(index) ? currentPage : `/posts/${index}`;
 };
 
 // Sort all articles.
 export const sortPosts = (allPosts: any) => {
-  return allPosts.sort((a, b) => {
-    const getIndexFromUrl = (url: string) =>
-      parseInt(extractTitlePart(url).split("-")[0]);
-    return getIndexFromUrl(b.url) - getIndexFromUrl(a.url);
-  });
+  return allPosts.sort((a, b) => getIndex(b.url) - getIndex(a.url));
 };

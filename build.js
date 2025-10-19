@@ -29,9 +29,10 @@ async function main() {
     const name = mdFiles[i];
     const filePath = encodeURIComponent(name);
     const oldTitle = name.split(".md")[0];
-    const num = parseInt(oldTitle.split("-")[0]);
-    const shortTitle = oldTitle.split("-")[1];
-    const url = `https://weekly.tw93.fun/posts/${oldTitle}`;
+    const [issueNumberPart, ...restTitleParts] = oldTitle.split("-");
+    const num = parseInt(issueNumberPart);
+    const shortTitle = restTitleParts.join("-") || issueNumberPart;
+    const url = `https://weekly.tw93.fun/posts/${num}`;
     const title = `第 ${num} 期 - ${shortTitle}`;
 
     // Read markdown file to extract cover image and description

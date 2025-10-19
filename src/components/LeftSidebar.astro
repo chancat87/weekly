@@ -2,7 +2,7 @@
 const { currentPage } = Astro.props;
 import AstroLogo from './Header/AstroLogo.astro';
 import { SITE } from '@/config';
-import { parseTitle, sortPosts } from '@/util';
+import { parseTitle, sortPosts, toNumericUrl } from '@/util';
 
 const posts = Object.values(import.meta.glob('../pages/posts/*.md', { eager: true }));
 const allPosts = sortPosts(posts);
@@ -10,9 +10,12 @@ const allPosts = sortPosts(posts);
 let currentPageMatch = currentPage.slice(1).replace(/\/$/, '');
 
 const sidebarSections = allPosts.reduce((sections, post, index) => {
+  const legacySlug = post.frontmatter?.legacySlug;
+  const issueTitle = post.frontmatter?.issueTitle;
+  const numericUrl = post.frontmatter?.numericUrl ?? toNumericUrl(post.url);
   const route = {
-    title: parseTitle(post.url),
-    link: post.url.slice(1),
+    title: parseTitle(numericUrl, legacySlug, issueTitle),
+    link: numericUrl.slice(1),
   };
   if (index === 0) {
     sections.push({ text: '', children: [] });
