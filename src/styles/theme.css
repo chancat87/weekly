@@ -59,6 +59,16 @@ site-search dialog button {
 
 html {
   transition:
-    color 300ms,
-    background-color 300ms;
+    color 200ms ease,
+    background-color 200ms ease;
+  scroll-behavior: smooth;
+}
+
+/* Decorative grid lines variables */
+:root {
+  --grid-line-color: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="dark"] {
+  --grid-line-color: rgba(255, 255, 255, 0.06);
 }

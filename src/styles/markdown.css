@@ -43,12 +43,17 @@ iframe {
 a {
   color: #1d9bf0;
   cursor: pointer;
+  transition: all 200ms ease;
+}
+
+a:hover {
+  opacity: 0.8;
 }
 
 .heti {
   font-weight: 400;
   -webkit-font-smoothing: subpixel-antialiased;
-  line-height: 1.7;
+  line-height: 1.75;
   letter-spacing: 0.5px;
   overflow-wrap: break-word;
   word-wrap: break-word;
