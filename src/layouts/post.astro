@@ -67,6 +67,7 @@ let prevUrl = postIndex < allPosts.length ? toNavUrl(allPosts[allPosts.length - 
   content={content}
   pageURL={currentUrl}
 >
+  <meta slot="head" data-pagefind-meta={`url:${currentUrl}`} />
   <!-- Post-specific styles -->
   <style slot="head">
     body {
