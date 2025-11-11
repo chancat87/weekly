@@ -50,7 +50,8 @@
   }
 
   /* 阅读模式下隐藏的元素 */
-  [data-reader-mode="true"] #grid-left {
+  [data-reader-mode="true"] #grid-left,
+  [data-reader-mode="true"] #grid-right {
     display: none !important;
   }
 
@@ -122,19 +123,20 @@
       ) !important;
   }
 
+  @media (min-width: 800px) {
+    [data-reader-mode="true"] .layout {
+      grid-template-columns: 288px minmax(0, var(--max-width)) !important;
+    }
+  }
+
+  @media (min-width: 1152px) {
+    [data-reader-mode="true"] .layout {
+      grid-template-columns: 320px minmax(0, var(--max-width)) 208px !important;
+    }
+  }
+
   [data-reader-mode="true"] #grid-main {
     grid-column: 2 !important;
-    max-width: 100% !important;
-  }
-
-  /* 阅读模式下优化正文排版 */
-  [data-reader-mode="true"] .markdown-body {
-    font-size: 17px;
-    line-height: 1.8;
-  }
-
-  [data-reader-mode="true"] .content-title {
-    margin-bottom: 32px !important;
   }
 
   /* 移动端适配 */
