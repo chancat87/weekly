@@ -1,12 +1,5 @@
-:root {
-  --text-font: "TsangerJinKai02", "STKaiti", "KaiTi", -apple-system,
-    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji";
-  --code-text-font: SF Mono, sans-serif;
-}
-
 html {
-  font-size: 16px;
+  font-size: var(--font-size-base);
   color: var(--text-color);
   -webkit-font-smoothing: subpixel-antialiased;
 }
@@ -43,7 +36,7 @@ iframe {
 a {
   color: #1d9bf0;
   cursor: pointer;
-  transition: all 200ms ease;
+  transition: all var(--transition-base);
 }
 
 a:hover {
@@ -158,10 +151,10 @@ blockquote blockquote {
   padding-inline-start: 16px;
   padding-inline-end: 16px;
   overflow: auto;
-  font-family: var(--text-font);
+  font-family: var(--font-fallback);
   white-space: pre;
   word-wrap: normal;
-  border-radius: 4px;
+  border-radius: var(--radius);
   background-color: rgba(0, 0, 0, 0.03);
 }
 
@@ -217,17 +210,17 @@ blockquote blockquote {
 }
 
 .heti h4 {
-  font-size: 16px;
+  font-size: var(--font-size-base);
   margin-block-start: 10px;
 }
 
 .heti h5 {
-  font-size: 16px;
+  font-size: var(--font-size-base);
   margin-block-start: 10px;
 }
 
 .heti h6 {
-  font-size: 16px;
+  font-size: var(--font-size-base);
   margin-block-start: 10px;
 }
 
@@ -310,7 +303,7 @@ blockquote blockquote {
 .heti li > code {
   background-color: #eef1f2;
   padding: 2px;
-  border-radius: 4px;
+  border-radius: var(--radius);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -352,7 +345,7 @@ blockquote blockquote {
   caption-side: bottom;
   margin-block-start: 2px;
   margin-block-end: -4px;
-  font-size: 14px;
+  font-size: var(--font-size-small);
   line-height: 24px;
 }
 
@@ -383,12 +376,12 @@ blockquote blockquote {
 .heti code {
   margin-inline-start: 4px;
   margin-inline-end: 4px;
-  font-size: 16px;
-  font-family: var(--text-font);
+  font-size: var(--font-size-base);
+  font-family: var(--font-fallback);
 }
 
 .heti pre code {
-  font-family: var(--code-text-font);
+  font-family: var(--font-mono);
 }
 
 .heti dfn {
@@ -407,7 +400,7 @@ blockquote blockquote {
 .heti figcaption {
   display: inline-block;
   vertical-align: top;
-  font-size: 14px;
+  font-size: var(--font-size-small);
   text-align: start;
 }
 
@@ -450,12 +443,12 @@ blockquote blockquote {
 }
 
 .heti rt {
-  font-size: 14px;
+  font-size: var(--font-size-small);
   font-weight: 400;
 }
 
 .heti small {
-  font-size: 14px;
+  font-size: var(--font-size-small);
 }
 
 .heti > p > small {
@@ -473,7 +466,7 @@ blockquote blockquote {
   margin-inline-start: 4px;
   margin-inline-end: 4px;
   font-size: 12px;
-  font-family: var(--text-font);
+  font-family: var(--font-fallback);
   font-style: normal;
   line-height: 1;
   vertical-align: baseline;
@@ -555,15 +548,15 @@ blockquote blockquote {
 
 .heti,
 .heti--sans {
-  font-family: var(--text-font);
+  font-family: var(--font-fallback);
 }
 
 .heti--serif {
-  font-family: var(--text-font);
+  font-family: var(--font-fallback);
 }
 
 .heti--classic {
-  font-family: var(--text-font);
+  font-family: var(--font-fallback);
 }
 
 .heti--classic h1,
@@ -572,28 +565,28 @@ blockquote blockquote {
 .heti--classic h4,
 .heti--classic h5,
 .heti--classic h6 {
-  font-family: var(--text-font);
+  font-family: var(--font-fallback);
   font-weight: 800;
 }
 
 .heti--classic blockquote,
 .heti--classic cite,
 .heti--classic q {
-  font-family: var(--text-font);
+  font-family: var(--font-fallback);
 }
 
 .heti--classic figcaption,
 .heti--classic caption,
 .heti--classic th {
-  font-family: var(--text-font);
+  font-family: var(--font-fallback);
 }
 
 .heti--hei {
-  font-family: var(--text-font);
+  font-family: var(--font-fallback);
 }
 
 .heti--song {
-  font-family: var(--text-font);
+  font-family: var(--font-fallback);
 }
 
 .heti--columns-1,
@@ -711,7 +704,7 @@ blockquote blockquote {
 
 .heti--ancient,
 .heti--poetry {
-  font-family: var(--text-font);
+  font-family: var(--font-fallback);
 }
 
 .heti--ancient h1,
@@ -726,7 +719,7 @@ blockquote blockquote {
 .heti--poetry h4,
 .heti--poetry h5,
 .heti--poetry h6 {
-  font-family: var(--text-font);
+  font-family: var(--font-fallback);
   font-weight: 800;
   text-align: center;
 }
@@ -828,7 +821,7 @@ blockquote blockquote {
 }
 
 .heti .heti-small {
-  font-size: 14px;
+  font-size: var(--font-size-small);
   line-height: 24px;
 }
 
@@ -865,8 +858,8 @@ blockquote blockquote {
   margin-block-start: 64px;
   border-block-start: 1px solid;
   border-block-start-color: #ccc;
-  font-size: 14px;
-  font-family: var(--text-font);
+  font-size: var(--font-size-small);
+  font-family: var(--font-fallback);
   line-height: 24px;
 }
 
@@ -930,7 +923,7 @@ blockquote blockquote {
 
 .heti ul.cb input[type="checkbox"] {
   position: relative;
-  font-size: 16px;
+  font-size: var(--font-size-base);
   width: 16px;
   height: 16px;
   top: 2px;
@@ -1018,7 +1011,7 @@ code.language-mermaid {
 }
 
 .heti pre.plantuml-image-container .plantuml-image {
-  border-radius: 4px;
+  border-radius: var(--radius);
 }
 
 .heti pre.mermaid-image-container {
@@ -1051,7 +1044,7 @@ span.emoji {
 
 span.emoji-sizer {
   line-height: 13px;
-  font-size: 16px;
+  font-size: var(--font-size-base);
   margin: -2px 0;
 }
 
@@ -1082,7 +1075,7 @@ img.emoji {
   visibility: visible;
   width: 100%;
   height: var(--markmap-height);
-  font-family: var(--text-font) !important;
+  font-family: var(--font-fallback) !important;
   font-size: 13px !important;
 }
 

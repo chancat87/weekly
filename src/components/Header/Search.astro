@@ -117,11 +117,11 @@ import SearchIcon from './SearchIcon.astro';
   }
 
   .site-search {
-    font-size: 16px;
+    font-size: var(--font-size-base);
   }
 
   .pagefind-ui__search-input {
-    font-size: 14px;
+    font-size: var(--font-size-small);
   }
 
   .site-search .pagefind-ui__search-input:focus,
@@ -143,7 +143,7 @@ import SearchIcon from './SearchIcon.astro';
     align-items: center;
     justify-content: center;
     padding: 6px;
-    border-radius: 6px;
+    border-radius: var(--radius);
   }
 
   .content-title .search-icon {
@@ -166,7 +166,7 @@ import SearchIcon from './SearchIcon.astro';
   }
 
   .site-search .close-icon {
-    font-size: 14px;
+    font-size: var(--font-size-small);
   }
 
   .site-search .pagefind-ui__button {

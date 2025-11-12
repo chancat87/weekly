@@ -52,7 +52,7 @@ main {
 }
 
 html {
-  font-size: 16px;
+  font-size: var(--font-size-base);
 }
 
 main {
@@ -91,7 +91,7 @@ main .gsc-comment-box-textarea {
 .form-control {
   padding-top: 6px;
   padding-bottom: 6px;
-  font-size: 14px;
+  font-size: var(--font-size-small);
 }
 main .gsc-comment-box-textarea:focus,
 #__next .form-control:focus {
@@ -109,12 +109,12 @@ main .gsc-comment-box-textarea:focus,
 }
 
 .gsc-comment {
-  font-size: 14px;
+  font-size: var(--font-size-small);
   line-height: 1.7;
 }
 
 .gsc-comment-content {
-  font-size: 16px;
+  font-size: var(--font-size-base);
 }
 
 .gsc-reactions-count {
@@ -141,7 +141,7 @@ input:focus {
   outline: none;
 }
 .gsc-social-reaction-summary-item {
-  font-size: 14px;
+  font-size: var(--font-size-small);
   border-radius: 8px;
   line-height: 26px;
   padding-inline-end: 6px;
