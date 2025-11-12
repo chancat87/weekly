@@ -261,41 +261,39 @@ blockquote code {
   }
 }
 
-blockquote {
-  margin: 32px 0;
-  padding: 20px 24px;
-  border-left: 4px solid var(--theme-accent);
-  background-color: var(--theme-bg-offset);
-  border-radius: 0 8px 8px 0;
-  line-height: 1.75;
-  position: relative;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-  transition: all 200ms ease;
+blockquote,
+.heti blockquote {
+  margin: 24px 0;
+  padding: 4px 12px;
+  border-left: 3px solid var(--theme-divider);
+  background-color: transparent;
+  border-radius: 0 4px 4px 0;
+  line-height: 1.7;
+  color: #777;
+  overflow: visible;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
-blockquote:hover {
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  border-left-color: var(--theme-accent);
+[data-theme="dark"] blockquote,
+[data-theme="dark"] .heti blockquote {
+  color: #aaa;
 }
 
-blockquote::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: linear-gradient(to bottom, var(--theme-accent), transparent);
-  opacity: 0.3;
-  border-radius: 0 0 0 8px;
-}
-
-blockquote p:first-child {
+blockquote p:first-child,
+.heti blockquote p:first-child {
   margin-top: 0;
 }
 
-blockquote p:last-child {
+blockquote p:last-child,
+.heti blockquote p:last-child {
   margin-bottom: 0;
+}
+
+.heti blockquote p {
+  line-height: 1.7;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
 }
 
 img {

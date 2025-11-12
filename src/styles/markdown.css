@@ -142,33 +142,10 @@ a:hover {
   text-align: right;
 }
 
-.heti blockquote {
-  margin-block-start: 13px;
-  margin-block-end: 28px;
-  padding-inline-start: 16px;
-  padding-inline-end: 16px;
-  border-radius: 4px;
-  color: #777;
-  border-left: 4px solid var(--theme-accent);
-  line-height: 1;
-}
-
-.heti blockquote p {
-  margin-block-end: 6px;
-  margin-block-start: 6px;
-  line-height: 1.7;
-}
+/* Blockquote styles moved to index.css for consistency */
 
 blockquote blockquote {
   padding-right: 0;
-}
-
-.heti blockquote {
-  margin: 0;
-  overflow: hidden;
-  box-sizing: border-box;
-  padding: 0 15px;
-  max-width: 100%;
 }
 
 .heti pre {
