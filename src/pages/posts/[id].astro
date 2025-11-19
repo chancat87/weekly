@@ -7,10 +7,7 @@ interface PathProps {
 
 export async function getStaticPaths() {
   const postsImport = import.meta.glob("./*.md");
-  const paths: Array<
-    | { params: { id: string }; props: PathProps }
-    | { params: { id: string }; redirect: string }
-  > = [];
+  const paths: Array<{ params: { id: string }; props: PathProps }> = [];
 
   for (const [filePath] of Object.entries(postsImport)) {
     const fileName = filePath.split("/").pop();
@@ -23,17 +20,11 @@ export async function getStaticPaths() {
 
     if (!rawId) continue;
 
+    // Only generate numeric ID paths
     paths.push({
       params: { id },
       props: { filePath },
     });
-
-    if (slug !== id) {
-      paths.push({
-        params: { id: slug },
-        redirect: `/posts/${id}`,
-      });
-    }
   }
 
   return paths;

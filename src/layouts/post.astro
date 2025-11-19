@@ -44,6 +44,10 @@ const normalizedNumeric = normalize(numericUrl);
 const effectivePath = normalizedNumeric ?? normalizedCurrent;
 let title = parseTitle(effectivePath, legacySlug, issueTitle);
 
+// Check if current path is the legacy slug path (with hyphen and title)
+// If so, mark it to be ignored by Pagefind to avoid duplicate search results
+const isLegacyPath = normalizedCurrent !== normalizedNumeric && normalizedCurrent?.includes('-');
+
 const content = {
   title,
   image: image,
@@ -217,7 +221,7 @@ let prevUrl = postIndex < allPosts.length ? toNavUrl(allPosts[allPosts.length - 
   </style>
 
   <!-- Post layout -->
-  <main class="layout">
+  <main class="layout" data-pagefind-ignore={isLegacyPath ? '' : undefined}>
     <aside id="grid-left" class="grid-sidebar" title="Site Navigation">
       <LeftSidebar currentPage={effectivePath} />
     </aside>
