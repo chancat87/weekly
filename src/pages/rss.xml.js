@@ -1,5 +1,6 @@
 import rss from "@astrojs/rss";
 import { getIndex, parseTitle, toNumericUrl } from "@/util";
+import { renderSupportCalloutForRSS } from "@/supportCallout";
 export async function GET() {
   let allPosts = import.meta.glob("./posts/*.md", { eager: true });
   let posts = Object.values(allPosts);
@@ -31,7 +32,7 @@ export async function GET() {
         return {
           link: numericLink,
           title,
-          description: await processContent(item),
+          description: `${await processContent(item)}${renderSupportCalloutForRSS()}`,
           pubDate: item.frontmatter.date,
         };
       }),
