@@ -2,15 +2,16 @@ import fs from "fs";
 import dayjs from "dayjs";
 import tailwind from "@astrojs/tailwind";
 import remarkBreaks from "remark-breaks";
+import sitemap from "@astrojs/sitemap";
 
 import { defineConfig } from "astro/config";
 import { parse } from "node-html-parser";
 import { SITE } from "./src/config";
 import rehypeImage from "./rehype-image.js";
 
-// Markdown 配置 - 控制换行行为
+// Markdown configuration - controls line break behavior
 const markdownConfig = {
-  hardBreaks: true, // 设置为 true 启用硬换行 (类似 CMARK_OPT_HARDBREAKS)
+  hardBreaks: true, // Set to true to enable hard breaks (similar to CMARK_OPT_HARDBREAKS)
   gfm: true,
   smartypants: true,
   allowDangerousHtml: true
@@ -92,12 +93,20 @@ function defaultLayoutPlugin() {
 }
 
 export default defineConfig({
+  site: SITE.homePage,
   prefetch: true,
-  integrations: [tailwind()],
+  integrations: [
+    tailwind(),
+    sitemap({
+      changefreq: 'weekly',
+      priority: 0.7,
+      lastmod: new Date(),
+    })
+  ],
   markdown: {
     remarkPlugins: [
       defaultLayoutPlugin,
-      // 根据配置决定是否启用硬换行
+      // Enable hard breaks based on configuration
       ...(markdownConfig.hardBreaks ? [remarkBreaks] : [])
     ],
     rehypePlugins: [rehypeImage],

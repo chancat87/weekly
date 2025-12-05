@@ -1,0 +1,17 @@
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# Sitemap
+Sitemap: https://weekly.tw93.fun/sitemap-index.xml
+
+# Disallow crawling of these directories
+Disallow: /pagefind/
+Disallow: /_astro/
