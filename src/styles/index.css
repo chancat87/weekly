@@ -295,7 +295,8 @@ blockquote p:last-child,
   margin-block-end: 0.5em;
 }
 
-img {
+img,
+iframe {
   max-width: 100%;
 }
 
@@ -407,7 +408,9 @@ h2.heading {
   scroll-margin: calc(var(--theme-sidebar-offset, 80px) + 32px) 0 32px;
 }
 
-#write>img, #write>p>img, #write>table>img {
+#write > img,
+#write > p > img,
+#write > table > img {
   cursor: zoom-in;
 }
 
@@ -420,7 +423,6 @@ img.border {
   border-radius: 8px;
   clip-path: inset(0 round 6px);
 }
-
 
 .markdown-body img,
 .markdown-body video {
