@@ -95,12 +95,18 @@ function defaultLayoutPlugin() {
 export default defineConfig({
   site: SITE.homePage,
   prefetch: true,
+  trailingSlash: 'never',
   integrations: [
     tailwind(),
     sitemap({
       changefreq: 'weekly',
       priority: 0.7,
       lastmod: new Date(),
+      filter: (page) => {
+        const url = new URL(page);
+        const postPathMatch = url.pathname.match(/\/posts\/(\d+)-/);
+        return !postPathMatch;
+      }
     })
   ],
   markdown: {
