@@ -5,7 +5,8 @@ import AstroLogo from "../components/Header/AstroLogo.astro";
 import LeftSidebar from "../components/LeftSidebar.astro";
 import Search from "../components/Header/Search.astro";
 import ReaderModeToggle from "../components/ReaderModeToggle.astro";
-import { SITE } from "@/config";
+import { SITE, GISCUS_CONFIG } from "@/config";
+import { SUPPORT_CALLOUT } from "@/supportCallout";
 import { parseTitle, sortPosts, getIndex, toNumericUrl } from "@/util";
 
 export interface Props {
@@ -246,9 +247,9 @@ let prevUrl = postIndex < allPosts.length ? toNavUrl(allPosts[allPosts.length - 
         <div class="flex align-middle justify-center mt-4 pay-button-wrapper">
           <a
             class="inline-block items-center rounded px-5 py-3 text-sm font-medium pay-button"
-            href="https://miaoyan.app/cats.html?name=潮流周刊"
+            href={SUPPORT_CALLOUT.link}
             target="_blank"
-            rel="noreferrer">内容不错，请 Tw93 喝冰可乐 🥤</a
+            rel="noreferrer">{SUPPORT_CALLOUT.cta}</a
           >
         </div>
         <hr class="post-divider" />
@@ -273,7 +274,7 @@ let prevUrl = postIndex < allPosts.length ? toNavUrl(allPosts[allPosts.length - 
               title="Follow">Twitter</a
             >
             <a
-              href={`https://github.com/${SITE.githubId}/weekly`}
+              href={`https://github.com/${SITE.repo}`}
               title="Star"
               target="_blank"
               class="lg:inline-block hidden"
@@ -291,24 +292,28 @@ let prevUrl = postIndex < allPosts.length ? toNavUrl(allPosts[allPosts.length - 
           </div>
         </div>
       </div>
-      <script
-        is:inline
-        id="giscus-script"
-        src="https://giscus.app/client.js"
-        data-repo={SITE.repo}
-        data-repo-id="R_kgDOG4TsQA"
-        data-category="General"
-        data-category-id="DIC_kwDOG4TsQM4CR4bV"
-        data-mapping="title"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="https://gw.alipayobjects.com/os/k/kr/comment.css"
-        data-lang="zh-CN"
-        crossorigin="anonymous"
-        async></script>
+      {
+      GISCUS_CONFIG.repo === SITE.repo && (
+        <script
+          is:inline
+          id="giscus-script"
+          src="https://giscus.app/client.js"
+          data-repo={GISCUS_CONFIG.repo}
+          data-repo-id={GISCUS_CONFIG.repoId}
+          data-category={GISCUS_CONFIG.category}
+          data-category-id={GISCUS_CONFIG.categoryId}
+          data-mapping={GISCUS_CONFIG.mapping}
+          data-strict={GISCUS_CONFIG.strict}
+          data-reactions-enabled={GISCUS_CONFIG.reactionsEnabled}
+          data-emit-metadata={GISCUS_CONFIG.emitMetadata}
+          data-input-position={GISCUS_CONFIG.inputPosition}
+          data-theme={GISCUS_CONFIG.theme}
+          data-lang={GISCUS_CONFIG.lang}
+          crossorigin="anonymous"
+          async
+        />
+      )
+    }
     </div>
   </main>
-
 </BaseLayout>

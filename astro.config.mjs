@@ -14,7 +14,7 @@ const markdownConfig = {
   hardBreaks: true, // Set to true to enable hard breaks (similar to CMARK_OPT_HARDBREAKS)
   gfm: true,
   smartypants: true,
-  allowDangerousHtml: true
+  allowDangerousHtml: true,
 };
 
 const DEFAULT_FORMAT = "YYYY/MM/DD";
@@ -45,8 +45,9 @@ function defaultLayoutPlugin() {
     const { frontmatter } = file.data.astro;
     frontmatter.layout = "@layouts/post.astro";
 
-    const relativePath =
-      filePath.split(/[\/\\]posts[\/\\]/)[1]?.replace(/\.md$/, "");
+    const relativePath = filePath
+      .split(/[\/\\]posts[\/\\]/)[1]
+      ?.replace(/\.md$/, "");
 
     if (relativePath) {
       frontmatter.legacySlug = relativePath;
@@ -95,32 +96,32 @@ function defaultLayoutPlugin() {
 export default defineConfig({
   site: SITE.homePage,
   prefetch: true,
-  trailingSlash: 'never',
+  trailingSlash: "never",
   integrations: [
     tailwind(),
     sitemap({
-      changefreq: 'weekly',
+      changefreq: "weekly",
       priority: 0.7,
       lastmod: new Date(),
       filter: (page) => {
         const url = new URL(page);
         const postPathMatch = url.pathname.match(/\/posts\/(\d+)-/);
         return !postPathMatch;
-      }
-    })
+      },
+    }),
   ],
   markdown: {
     remarkPlugins: [
       defaultLayoutPlugin,
       // Enable hard breaks based on configuration
-      ...(markdownConfig.hardBreaks ? [remarkBreaks] : [])
+      ...(markdownConfig.hardBreaks ? [remarkBreaks] : []),
     ],
     rehypePlugins: [rehypeImage],
     remarkRehype: {
       handlers: {},
-      allowDangerousHtml: markdownConfig.allowDangerousHtml
+      allowDangerousHtml: markdownConfig.allowDangerousHtml,
     },
     gfm: markdownConfig.gfm,
-    smartypants: markdownConfig.smartypants
+    smartypants: markdownConfig.smartypants,
   },
 });

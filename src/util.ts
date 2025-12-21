@@ -12,8 +12,25 @@ const getSlugParts = (slug: string) => {
   };
 };
 
-// Convert to title
-export const parseTitle = (currentPage: string, legacySlug?: string, fallbackName = "") => {
+export const getIndex = (currentPage: string) => {
+  const { numberPart } = getSlugParts(extractTitlePart(currentPage));
+  return Number.parseInt(numberPart, 10);
+};
+
+export const sortPosts = (allPosts: any) => {
+  return allPosts.sort((a: any, b: any) => getIndex(b.url) - getIndex(a.url));
+};
+
+export const toNumericUrl = (currentPage: string) => {
+  const index = getIndex(currentPage);
+  return Number.isNaN(index) ? currentPage : `/posts/${index}`;
+};
+
+export const parseTitle = (
+  currentPage: string,
+  legacySlug?: string,
+  fallbackName = "",
+) => {
   const slug = legacySlug ?? extractTitlePart(currentPage);
   const { numberPart, name } = getSlugParts(slug);
   const displayName = name || fallbackName;
@@ -22,21 +39,4 @@ export const parseTitle = (currentPage: string, legacySlug?: string, fallbackNam
     title += ` - ${displayName}`;
   }
   return title;
-};
-
-// Get the current article number.
-export const getIndex = (currentPage: string) => {
-  const { numberPart } = getSlugParts(extractTitlePart(currentPage));
-  return Number.parseInt(numberPart, 10);
-};
-
-// Normalize URL to numeric form.
-export const toNumericUrl = (currentPage: string) => {
-  const index = getIndex(currentPage);
-  return Number.isNaN(index) ? currentPage : `/posts/${index}`;
-};
-
-// Sort all articles.
-export const sortPosts = (allPosts: any) => {
-  return allPosts.sort((a, b) => getIndex(b.url) - getIndex(a.url));
 };

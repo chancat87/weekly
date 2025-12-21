@@ -1,6 +1,8 @@
 import rss from "@astrojs/rss";
 import { getIndex, parseTitle, toNumericUrl } from "@/util";
 import { renderSupportCalloutForRSS } from "@/supportCallout";
+import { SITE } from "@/config";
+
 export async function GET() {
   let allPosts = import.meta.glob("./posts/*.md", { eager: true });
   let posts = Object.values(allPosts);
@@ -23,10 +25,11 @@ export async function GET() {
     xmlns: {
       atom: "http://www.w3.org/2005/Atom",
     },
-    customData: `<atom:icon>https://gw.alipayobjects.com/zos/k/qv/coffee-2-icon.png</atom:icon><atom:logo>https://gw.alipayobjects.com/zos/k/qv/coffee-2-icon.png</atom:logo><image><url>https://gw.alipayobjects.com/zos/k/qv/coffee-2-icon.png</url><title>潮流周刊</title><link>https://weekly.tw93.fun/</link></image><follow_challenge><feedId>41147805276726275</feedId><userId>42909600318350336</userId></follow_challenge>`,
+    customData: `<atom:icon>${SITE.icon}</atom:icon><atom:logo>${SITE.icon}</atom:logo><image><url>${SITE.icon}</url><title>${SITE.title}</title><link>${SITE.homePage}/</link></image><follow_challenge><feedId>41147805276726275</feedId><userId>42909600318350336</userId></follow_challenge>`,
     items: await Promise.all(
       posts.map(async (item) => {
-        const numericLink = item.frontmatter.numericUrl ?? toNumericUrl(item.url);
+        const numericLink =
+          item.frontmatter.numericUrl ?? toNumericUrl(item.url);
         const title = parseTitle(
           numericLink,
           item.frontmatter.legacySlug,

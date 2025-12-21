@@ -12,3 +12,17 @@ export const SITE = {
   githubId: "tw93",
   repo: "tw93/weekly",
 };
+
+export const GISCUS_CONFIG = {
+  repo: "tw93/weekly",
+  repoId: "R_kgDOG4TsQA",
+  category: "General",
+  categoryId: "DIC_kwDOG4TsQM4CR4bV",
+  mapping: "title",
+  strict: "0",
+  reactionsEnabled: "1",
+  emitMetadata: "0",
+  inputPosition: "bottom",
+  theme: "https://gw.alipayobjects.com/os/k/kr/comment.css",
+  lang: "zh-CN",
+};
