@@ -119,7 +119,7 @@
     const updateIframeTheme = (newTheme) => {
       const iframe = document.querySelector('iframe.giscus-frame');
       if (iframe) {
-        iframe.contentWindow.postMessage({ giscus: { setConfig: { theme: newTheme } } }, 'https://giscus.app');
+        iframe.contentWindow.postMessage({ giscus: { setConfig: { theme: newTheme } } }, '*');
         return true;
       }
       return false;
