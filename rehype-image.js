@@ -12,7 +12,7 @@ export default function rehypeCustomizeImageSrc() {
       node.value = node.value.replace(imgRegex, (match, p1) => {
         // Check if the URL already contains query parameters
         const separator = p1.includes("?") ? "&" : "?";
-        return `<img src="${p1}${separator}x-oss-process=image/resize,w_3600/format,webp"`;
+        return `<img src="${p1}${separator}x-oss-process=image/resize,w_3600/format,webp" data-lightense-src="${p1}"`;
       });
     });
   };

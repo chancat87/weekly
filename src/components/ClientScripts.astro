@@ -35,10 +35,252 @@
     });
 
     // Image zoom functionality
-    const zoomImgs = document.querySelectorAll('#write>img, #write>p>img, #write>table img');
+    const zoomImgs = Array.from(
+      document.querySelectorAll('#write>img, #write>p>img, #write>table img')
+    );
     if (zoomImgs.length > 0 && typeof Lightense !== 'undefined') {
+      let activeIndex = -1;
+      let activeTarget = null;
+      let activeBase = null;
+      let isNavigating = false;
+      let queuedIndex = null;
+
+      const stripOssProcess = (url) => {
+        if (!url || typeof url !== 'string' || !url.includes('x-oss-process=')) return url;
+        const hashIndex = url.indexOf('#');
+        const hash = hashIndex >= 0 ? url.slice(hashIndex) : '';
+        const beforeHash = hashIndex >= 0 ? url.slice(0, hashIndex) : url;
+        const queryIndex = beforeHash.indexOf('?');
+        if (queryIndex === -1) return url;
+        const base = beforeHash.slice(0, queryIndex);
+        const query = beforeHash.slice(queryIndex + 1);
+        const params = query
+          .split('&')
+          .filter((param) => param && !param.startsWith('x-oss-process='));
+        const cleaned = params.length ? `${base}?${params.join('&')}` : base;
+        return `${cleaned}${hash}`;
+      };
+
+      const getOriginalSrc = (img) => {
+        const dataSrc = img.getAttribute('data-lightense-src');
+        const candidate = dataSrc || img.currentSrc || img.src;
+        return stripOssProcess(candidate);
+      };
+
+      const swapToOriginal = (target) => {
+        const zoomSrc = getOriginalSrc(target);
+        if (!zoomSrc || target.src === zoomSrc) return;
+        target.setAttribute('data-lightense-src-current', target.src);
+        target.src = zoomSrc;
+      };
+
+      const restoreCompressed = (target) => {
+        const compressedSrc = target.getAttribute('data-lightense-src-current');
+        if (!compressedSrc) return;
+        target.src = compressedSrc;
+        target.removeAttribute('data-lightense-src-current');
+      };
+
+      const getZoomSrc = (img) => getOriginalSrc(img);
+
+      const getScrollOffsets = () => ({
+        x: window.pageXOffset || document.documentElement.scrollLeft || 0,
+        y: window.pageYOffset || document.documentElement.scrollTop || 0,
+      });
+
+      const getCurrentScale = (img) => {
+        const transform = img.style.transform || '';
+        const match = transform.match(/scale\(([^)]+)\)/);
+        const value = match ? Number.parseFloat(match[1]) : NaN;
+        return Number.isFinite(value) ? value : 1;
+      };
+
+      const getLayoutSize = (img) => {
+        const width = img.width || img.clientWidth;
+        const height = img.height || img.clientHeight;
+        if (width && height) return { width, height };
+
+        const rect = img.getBoundingClientRect();
+        const scale = getCurrentScale(img);
+        return {
+          width: scale ? rect.width / scale : rect.width,
+          height: scale ? rect.height / scale : rect.height,
+        };
+      };
+
+      const disableTransition = (el) => {
+        if (!el) return null;
+        const previous = el.style.transition;
+        el.style.transition = 'none';
+        return previous;
+      };
+
+      const restoreTransition = (el, previous) => {
+        if (!el) return;
+        el.style.transition = previous || '';
+      };
+
+      const waitForImage = (img) => {
+        if (img.complete && img.naturalWidth) return Promise.resolve();
+        if (typeof img.decode === 'function') {
+          return img.decode().catch(
+            () =>
+              new Promise((resolve) => {
+                img.addEventListener('load', resolve, { once: true });
+                img.addEventListener('error', resolve, { once: true });
+              })
+          );
+        }
+        return new Promise((resolve) => {
+          img.addEventListener('load', resolve, { once: true });
+          img.addEventListener('error', resolve, { once: true });
+        });
+      };
+
+      const computeScale = (img) => {
+        const { width: rectWidth, height: rectHeight } = getLayoutSize(img);
+        const naturalWidth = img.naturalWidth;
+        const naturalHeight = img.naturalHeight;
+
+        if (!rectWidth || !rectHeight || !naturalWidth || !naturalHeight) return 1;
+
+        const paddingAttr =
+          img.getAttribute('data-lightense-padding') || img.getAttribute('data-padding');
+        const padding = Number.parseFloat(paddingAttr);
+        const effectivePadding = Number.isFinite(padding) ? padding : 40;
+        const viewportWidth = window.innerWidth || document.documentElement.clientWidth || 0;
+        const viewportHeight = window.innerHeight || document.documentElement.clientHeight || 0;
+        const availableWidth =
+          viewportWidth > effectivePadding ? viewportWidth - effectivePadding : viewportWidth;
+        const availableHeight =
+          viewportHeight > effectivePadding ? viewportHeight - effectivePadding : viewportHeight;
+        const scaleToNatural = naturalWidth / rectWidth;
+
+        if (naturalWidth < availableWidth && naturalHeight < availableHeight) {
+          return scaleToNatural;
+        }
+
+        const imgRatio = naturalWidth / naturalHeight;
+        const viewportRatio = availableWidth / availableHeight;
+
+        return imgRatio < viewportRatio
+          ? availableHeight / rectHeight
+          : availableWidth / rectWidth;
+      };
+
+      const updateWrapTransform = (img) => {
+        if (!activeBase || !activeTarget) return;
+        const wrap = activeTarget.parentElement;
+        if (!wrap || !wrap.classList.contains('lightense-wrap')) return;
+
+        const { width, height } = getLayoutSize(img);
+        if (!width || !height) return;
+
+        const { x: scrollX, y: scrollY } = getScrollOffsets();
+        const viewportWidth = window.innerWidth || document.documentElement.clientWidth || 0;
+        const viewportHeight = window.innerHeight || document.documentElement.clientHeight || 0;
+        const centerX = scrollX + viewportWidth / 2;
+        const centerY = scrollY + viewportHeight / 2;
+        const translateX = Math.round(centerX - (activeBase.left + width / 2));
+        const translateY = Math.round(centerY - (activeBase.top + height / 2));
+        wrap.style.transform = `translate3d(${translateX}px, ${translateY}px, 0)`;
+      };
+
+      const updateActiveImage = async (nextIndex) => {
+        if (!activeTarget) return;
+        const nextImg = zoomImgs[nextIndex];
+        if (!nextImg) return;
+
+        const nextSrc = getZoomSrc(nextImg);
+        if (!nextSrc) return;
+
+        const wrap =
+          activeTarget.parentElement &&
+          activeTarget.parentElement.classList.contains('lightense-wrap')
+            ? activeTarget.parentElement
+            : null;
+        const targetTransition = disableTransition(activeTarget);
+        const wrapTransition = disableTransition(wrap);
+
+        activeTarget.src = nextSrc;
+        await waitForImage(activeTarget);
+        const scale = computeScale(activeTarget);
+        activeTarget.style.transform = `scale(${scale})`;
+        updateWrapTransform(activeTarget);
+        void activeTarget.offsetHeight;
+        restoreTransition(activeTarget, targetTransition);
+        restoreTransition(wrap, wrapTransition);
+        activeIndex = nextIndex;
+      };
+
+      const navigateTo = async (nextIndex) => {
+        if (isNavigating) {
+          queuedIndex = nextIndex;
+          return;
+        }
+        isNavigating = true;
+        await updateActiveImage(nextIndex);
+        isNavigating = false;
+
+        if (queuedIndex !== null && queuedIndex !== nextIndex) {
+          const targetIndex = queuedIndex;
+          queuedIndex = null;
+          navigateTo(targetIndex);
+        } else {
+          queuedIndex = null;
+        }
+      };
+
+      const getBackdropColor = () => {
+        const theme = document.body.getAttribute('data-theme');
+        const isDark = theme === 'dark' || document.body.classList.contains('dark');
+        return isDark ? 'rgba(18, 18, 18, 0.78)' : 'rgba(230, 230, 230, 0.85)';
+      };
+
       Lightense(zoomImgs, {
-        background: 'rgba(255, 255, 255, .8)',
+        background: 'rgba(230, 230, 230, 0.85)',
+        beforeShow: ({ target }) => {
+          // 动态设置遮罩层背景色
+          setTimeout(() => {
+            const backdrop = document.querySelector('.lightense-backdrop');
+            if (backdrop) {
+              backdrop.style.backgroundColor = getBackdropColor();
+            }
+          }, 0);
+
+          activeTarget = target;
+          activeIndex = zoomImgs.indexOf(target);
+          const rect = target.getBoundingClientRect();
+          const { x: scrollX, y: scrollY } = getScrollOffsets();
+          activeBase = {
+            left: rect.left + scrollX,
+            top: rect.top + scrollY,
+          };
+          swapToOriginal(target);
+        },
+        afterHide: ({ target }) => {
+          restoreCompressed(target);
+          activeTarget = null;
+          activeIndex = -1;
+          activeBase = null;
+          isNavigating = false;
+          queuedIndex = null;
+        },
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(event.key)) return;
+        if (!activeTarget || !activeTarget.classList.contains('lightense-open')) return;
+
+        event.preventDefault();
+        if (activeIndex === -1) return;
+
+        const isPrev = event.key === 'ArrowLeft' || event.key === 'ArrowUp';
+        const nextIndex = isPrev
+          ? (activeIndex - 1 + zoomImgs.length) % zoomImgs.length
+          : (activeIndex + 1) % zoomImgs.length;
+
+        navigateTo(nextIndex);
       });
     }
 
