@@ -42,6 +42,7 @@
       let activeIndex = -1;
       let activeTarget = null;
       let activeBase = null;
+      let initialIndex = -1;
       let isNavigating = false;
       let queuedIndex = null;
 
@@ -240,7 +241,6 @@
       Lightense(zoomImgs, {
         background: 'rgba(230, 230, 230, 0.85)',
         beforeShow: ({ target }) => {
-          // 动态设置遮罩层背景色
           setTimeout(() => {
             const backdrop = document.querySelector('.lightense-backdrop');
             if (backdrop) {
@@ -250,18 +250,102 @@
 
           activeTarget = target;
           activeIndex = zoomImgs.indexOf(target);
+          initialIndex = activeIndex;
           const rect = target.getBoundingClientRect();
           const { x: scrollX, y: scrollY } = getScrollOffsets();
           activeBase = {
             left: rect.left + scrollX,
             top: rect.top + scrollY,
+            width: rect.width,
+            height: rect.height,
+            borderRadius: getComputedStyle(target).borderRadius,
           };
           swapToOriginal(target);
         },
+        beforeHide: ({ target }) => {
+          if (activeIndex !== initialIndex && activeTarget) {
+            activeTarget.style.transition = 'none';
+            activeTarget.style.opacity = '0';
+
+            const wrap = activeTarget.parentElement;
+            if (wrap && wrap.classList.contains('lightense-wrap')) {
+              wrap.style.transition = 'none';
+              wrap.style.opacity = '0';
+            }
+
+            const filler = document.createElement('img');
+            filler.src = activeTarget.getAttribute('data-lightense-src-current') || activeTarget.src;
+            filler.style.position = 'fixed';
+            filler.style.left = `${activeBase.left - (getScrollOffsets().x)}px`;
+            filler.style.top = `${activeBase.top - (getScrollOffsets().y)}px`;
+            filler.style.width = `${activeBase.width}px`;
+            filler.style.height = `${activeBase.height}px`;
+            filler.style.borderRadius = activeBase.borderRadius;
+            filler.style.objectFit = 'cover';
+            filler.style.margin = '0';
+            filler.style.padding = '0';
+            filler.style.zIndex = '1';
+            filler.style.pointerEvents = 'none';
+            filler.id = 'lightense-filler';
+            document.body.appendChild(filler);
+
+            const ghost = activeTarget.cloneNode(true);
+            const rectZ = activeTarget.getBoundingClientRect();
+
+            ghost.className = '';
+            ghost.style.position = 'fixed';
+            ghost.style.left = `${rectZ.left}px`;
+            ghost.style.top = `${rectZ.top}px`;
+            ghost.style.width = `${rectZ.width}px`;
+            ghost.style.height = `${rectZ.height}px`;
+            ghost.style.transform = '';
+            ghost.style.zIndex = '2147483647';
+            ghost.style.transition = 'all 0.3s cubic-bezier(0.2, 0, 0.2, 1)';
+            ghost.style.borderRadius = activeBase.borderRadius;
+            ghost.style.opacity = '1';
+            ghost.id = 'lightense-ghost';
+            document.body.appendChild(ghost);
+
+            const currentImg = zoomImgs[activeIndex];
+            const rectB = currentImg.getBoundingClientRect();
+
+            void ghost.offsetWidth;
+
+            ghost.style.left = `${rectB.left}px`;
+            ghost.style.top = `${rectB.top}px`;
+            ghost.style.width = `${rectB.width}px`;
+            ghost.style.height = `${rectB.height}px`;
+            ghost.style.borderRadius = getComputedStyle(currentImg).borderRadius;
+
+            setTimeout(() => {
+              ghost.style.opacity = '0';
+              setTimeout(() => {
+                if (ghost.parentNode) ghost.parentNode.removeChild(ghost);
+              }, 150);
+            }, 300);
+          }
+        },
         afterHide: ({ target }) => {
+          const filler = document.getElementById('lightense-filler');
+          if (filler) filler.parentNode.removeChild(filler);
+
+          const ghost = document.getElementById('lightense-ghost');
+          if (ghost) ghost.parentNode.removeChild(ghost);
+
+          if (activeIndex !== initialIndex) {
+            target.style.transition = '';
+            target.style.opacity = '';
+            const wrap = target.parentElement;
+            if (wrap && wrap.classList.contains('lightense-wrap')) {
+              wrap.style.transition = '';
+              wrap.style.opacity = '';
+            }
+          }
+
           restoreCompressed(target);
           activeTarget = null;
           activeIndex = -1;
+          initialIndex = -1;
           activeBase = null;
           isNavigating = false;
           queuedIndex = null;
