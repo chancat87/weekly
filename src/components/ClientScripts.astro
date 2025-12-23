@@ -34,11 +34,12 @@
       }
     });
 
-    // Image zoom functionality
+    // Image zoom functionality (desktop only)
     const zoomImgs = Array.from(
       document.querySelectorAll('#write>img, #write>p>img, #write>table img')
     );
-    if (zoomImgs.length > 0 && typeof Lightense !== 'undefined') {
+    const isDesktop = window.innerWidth > 768;
+    if (zoomImgs.length > 0 && typeof Lightense !== 'undefined' && isDesktop) {
       let activeIndex = -1;
       let activeTarget = null;
       let activeBase = null;
@@ -262,7 +263,7 @@
           };
           swapToOriginal(target);
         },
-        beforeHide: ({ target }) => {
+        beforeHide: () => {
           if (activeIndex !== initialIndex && activeTarget) {
             activeTarget.style.transition = 'none';
             activeTarget.style.opacity = '0';
