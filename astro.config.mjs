@@ -124,4 +124,20 @@ export default defineConfig({
     gfm: markdownConfig.gfm,
     smartypants: markdownConfig.smartypants,
   },
+  vite: {
+    build: {
+      rollupOptions: {
+        onwarn(warning, warn) {
+          // Suppress harmless internal Astro import warnings
+          if (
+            warning.code === "UNUSED_EXTERNAL_IMPORT" &&
+            warning.exporter === "@astrojs/internal-helpers/remote"
+          ) {
+            return;
+          }
+          warn(warning);
+        },
+      },
+    },
+  },
 });
