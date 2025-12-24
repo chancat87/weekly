@@ -12,7 +12,7 @@ export async function GET() {
   // Only 12 are kept
   posts = posts.slice(0, 12);
 
-  // 处理 Markdown 内容，返回不过滤的标签的原始内容
+  // Process Markdown content, return the original content of unfiltered tags
   const processContent = async (item) => {
     const content = await item.compiledContent();
     return content;
