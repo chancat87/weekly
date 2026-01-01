@@ -19,7 +19,6 @@ const markdownConfig = {
 
 const DEFAULT_FORMAT = "YYYY/MM/DD";
 const WEEKLY_REPO_NAME = "tw93/weekly";
-const START_DATE = "2022-10-10";
 
 function formatDate(date) {
   return dayjs(date).format(DEFAULT_FORMAT);
@@ -27,12 +26,6 @@ function formatDate(date) {
 
 function getFileCreateDate(filePath) {
   return formatDate(fs.statSync(filePath).birthtime);
-}
-
-function getWeeklyDate(num) {
-  return num < 100
-    ? formatDate(dayjs(START_DATE).subtract(100 - num, "week"))
-    : getFileCreateDate(filePath);
 }
 
 function getTwitterImage(num) {
@@ -45,6 +38,9 @@ function defaultLayoutPlugin() {
     const { frontmatter } = file.data.astro;
     frontmatter.layout = "@layouts/post.astro";
 
+    const isEn = filePath.includes("/en/posts/");
+    const postsDir = isEn ? "/en/posts/" : "/posts/";
+
     const relativePath = filePath
       .split(/[\/\\]posts[\/\\]/)[1]
       ?.replace(/\.md$/, "");
@@ -56,9 +52,9 @@ function defaultLayoutPlugin() {
         const numericIndex = Number.parseInt(numberPart, 10);
         if (!Number.isNaN(numericIndex)) {
           frontmatter.issueNumber = numericIndex;
-          frontmatter.numericUrl = `/posts/${numericIndex}`;
+          frontmatter.numericUrl = `${postsDir}${numericIndex}`;
         } else {
-          frontmatter.numericUrl = `/posts/${numberPart}`;
+          frontmatter.numericUrl = `${postsDir}${numberPart}`;
         }
       }
       if (nameParts.length > 0) {
@@ -78,12 +74,9 @@ function defaultLayoutPlugin() {
     frontmatter.description = frontmatter.description || SITE.description;
     frontmatter.image = frontmatter.image || SITE.image;
 
+    // Fallback to file creation time if no date is specified
     if (!frontmatter.date) {
-      const postNumber = filePath.split(/[\/\\]posts[\/\\]/)[1]?.split("-")[0];
-      frontmatter.date =
-        SITE.repo === WEEKLY_REPO_NAME
-          ? getWeeklyDate(postNumber)
-          : getFileCreateDate(filePath);
+      frontmatter.date = getFileCreateDate(filePath);
     }
 
     if (SITE.repo === WEEKLY_REPO_NAME) {
@@ -97,6 +90,11 @@ export default defineConfig({
   site: SITE.homePage,
   prefetch: true,
   trailingSlash: "never",
+  server: {
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
+  },
   integrations: [
     tailwind(),
     sitemap({
@@ -110,6 +108,13 @@ export default defineConfig({
       },
     }),
   ],
+  i18n: {
+    defaultLocale: "zh",
+    locales: ["zh", "en"],
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
   markdown: {
     remarkPlugins: [
       defaultLayoutPlugin,
@@ -125,6 +130,9 @@ export default defineConfig({
     smartypants: markdownConfig.smartypants,
   },
   vite: {
+    server: {
+      cors: true,
+    },
     build: {
       rollupOptions: {
         onwarn(warning, warn) {

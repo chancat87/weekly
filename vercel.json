@@ -2,6 +2,17 @@
   "github": {
     "silent": true
   },
+  "headers": [
+    {
+      "source": "/styles/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    }
+  ],
   "redirects": [
     {
       "source": "/posts/:id(\\d+)-:title*",

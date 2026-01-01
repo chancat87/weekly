@@ -1,10 +1,10 @@
 // Helper function to extract and decode the title part from the URL
-const extractTitlePart = (currentPage: string) => {
+export const extractTitlePart = (currentPage: string) => {
   const [, raw = ""] = currentPage.split("/posts/");
   return decodeURIComponent(raw.replace(/\/$/, ""));
 };
 
-const getSlugParts = (slug: string) => {
+export const getSlugParts = (slug: string) => {
   const [numberPart = "", ...nameParts] = slug.split("-");
   return {
     numberPart,
@@ -30,10 +30,21 @@ export const parseTitle = (
   currentPage: string,
   legacySlug?: string,
   fallbackName = "",
+  lang = "zh",
+  isSidebar = false,
 ) => {
   const slug = legacySlug ?? extractTitlePart(currentPage);
   const { numberPart, name } = getSlugParts(slug);
   const displayName = name || fallbackName;
+
+  if (lang === "en") {
+    if (isSidebar) {
+      return `#${numberPart}`;
+    }
+    const cleanName = displayName.replace(/-/g, " ");
+    return `#${numberPart}${cleanName ? ` - ${cleanName}` : ""}`;
+  }
+
   let title = `第${numberPart}期`;
   if (displayName) {
     title += ` - ${displayName}`;
