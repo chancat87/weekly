@@ -72,12 +72,12 @@ let prevUrl = postIndex < allPosts.length ? toNavUrl(allPosts[allPosts.length - 
 // Try to extract numeric ID from numericUrl or current path
 const getGiscusTerm = () => {
   if (numericUrl) return numericUrl.split('/').pop();
-  
+
   const pathParts = effectivePath.split('/');
   const lastPart = pathParts[pathParts.length - 1];
   const match = lastPart.match(/^(\d+)/);
   if (match) return match[1];
-  
+
   return title;
 };
 
@@ -257,7 +257,6 @@ const giscusTheme = `${Astro.url.origin}/styles/giscus-light.css`;
       .content-title .content-logo {
         margin-right: 0;
       }
-
     }
 
     .post-footer a {
@@ -288,7 +287,7 @@ const giscusTheme = `${Astro.url.origin}/styles/giscus-light.css`;
     .lang-switch-icon:hover {
       background-color: var(--theme-bg-hover);
     }
-    
+
     .lang-switch-mobile-btn {
       text-decoration: none !important;
     }
@@ -298,6 +297,10 @@ const giscusTheme = `${Astro.url.origin}/styles/giscus-light.css`;
       border-block-end: none !important;
       padding-block-end: 0 !important;
       background-color: var(--theme-bg-hover) !important;
+    }
+
+    iframe.giscus-frame {
+      width: 100%;
     }
   </style>
 
