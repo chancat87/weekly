@@ -1,0 +1,45 @@
+name: Auto Translate Posts
+
+on:
+  push:
+    paths:
+      - "src/pages/posts/**.md"
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install axios
+
+      - name: Run Translation Script
+        env:
+          GROK_API_KEY: ${{ secrets.GROK_API_KEY }}
+        run: node scripts/translate_posts.js
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/pages/en/posts/
+          # Only commit if there are changes
+          if ! git diff --staged --quiet; then
+            git commit -m "feat: auto translate new posts [skip ci]"
+            git push
+          else
+            echo "No changes to commit"
+          fi

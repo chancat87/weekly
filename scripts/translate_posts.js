@@ -1,31 +1,38 @@
 /**
- * This script automates the translation of weekly posts using a LLM.
- * You can run this with: node scripts/translate_posts.js
+ * This script automates the translation of weekly posts using the Grok API (xAI).
+ * It checks for missing English translations and generates them.
+ * Run with: GROK_API_KEY=your_key node scripts/translate_posts.js
  */
 import fs from "fs";
 import path from "path";
 import axios from "axios";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // --- CONFIGURATION ---
-const SOURCE_DIR = "src/pages/posts";
-const TARGET_DIR = "src/pages/en/posts";
-const API_URL = "https://api.openai.com/v1/chat/completions"; // Or your preferred LLM API
-const API_KEY = process.env.API_KEY;
-const MODEL = "gpt-4"; // Or gemini-pro/etc.
+const SOURCE_DIR = path.join(__dirname, "../src/pages/posts");
+const TARGET_DIR = path.join(__dirname, "../src/pages/en/posts");
+const API_URL = "https://api.x.ai/v1/chat/completions";
+const API_KEY = process.env.GROK_API_KEY;
+const MODEL = "grok-beta";
 
 // --- PROMPT ---
-const SYSTEM_PROMPT = `You are a professional translator and tech blogger.
+const SYSTEM_PROMPT = `You are a professional tech blogger and translator.
 Translate the following Markdown content from Chinese to English.
-- Keep the "engineer's cool and interesting" tone.
-- Preserve all Markdown formatting (images, links, bold, etc.).
-- Do NOT translate or modify the YAML frontmatter (the content between ---).
-- Translate the titles and descriptions inside the content.
-- Ensure technical terms are translated accurately.`;
+
+Rules:
+1. Tone: Engineer's cool, interesting, and professional tone.
+2. Formatting: STRICTLY preserve all Markdown formatting (links, images, bold, lists, code blocks, etc.).
+3. Content: Translate all text, including titles and descriptions.
+4. Accuracy: Ensure technical terms are translated accurately.
+5. Output: Return ONLY the translated Markdown content, no explanations or conversational text.`;
 
 async function translateContent(content) {
   if (!API_KEY) {
-    console.error("ERROR: API_KEY is not set in environment variables.");
-    return content;
+    console.error("❌ ERROR: GROK_API_KEY is not set.");
+    return null;
   }
 
   try {
@@ -38,25 +45,40 @@ async function translateContent(content) {
           { role: "user", content: content },
         ],
         temperature: 0.3,
+        stream: false,
       },
       {
-        headers: { Authorization: `Bearer ${API_KEY}` },
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${API_KEY}`,
+        },
       },
     );
 
     return response.data.choices[0].message.content;
   } catch (error) {
-    console.error("Translation failed:", error.message);
+    console.error(
+      "❌ Translation API failed:",
+      error.response?.data || error.message,
+    );
     return null;
   }
 }
 
-function slugify(text) {
-  return text
-    .toLowerCase()
-    .replace(/[^\w\s-]/g, "")
-    .replace(/[\s_-]+/g, "-")
-    .replace(/^-+|-+$/g, "");
+function parseFrontmatter(fileContent) {
+  const match = fileContent.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+  if (match) {
+    return {
+      frontmatter: match[1],
+      body: match[2],
+      hasFrontmatter: true,
+    };
+  }
+  return {
+    frontmatter: "",
+    body: fileContent,
+    hasFrontmatter: false,
+  };
 }
 
 async function run() {
@@ -65,38 +87,64 @@ async function run() {
   }
 
   const files = fs.readdirSync(SOURCE_DIR).filter((f) => f.endsWith(".md"));
+  let processedCount = 0;
+
+  console.log(`🔍 Checking ${files.length} posts for missing translations...`);
 
   for (const file of files) {
     const issueNumber = file.split("-")[0];
 
-    // Check if any file with this issue number already exists in target
+    // Check if any English file with this issue number already exists
     const targetFiles = fs.readdirSync(TARGET_DIR);
-    if (targetFiles.some((f) => f.startsWith(`${issueNumber}-`))) {
-      console.log(`Skipping issue ${issueNumber} (already translated)`);
+    const existingTranslation = targetFiles.find((f) =>
+      f.startsWith(`${issueNumber}-`),
+    );
+
+    if (existingTranslation) {
       continue;
     }
 
-    console.log(`Translating ${file}...`);
+    console.log(`\n🚀 Translating Issue #${issueNumber} (${file})...`);
+
     const sourcePath = path.join(SOURCE_DIR, file);
-    const content = fs.readFileSync(sourcePath, "utf-8");
+    const rawContent = fs.readFileSync(sourcePath, "utf-8");
+    const { frontmatter, body, hasFrontmatter } = parseFrontmatter(rawContent);
 
-    const translated = await translateContent(content);
-
-    if (translated) {
-      // Extract a simple English title for the filename from the translated content
-      // This is a naive implementation, ideally you'd ask the LLM for a slug
-      const titleMatch =
-        translated.match(/^# (.*)/m) || translated.match(/\*\*([\w\s]+)\*\*/);
-      const title = titleMatch ? slugify(titleMatch[1]) : "issue";
-      const targetFileName = `${issueNumber}-${title}.md`;
-      const targetPath = path.join(TARGET_DIR, targetFileName);
-
-      fs.writeFileSync(targetPath, translated);
-      console.log(`Saved to ${targetPath}`);
+    if (!body.trim()) {
+      console.log(`⚠️  Skipping empty body: ${file}`);
+      continue;
     }
 
-    // Rate limiting
-    await new Promise((r) => setTimeout(r, 1000));
+    const translatedBody = await translateContent(body);
+
+    if (translatedBody) {
+      // Reconstruct valid file content
+      let finalContent = "";
+      if (hasFrontmatter) {
+        finalContent = `---\n${frontmatter}\n---\n\n${translatedBody.trim()}\n`;
+      } else {
+        finalContent = `${translatedBody.trim()}\n`;
+      }
+
+      // Use the same filename for simplicity to maintain 1:1 mapping easily,
+      // or we could translate the filename. For automation, same filename is safer/easier to track.
+      // However, the original script tried to slugify the title.
+      // Let's stick to the original filename to avoid duplicates if title changes.
+      const targetPath = path.join(TARGET_DIR, file);
+
+      fs.writeFileSync(targetPath, finalContent);
+      console.log(`✅ Saved translation to: src/pages/en/posts/${file}`);
+      processedCount++;
+    }
+
+    // Rate limiting (gentle)
+    await new Promise((r) => setTimeout(r, 2000));
+  }
+
+  if (processedCount === 0) {
+    console.log("\n✨ All posts have English translations. Nothing to do.");
+  } else {
+    console.log(`\n🎉 Successfully translated ${processedCount} posts.`);
   }
 }
 
