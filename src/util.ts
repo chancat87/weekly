@@ -39,10 +39,10 @@ export const parseTitle = (
 
   if (lang === "en") {
     if (isSidebar) {
-      return `#${numberPart}`;
+      return `${numberPart}.`;
     }
     const cleanName = displayName.replace(/-/g, " ");
-    return `#${numberPart}${cleanName ? ` - ${cleanName}` : ""}`;
+    return `${numberPart}.${cleanName ? ` ${cleanName}` : ""}`;
   }
 
   let title = `第${numberPart}期`;

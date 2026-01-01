@@ -2,16 +2,24 @@
 import { SITE } from '@/config';
 import AstroLogo from './AstroLogo.astro';
 import HeaderRight from './HeaderRight.astro';
+import { getLangFromUrl, useTranslations, useLocalizedPath } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useLocalizedPath(lang);
 ---
 
 <header>
-  <nav class='nav-wrapper md:-ml-3 xl:max-w-7xl md:w-full lg:max-w-5xl md:max-w-2xl sm:w-96 w-full ml-3' title={SITE.title}>
-    <div class='logo flex md:ml-0 ml-3.5'>
-      <a href='/' class='logo-image'>
+  <nav
+    class='nav-wrapper mx-auto xl:max-w-7xl w-full lg:max-w-5xl md:max-w-2xl max-w-xl box-border md:px-0 sm:px-3 px-4'
+    title={t('site.title')}
+  >
+    <div class='logo flex'>
+      <a href={translatePath('/')} class='logo-image'>
         <AstroLogo size={40} />
       </a>
-      <a href='/'>
-        <h1 class='text-gray-800 dark:text-gray-200'>{SITE.title}</h1>
+      <a href={translatePath('/')}>
+        <h1 class='text-gray-800 dark:text-gray-200'>{t('site.title')}</h1>
       </a>
     </div>
     <HeaderRight />
@@ -67,13 +75,14 @@ import HeaderRight from './HeaderRight.astro';
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 16px;
-    margin: 10px 0 5px;
+    gap: 36px;
   }
 
   @media (max-width: 800px) {
     .nav-wrapper {
       margin: 5px 0;
+      max-width: 100%;
+      width: 100%;
     }
   }
 

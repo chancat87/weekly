@@ -1,5 +1,6 @@
 export const SUPPORT_CALLOUT = {
-  cta: "觉得不错，请 Tw93 喝冰可乐 🥤",
+  zh: "觉得不错，请 Tw93 喝冰可乐 🥤",
+  en: "Buy me a coke 🥤",
   link: "https://miaoyan.app/cats.html?name=潮流周刊",
 };
 

@@ -4,7 +4,12 @@ import SearchIcon from './SearchIcon.astro';
 ---
 
 <site-search id='search' class='ms-auto relative md:inline-block hidden site-search'>
-  <button data-open-modal disabled class='flex items-center justify-center rounded-md gap-1 search-icon' title='输入/进行搜索'>
+  <button
+    data-open-modal
+    disabled
+    class='flex items-center justify-center rounded-full gap-1 search-icon !bg-gray-100 dark:!bg-gray-800 !text-gray-600 dark:!text-gray-400 hover:!text-gray-900 dark:hover:!text-gray-200'
+    title='输入/进行搜索'
+  >
     <SearchIcon />
   </button>
   <dialog
@@ -131,9 +136,6 @@ import SearchIcon from './SearchIcon.astro';
   }
 
   .search-icon {
-    position: absolute;
-    left: -40px;
-    top: -23px;
     outline: none;
     height: 36px;
     min-height: 36px;
@@ -143,12 +145,6 @@ import SearchIcon from './SearchIcon.astro';
     align-items: center;
     justify-content: center;
     padding: 6px;
-    border-radius: var(--radius);
-  }
-
-  .content-title .search-icon {
-    top: -16px;
-    left: -36px;
   }
 
   .site-search .pagefind-ui__message {
@@ -159,6 +155,10 @@ import SearchIcon from './SearchIcon.astro';
 
   .content-title .site-search .pagefind-ui__message {
     padding: 8px 0;
+  }
+
+  .content-title .site-search {
+    margin-left: 8px;
   }
 
   .site-search .pagefind-ui__result {

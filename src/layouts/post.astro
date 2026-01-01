@@ -7,7 +7,8 @@ import Search from '../components/Header/Search.astro';
 import ReaderModeToggle from '../components/ReaderModeToggle.astro';
 import { SITE, GISCUS_CONFIG } from '@/config';
 import { SUPPORT_CALLOUT } from '@/supportCallout';
-import { parseTitle, sortPosts, getIndex, toNumericUrl } from '@/util';
+import { parseTitle, sortPosts, getIndex, toNumericUrl, extractTitlePart, getSlugParts } from '@/util';
+import { getLangFromUrl, useTranslations, useLocalizedPath } from '../i18n/utils';
 
 export interface Props {
   frontmatter: {
@@ -32,10 +33,20 @@ const normalize = (path: string | undefined) => {
 };
 const { date, image, description, url, socialImage, numericUrl, legacySlug, issueTitle, heroImage } = Astro.props.frontmatter;
 
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useLocalizedPath(lang);
+
 const normalizedCurrent = normalize(currentPage) ?? currentPage;
 const normalizedNumeric = normalize(numericUrl);
 const effectivePath = normalizedNumeric ?? normalizedCurrent;
-let title = parseTitle(effectivePath, legacySlug, issueTitle);
+let title = parseTitle(effectivePath, legacySlug, issueTitle, lang);
+
+const { numberPart, name } = getSlugParts(legacySlug ?? extractTitlePart(effectivePath));
+const displayName = name || issueTitle || '';
+const displayTitle = lang === 'en' ? displayName.replace(/-/g, ' ') : displayName;
+const numberPrefix = lang === 'en' ? `${numberPart}.` : `第 ${numberPart} 期`;
+const titleSeparator = lang === 'en' ? ' ' : ' - ';
 
 // Check if current path is the legacy slug path (with hyphen and title)
 // If so, mark it to be ignored by Pagefind to avoid duplicate search results
@@ -57,6 +68,27 @@ const postIndex = getIndex(effectivePath);
 const toNavUrl = (post: any) => (post ? (post.frontmatter?.numericUrl ?? toNumericUrl(post.url)) : '');
 let nextUrl = postIndex > 2 ? toNavUrl(allPosts[allPosts.length - postIndex + 1]) : '';
 let prevUrl = postIndex < allPosts.length ? toNavUrl(allPosts[allPosts.length - postIndex - 1]) : '';
+
+// Try to extract numeric ID from numericUrl or current path
+const getGiscusTerm = () => {
+  if (numericUrl) return numericUrl.split('/').pop();
+  
+  const pathParts = effectivePath.split('/');
+  const lastPart = pathParts[pathParts.length - 1];
+  const match = lastPart.match(/^(\d+)/);
+  if (match) return match[1];
+  
+  return title;
+};
+
+const giscusTerm = getGiscusTerm();
+
+const cleanPath = effectivePath.startsWith('/en/') ? effectivePath.slice(3) : effectivePath;
+const zhPath = cleanPath;
+const enPath = `/en${cleanPath.startsWith('/') ? cleanPath : '/' + cleanPath}`;
+const translationLabel = lang === 'en' ? '切换到中文' : 'Switch to English';
+
+const giscusTheme = `${Astro.url.origin}/styles/giscus-light.css`;
 ---
 
 <BaseLayout title={`${SITE.title}${title}`} content={content} pageURL={currentUrl}>
@@ -80,10 +112,50 @@ let prevUrl = postIndex < allPosts.length ? toNavUrl(allPosts[allPosts.length - 
     }
 
     .heti h1.content-title:first-child {
-      margin-block-start: 20px !important;
+      margin-block-start: 0 !important;
       margin-bottom: 24px;
       letter-spacing: 0.32px;
       line-height: 1.2;
+    }
+
+    .content-title {
+      align-items: center;
+    }
+
+    .content-title .content-logo {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 4px;
+      margin: -8px -4px;
+      margin-top: -14px;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    :global(.content-logo img) {
+      background-color: transparent !important;
+      border-radius: 0 !important;
+    }
+
+    .content-title .content-logo:hover,
+    .content-title .content-logo:focus,
+    .content-title .content-logo:active {
+      text-decoration: none;
+      border-block-end: none;
+      padding-block-end: 8px;
+    }
+
+    @media (min-width: 800px) {
+      .content-title .content-logo {
+        display: none;
+      }
+
+      .heti h1.content-title:first-child {
+        margin-bottom: 32px;
+      }
+
+      .markdown-body {
+        margin-top: 13px;
+      }
     }
 
     .grid-sidebar {
@@ -102,7 +174,7 @@ let prevUrl = postIndex < allPosts.length ? toNavUrl(allPosts[allPosts.length - 
     }
 
     #grid-main {
-      padding: 20px var(--gutter) 80px var(--gutter);
+      padding: calc((var(--theme-navbar-height) - 40px) / 2) var(--gutter) 80px var(--gutter);
       grid-column: 2;
       display: flex;
       flex-direction: column;
@@ -114,6 +186,10 @@ let prevUrl = postIndex < allPosts.length ? toNavUrl(allPosts[allPosts.length - 
     }
 
     @media (min-width: 800px) {
+      body {
+        --gutter: 0px;
+      }
+
       .layout {
         overflow: initial;
         grid-template-columns: 288px minmax(0, var(--max-width));
@@ -131,7 +207,6 @@ let prevUrl = postIndex < allPosts.length ? toNavUrl(allPosts[allPosts.length - 
         grid-column: 1;
       }
     }
-
     @media (min-width: 1152px) {
       .layout {
         grid-template-columns: 320px minmax(0, var(--max-width)) 208px;
@@ -152,7 +227,6 @@ let prevUrl = postIndex < allPosts.length ? toNavUrl(allPosts[allPosts.length - 
 
     .logo {
       display: none;
-      margin-top: -2px;
     }
 
     @media (max-width: 800px) {
@@ -169,19 +243,21 @@ let prevUrl = postIndex < allPosts.length ? toNavUrl(allPosts[allPosts.length - 
       }
 
       #grid-main {
-        margin-top: -7px;
-        padding: 13px 8px var(--doc-padding) 8px;
+        margin-top: 0;
+        padding: 12px 8px var(--doc-padding) 8px;
       }
 
       .heti h1.content-title:first-child {
-        margin-block-start: 12px !important;
-        margin-bottom: 16px;
-        font-size: 28px;
+        margin-block-start: 16px !important;
+        margin-bottom: 24px;
+        font-size: 32px;
+        line-height: 1;
       }
 
-      .heti h1.content-title:first-child > span {
-        margin-top: 4px;
+      .content-title .content-logo {
+        margin-right: 0;
       }
+
     }
 
     .post-footer a {
@@ -208,6 +284,21 @@ let prevUrl = postIndex < allPosts.length ? toNavUrl(allPosts[allPosts.length - 
       opacity: 0.9;
       transform: translateY(-1px);
     }
+
+    .lang-switch-icon:hover {
+      background-color: var(--theme-bg-hover);
+    }
+    
+    .lang-switch-mobile-btn {
+      text-decoration: none !important;
+    }
+
+    .lang-switch-mobile-btn:hover {
+      opacity: 1 !important;
+      border-block-end: none !important;
+      padding-block-end: 0 !important;
+      background-color: var(--theme-bg-hover) !important;
+    }
   </style>
 
   <!-- Post layout -->
@@ -216,12 +307,21 @@ let prevUrl = postIndex < allPosts.length ? toNavUrl(allPosts[allPosts.length - 
       <LeftSidebar currentPage={effectivePath} />
     </aside>
     <div id='grid-main'>
-      <div class='markdown-body heti md:mx-auto md:pb-20 pb-14 xl:max-w-7xl w-full lg:max-w-5xl md:max-w-2xl md:pl-3.5' id='write'>
-        <h1 class='content-title flex align-middle text-gray-800 dark:text-gray-200' tabindex='0'>
-          <a class='logo inline-block md:hidden visible' href='/'><AstroLogo size={40} /> </a>
-          <span data-pagefind-meta='title'>{title}</span>
+      <div class='markdown-body heti md:mx-auto md:pb-20 pb-14 xl:max-w-7xl w-full lg:max-w-5xl md:max-w-2xl' id='write'>
+        <h1 class='content-title flex text-gray-800 dark:text-gray-200' tabindex='0'>
+          <a class='content-logo inline-block md:hidden visible' href={translatePath('/')}><AstroLogo size={40} /> </a>
+          <span data-pagefind-meta='title' class='leading-tight flex-1 min-w-0 truncate'>
+            <span class='hidden md:inline'>{numberPrefix}{titleSeparator}</span>{displayTitle}
+          </span>
           <ReaderModeToggle />
           <Search />
+          <a
+            href={lang === 'en' ? zhPath : enPath}
+            class='lang-switch-wrapper flex items-center justify-center h-9 w-9 rounded-full ml-2 !bg-gray-100 dark:!bg-gray-800 text-sm font-medium transition-colors !text-gray-600 dark:!text-gray-400 hover:!text-gray-900 dark:hover:!text-gray-200 lang-switch-mobile-btn'
+            aria-label={translationLabel}
+          >
+            {lang === 'en' ? '中' : 'En'}
+          </a>
         </h1>
         <slot />
         <div class='flex align-middle justify-center mt-4 pay-button-wrapper'>
@@ -229,13 +329,13 @@ let prevUrl = postIndex < allPosts.length ? toNavUrl(allPosts[allPosts.length - 
             class='inline-block items-center rounded px-5 py-3 text-sm font-medium pay-button'
             href={SUPPORT_CALLOUT.link}
             target='_blank'
-            rel='noreferrer'>{SUPPORT_CALLOUT.cta}</a
+            rel='noreferrer'>{SUPPORT_CALLOUT[lang]}</a
           >
         </div>
         <hr class='post-divider' />
         <div class='flex justify-between md:flex-row flex-col mt-2 post-footer'>
           <div class='text-gray-800 dark:text-gray-200 flex-1'>
-            发布日期：<a
+            {lang === 'en' ? 'Published at: ' : '发布日期：'}<a
               href={`https://github.com/${SITE.repo}/tree/main/src/pages${url}.md`}
               target='_blank'
               data-pagefind-sort='date'
@@ -243,9 +343,9 @@ let prevUrl = postIndex < allPosts.length ? toNavUrl(allPosts[allPosts.length - 
             >
           </div>
           <div class='md:mt-0 mt-4 flex-1 text-right'>
-            {nextUrl ? <a href={nextUrl}>下一篇 |</a> : null}
-            {prevUrl ? <a href={prevUrl}>上一篇 |</a> : null}
-            <a href='/'>去首页 |</a>
+            {nextUrl ? <a href={translatePath(nextUrl)}>{lang === 'en' ? 'Next' : '下一篇'} |</a> : null}
+            {prevUrl ? <a href={translatePath(prevUrl)}>{lang === 'en' ? 'Prev' : '上一篇'} |</a> : null}
+            <a href={translatePath('/')}>{lang === 'en' ? 'Home' : '去首页'} |</a>
             <a href={`https://twitter.com/${SITE.twitterId}`} target='_blank' title='Follow'>Twitter</a>
             <a href={`https://github.com/${SITE.repo}`} title='Star' target='_blank' class='lg:inline-block hidden'> | Github</a>
             <a href='/rss.xml' title='Subscribe' target='_blank' class='xl:inline-block hidden'> | RSS</a>
@@ -262,13 +362,14 @@ let prevUrl = postIndex < allPosts.length ? toNavUrl(allPosts[allPosts.length - 
             data-repo-id={GISCUS_CONFIG.repoId}
             data-category={GISCUS_CONFIG.category}
             data-category-id={GISCUS_CONFIG.categoryId}
-            data-mapping={GISCUS_CONFIG.mapping}
+            data-mapping='specific'
+            data-term={giscusTerm}
             data-strict={GISCUS_CONFIG.strict}
             data-reactions-enabled={GISCUS_CONFIG.reactionsEnabled}
             data-emit-metadata={GISCUS_CONFIG.emitMetadata}
             data-input-position={GISCUS_CONFIG.inputPosition}
-            data-theme={GISCUS_CONFIG.theme}
-            data-lang={GISCUS_CONFIG.lang}
+            data-theme={giscusTheme}
+            data-lang={lang === 'en' ? 'en' : 'zh-CN'}
             crossorigin='anonymous'
             async
           />

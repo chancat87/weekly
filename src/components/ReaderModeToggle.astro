@@ -1,7 +1,7 @@
 <!-- Reader mode toggle button -->
 <button
   id='reader-toggle'
-  class='reader-toggle inline-flex items-center justify-center ml-2 align-middle'
+  class='reader-toggle flex items-center justify-center ml-2 !bg-gray-100 dark:!bg-gray-800 rounded-full !text-gray-600 dark:!text-gray-400 hover:!text-gray-900 dark:hover:!text-gray-200'
   aria-label='Toggle reader mode'
   aria-pressed='false'
   title='切换纯净阅读模式'
@@ -31,20 +31,18 @@
     background: none;
     border: none;
     cursor: pointer;
-    color: var(--theme-text-lighter);
     padding: 6px;
-    border-radius: var(--radius);
     transition: all var(--transition-base);
     height: 36px;
     min-height: 36px;
     width: 36px;
     min-width: 36px;
+    margin-top: 2px;
   }
 
   .reader-toggle:hover {
-    opacity: 1;
-    color: var(--theme-accent);
-    background-color: var(--theme-divider);
+    opacity: 1 !important;
+    background-color: var(--theme-bg-hover) !important;
   }
 
   .reader-icon {
@@ -64,9 +62,9 @@
 
   /* Keep the toggle subtle unless the reader needs it */
   .content-title .reader-toggle {
-    opacity: 0.08;
-    visibility: visible;
-    pointer-events: auto;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
     transform: scale(0.94);
   }
 
@@ -84,6 +82,8 @@
   .content-title:focus-within .reader-toggle,
   .reader-toggle:focus-visible {
     opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
     transform: scale(1);
   }
 
@@ -98,7 +98,13 @@
   }
 
   [data-reader-mode='true'] .content-title .site-search {
-    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  [data-reader-mode='true'] .lang-switch-wrapper {
+    visibility: hidden !important;
+    pointer-events: none !important;
   }
 
   [data-reader-mode='true'] .pay-button-wrapper {
