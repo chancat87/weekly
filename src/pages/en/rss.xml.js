@@ -25,7 +25,7 @@ export async function GET() {
     xmlns: {
       atom: "http://www.w3.org/2005/Atom",
     },
-    customData: `<atom:icon>${SITE.icon}</atom:icon><atom:logo>${SITE.icon}</atom:logo><image><url>${SITE.icon}</url><title>${SITE.title}</title><link>${SITE.homePage}/en/</link></image><follow_challenge><feedId>41147805276726275</feedId><userId>42909600318350336</userId></follow_challenge>`,
+    customData: `<atom:icon>${SITE.icon}</atom:icon><atom:logo>${SITE.icon}</atom:logo><image><url>${SITE.icon}</url><title>Tw93 Weekly</title><link>${SITE.homePage}/en/</link></image><follow_challenge><feedId>41147805276726276</feedId><userId>42909600318350336</userId></follow_challenge>`,
     items: await Promise.all(
       posts.map(async (item) => {
         const numericLink =
