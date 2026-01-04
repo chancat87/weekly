@@ -10,6 +10,15 @@ date: 2026/01/05
 
 ## Trending Tools
 
+**Migrating Tw93 Weekly to an English version.**
+<https://weekly.tw93.fun/en>
+I spent the whole afternoon migrating Tw93 Weekly to an English version.
+
+The translations were largely powered by Gemini Flash, which turned out to be incredibly efficient. From now on, every issue will be published in both Chinese and English.
+
+Non-Chinese readers are very welcome to join — to get a glimpse into a Chinese engineer’s weekend life, explore interesting developer tools, and read my thoughts on AI along the way.
+<img src="https://cdn.fliggy.com/upic/JVw8PR.png" width="800" />
+
 **Mole 1.8 is here**
 <https://github.com/tw93/Mole>
 Update logs below, mainly focused on various optimizations and capability enhancements.
