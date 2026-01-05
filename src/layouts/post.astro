@@ -69,15 +69,8 @@ const toNavUrl = (post: any) => (post ? (post.frontmatter?.numericUrl ?? toNumer
 let nextUrl = postIndex > 2 ? toNavUrl(allPosts[allPosts.length - postIndex + 1]) : '';
 let prevUrl = postIndex < allPosts.length ? toNavUrl(allPosts[allPosts.length - postIndex - 1]) : '';
 
-// Try to extract numeric ID from numericUrl or current path
+// Use the full title as the Giscus term to ensure GitHub Discussions have descriptive titles
 const getGiscusTerm = () => {
-  if (numericUrl) return numericUrl.split('/').pop();
-
-  const pathParts = effectivePath.split('/');
-  const lastPart = pathParts[pathParts.length - 1];
-  const match = lastPart.match(/^(\d+)/);
-  if (match) return match[1];
-
   return title;
 };
 
