@@ -9,7 +9,9 @@
 <script async src='https://www.googletagmanager.com/gtag/js?id=G-DT01FBW30E' is:inline></script>
 <script is:inline>
   window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
+  function gtag() {
+    dataLayer.push(arguments);
+  }
   gtag('js', new Date());
   gtag('config', 'G-DT01FBW30E');
 </script>
@@ -35,9 +37,7 @@
     });
 
     // Image zoom functionality (desktop only)
-    const zoomImgs = Array.from(
-      document.querySelectorAll('#write>img, #write>p>img, #write>table img')
-    );
+    const zoomImgs = Array.from(document.querySelectorAll('#write>img, #write>p>img, #write>table img'));
     const isDesktop = window.innerWidth > 768;
     if (zoomImgs.length > 0 && typeof Lightense !== 'undefined' && isDesktop) {
       let activeIndex = -1;
@@ -56,9 +56,7 @@
         if (queryIndex === -1) return url;
         const base = beforeHash.slice(0, queryIndex);
         const query = beforeHash.slice(queryIndex + 1);
-        const params = query
-          .split('&')
-          .filter((param) => param && !param.startsWith('x-oss-process='));
+        const params = query.split('&').filter((param) => param && !param.startsWith('x-oss-process='));
         const cleaned = params.length ? `${base}?${params.join('&')}` : base;
         return `${cleaned}${hash}`;
       };
@@ -146,16 +144,13 @@
 
         if (!rectWidth || !rectHeight || !naturalWidth || !naturalHeight) return 1;
 
-        const paddingAttr =
-          img.getAttribute('data-lightense-padding') || img.getAttribute('data-padding');
+        const paddingAttr = img.getAttribute('data-lightense-padding') || img.getAttribute('data-padding');
         const padding = Number.parseFloat(paddingAttr);
         const effectivePadding = Number.isFinite(padding) ? padding : 40;
         const viewportWidth = window.innerWidth || document.documentElement.clientWidth || 0;
         const viewportHeight = window.innerHeight || document.documentElement.clientHeight || 0;
-        const availableWidth =
-          viewportWidth > effectivePadding ? viewportWidth - effectivePadding : viewportWidth;
-        const availableHeight =
-          viewportHeight > effectivePadding ? viewportHeight - effectivePadding : viewportHeight;
+        const availableWidth = viewportWidth > effectivePadding ? viewportWidth - effectivePadding : viewportWidth;
+        const availableHeight = viewportHeight > effectivePadding ? viewportHeight - effectivePadding : viewportHeight;
         const scaleToNatural = naturalWidth / rectWidth;
 
         if (naturalWidth < availableWidth && naturalHeight < availableHeight) {
@@ -165,9 +160,7 @@
         const imgRatio = naturalWidth / naturalHeight;
         const viewportRatio = availableWidth / availableHeight;
 
-        return imgRatio < viewportRatio
-          ? availableHeight / rectHeight
-          : availableWidth / rectWidth;
+        return imgRatio < viewportRatio ? availableHeight / rectHeight : availableWidth / rectWidth;
       };
 
       const updateWrapTransform = (img) => {
@@ -197,10 +190,7 @@
         if (!nextSrc) return;
 
         const wrap =
-          activeTarget.parentElement &&
-          activeTarget.parentElement.classList.contains('lightense-wrap')
-            ? activeTarget.parentElement
-            : null;
+          activeTarget.parentElement && activeTarget.parentElement.classList.contains('lightense-wrap') ? activeTarget.parentElement : null;
         const targetTransition = disableTransition(activeTarget);
         const wrapTransition = disableTransition(wrap);
 
@@ -263,86 +253,7 @@
           };
           swapToOriginal(target);
         },
-        beforeHide: () => {
-          if (activeIndex !== initialIndex && activeTarget) {
-            activeTarget.style.transition = 'none';
-            activeTarget.style.opacity = '0';
-
-            const wrap = activeTarget.parentElement;
-            if (wrap && wrap.classList.contains('lightense-wrap')) {
-              wrap.style.transition = 'none';
-              wrap.style.opacity = '0';
-            }
-
-            const filler = document.createElement('img');
-            filler.src = activeTarget.getAttribute('data-lightense-src-current') || activeTarget.src;
-            filler.style.position = 'fixed';
-            filler.style.left = `${activeBase.left - (getScrollOffsets().x)}px`;
-            filler.style.top = `${activeBase.top - (getScrollOffsets().y)}px`;
-            filler.style.width = `${activeBase.width}px`;
-            filler.style.height = `${activeBase.height}px`;
-            filler.style.borderRadius = activeBase.borderRadius;
-            filler.style.objectFit = 'cover';
-            filler.style.margin = '0';
-            filler.style.padding = '0';
-            filler.style.zIndex = '1';
-            filler.style.pointerEvents = 'none';
-            filler.id = 'lightense-filler';
-            document.body.appendChild(filler);
-
-            const ghost = activeTarget.cloneNode(true);
-            const rectZ = activeTarget.getBoundingClientRect();
-
-            ghost.className = '';
-            ghost.style.position = 'fixed';
-            ghost.style.left = `${rectZ.left}px`;
-            ghost.style.top = `${rectZ.top}px`;
-            ghost.style.width = `${rectZ.width}px`;
-            ghost.style.height = `${rectZ.height}px`;
-            ghost.style.transform = '';
-            ghost.style.zIndex = '2147483647';
-            ghost.style.transition = 'all 0.3s cubic-bezier(0.2, 0, 0.2, 1)';
-            ghost.style.borderRadius = activeBase.borderRadius;
-            ghost.style.opacity = '1';
-            ghost.id = 'lightense-ghost';
-            document.body.appendChild(ghost);
-
-            const currentImg = zoomImgs[activeIndex];
-            const rectB = currentImg.getBoundingClientRect();
-
-            void ghost.offsetWidth;
-
-            ghost.style.left = `${rectB.left}px`;
-            ghost.style.top = `${rectB.top}px`;
-            ghost.style.width = `${rectB.width}px`;
-            ghost.style.height = `${rectB.height}px`;
-            ghost.style.borderRadius = getComputedStyle(currentImg).borderRadius;
-
-            setTimeout(() => {
-              ghost.style.opacity = '0';
-              setTimeout(() => {
-                if (ghost.parentNode) ghost.parentNode.removeChild(ghost);
-              }, 150);
-            }, 300);
-          }
-        },
         afterHide: ({ target }) => {
-          const filler = document.getElementById('lightense-filler');
-          if (filler) filler.parentNode.removeChild(filler);
-
-          const ghost = document.getElementById('lightense-ghost');
-          if (ghost) ghost.parentNode.removeChild(ghost);
-
-          if (activeIndex !== initialIndex) {
-            target.style.transition = '';
-            target.style.opacity = '';
-            const wrap = target.parentElement;
-            if (wrap && wrap.classList.contains('lightense-wrap')) {
-              wrap.style.transition = '';
-              wrap.style.opacity = '';
-            }
-          }
-
           restoreCompressed(target);
           activeTarget = null;
           activeIndex = -1;
@@ -361,20 +272,18 @@
         if (activeIndex === -1) return;
 
         const isPrev = event.key === 'ArrowLeft' || event.key === 'ArrowUp';
-        const nextIndex = isPrev
-          ? (activeIndex - 1 + zoomImgs.length) % zoomImgs.length
-          : (activeIndex + 1) % zoomImgs.length;
+        const nextIndex = isPrev ? (activeIndex - 1 + zoomImgs.length) % zoomImgs.length : (activeIndex + 1) % zoomImgs.length;
 
         navigateTo(nextIndex);
       });
     }
 
     // Lazy load images after the first two
-    const images = document.querySelectorAll("#write img");
+    const images = document.querySelectorAll('#write img');
     images.forEach((img, index) => {
       if (index > 1) {
-        img.setAttribute("loading", "lazy");
-        img.setAttribute("decoding", "async");
+        img.setAttribute('loading', 'lazy');
+        img.setAttribute('decoding', 'async');
       }
     });
   });
