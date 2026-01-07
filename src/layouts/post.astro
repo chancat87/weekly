@@ -69,9 +69,9 @@ const toNavUrl = (post: any) => (post ? (post.frontmatter?.numericUrl ?? toNumer
 let nextUrl = postIndex > 2 ? toNavUrl(allPosts[allPosts.length - postIndex + 1]) : '';
 let prevUrl = postIndex < allPosts.length ? toNavUrl(allPosts[allPosts.length - postIndex - 1]) : '';
 
-// Use the full title as the Giscus term to ensure GitHub Discussions have descriptive titles
+// Use the issue number as the Giscus term to unify comments across languages
 const getGiscusTerm = () => {
-  return title;
+  return numberPart;
 };
 
 const giscusTerm = getGiscusTerm();
@@ -305,7 +305,9 @@ const giscusTheme = `${Astro.url.origin}/styles/giscus-light.css`;
     <div id='grid-main'>
       <div class='markdown-body heti md:mx-auto md:pb-20 pb-14 xl:max-w-7xl w-full lg:max-w-5xl md:max-w-2xl' id='write'>
         <h1 class='content-title flex text-gray-800 dark:text-gray-200' tabindex='0'>
-          <a class='content-logo inline-block md:hidden visible' href={translatePath('/')}><AstroLogo size={40} /> </a>
+          <a class='content-logo inline-block md:hidden visible' href={translatePath('/')} aria-label={SITE.title}
+            ><AstroLogo size={40} />
+          </a>
           <span data-pagefind-meta='title' class='leading-tight flex-1 min-w-0 truncate'>
             <span class='hidden md:inline'>{numberPrefix}{titleSeparator}</span>{displayTitle}
           </span>

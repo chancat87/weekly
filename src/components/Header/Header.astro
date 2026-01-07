@@ -15,7 +15,7 @@ const translatePath = useLocalizedPath(lang);
     title={t('site.title')}
   >
     <div class='logo flex'>
-      <a href={translatePath('/')} class='logo-image'>
+      <a href={translatePath('/')} class='logo-image' aria-label={t('site.title')}>
         <AstroLogo size={40} />
       </a>
       <a href={translatePath('/')}>

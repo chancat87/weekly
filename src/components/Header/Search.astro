@@ -9,6 +9,7 @@ import SearchIcon from './SearchIcon.astro';
     disabled
     class='flex items-center justify-center rounded-full gap-1 search-icon !bg-gray-100 dark:!bg-gray-800 !text-gray-600 dark:!text-gray-400 hover:!text-gray-900 dark:hover:!text-gray-200'
     title='输入/进行搜索'
+    aria-label='Search'
   >
     <SearchIcon />
   </button>
@@ -117,8 +118,9 @@ import SearchIcon from './SearchIcon.astro';
   body {
     --pagefind-ui-primary: #a67c52;
     --pagefind-ui-border-width: 1px;
-    --pagefind-ui-font: 'TsangerJinKai02', 'STKaiti', 'KaiTi', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
-      Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    --pagefind-ui-font:
+      'TsangerJinKai02', 'STKaiti', 'KaiTi', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif,
+      'Apple Color Emoji', 'Segoe UI Emoji';
   }
 
   .site-search {

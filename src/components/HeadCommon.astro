@@ -13,4 +13,7 @@ const { icon } = SITE;
 <link rel='sitemap' href='/sitemap.xml' />
 <!-- Canonical URL is handled in HeadSEO.astro (included via BaseLayout) -->
 
+<!-- Font preconnect for faster loading -->
+<link rel='preconnect' href='https://gw.alipayobjects.com' crossorigin />
+<!-- Note: This CSS loads font subsets + 8.6MB all-glyphs fallback. The fallback ensures complete unicode coverage but impacts initial load. Consider removing fallback if rare characters can fall back to system fonts. -->
 <link rel='stylesheet' href='https://gw.alipayobjects.com/os/k/jinkai/style.css' crossorigin='anonymous' />

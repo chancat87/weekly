@@ -1,5 +1,3 @@
-@import url("https://gw.alipayobjects.com/os/k/jinkai/style.css");
-
 main {
   --color-btn-text: #e7e9ea;
   --color-btn-bg: #2c5558;
@@ -70,7 +68,7 @@ main {
     "Apple Color Emoji",
     "Segoe UI Emoji";
   letter-spacing: 0.5px;
-  color: red;
+  color: var(--theme-text);
 }
 
 main .pagination-loader-container {

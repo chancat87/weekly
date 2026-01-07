@@ -11,49 +11,51 @@ const { title: contentTitle, socialImage, description: contentDescription, image
 const pageTitle = contentTitle ? `${title}${contentTitle}` : title;
 const imageSrc = socialImage || siteImage;
 const description = contentDescription || siteDescription;
-const preloadImage = image ? `${image}?x-oss-process=image/resize,w_3600/format,webp` : false;
+const preloadImage = image ? `${image}?x-oss-process=image/resize,w_1200/format,webp` : false;
 const canonicalURL = new URL(pageURL, homePage).href;
 
 // Check if this is an article page
 const isArticle = contentTitle && content.date;
 
 // Structured data
-const structuredData = isArticle ? {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": contentTitle,
-  "description": description,
-  "image": image || imageSrc,
-  "author": {
-    "@type": "Person",
-    "name": author,
-    "url": `https://twitter.com/${twitterId}`
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": title,
-    "logo": {
-      "@type": "ImageObject",
-      "url": icon
+const structuredData = isArticle
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      headline: contentTitle,
+      description: description,
+      image: image || imageSrc,
+      author: {
+        '@type': 'Person',
+        name: author,
+        url: `https://twitter.com/${twitterId}`,
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: title,
+        logo: {
+          '@type': 'ImageObject',
+          url: icon,
+        },
+      },
+      datePublished: content.date,
+      dateModified: content.date,
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': canonicalURL,
+      },
     }
-  },
-  "datePublished": content.date,
-  "dateModified": content.date,
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": canonicalURL
-  }
-} : {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": title,
-  "description": siteDescription,
-  "url": homePage,
-  "author": {
-    "@type": "Person",
-    "name": author
-  }
-};
+  : {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: title,
+      description: siteDescription,
+      url: homePage,
+      author: {
+        '@type': 'Person',
+        name: author,
+      },
+    };
 ---
 
 <!-- Canonical URL -->
@@ -78,6 +80,6 @@ const structuredData = isArticle ? {
 {isArticle && <meta property='article:author' content={author} />}
 
 <!-- JSON-LD Structured Data -->
-<script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+<script type='application/ld+json' set:html={JSON.stringify(structuredData)} />
 
 {preloadImage && <link rel='preload' href={preloadImage} as='image' />}

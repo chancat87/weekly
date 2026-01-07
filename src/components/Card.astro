@@ -13,9 +13,11 @@ export interface Props {
       numericUrl?: string;
     };
   };
+  priority?: boolean;
+  isLCP?: boolean;
 }
 
-const { post } = Astro.props;
+const { post, priority = false, isLCP = false } = Astro.props;
 import { getLangFromUrl } from '../i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 
@@ -34,10 +36,14 @@ const { image, description, date } = post.frontmatter;
   style='transition: all 200ms ease; will-change: transform;'
 >
   <img
-    data-placeholder-background='linear-gradient(to bottom, var(--placeholder-gradient-start), var(--placeholder-gradient-end))'
-    data-src={`${image}?x-oss-process=image/resize,w_640/format,webp`}
-    data-alt={title}
-    class='lozad block md:w-80 md:h-48 sm:w-96 w-full sm:h-52 h-56 rounded-t-lg'
+    src={`${image}?x-oss-process=image/resize,w_640/format,webp`}
+    width='640'
+    height='384'
+    alt={title}
+    loading={priority ? 'eager' : 'lazy'}
+    decoding='async'
+    fetchpriority={isLCP ? 'high' : 'auto'}
+    class='block md:w-80 md:h-48 sm:w-96 w-full sm:h-52 h-56 rounded-t-lg'
     style='transition: transform 200ms ease;'
   />
   <div class='w-full flex justify-between items-center leading-tight pt-3 px-3'>

@@ -54,7 +54,7 @@ First, force restart your iPhone: Volume Up → Release, Volume Down → Release
 Next, go to Settings → Apple ID → iCloud → iCloud Drive, then turn off iCloud Drive, restart again, and then turn it back on in Settings. You'll find a few more GBs are gone.
 Finally, clear Safari & in-app caches: go to Settings → Safari → Clear History and Website Data; go to Settings → Safari → Advanced → Website Data → Remove All Website Data. This will also save a few GBs.
 To clean up even more, I usually go through the apps of major domestic companies and use their built-in cache clearing, then uninstall apps I don't use often. Of course, the main culprit is always WeChat (where your understanding of the product is effectively 0), so you can continue cleaning that up.
-<img src="https://cdn.fliggy.com/upic/0Ehxk4.png" width="680" class="border"/>
+<img src="https://cdn.fliggy.com/upic/0Ehxk4.png" width="800"/>
 
 **Recommending a delicious Sparkling Iced Americano**
 Mix apple soda with an Americano and ice. It's very tasty, simple to make, and looks great. Later, I used Watson's Tonic Water instead, and it was also very delicious.

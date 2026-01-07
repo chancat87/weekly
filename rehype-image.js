@@ -29,7 +29,7 @@ const getHeroImage = (tree, homePage) => {
       const skipRegex = /\.(?:gif|svg|GIF|SVG)(?:\?.*)?$/;
       if (url.match(domainRegex) && !url.match(skipRegex)) {
         const separator = url.includes("?") ? "&" : "?";
-        heroUrl = `${url}${separator}x-oss-process=image/auto-orient,1/resize,w_3600/format,webp`;
+        heroUrl = `${url}${separator}x-oss-process=image/auto-orient,1/resize,w_2000/format,webp`;
       }
     }
   });
@@ -87,7 +87,7 @@ export default function rehypeCustomizeImageSrc() {
           ? originalHeightMatch[1].replace("px", "")
           : null;
 
-        let newAttrs = `src="${p1}${separator}x-oss-process=image/auto-orient,1/resize,w_3600/format,webp" data-lightense-src="${p1}"`;
+        let newAttrs = `src="${p1}${separator}x-oss-process=image/auto-orient,1/resize,w_2000/format,webp" data-lightense-src="${p1}"`;
 
         const finalWidth = meta?.width || origWidth;
         const finalHeight = meta?.height || origHeight;
@@ -135,7 +135,7 @@ export default function rehypeCustomizeImageSrc() {
           const separator = posterUrl.includes("?") ? "&" : "?";
           const processedPoster = posterUrl.includes("x-oss-process")
             ? posterUrl
-            : `${posterUrl}${separator}x-oss-process=image/auto-orient,1/resize,w_3600/format,webp`;
+            : `${posterUrl}${separator}x-oss-process=image/auto-orient,1/resize,w_2000/format,webp`;
 
           let videoAttrs = `poster="${processedPoster}"`;
 
