@@ -28,7 +28,9 @@ self.addEventListener("activate", (event) => {
 self.addEventListener("fetch", (event) => {
   const url = event.request.url;
   const isImmutableAsset =
-    IMMUTABLE_ASSETS.includes(url) || url.startsWith(FONT_BASE_URL);
+    IMMUTABLE_ASSETS.includes(url) ||
+    url.startsWith(FONT_BASE_URL) ||
+    url.includes("/fonts/jinkai.css");
 
   if (isImmutableAsset) {
     event.respondWith(

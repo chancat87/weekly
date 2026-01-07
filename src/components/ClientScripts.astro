@@ -2,17 +2,41 @@
 // Client-side scripts for image optimization and interactions
 ---
 
-<script type='text/javascript' src='https://gw.alipayobjects.com/os/k/s3/lightense.min.js' is:inline></script>
+<script type='text/javascript' src='https://gw.alipayobjects.com/os/k/s3/lightense.min.js' is:inline defer></script>
 
 <!-- Google Analytics -->
-<script async src='https://www.googletagmanager.com/gtag/js?id=G-DT01FBW30E' is:inline></script>
 <script is:inline>
   window.dataLayer = window.dataLayer || [];
   function gtag() {
     dataLayer.push(arguments);
   }
-  gtag('js', new Date());
-  gtag('config', 'G-DT01FBW30E');
+
+  // Lazy load Google Analytics
+  const loadGA = () => {
+    const script = document.createElement('script');
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-DT01FBW30E';
+    script.async = true;
+    document.head.appendChild(script);
+
+    gtag('js', new Date());
+    gtag('config', 'G-DT01FBW30E');
+  };
+
+  // Wait for user interaction or delay
+  const triggerGA = () => {
+    window.removeEventListener('scroll', triggerGA);
+    window.removeEventListener('mousemove', triggerGA);
+    window.removeEventListener('touchstart', triggerGA);
+    loadGA();
+  };
+
+  window.addEventListener('scroll', triggerGA, { once: true });
+  window.addEventListener('mousemove', triggerGA, { once: true });
+  window.addEventListener('touchstart', triggerGA, { once: true });
+  setTimeout(() => {
+    // Fallback if no interaction after 5s
+    if (!window.dataLayer.length) loadGA();
+  }, 5000);
 </script>
 
 <script is:inline>
