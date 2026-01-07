@@ -368,6 +368,7 @@ const giscusTheme = `${Astro.url.origin}/styles/giscus-light.css`;
             data-input-position={GISCUS_CONFIG.inputPosition}
             data-theme={giscusTheme}
             data-lang={lang === 'en' ? 'en' : 'zh-CN'}
+            data-loading='lazy'
             crossorigin='anonymous'
             async
           />
