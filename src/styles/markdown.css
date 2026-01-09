@@ -40,14 +40,6 @@ body {
   margin-top: 8px;
 }
 
-.lightense-target {
-  margin-top: 8px;
-}
-
-table .lightense-target {
-  margin-top: 0px;
-}
-
 pre,
 iframe {
   max-width: 900px;
@@ -328,7 +320,7 @@ blockquote blockquote {
 
 @media (prefers-color-scheme: dark) {
   .heti table {
-    border-color: #404040;
+    border-color: #404040 !important;
   }
 
   .heti p > code,
@@ -336,6 +328,16 @@ blockquote blockquote {
     background-color: #343941;
     color: #e8e8eb;
   }
+}
+
+[data-theme="dark"] .heti table {
+  border-color: #404040 !important;
+}
+
+[data-theme="dark"] .heti p > code,
+[data-theme="dark"] .heti li > code {
+  background-color: #343941;
+  color: #e8e8eb;
 }
 
 .heti table {
@@ -351,14 +353,19 @@ blockquote blockquote {
   padding-inline-end: 8px;
   border-width: 1px;
   border-style: solid;
-  border-color: #f2f3f4;
+  border-color: #e5e7eb;
 }
 
 @media (prefers-color-scheme: dark) {
   .heti th,
   .heti td {
-    border-color: #404040;
+    border-color: #404040 !important;
   }
+}
+
+[data-theme="dark"] .heti th,
+[data-theme="dark"] .heti td {
+  border-color: #404040 !important;
 }
 
 .heti caption {
@@ -1121,4 +1128,57 @@ img[loading="lazy"] {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/* PhotoSwipe UI Cleanup */
+.pswp__button--close,
+.pswp__button--arrow,
+.pswp__button--zoom {
+  display: none !important;
+}
+
+.pswp__caption-content {
+  text-align: center;
+  margin-top: 15px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+
+.pswp__icn {
+  color: white;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));
+}
+
+.pswp__top-bar {
+  background: none !important;
+}
+
+/* Darker Backdrop */
+.pswp__bg {
+  background: #000 !important;
+}
+
+/* Hide counter */
+.pswp__counter {
+  display: none !important;
+}
+
+/* Add rounded corners to all image elements for smooth transition */
+.pswp__img,
+.pswp__content > img,
+.pswp__zoom-wrap img {
+  object-fit: contain;
+  border-radius: 4px !important;
+  transition: border-radius 0.2s ease-out;
+}
+
+/* When zoomed in (class added by JS), use larger radius */
+.pswp--zoomed-in .pswp__img,
+.pswp--zoomed-in .pswp__content > img,
+.pswp--zoomed-in .pswp__zoom-wrap img {
+  border-radius: 16px !important;
+}
+
+.pswp__img--placeholder {
+  border-radius: 4px !important;
 }

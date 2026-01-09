@@ -151,5 +151,34 @@
 
     themeToggle.addEventListener('click', toggleTheme);
     prefersDarkScheme.addEventListener('change', (e) => setTheme(e.matches ? 'dark' : 'light'));
+
+    // Monitor Giscus iframe loading and reapply theme
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        mutation.addedNodes.forEach((node) => {
+          if (node.tagName === 'IFRAME' && node.classList.contains('giscus-frame')) {
+            const currentTheme = document.body.getAttribute('data-theme');
+            const giscusTheme = currentTheme === 'dark' ? GISCUS_DARK_THEME : GISCUS_LIGHT_THEME;
+            setTimeout(() => updateIframeTheme(giscusTheme), 100);
+            setTimeout(() => updateIframeTheme(giscusTheme), 500);
+          }
+        });
+      });
+    });
+
+    // Observe the giscus container
+    const giscusContainer = document.querySelector('.giscus');
+    if (giscusContainer) {
+      observer.observe(giscusContainer, { childList: true, subtree: true });
+    }
+
+    // Reapply theme on visibility change (helps with mobile viewport changes)
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden) {
+        const currentTheme = document.body.getAttribute('data-theme');
+        const giscusTheme = currentTheme === 'dark' ? GISCUS_DARK_THEME : GISCUS_LIGHT_THEME;
+        setTimeout(() => updateIframeTheme(giscusTheme), 100);
+      }
+    });
   });
 </script>

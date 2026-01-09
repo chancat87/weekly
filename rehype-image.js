@@ -87,7 +87,7 @@ export default function rehypeCustomizeImageSrc() {
           ? originalHeightMatch[1].replace("px", "")
           : null;
 
-        let newAttrs = `src="${p1}${separator}x-oss-process=image/auto-orient,1/resize,w_2000/format,webp" data-lightense-src="${p1}"`;
+        let newAttrs = `src="${p1}${separator}x-oss-process=image/auto-orient,1/resize,w_2000/format,webp" data-lightense-src="${p1}" data-pswp-src="${p1}"`;
 
         const finalWidth = meta?.width || origWidth;
         const finalHeight = meta?.height || origHeight;
@@ -97,7 +97,7 @@ export default function rehypeCustomizeImageSrc() {
           const loadingAttr = isFirstImage
             ? 'loading="eager" fetchpriority="high"'
             : 'loading="lazy"';
-          newAttrs += ` width="${finalWidth}" height="${finalHeight}" style="aspect-ratio: ${ratio};" ${loadingAttr}`;
+          newAttrs += ` width="${finalWidth}" height="${finalHeight}" data-pswp-width="${finalWidth}" data-pswp-height="${finalHeight}" style="aspect-ratio: ${ratio};" ${loadingAttr}`;
         } else if (isFirstImage) {
           newAttrs += ' loading="eager" fetchpriority="high"';
         } else {
