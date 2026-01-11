@@ -11,9 +11,7 @@ date: 2026/01/12
 ## Trendy Tools
 
 **Mole's Highlight Moment: Connecting with Paul Graham**
-
 <https://github.com/tw93/Mole>
-
 Mole 1.20 is out! This update adds a lot of fun stuff. You can check the changelog for details, so I won't go into them here.
 
 I want to share some good news first. Through Mole, I unexpectedly got in touch with my tech idol, Paul Graham. Ten years ago, during my sophomore year, I found "Hackers & Painters" in the university library. It had a huge impact on me. At that time, I was constantly thinking about what kind of role I wanted to play. This book was a wake-up call: engineers aren't just geeks; they can also be painters with a sense of aesthetics. This influenced many of my subsequent works, where I strive to keep things simple, easy to use, and beautiful, while truly solving problems. Being able to connect with him through Mole is really magical to me.
@@ -22,9 +20,7 @@ Of course, Mole's open-sourcing has been well-received by many programmers in th
 <img src="https://cdn.fliggy.com/upic/assBCv.jpeg" width="800" />
 
 **MiaoYan released version 2.4.5, looking even better**
-
 <https://github.com/tw93/MiaoYan>
-
 This update adds split-column editing and preview modes, allowing you to view the final result while maintaining pure Markdown editing. It also adds layout cycling capabilities, enabling quick switching between the sidebar, list, and focus modes. Split-column dragging and window resizing are smoother and more stable.
 
 Visually and interactively, the interface has been polished: icons have unified sizes and grayscale states, active colors are clearer, and light/dark mode performance is more consistent. Preview switching now has soft fade-in/out animations, fully preserving the selection and scroll position during the switch to minimize interruption to writing.

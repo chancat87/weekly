@@ -117,61 +117,8 @@ export default function rehypeCustomizeImageSrc() {
         return `<img ${newAttrs} ${otherAttrs} />`;
       });
 
-      // 2. Process <video> tags for posters
-      const videoRegex = /<video\s+([^>]*src="([^"]+)"[^>]*)>/g;
-      const videoTagRegex = /<video\s+([^>]*)>/g;
-
-      node.value = node.value.replace(videoTagRegex, (fullMatch, attrs) => {
-        // If it already has a poster, don't touch it
-        if (attrs.includes("poster=")) {
-          return fullMatch;
-        }
-
-        // Use frontmatter 'image' if available as poster
-        const frontmatterImage = file.data.astro?.frontmatter?.image;
-        const posterUrl = frontmatterImage || heroImage;
-
-        if (posterUrl) {
-          const separator = posterUrl.includes("?") ? "&" : "?";
-          const processedPoster = posterUrl.includes("x-oss-process")
-            ? posterUrl
-            : `${posterUrl}${separator}x-oss-process=image/auto-orient,1/resize,w_2000/format,webp`;
-
-          let videoAttrs = `poster="${processedPoster}"`;
-
-          // Try to get dimensions of the poster to prevent layout shift for video
-          const meta = imageMetadata[posterUrl];
-
-          // Extract original values for fallback
-          const originalWidthMatch = attrs.match(/width="([^"]*)"/);
-          const originalHeightMatch = attrs.match(/height="([^"]*)"/);
-          const origWidth = originalWidthMatch
-            ? originalWidthMatch[1].replace("px", "")
-            : null;
-          const origHeight = originalHeightMatch
-            ? originalHeightMatch[1].replace("px", "")
-            : null;
-
-          const finalWidth = meta?.width || origWidth;
-          const finalHeight = meta?.height || origHeight;
-
-          if (finalWidth && finalHeight) {
-            const ratio = (Number(finalWidth) / Number(finalHeight)).toFixed(4);
-            videoAttrs += ` width="${finalWidth}" height="${finalHeight}" style="aspect-ratio: ${ratio};"`;
-          }
-
-          // Clean up conflicting attributes from the original video tag
-          const otherAttrs = attrs
-            .replace(/\s*poster="[^"]*"/g, "")
-            .replace(/\s*width="[^"]*"/g, "")
-            .replace(/\s*height="[^"]*"/g, "")
-            .replace(/\s*style="[^"]*"/g, "");
-
-          return `<video ${videoAttrs} ${otherAttrs}>`;
-        }
-
-        return fullMatch;
-      });
+      // 2. Video tags processing removed to prevent automatic poster injection from first image as it was causing confusion.
+      // If a poster is needed, it should be manually specified in the markdown.
     });
   };
 }
