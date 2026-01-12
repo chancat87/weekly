@@ -305,8 +305,8 @@ const giscusTheme = `${Astro.url.origin}/styles/giscus-light.css`;
     <div id='grid-main'>
       <div class='markdown-body heti md:mx-auto md:pb-20 pb-14 xl:max-w-7xl w-full lg:max-w-5xl md:max-w-2xl' id='write'>
         <h1 class='content-title flex text-gray-800 dark:text-gray-200' tabindex='0'>
-          <a class='content-logo inline-block md:hidden visible' href={translatePath('/')} aria-label={SITE.title}
-            ><AstroLogo size={40} />
+          <a class='content-logo pswp-ignore inline-block md:hidden visible' href={translatePath('/')} aria-label={SITE.title}
+            ><AstroLogo size={40} class='pswp-ignore' />
           </a>
           <span data-pagefind-meta='title' class='leading-tight flex-1 min-w-0 truncate'>
             <span class='hidden md:inline'>{numberPrefix}{titleSeparator}</span>{displayTitle}

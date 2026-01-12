@@ -14,9 +14,9 @@ const translatePath = useLocalizedPath(lang);
     class='nav-wrapper mx-auto xl:max-w-7xl w-full lg:max-w-5xl md:max-w-2xl max-w-xl box-border md:px-0 sm:px-3 px-4'
     title={t('site.title')}
   >
-    <div class='logo flex'>
+    <div class='logo flex content-logo'>
       <a href={translatePath('/')} class='logo-image' aria-label={t('site.title')}>
-        <AstroLogo size={40} />
+        <AstroLogo size={40} class='pswp-ignore' />
       </a>
       <a href={translatePath('/')}>
         <h1 class='text-gray-800 dark:text-gray-200'>{t('site.title')}</h1>

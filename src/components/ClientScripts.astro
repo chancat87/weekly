@@ -65,6 +65,17 @@
       }
     });
 
+    // Prevent PhotoSwipe from intercepting clicks on ignored elements
+    document.addEventListener(
+      'click',
+      (e) => {
+        if ((e.target as HTMLElement).closest('.pswp-ignore')) {
+          e.stopPropagation();
+        }
+      },
+      true
+    );
+
     // Lazy load images after the first two
     const images = document.querySelectorAll('#write img');
     images.forEach((img, index) => {
@@ -77,13 +88,13 @@
     // Initialize PhotoSwipe
     const lightbox = new PhotoSwipeLightbox({
       gallery: '#write',
-      children: 'img',
+      children: 'img:not(.pswp-ignore)',
       pswpModule: () => import('photoswipe'),
       imageClickAction: 'zoom',
-      tapAction: 'zoom',
+      tapAction: 'close',
       doubleTapAction: 'zoom',
       bgClickAction: 'close',
-      bgOpacity: 1,
+      bgOpacity: 0.8,
       padding: { top: 20, bottom: 20, left: 20, right: 20 },
     });
 
@@ -94,12 +105,6 @@
       // Add class after zoom animation to handle border radius
       // We check if pswp exists (it should inside uiRegister, but safe-check doesn't hurt)
       if (pswp) {
-        pswp.on('openingAnimationEnd', () => {
-          pswp.element.classList.add('pswp--zoomed-in');
-        });
-        pswp.on('close', () => {
-          pswp.element.classList.remove('pswp--zoomed-in');
-        });
       }
 
       lightbox.pswp.ui.registerElement({
@@ -127,8 +132,8 @@
         return itemData;
       }
 
-      // Exclude logo images (in .content-logo container)
-      if (element.closest('.content-logo')) {
+      // Exclude specific images (like logo)
+      if (element.classList.contains('pswp-ignore') || element.closest('.content-logo') || element.closest('.logo')) {
         return null;
       }
 
