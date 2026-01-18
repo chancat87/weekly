@@ -92,16 +92,21 @@ export default function rehypeCustomizeImageSrc() {
         const finalWidth = meta?.width || origWidth;
         const finalHeight = meta?.height || origHeight;
 
+        const loadingAttr = isFirstImage
+          ? 'loading="eager" fetchpriority="high"'
+          : 'loading="lazy"';
+        newAttrs += ` ${loadingAttr}`;
+
         if (finalWidth && finalHeight) {
           const ratio = (Number(finalWidth) / Number(finalHeight)).toFixed(4);
-          const loadingAttr = isFirstImage
-            ? 'loading="eager" fetchpriority="high"'
-            : 'loading="lazy"';
-          newAttrs += ` width="${finalWidth}" height="${finalHeight}" data-pswp-width="${finalWidth}" data-pswp-height="${finalHeight}" style="aspect-ratio: ${ratio};" ${loadingAttr}`;
-        } else if (isFirstImage) {
-          newAttrs += ' loading="eager" fetchpriority="high"';
+          newAttrs += ` width="${finalWidth}" height="${finalHeight}" data-pswp-width="${finalWidth}" data-pswp-height="${finalHeight}" style="aspect-ratio: ${ratio};"`;
         } else {
-          newAttrs += ' loading="lazy"';
+          if (finalWidth) {
+            newAttrs += ` width="${finalWidth}"`;
+          }
+          if (finalHeight) {
+            newAttrs += ` height="${finalHeight}"`;
+          }
         }
 
         const otherAttrs = fullMatch

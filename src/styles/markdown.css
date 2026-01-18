@@ -19,11 +19,6 @@ body {
   border-radius: 4px;
 }
 
-.heti img[width] {
-  display: inline-block;
-  width: initial;
-}
-
 .logo img,
 .logo svg {
   background-color: transparent !important;
