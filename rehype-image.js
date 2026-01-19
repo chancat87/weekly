@@ -89,25 +89,19 @@ export default function rehypeCustomizeImageSrc() {
 
         let newAttrs = `src="${p1}${separator}x-oss-process=image/auto-orient,1/resize,w_2000/format,webp" data-lightense-src="${p1}" data-pswp-src="${p1}"`;
 
-        // User-specified dimensions take priority over auto-detected metadata
-        const finalWidth = origWidth || meta?.width;
-        const finalHeight = origHeight || meta?.height;
-
-        const loadingAttr = isFirstImage
-          ? 'loading="eager" fetchpriority="high"'
-          : 'loading="lazy"';
-        newAttrs += ` ${loadingAttr}`;
+        const finalWidth = meta?.width || origWidth;
+        const finalHeight = meta?.height || origHeight;
 
         if (finalWidth && finalHeight) {
           const ratio = (Number(finalWidth) / Number(finalHeight)).toFixed(4);
-          newAttrs += ` width="${finalWidth}" height="${finalHeight}" data-pswp-width="${finalWidth}" data-pswp-height="${finalHeight}" style="aspect-ratio: ${ratio};"`;
+          const loadingAttr = isFirstImage
+            ? 'loading="eager" fetchpriority="high"'
+            : 'loading="lazy"';
+          newAttrs += ` width="${finalWidth}" height="${finalHeight}" data-pswp-width="${finalWidth}" data-pswp-height="${finalHeight}" style="aspect-ratio: ${ratio};" ${loadingAttr}`;
+        } else if (isFirstImage) {
+          newAttrs += ' loading="eager" fetchpriority="high"';
         } else {
-          if (finalWidth) {
-            newAttrs += ` width="${finalWidth}"`;
-          }
-          if (finalHeight) {
-            newAttrs += ` height="${finalHeight}"`;
-          }
+          newAttrs += ' loading="lazy"';
         }
 
         const otherAttrs = fullMatch
