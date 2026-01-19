@@ -89,8 +89,9 @@ export default function rehypeCustomizeImageSrc() {
 
         let newAttrs = `src="${p1}${separator}x-oss-process=image/auto-orient,1/resize,w_2000/format,webp" data-lightense-src="${p1}" data-pswp-src="${p1}"`;
 
-        const finalWidth = meta?.width || origWidth;
-        const finalHeight = meta?.height || origHeight;
+        // User-specified dimensions take priority over auto-detected metadata
+        const finalWidth = origWidth || meta?.width;
+        const finalHeight = origHeight || meta?.height;
 
         const loadingAttr = isFirstImage
           ? 'loading="eager" fetchpriority="high"'
