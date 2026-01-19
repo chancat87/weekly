@@ -89,19 +89,27 @@ export default function rehypeCustomizeImageSrc() {
 
         let newAttrs = `src="${p1}${separator}x-oss-process=image/auto-orient,1/resize,w_2000/format,webp" data-lightense-src="${p1}" data-pswp-src="${p1}"`;
 
-        const finalWidth = meta?.width || origWidth;
-        const finalHeight = meta?.height || origHeight;
+        // Use metadata for aspect-ratio and lightbox, user-specified for display size
+        const metaWidth = meta?.width;
+        const metaHeight = meta?.height;
 
-        if (finalWidth && finalHeight) {
-          const ratio = (Number(finalWidth) / Number(finalHeight)).toFixed(4);
-          const loadingAttr = isFirstImage
-            ? 'loading="eager" fetchpriority="high"'
-            : 'loading="lazy"';
-          newAttrs += ` width="${finalWidth}" height="${finalHeight}" data-pswp-width="${finalWidth}" data-pswp-height="${finalHeight}" style="aspect-ratio: ${ratio};" ${loadingAttr}`;
-        } else if (isFirstImage) {
-          newAttrs += ' loading="eager" fetchpriority="high"';
-        } else {
-          newAttrs += ' loading="lazy"';
+        const loadingAttr = isFirstImage
+          ? 'loading="eager" fetchpriority="high"'
+          : 'loading="lazy"';
+        newAttrs += ` ${loadingAttr}`;
+
+        // Add lightbox dimensions from metadata
+        if (metaWidth && metaHeight) {
+          const ratio = (Number(metaWidth) / Number(metaHeight)).toFixed(4);
+          newAttrs += ` data-pswp-width="${metaWidth}" data-pswp-height="${metaHeight}" style="aspect-ratio: ${ratio};"`;
+        }
+
+        // User-specified dimensions for display (if provided)
+        if (origWidth) {
+          newAttrs += ` width="${origWidth}"`;
+        }
+        if (origHeight) {
+          newAttrs += ` height="${origHeight}"`;
         }
 
         const otherAttrs = fullMatch
