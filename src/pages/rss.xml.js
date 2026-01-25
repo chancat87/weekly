@@ -18,12 +18,47 @@ export async function GET() {
     return content;
   };
 
+  const extractFirstImage = (html) => {
+    const match = html.match(/<img[^>]+src=["']([^"']+)["']/i);
+    return match?.[1] ?? null;
+  };
+
+  const escapeXmlAttr = (value) =>
+    value
+      .replace(/&/g, "&amp;")
+      .replace(/"/g, "&quot;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
+
+  const getImageMimeType = (url) => {
+    const cleanUrl = url.split("?")[0]?.split("#")[0] ?? "";
+    const ext = cleanUrl.slice(cleanUrl.lastIndexOf(".") + 1).toLowerCase();
+    switch (ext) {
+      case "jpg":
+      case "jpeg":
+        return "image/jpeg";
+      case "png":
+        return "image/png";
+      case "gif":
+        return "image/gif";
+      case "webp":
+        return "image/webp";
+      case "svg":
+        return "image/svg+xml";
+      case "avif":
+        return "image/avif";
+      default:
+        return "image/jpeg";
+    }
+  };
+
   return rss({
     title: "潮流周刊",
     description: "记录工程师 Tw93 的不枯燥生活",
     site: "https://weekly.tw93.fun/",
     xmlns: {
       atom: "http://www.w3.org/2005/Atom",
+      media: "http://search.yahoo.com/mrss/",
     },
     customData: `<atom:icon>${SITE.icon}</atom:icon><atom:logo>${SITE.icon}</atom:logo><image><url>${SITE.icon}</url><title>${SITE.title}</title><link>${SITE.homePage}/</link></image><follow_challenge><feedId>41147805276726275</feedId><userId>42909600318350336</userId></follow_challenge>`,
     items: await Promise.all(
@@ -35,11 +70,18 @@ export async function GET() {
           item.frontmatter.legacySlug,
           item.frontmatter.issueTitle,
         );
+        const html = await processContent(item);
+        const coverImage = extractFirstImage(html);
+        const coverImageUrl = coverImage ? escapeXmlAttr(coverImage) : null;
+        const coverImageMime = coverImage ? getImageMimeType(coverImage) : null;
         return {
           link: numericLink,
           title,
-          description: `${await processContent(item)}${renderSupportCalloutForRSS()}`,
+          description: `${html}${renderSupportCalloutForRSS()}`,
           pubDate: item.frontmatter.date,
+          customData: coverImageUrl
+            ? `<media:content url="${coverImageUrl}" medium="image" type="${coverImageMime}" /><media:thumbnail url="${coverImageUrl}" /><enclosure url="${coverImageUrl}" type="${coverImageMime}" />`
+            : "",
         };
       }),
     ),
