@@ -7,17 +7,24 @@ import path from "path";
 let imageMetadataCache = null;
 
 function getImageMetadata() {
+  if (process.env.NODE_ENV === "production" && imageMetadataCache) {
+    return imageMetadataCache;
+  }
   const METADATA_PATH = path.resolve("./src/data/image-metadata.json");
   if (!fs.existsSync(METADATA_PATH)) return {};
   try {
-    return JSON.parse(fs.readFileSync(METADATA_PATH, "utf-8"));
+    const data = JSON.parse(fs.readFileSync(METADATA_PATH, "utf-8"));
+    if (process.env.NODE_ENV === "production") {
+      imageMetadataCache = data;
+    }
+    return data;
   } catch (e) {
     console.error("Failed to parse image-metadata.json", e);
     return {};
   }
 }
 
-const getHeroImage = (tree, homePage) => {
+const getHeroImage = (tree) => {
   let heroUrl = null;
   visit(tree, "raw", (node) => {
     if (heroUrl) return;

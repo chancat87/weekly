@@ -3,9 +3,13 @@ import axios from "axios";
 
 async function fetchCiTime(filePath) {
   const url = `https://api.github.com/repos/tw93/weekly/commits?path=${filePath}&page=1&per_page=1`;
-  const response = await axios.get(url);
-  const ciTime = response.data[0].commit.committer.date.split("T")[0];
-  return ciTime;
+  try {
+    const response = await axios.get(url);
+    const commitDate = response.data?.[0]?.commit?.committer?.date;
+    return commitDate ? commitDate.split("T")[0] : null;
+  } catch (error) {
+    return null;
+  }
 }
 
 async function main() {
@@ -16,8 +20,11 @@ async function main() {
   const mdFiles = files
     .filter((file) => file.endsWith(".md"))
     .sort((a, b) => {
-      const numA = parseInt(a.match(/(\d+)/)[0]);
-      const numB = parseInt(b.match(/(\d+)/)[0]);
+      const matchA = a.match(/(\d+)/);
+      const matchB = b.match(/(\d+)/);
+      if (!matchA || !matchB) return 0;
+      const numA = parseInt(matchA[0], 10);
+      const numB = parseInt(matchB[0], 10);
       return numB - numA;
     });
 
@@ -36,7 +43,8 @@ async function main() {
     const title = `第 ${num} 期 - ${shortTitle}`;
 
     // Read markdown file to extract cover image and description
-    const mdContent = await fs.readFile(`./src/pages/posts/${name}`, "utf8");
+    const fullPath = `./src/pages/posts/${name}`;
+    const mdContent = await fs.readFile(fullPath, "utf8");
     const imgMatch = mdContent.match(/<img\s+src="([^"]+)"/);
     const pic = imgMatch ? imgMatch[1] : "";
     
@@ -47,7 +55,9 @@ async function main() {
     readmeContent2 += `* [${title}](${url})\n`;
 
     if (i < 5) {
-      const modified = await fetchCiTime(`/src/pages/posts/${filePath}`);
+      const modified =
+        (await fetchCiTime(`/src/pages/posts/${filePath}`)) ||
+        new Date((await fs.stat(fullPath)).mtime).toISOString().split("T")[0];
       recentContent += `* [${title}](${url}) - ${modified}\n`;
     }
   }
