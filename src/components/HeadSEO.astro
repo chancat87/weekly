@@ -9,13 +9,12 @@ const { content = {}, pageURL } = Astro.props;
 const { title: contentTitle, socialImage, description: contentDescription, image } = content;
 
 const pageTitle = contentTitle ? `${title}${contentTitle}` : title;
-const imageSrc = socialImage || siteImage;
+// Check if this is an article page
+const isArticle = contentTitle && content.date;
+const imageSrc = isArticle ? (socialImage || siteImage) : icon;
 const description = contentDescription || siteDescription;
 const preloadImage = image ? `${image}?x-oss-process=image/resize,w_1200/format,webp` : false;
 const canonicalURL = new URL(pageURL, homePage).href;
-
-// Check if this is an article page
-const isArticle = contentTitle && content.date;
 
 // Structured data
 const structuredData = isArticle
