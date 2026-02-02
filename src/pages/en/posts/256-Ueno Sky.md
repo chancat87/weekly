@@ -55,7 +55,7 @@ Gatus is a health dashboard for developers. You can monitor your services using 
 ## Random Finds
 
 **Global AI Industry Traffic Tracking Report**
-<https://similarweb.com/corp/wp-content/uploads/2026/01/attachment-Global-AI-Tracker-6.pdf%E2%80%A6>
+<https://similarweb.com/corp/wp-content/uploads/2026/01/attachment-Global-AI-Tracker-6.pdf>
 Similarweb recently released the Global AI Industry Traffic Tracking Report, "AI Global Sector Trends on Generative AI," which is well worth reading. It analyzes the traffic situation of major product categories in the current AI space, showing who's growing and who's declining.
 <img src="https://cdn.fliggy.com/upic/TWjiB9.png" width="800" />
 
