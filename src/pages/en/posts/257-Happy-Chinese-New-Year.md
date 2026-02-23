@@ -64,7 +64,7 @@ Basically the volume mixer that macOS should have come with - truly independent 
 **Snitch: A better-looking network connection viewer**
 <https://github.com/karol-broda/snitch>
 I found a pretty interesting little tool called Snitch that makes viewing network connections more beautiful and "human-friendly" - you can think of it as an ss or netstat for humans.
-<img src="https://cdn.fliggy.com/upic/roAqBH.png" width="800">
+<img src="https://github.com/karol-broda/snitch/raw/master/demo/demo.gif" width="800">
 
 **Beautiful Mermaid: Beautiful Mermaid renderer designed for the AI era**
 <https://github.com/lukilabs/beautiful-mermaid>
