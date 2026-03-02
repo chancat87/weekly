@@ -16,7 +16,7 @@ body {
   height: auto;
   object-fit: cover;
   background-color: #f3f4f6;
-  border-radius: var(--img-radius, 8px);
+  border-radius: var(--radius);
 }
 
 /* Remove border-radius during PhotoSwipe zoom animation */
@@ -1039,7 +1039,7 @@ code.language-mermaid {
 .heti pre.plantuml-image-container {
   padding: 0;
   background: transparent;
-  border-radius: none;
+  border-radius: 0;
 }
 
 .heti pre.plantuml-image-container .plantuml-image {
@@ -1203,5 +1203,5 @@ img[loading="lazy"] {
 }
 
 .pswp--anim-complete .pswp__img {
-  clip-path: inset(0 round var(--img-radius, 8px));
+  clip-path: inset(0 round var(--radius));
 }
