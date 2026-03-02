@@ -96,17 +96,34 @@
       bgClickAction: 'close',
       bgOpacity: 0.8,
       padding: { top: 20, bottom: 20, left: 20, right: 20 },
+      showHideAnimationType: 'zoom',
+      showAnimationDuration: 300,
+      hideAnimationDuration: 300,
+    });
+
+    // Smooth border-radius transition: remove during animation, restore after
+    let currentThumb: HTMLElement | null = null;
+
+    lightbox.on('openingAnimationStart', () => {
+      currentThumb = lightbox.pswp?.currSlide?.data?.element as HTMLElement;
+      currentThumb?.classList.add('pswp-animating');
+    });
+
+    lightbox.on('openingAnimationEnd', () => {
+      document.querySelector('.pswp')?.classList.add('pswp--anim-complete');
+    });
+
+    lightbox.on('closingAnimationStart', () => {
+      document.querySelector('.pswp')?.classList.remove('pswp--anim-complete');
+    });
+
+    lightbox.on('closingAnimationEnd', () => {
+      currentThumb?.classList.remove('pswp-animating');
+      currentThumb = null;
     });
 
     // Parse data from image tags
     lightbox.on('uiRegister', function () {
-      const pswp = lightbox.pswp;
-
-      // Add class after zoom animation to handle border radius
-      // We check if pswp exists (it should inside uiRegister, but safe-check doesn't hurt)
-      if (pswp) {
-      }
-
       lightbox.pswp.ui.registerElement({
         name: 'custom-caption',
         order: 9,
