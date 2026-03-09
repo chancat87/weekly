@@ -47,7 +47,7 @@ When running things like OpenClaw or nanobot, you really don't want the screen t
 <img src="https://raw.githubusercontent.com/tw93/static/master/pic/maple1.gif" width="800" />
 
 **Discovered a very modern VSCode theme: Islands Dark**
-<https://github.com/batrachianai/toad>
+<https://github.com/bwya77/vscode-dark-islands>
 Has that new Apple system feel with glass arc effects, rounded corners - very modern looking, though you might not get used to it.
 <img src="https://gw.alipayobjects.com/zos/k/iz/JgqaH9.png" width="800" />
 
