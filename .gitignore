@@ -28,3 +28,8 @@ pnpm-debug.log*
 
 # Vercel deployment
 .vercel
+
+# AI Assistant files
+AGENTS.md
+CLAUDE.md
+journal/
