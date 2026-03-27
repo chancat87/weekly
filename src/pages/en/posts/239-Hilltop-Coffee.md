@@ -22,7 +22,7 @@ This open-source product has been maintained for about 5 years, incorporating ma
 5. Project fully upgraded to Swift 6, optimizing many code implementations and adapting to new features.
 6. Asynchronous image uploading is smoother, preview performance is optimized, and the experience is more consistent under editing status.
 
-<img src="https://cdn.tw93.fun/miaoyan/newmiaoyan.gif" width="800" />
+<img src="https://cdn.fliggy.com/pic/newmiaoyan15.gif" width="800" />
 
 **Try Tencent's Edge Security and Acceleration Platform: EdgeOne**  
 <https://pages.edgeone.ai/zh>  
