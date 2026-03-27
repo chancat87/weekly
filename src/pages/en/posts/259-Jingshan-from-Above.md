@@ -80,7 +80,7 @@ As for cracking the shell open - use another coconut. Hold one in each hand and 
 
 ## Random Thoughts
 
-![](https://cdn.tw93.fun/uPic/4CGWQA.png)
+![](https://gw.alipayobjects.com/zos/k/2v/4CGWQA.png)
 
 Last Friday I saw Tencent Tower installing OpenClaw company-wide. Quite thought-provoking - felt a bit like "The Great OpenClaw Leap Forward".
 
