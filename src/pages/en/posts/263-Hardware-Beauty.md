@@ -18,7 +18,7 @@ This is the longest article I have ever written. The good news is I finally got 
 ## Product Releases
 
 **Waza, My Engineer-Alter-Ego Skill Set**
-<https://github.com/tw93/waka>
+<https://github.com/tw93/waza>
 I packaged my personal skills into something new called Waza. In Japanese, 技（わざ）means technique or skill, often used in martial arts. This is the first time I have released an open-source project with zero code, just markdown files. In the pre-AI era, for a programmer, that would have been embarrassing.
 
 When Superpowers came out, I installed it once and deleted it right away. Too heavy, not my thing. A lot of people kept telling me "You don't know Superpowers? If you're not using it you're not with the times, it's amazing." Then I found gstack, which was better, but still felt like too much. I still wasn't used to it. I wanted something simple and useful where I could clearly see what it was doing.
