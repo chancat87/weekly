@@ -1,7 +1,47 @@
 {
+  "https://cdn.fliggy.com/pic/26410.jpg": {
+    "width": 4032,
+    "height": 3024,
+    "mime": "image/jpeg"
+  },
+  "https://cdn.fliggy.com/pic/IMG_0379.jpg06.jpg": {
+    "width": 3880,
+    "height": 2910,
+    "mime": "image/jpeg"
+  },
+  "https://cdn.fliggy.com/pic/IMG_050519.JPG": {
+    "width": 4032,
+    "height": 3024,
+    "mime": "image/jpeg"
+  },
+  "https://cdn.fliggy.com/pic/IMG_050736.JPG": {
+    "width": 4032,
+    "height": 3024,
+    "mime": "image/jpeg"
+  },
+  "https://cdn.fliggy.com/pic/IMG_050944.JPG": {
+    "width": 4032,
+    "height": 3024,
+    "mime": "image/jpeg"
+  },
   "https://cdn.fliggy.com/pic/KeRlkk25.png": {
     "width": 1536,
     "height": 2048,
+    "mime": "image/png"
+  },
+  "https://cdn.fliggy.com/pic/Pnc8XN58.png": {
+    "width": 1200,
+    "height": 886,
+    "mime": "image/png"
+  },
+  "https://cdn.fliggy.com/pic/deep04.png": {
+    "width": 1500,
+    "height": 600,
+    "mime": "image/png"
+  },
+  "https://cdn.fliggy.com/pic/lxEYPC26.png": {
+    "width": 2048,
+    "height": 1536,
     "mime": "image/png"
   },
   "https://cdn.fliggy.com/uPic/107shots_so22.png": {
@@ -3669,6 +3709,11 @@
     "height": 2382,
     "mime": "image/png"
   },
+  "https://gw.alipayobjects.com/zos/k/7o/4OUzkd.png": {
+    "width": 1200,
+    "height": 775,
+    "mime": "image/png"
+  },
   "https://gw.alipayobjects.com/zos/k/7o/z3DmlK.png": {
     "width": 1802,
     "height": 1908,
@@ -4329,6 +4374,11 @@
     "height": 3024,
     "mime": "image/jpeg"
   },
+  "https://gw.alipayobjects.com/zos/k/cu/265.JPG": {
+    "width": 5712,
+    "height": 4284,
+    "mime": "image/jpeg"
+  },
   "https://gw.alipayobjects.com/zos/k/cu/RMk5ux.png": {
     "width": 1200,
     "height": 754,
@@ -4924,6 +4974,11 @@
     "height": 1920,
     "mime": "image/png"
   },
+  "https://gw.alipayobjects.com/zos/k/gu/gOR0gb.png": {
+    "width": 2048,
+    "height": 1536,
+    "mime": "image/png"
+  },
   "https://gw.alipayobjects.com/zos/k/gv/B91FGZ.jpg": {
     "width": 3066,
     "height": 1764,
@@ -5047,6 +5102,11 @@
   "https://gw.alipayobjects.com/zos/k/hq/SCR-20240119-rnzg.png": {
     "width": 2678,
     "height": 2162,
+    "mime": "image/png"
+  },
+  "https://gw.alipayobjects.com/zos/k/hq/bPJ8tk.png": {
+    "width": 1645,
+    "height": 1079,
     "mime": "image/png"
   },
   "https://gw.alipayobjects.com/zos/k/hr/SCR-20230106-vy8.png": {
@@ -5357,6 +5417,11 @@
   "https://gw.alipayobjects.com/zos/k/kc/R6Xf3K.jpg": {
     "width": 1200,
     "height": 675,
+    "mime": "image/jpeg"
+  },
+  "https://gw.alipayobjects.com/zos/k/kd/264.jpg": {
+    "width": 4032,
+    "height": 3024,
     "mime": "image/jpeg"
   },
   "https://gw.alipayobjects.com/zos/k/kd/QdxrI2.png": {
