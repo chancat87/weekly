@@ -58,7 +58,7 @@ The output also supports image and slide deck export, including HTML display. Th
 ## Just Writing
 
 **The AI Coding You Don't Know: Onboarding, Scenarios, and Practice for Non-Technical Folks**
-<http://github.com/tw93/MiaoYan>
+<https://tw93.fun/en/2026-04-26/ai-coding.html>
 Last month I gave a session at work for product and business folks on how to get started with AI Coding. Recently I also posted about it on Twitter, and a lot of people brought up that subscription costs prevent them from accessing the top-tier AI Coding tools. The methods and habits can actually be learned for free first, so I decided to write up the onboarding part. To make it easier to grasp, the article includes plenty of simple illustrations, which should make it more direct.
 <img src="https://gw.alipayobjects.com/zos/k/z1/00.png" width="800" />
 
