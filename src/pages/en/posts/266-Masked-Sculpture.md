@@ -3,7 +3,7 @@ date: 2026/04/27
 ---
 
 
-<img src="https://gw.alipayobjects.com/zos/k/0y/266.jpg" width="800" />
+<img src="https://gw.alipayobjects.com/zos/k/31/266.jpg" width="800" />
 
 <small>The cover photo is a sculpture of a child wearing a mask, taken on the weekend while running errands over in Gongshu. In a flash, the pandemic already feels like a long time ago, and yet it also feels like just yesterday. Those years are still worth remembering.</small>
 
