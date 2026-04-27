@@ -66,6 +66,8 @@ Last month I gave a session at work for product and business folks on how to get
 <https://www.youtube.com/watch?v=Z5If1L3eFtw>
 Finally uploaded to YouTube. If you read the article and did not fully follow it, or want a deeper look, the video version is up. New to YouTube here, so please like, subscribe, and share. From now on I will try to record more sessions and share them here.
 
+<img src="https://gw.alipayobjects.com/zos/k/bp/SCR-20260423-tuzj.jpeg" width="800" />
+
 The [slides](https://tw93.fun/files/share/agent.html) are also fun. They are the predecessor of Kami. Kami started as a small investment report generator I was tinkering with inside CC. Around the same time I had a session about agents to give, and writing such a long deck felt tedious, so I just used the existing capability to generate and tweak versions until I was satisfied. That is how Kami was born. Welcome to read.
 
 **Moments of Happiness**
