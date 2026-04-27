@@ -77,7 +77,7 @@ Endless Claude Code
 Code that works on the first try
 Look up and see the sunset coming through the window
 A very simple kind of happiness
-<img src="https://gw.alipayobjects.com/zos/k/pv/PHyc1R.png" width="800" />
+<img src="https://gw.alipayobjects.com/zos/k/pv/PHyc1R.png" width="400" />
 
 **Some thoughts after sharing, and they have shifted again**
 Recently I interviewed a number of 985 university interns for campus recruiting. One strong impression: AI tools are rapidly widening the resource gap between students.
