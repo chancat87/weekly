@@ -2,4 +2,34 @@
 import ThemeSwitch from './ThemeSwitch.astro';
 ---
 
+<footer class="site-footer">
+  <nav class="footer-links">
+    <a href="https://tw93.fun/about.html">About</a>
+    <a href="https://github.com/tw93">GitHub</a>
+    <a href="https://twitter.com/HiTw93">Twitter</a>
+    <a href="https://tw93.fun">Blog</a>
+  </nav>
+</footer>
 <ThemeSwitch />
+
+<style>
+  .site-footer {
+    max-width: 860px;
+    margin: 48px auto 0;
+    padding: 16px 24px;
+    border-top: 1px solid var(--border, #eee);
+  }
+  .footer-links {
+    display: flex;
+    gap: 20px;
+    font-size: 0.85rem;
+    flex-wrap: wrap;
+  }
+  .footer-links a {
+    color: var(--secondary, #666);
+    text-decoration: none;
+  }
+  .footer-links a:hover {
+    color: var(--primary, #333);
+  }
+</style>
