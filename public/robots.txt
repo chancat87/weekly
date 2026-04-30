@@ -1,17 +1,37 @@
 # Allow all search engines
 User-agent: *
 Allow: /
+Disallow: /pagefind/
+Disallow: /_astro/
 
-# Specific rules for major search engines
+# Sitemap
+Sitemap: https://weekly.tw93.fun/sitemap-index.xml
+
+# Search engines
 User-agent: Googlebot
 Allow: /
 
 User-agent: Baiduspider
 Allow: /
 
-# Sitemap
-Sitemap: https://weekly.tw93.fun/sitemap-index.xml
+# AI crawlers
+User-agent: GPTBot
+Allow: /
 
-# Disallow crawling of these directories
-Disallow: /pagefind/
-Disallow: /_astro/
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /

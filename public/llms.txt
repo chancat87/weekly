@@ -1,0 +1,23 @@
+# 潮流周刊 (Tw93 Weekly)
+
+> Weekly curation of tech discoveries and lifestyle by Tw93 (Tang). 266+ issues since 2021.
+
+## About
+
+潮流周刊 is a Chinese-language weekly newsletter curating interesting tech tools, design inspiration, and lifestyle discoveries. Published every week by Tw93, a product engineer based in Hangzhou.
+
+## Content
+
+- 266+ weekly issues
+- Bilingual: Chinese original + English translation
+- RSS: https://weekly.tw93.fun/rss.xml
+
+## Author
+
+Tw93 is a product engineer who builds open source developer tools (Pake, MiaoYan, Kaku, Mole). 130K+ GitHub stars.
+
+## Links
+
+- GitHub: https://github.com/tw93
+- Blog: https://tw93.fun
+- AI Profile: https://yobi.tw93.fun/llms-full.txt
