@@ -57,3 +57,25 @@ jobs:
             git commit -m "Updated content"
             git push origin "HEAD:$BRANCH_NAME"
           fi
+
+      - name: Ping IndexNow
+        run: |
+          KEY="6ff2b87724ac930114bf05c74db50bb5"
+          HOST="weekly.tw93.fun"
+
+          URLS=$(git diff --name-only HEAD~1 HEAD -- 'src/pages/posts/*.md' | while read f; do
+            slug=$(basename "$f" .md)
+            echo "https://$HOST/posts/$slug"
+          done)
+
+          if [ -z "$URLS" ]; then
+            echo "No post URLs changed, submitting homepage"
+            URLS="https://$HOST/"
+          fi
+
+          URL_LIST=$(echo "$URLS" | jq -R -s 'split("\n") | map(select(length > 0))')
+          echo "Submitting to IndexNow: $URL_LIST"
+
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json" \
+            -d "{\"host\":\"$HOST\",\"key\":\"$KEY\",\"keyLocation\":\"https://$HOST/$KEY.txt\",\"urlList\":$URL_LIST}"
