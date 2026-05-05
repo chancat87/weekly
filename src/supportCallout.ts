@@ -1,7 +1,7 @@
 export const SUPPORT_CALLOUT = {
   zh: "觉得不错，请 Tw93 喝冰可乐 🥤",
   en: "Buy me a coke 🥤",
-  link: "https://miaoyan.app/cats.html?name=潮流周刊",
+  link: "https://cats.tw93.fun?name=潮流周刊",
 };
 
 export const renderSupportCalloutForRSS = (lang: "zh" | "en" = "zh") => {
