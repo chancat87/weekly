@@ -11,7 +11,7 @@ const { title: contentTitle, socialImage, description: contentDescription, image
 const pageTitle = contentTitle ? `${title}${contentTitle}` : title;
 // Check if this is an article page
 const isArticle = contentTitle && content.date;
-const imageSrc = isArticle ? (socialImage || siteImage) : icon;
+const imageSrc = isArticle ? (socialImage || siteImage) : siteImage;
 const description = contentDescription || siteDescription;
 const preloadImage = image ? `${image}?x-oss-process=image/resize,w_1200/format,webp` : false;
 const canonicalURL = new URL(pageURL, homePage).href;
