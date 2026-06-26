@@ -18,12 +18,12 @@ A must-read for remote workers, covering team collaboration, organizational desi
 **Streamline: A better tool for custom text expansion**  
 <https://github.com/brianyu28/streamline>  
 I was looking for a better text expansion tool for custom phrases. while Apple's built-in tool is okay, I wanted something faster and more customizable (e.g., `vdz` for my address, `vdh` for my phone number). `Streamline` is open-source and much more minimalist than the paid `aText`.  
-<img src="https://cdn.fliggy.com/upic/1719150680.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/1719150680.png" width="800" />
 
 **YouTube Subtitle Downloader**  
 <https://www.downloadyoutubesubtitles.com/zh>  
 Found a very useful tool for downloading subtitles from YouTube videos—great for repurposing content or study.  
-<img src="https://cdn.fliggy.com/upic/1719150752.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/1719150752.png" width="800" />
 
 ## Technical Articles
 
@@ -51,10 +51,10 @@ While re-reading "Being Systemic," I found a quote that perfectly matches a vide
 <table>
     <tr>
         <td width="30%">
-          <img src="https://cdn.fliggy.com/upic/1719151062.JPG" width="300px" />
+          <img src="https://cdn.tw93.fun/blog/upic/1719151062.JPG" width="300px" />
         </td>
         <td width="70%">
-            <video width="600px" preload controls><source src="https://cdn.fliggy.com/upic/1719151127.mp4" type="video/mp4"></video>
+            <video width="600px" preload controls><source src="https://cdn.tw93.fun/blog/upic/1719151127.mp4" type="video/mp4"></video>
         </td>
     </tr>
 </table>

@@ -17,7 +17,7 @@ A 2017 blog post from "I Code It" that remains extremely relevant: stay healthy,
 **State of Generative AI Infographic**  
 <https://briansolis.com/2023/12/introducing-the-genai-prism-infographic-a-framework-for-colalborating-with-generative-ai/>  
 The "GenAI Prism v1.0" by JESS3 and Brian Solis is a comprehensive map of the current AI landscape, covering companies and their maturity across various categories.  
-<img src="https://cdn.fliggy.com/upic/UTIRKY.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/UTIRKY.png" width="800" />
 
 ## Trending Tools
 
@@ -33,12 +33,12 @@ Here’s my current setup:
 **Product Hunt: Golden Kitty Awards 2023**  
 <https://www.producthunt.com/golden-kitty-awards/hall-of-fame>  
 Check out the best products of 2023. most are AI-based this year, making it a great place to discover new tools.  
-<img src="https://cdn.fliggy.com/upic/NZ6SNq.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/NZ6SNq.png" width="800" />
 
 **Shiki: A beautiful syntax highlighter**  
 <https://shiki.style/>  
 Another powerful syntax highlighter—great for those who want a fresher look than highlight.js.  
-<img src="https://cdn.fliggy.com/upic/sALxDE.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/sALxDE.png" width="800" />
 
 ## Just Looking Around
 

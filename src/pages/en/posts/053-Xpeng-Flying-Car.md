@@ -35,12 +35,12 @@ An essential read for frontend developers working on hybrid mobile apps to under
 **spy-debugger: One-Stop Page Debugging and Proxy Tool**  
 <https://github.com/wuchangming/spy-debugger>  
 A powerful tool for debugging mobile web pages and WebView content (including WeChat) over the air, supporting both HTTP and HTTPS.  
-<img src="https://cdn.fliggy.com/upic/qHkr9g.gif" width=240/>
+<img src="https://cdn.tw93.fun/blog/upic/qHkr9g.gif" width=240/>
 
 **BBDown: A Command-Line Downloader for Bilibili**  
 <https://github.com/nilaoda/BBDown>  
 A fast and efficient way to download videos from Bilibili directly from your terminal.  
-<img src="https://cdn.fliggy.com/upic/u3Pf1x.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/u3Pf1x.gif" width="800" />
 
 **Next.js 12 Released**  
 <https://nextjs.org/blog/next-12>  

@@ -31,17 +31,17 @@ If you've ever wondered how your JavaScript actually gets executed, this is the 
 **wifi-card: Print QR Codes to Share Your WiFi**  
 <https://github.com/bndw/wifi-card>  
 The principle is simple but brilliant. the encoded format is just `WIFI:T:WPA;S:SSID;P:PASSWORD;;`. A very handy tool for guest convenience.  
-<img src="https://cdn.fliggy.com/upic/12TLth.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/12TLth.jpg" width="800" />
 
 **Hyper.js: A Beautiful, Extensible Terminal**  
 <https://hyper.is/>  
 Built by the Vercel team using web technologies. If you value aesthetics in your CLI world, this is definitely worth a look.  
-<img src="https://cdn.fliggy.com/upic/VJaUFU.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/VJaUFU.jpg" width="800" />
 
 **Yozora: High-Performance Markdown Parser**  
 <https://github.com/yozorajs/yozora>  
 Converts Markdown and its various extensions into a clean, queryable Abstract Syntax Tree (AST).  
-<img src="https://cdn.fliggy.com/upic/QvKk7B.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/QvKk7B.jpg" width="800" />
 
 **fnm: A Fast and Simple Node Version Manager**  
 <https://github.com/Schniz/fnm>  

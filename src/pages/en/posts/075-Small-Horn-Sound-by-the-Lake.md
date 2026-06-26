@@ -4,7 +4,7 @@ date: 2022/04/26
 
 <img src="https://gw.alipayobjects.com/zos/k/k1/0zUCeB.jpg" width="800" />
 
-<small>I visited Xianghu Lake in Binjiang over the weekend and saw someone [playing the trumpet](https://cdn.fliggy.com/upic/nidn1X.mp4). Just one person, one lake, and a trumpet—it had such a great vibe.</small>
+<small>I visited Xianghu Lake in Binjiang over the weekend and saw someone [playing the trumpet](https://cdn.tw93.fun/blog/upic/nidn1X.mp4). Just one person, one lake, and a trumpet—it had such a great vibe.</small>
 
 > **Record the down-to-earth trending technologies seen every week, and publish them here after screening. If you find it good, you can follow this weekly to get update notifications.**
 
@@ -48,17 +48,17 @@ greeter.greet("World") # => Hello, World!
 **OSSArt: Turn your GitHub Activity into a Work of Art**  
 <https://getoss.art/generator>  
 Simply enter your GitHub username to generate a beautifully abstract representation of your contributions that you can even print out.  
-<img src="https://cdn.fliggy.com/upic/idK7Ni.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/idK7Ni.jpg" width="800" />
 
 **Astro: The Next-Gen Static Site Builder**  
 <https://github.com/withastro/astro>  
 Astro claims to be powerful while shipping zero JavaScript by default. I tried it out and the developer experience is fantastic—the project structure is incredibly clean.  
-<img src="https://cdn.fliggy.com/upic/WNQno0.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/WNQno0.jpg" width="800" />
 
 **Lexical: Facebook’s Extensible Text Editor Framework**  
 <https://github.com/facebook/lexical>  
 A new, high-performance editor framework from the Meta team designed for accessibility and reliability.  
-<img src="https://cdn.fliggy.com/upic/VzAvsW.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/VzAvsW.jpg" width="800" />
 
 ## Just Looking Around
 

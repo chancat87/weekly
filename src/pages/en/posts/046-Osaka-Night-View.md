@@ -27,17 +27,17 @@ Insights into how a massive production platform and an interactive analysis engi
 **NvChad: A Blazing Fast VIM IDE**  
 <https://github.com/NvChad/NvChad>  
 This is a full IDE, not just an editor—and it looks absolutely stunning.  
-<img src="https://cdn.fliggy.com/upic/DptSOj.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/DptSOj.jpg" width="800" />
 
 **zsh-z: Jump Quickly to Frequent Directories**  
 <https://github.com/agkozak/zsh-z>  
 I’m surprised that only about 1 in 10 developers I know actually use this. It’s an absolute productivity essential.  
-<img src="https://cdn.fliggy.com/upic/CLh5XK.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/CLh5XK.gif" width="800" />
 
 **zsh-autosuggestions: Command Autocomplete Based on History**  
 <https://github.com/zsh-users/zsh-autosuggestions>  
 The perfect companion to `z`. If you start typing a command, it’ll suggest the full version based on your past activity.  
-<img src="https://cdn.fliggy.com/upic/TZtuw3.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/TZtuw3.jpg" width="800" />
 
 ## Just Looking Around
 

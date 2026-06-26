@@ -37,7 +37,7 @@ The latest State of CSS is out, and it’s clear that with Flexbox, Grid, and Va
 **Screenity: Powerful Screen Recorder & Annotator**  
 <https://chrome.google.com/webstore/detail/screenity-screen-recorder/kbbdabhdfibnancpjfhlkhafgdilcnji>  
 An exceptional extension for recording demos or tutorials. it supports tab/desktop recording, camera overlays, and on-screen annotations, with easy export options. perfect for product managers and teachers.  
-<img src="https://cdn.fliggy.com/upic/eJeX4s.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/eJeX4s.jpg" width="800" />
 
 **act: Run your GitHub Actions Locally**  
 <https://github.com/nektos/act>  
@@ -54,4 +54,4 @@ A huxiu reflection on James Cameron’s latest. the story might be traditional, 
 **Code Effect of the Week: Profile Card Hover Effect**  
 <https://codepen.io/petegarvin1/pen/YzWBbRx>  
 An elegant and high-end hover effect for profile cards. it’s implemented with pure CSS transitions and is perfect for designer portfolios or team introduction pages.  
-<img src="https://cdn.fliggy.com/upic/Ve1RhT.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/Ve1RhT.gif" width="800" />

@@ -29,17 +29,17 @@ A visual, step-by-step breakdown of how Stable Diffusion actually works. underst
 1. how to make GPT respond with "image-ready" outputs.
 2. using the API to help GPT understand its actual version and current time.  
 <https://telegra.ph/ChatGPT-06-04-2>  
-<img src="https://cdn.fliggy.com/upic/w2eKNl.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/w2eKNl.png" width="800" />
 
 **Rime Auto-Deploy for Mac**  
 <https://github.com/Mark24Code/rime-auto-deploy>  
 An automated script for painlessly installing and configuring the Rime input method on Mac—including the popular "Wusong" pinyin config and beautiful themes.  
-<img src="https://cdn.fliggy.com/upic/1JIbxo.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/1JIbxo.png" width="800" />
 
 **Illustrated Transport Layer Protocols**  
 <https://cangsdarm.github.io/illustrate/quic>  
 Visual explanations of QUIC, DTLS, and TLS 1.3/1.2 connections—complete with code implementations. A must-read for network enthusiasts.  
-<img src="https://cdn.fliggy.com/upic/wyiLgZ.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/wyiLgZ.jpg" width="800" />
 
 **Clean Up CSDN with Tampermonkey**  
 <https://greasyfork.org/zh-CN/scripts/378351>  
@@ -58,4 +58,4 @@ The internet gives everyone fifteen minutes of fame, but it also hangs a sword o
 **Hello Algorithm: Visual Data Structures and Algorithms**  
 <https://www.hello-algo.com/>  
 A brilliant open-source book for beginners. it uses animations and diagrams to explain DSA concepts across multiple languages (Java, C++, Go, JS, etc.) with a smooth learning curve.  
-<img src="https://cdn.fliggy.com/upic/X60QiJ.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/X60QiJ.png" width="800" />

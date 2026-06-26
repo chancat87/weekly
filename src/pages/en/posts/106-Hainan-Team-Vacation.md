@@ -37,17 +37,17 @@ The latest update to my Markdown editor:
 3. Enhanced preview layout with adaptive spacing.
 4. Intelligent file/folder opening behavior.
 5. Fixed local images in PPT mode and improved focus handling.  
-<img src="https://cdn.fliggy.com/upic/SkAewA.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/SkAewA.png" width="800" />
 
 **The Twitter 2022 Architecture Diagram**  
 <https://twitter.com/alexxubyte/status/1594008281340530688>  
 A fascinating (and slightly hilarious) diagram reconstructed from a photo Elon Musk tweeted from the Twitter office.  
-<img src="https://cdn.fliggy.com/upic/sMMIgx.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/sMMIgx.jpg" width="800" />
 
 **Daily.dev: High-Quality Tech News Aggregator**  
 <https://app.daily.dev/>  
 A beautifully designed tool for keeping up with global tech news. this is where I find a lot of the international articles for this weekly. it’s highly customizable and great for a quick morning scrawl.  
-<img src="https://cdn.fliggy.com/upic/2bYyH8.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/2bYyH8.png" width="800" />
 
 **Speechless: One-Click Weibo Backup**  
 <https://github.com/meterscao/Speechless>  
@@ -66,9 +66,9 @@ A huxiu article on how life and responsibilities change the way we experience ma
 **Must Watch: Reborn Rich (Chaebol Family's Youngest Son)**  
 <https://movie.douban.com/subject/30291070/>  
 A thrilling K-drama about revenge and corporate intrigue. a secretary is betrayed and murdered by a massive conglomerate, only to wake up in the 1980s as the family's youngest son. the acting and pacing are top-notch.  
-<img src="https://cdn.fliggy.com/upic/EBI3Lt.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/EBI3Lt.jpg" width="800" />
 
 **Code Effect of the Week: Space Globe (Three.js)**  
 <https://codepen.io/isladjan/pen/bGpjZwN>  
 A stunning interactive space globe implemented in under 200 lines of Three.js. it’s rich, fluid, and beautifully executed.  
-<img src="https://cdn.fliggy.com/upic/RgBUxC.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/RgBUxC.gif" width="800" />

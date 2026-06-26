@@ -15,7 +15,7 @@ date: 2025/08/18
 🍁 Maple Bookmarks: One-click call, supports setting search to collapse, and is faster.  
 🏷 Maple New Tab: Supports more effects, supports toggle refresh, and added a "Renaissance" style.  
 🏕️ Maple White Theme: Supports a slightly darker color for selection, making it more comfortable to look at.  
-<img src="https://cdn.fliggy.com/upic/5Pq2nE.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/5Pq2nE.gif" width="800" />
 
 **AI Goofish Monitor: Real-time/Scheduled monitor and smart analysis tool for Xianyu (Goofish)**  
 <https://github.com/dingyufei615/ai-goofish-monitor>  
@@ -42,7 +42,7 @@ onevcat's thoughts after high-intensity Claude Code use for a month and a half a
 
 **Thoughts on the impact of AI Coding on programmers.**
 
-<img src="https://cdn.fliggy.com/upic/wnoOST.png" width="800" />  
+<img src="https://cdn.tw93.fun/blog/upic/wnoOST.png" width="800" />  
 
 After spending $326 on Claude Code in less than a month (actually used $20 Pro + $50 top-up), Cursor, which I used for several months before, has become "old news." Used well, AI can easily reach the level of a Senior (P6+) Engineer. As an engineer, I feel both pleasantly surprised and a bit afraid.
 

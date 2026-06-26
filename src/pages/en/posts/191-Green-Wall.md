@@ -46,7 +46,7 @@ This project uses OpenType features to bake syntax highlighting directly into th
 **Deep-Live-Cam: Open-source face-swapping tool**  
 <https://github.com/hacksider/Deep-Live-Cam>  
 Found this open-source tool on GitHub that allows for real-time and video face-swapping with just a single target image. it's powerful and a bit scary—please use responsibly.  
-<img src="https://cdn.fliggy.com/upic/1724590339.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/1724590339.gif" width="800" />
 
 ## Technical Learning
 
@@ -57,7 +57,7 @@ Beginner engineers often mix up the parameters of Cron jobs. This clear cheatshe
 **Workbench: A new way to debug, monitor, and grow your Stripe integration**  
 <https://stripe.com/blog/workbench-a-new-way-to-debug-monitor-and-grow-your-stripe-integration>  
 Stripe's approach to developer debugging is excellent—very worthy of study, and their productization is top-notch.  
-<video width="800px" preload mute autoplay loop><source src="https://cdn.fliggy.com/upic/1724591259.mp4" type="video/mp4"></video>
+<video width="800px" preload mute autoplay loop><source src="https://cdn.tw93.fun/blog/upic/1724591259.mp4" type="video/mp4"></video>
 
 ## Just Looking Around
 

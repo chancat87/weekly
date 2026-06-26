@@ -32,27 +32,27 @@ Version 2 is here!
 2. New tab page uses the cover photos from this Weekly (or can be set to blank).
 3. Command-click a folder to open all bookmarks within it.
 4. Ctrl+B shortcut for Windows and various bug fixes.  
-<img src="https://cdn.fliggy.com/upic/Fehy3R.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/Fehy3R.gif" width="800" />
 
 **InvokeAI: "Productized" Stable Diffusion**  
 <https://github.com/invoke-ai/InvokeAI>  
 Stable Diffusion can be daunting for designers. InvokeAI provides a clean, user-friendly interface that feels like a real creative product rather than just a technical demo.  
-<img src="https://cdn.fliggy.com/upic/Aw4FZ8.png" width=800 />
+<img src="https://cdn.tw93.fun/blog/upic/Aw4FZ8.png" width=800 />
 
 **driver.js: Web Onboarding and Guidance**  
 <https://driverjs.com/>  
 A minimalist tool for creating product tours and highlighting key features. it’s best used sparingly to show off the most important parts of your UI.  
-<img src="https://cdn.fliggy.com/upic/26Px2m.gif"   width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/26Px2m.gif"   width="800" />
 
 **Web-Check: The Hacker’s Tool for Websites**  
 <https://web-check.xyz/>  
 A very cool tool to see almost everything about a website: IP, SSL, DNS records, cookies, server location, open ports, routing, and more.  
-<img src="https://cdn.fliggy.com/upic/bbLv5N.png"   width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/bbLv5N.png"   width="800" />
 
 **Dozer: Hide Menu Bar Icons on the Notch**  
 <https://github.com/Mortennn/Dozer>  
 Since switching to a MacBook with a notch, I’ve found Dozer to be the cleanest way to manage my menu bar. it’s far better than Hidden Bar for this specific hardware and keeps everything looking tidy.  
-<img src="https://cdn.fliggy.com/upic/wt9Ntu.gif"   width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/wt9Ntu.gif"   width="800" />
 
 **TypeChat: Schema Engineering vs Prompt Engineering**  
 <https://github.com/microsoft/TypeChat>  

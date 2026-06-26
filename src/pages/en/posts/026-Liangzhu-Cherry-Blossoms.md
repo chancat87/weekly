@@ -45,12 +45,12 @@ Highly recommended for anyone looking to push their Vim-centric workflow to the 
 **MacDriver: Native Mac APIs for Golang!**  
 <https://github.com/progrium/macdriver>  
 Check out the examples—you can write a native Pomodoro timer in [just 80 lines](https://github.com/progrium/macdriver/blob/main/examples/pomodoro/main.go#L1).  
-<img src="https://cdn.fliggy.com/upic/RUY61F.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/RUY61F.gif" width="800" />
 
 **Ghost: A Professional Headless Node.js CMS**  
 <https://github.com/TryGhost/Ghost>  
 The gold standard for modern independent publishing and content management.  
-<img src="https://cdn.fliggy.com/upic/Naze6p.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/Naze6p.jpg" width="800" />
 
 **Clone-Wars: 100+ Popular Website Clones**  
 <https://github.com/GorvGoyl/Clone-Wars>  

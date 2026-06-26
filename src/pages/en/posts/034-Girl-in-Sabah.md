@@ -46,22 +46,22 @@ A more reliable and reproducible alternative to `npm link` for local package dev
 **Intellidock: Intelligent Hide/Show for the macOS Dock**  
 <https://mightymac.app/intellidock/>  
 I used to keep my Dock hidden because it looked cluttered in full-screen mode. This tool automatically shows or hides it based on window proximity—perfect.  
-<img src="https://cdn.fliggy.com/upic/fJ2JzX.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/fJ2JzX.gif" width="800" />
 
 **git-split-diffs: GitHub-Style Diffs in the Terminal**  
 <https://github.com/banga/git-split-diffs>  
 Standard `git diff` can’t compete with the visual clarity of tools like WebStorm. If you aren't using an IDE, this beautiful terminal tool is a game-changer.  
-<img src="https://cdn.fliggy.com/upic/GjA9oW.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/GjA9oW.jpg" width="800" />
 
 **WeChatExtension: Enhanced Features for WeChat Mac**  
 <https://github.com/MustangYM/WeChatExtension-ForMac>  
 A powerful helper with better skins, message recall prevention, and auto-reply features. Highly recommended for personal computers (maybe skip the work laptop).  
-<img src="https://cdn.fliggy.com/upic/i3HT1C.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/i3HT1C.jpg" width="800" />
 
 **Plash: Set Any Website as Your Desktop Wallpaper**  
 <https://github.com/sindresorhus/Plash>  
 The creative possibilities are endless—from live dashboards to interactive art.  
-<img src="https://cdn.fliggy.com/upic/NB4ryP.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/NB4ryP.jpg" width="800" />
 
 **ClashX: A Rule-Based Proxy Client for Mac**  
 <https://github.com/yichengchen/clashX>  

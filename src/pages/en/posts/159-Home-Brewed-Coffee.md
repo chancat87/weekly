@@ -21,29 +21,29 @@ An interesting breakdown by GeekPlux. `Cost = $43000 (Ouch) + $1390 + $200 + $32
 **Trending Papers in Computer Science**  
 <https://trendingpapers.com/papers>  
 A "GitHub Trending" style site for computer science research. Perfect for staying up-to-date with new papers, especially in AI.  
-<img src="https://cdn.fliggy.com/upic/mSndz4.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/mSndz4.png" width="800" />
 
 ## Trending Tools
 
 **Devv: An AI Search Engine for Developers**  
 <https://github.com/devv-ai/devv/releases/tag/v0.1.0>  
 Devv is much better at coding-related queries than traditional search. it helps you learn new domains quickly. I’ve partnered with them to package it as a desktop app via Pake—try setting a Raycast shortcut to summon it instantly.  
-<img src="https://cdn.fliggy.com/upic/yfpfTW.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/yfpfTW.gif" width="800" />
 
 **Bio Link: A Simple and Clean Bio Tool**  
 <http://bio.link>  
 After trying Bento (a bit too complex) and Linktree (not my aesthetic), I found Bio Link. it's minimalist and easy to use, with plenty of configuration options for your personal landing page.  
-<img src="https://cdn.fliggy.com/upic/Mc4eeI.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/Mc4eeI.png" width="800" />
 
 **Chrome Web Store: 2023 Favorites**  
 <https://chromewebstore.google.com/collection/2023_favorites>  
 A collection of the best new Chrome extensions from 2023, many featuring AI integration.  
-<img src="https://cdn.fliggy.com/upic/yxHWZE.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/yxHWZE.png" width="800" />
 
 **GitHub Worth: How much is your account worth?**  
 <https://github-worth.vercel.app/>  
 A fun toy that calculates your GitHub "value" based on commits, stars, and followers.  
-<img src="https://cdn.fliggy.com/upic/aB1yK6.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/aB1yK6.png" width="800" />
 
 ## Snippets: "I Delivered Express in Beijing"
 

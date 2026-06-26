@@ -27,7 +27,7 @@ A detailed series from Meituan on how they built and optimized their advertising
 **SingleFile: Save a Webpage as a Standalone HTML File**  
 <https://chrome.google.com/webstore/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle>  
 Traditional "Save As" usually creates a messy resource folder. SingleFile solves this by bundling everything—CSS, images, and fonts—into one clean HTML file.  
-<img src="https://cdn.fliggy.com/upic/ydfv2y.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/ydfv2y.gif" width="800" />
 
 **Lapce: Lightning-Fast Code Editor Written in Rust**  
 <https://github.com/lapce/lapce>  

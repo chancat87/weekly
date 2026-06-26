@@ -35,12 +35,12 @@ A great guide for filling in the gaps in your knowledge of React’s reactivity 
 **Maccy: A Lightweight Clipboard Manager for Mac**  
 <https://github.com/p0deje/Maccy>  
 Keep a persistent history of everything you've copied. simple, fast, and an absolute productivity essential.  
-<img src="https://cdn.fliggy.com/upic/ELTqbC.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/ELTqbC.gif" width="800" />
 
 **mac-cleanup: Clean Your Mac via the Command Line**  
 <https://github.com/fwartner/homebrew-mac-cleanup>  
 Setup an alias like `alias clean="mac-cleanup -n"` in your .zshrc for a much smoother maintenance experience.  
-<img src="https://cdn.fliggy.com/upic/GcuV5w.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/GcuV5w.jpg" width="800" />
 
 **OrgChart: Visualizing Tree Structures with Tables**  
 <https://github.com/dabeng/OrgChart>  
@@ -49,12 +49,12 @@ A very creative implementation that uses nested tables and CSS borders to constr
 **Gaze-detection: Control Your Computer with Your Eyes**  
 <https://github.com/charliegerard/gaze-detection>  
 An impressive look at what’s possible with browser-based computer vision. Imagine "aiming" just by looking!  
-<img src="https://cdn.fliggy.com/upic/5vBkaT.gif" width=500 />
+<img src="https://cdn.tw93.fun/blog/upic/5vBkaT.gif" width=500 />
 
 **Ryujinx: A High-Performance Nintendo Switch Simulator**  
 <https://github.com/Ryujinx/Ryujinx>  
 Another entry in the "I can't believe this exists" category of open source.  
-<img src="https://cdn.fliggy.com/upic/zLeeAx.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/zLeeAx.jpg" width="800" />
 
 ## Just Looking Around
 
@@ -69,4 +69,4 @@ A curated collection of exceptional iOS components and libraries—perfect for l
 **The "Beautiful Biker" Who Was Actually a 50-Year-Old Man**  
 <https://mothership.sg/2021/03/japanese-biker-actually-man/>  
 A viral story of a Japanese biker who used FaceApp to transform their appearance. You can find their original Twitter at [azusagakuyuki](https://twitter.com/azusagakuyuki).  
-<img src="https://cdn.fliggy.com/upic/2B4l2w.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/2B4l2w.jpg" width="800" />

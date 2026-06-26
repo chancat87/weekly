@@ -31,7 +31,7 @@ A new editor designed to improve React development by bridging the gap between v
 **Pake: A Polished ChatGPT Desktop Client**  
 <https://github.com/tw93/Pake>  
 For those who prefer a dedicated desktop experience, I’ve used Pake to bundle ChatGPT into a small, standalone app for Mac, Windows, and Linux. I’ve also customized the UI to be even cleaner than the web version.  
-<img src="https://cdn.fliggy.com/upic/DAvWM0.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/DAvWM0.png" width="800" />
 
 **OSS Insight: Discover GitHub Trends**  
 <https://ossinsight.io/>  

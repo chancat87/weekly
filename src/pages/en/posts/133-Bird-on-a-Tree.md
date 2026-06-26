@@ -27,22 +27,22 @@ A must-read for any software engineer. this year's report includes a new focus o
 **manypixels: High-Quality Vector Illustrations**  
 <https://www.manypixels.co/gallery>  
 A fantastic gallery of vector illustrations with extensive customization options. it’s particularly good at handling dark-mode-friendly designs and features a very refined aesthetic.  
-<img src="https://cdn.fliggy.com/upic/8FwC9q.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/8FwC9q.jpg" width="800" />
 
 **MessAuto: Auto-Copy SMS verification codes on Mac**  
 <https://github.com/LeeeSe/MessAuto>  
 A brilliantly simple tool that automatically copies SMS codes from your iPhone to your Mac clipboard. Simply enable "SMS Forwarding" in your iPhone settings and the tool handles the rest.  
-<img src="https://cdn.fliggy.com/upic/0yE355.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/0yE355.png" width="800" />
 
 **Color Palettes by Movie**  
 <https://screenmusings.org/color/>  
 Search for movie screenshots based on their color palettes. A great way for designers to find inspiration or for film lovers to relive their favorite cinematic moments.  
-<img src="https://cdn.fliggy.com/upic/IOt2US.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/IOt2US.png" width="800" />
 
 **The Flash Game Preservation Project**  
 <https://flash.zczc.cz/>  
 A massive collection of childhood Flash games—from Gold Miner to Metal Slug. perfect for a nostalgic trip back to the era of browser games.  
-<img src="https://cdn.fliggy.com/upic/kFNQkY.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/kFNQkY.jpg" width="800" />
 
 ## Just Looking Around
 

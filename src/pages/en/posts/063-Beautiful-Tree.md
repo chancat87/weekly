@@ -31,29 +31,29 @@ It’s always worth it for frontend developers to peek under the hood of backend
 **Tesla Light Show: Create Your Own**  
 <https://github.com/teslamotors/light-show>  
 Tesla has open-sourced the tools to build your own custom choreographed light shows. it’s incredibly stylish if you have a car to test it on.  
-<img src="https://cdn.fliggy.com/upic/QFBO7E.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/QFBO7E.jpg" width="800" />
 
 **Shan Shui: AI-Generated Landscape Paintings**  
 <https://shan-shui-inf.glitch.me/>  
 A beautiful demonstration of generative art that produces traditional Chinese landscape paintings in real-time.  
-<img src="https://cdn.fliggy.com/upic/t1Mk69.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/t1Mk69.jpg" width="800" />
 
 **Tiler: Reconstructing Images with Images**  
 <https://github.com/nuno-faria/tiler>  
 A tool for rebuilding any image using a library of smaller images. the results are fascinating mosaics.  
-<img src="https://cdn.fliggy.com/upic/KILcvN.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/KILcvN.jpg" width="800" />
 
 **Termux: Terminal Simulation for Android**  
 <https://github.com/termux/termux-app>  
 A powerful way to turn your Android device into a portable dev environment with a full terminal experience.  
-<img src="https://cdn.fliggy.com/upic/3NYIwE.jpg" width=240/>
+<img src="https://cdn.tw93.fun/blog/upic/3NYIwE.jpg" width=240/>
 
 ## Just Looking Around
 
 **The Desks of sspai Authors**  
 <https://sspai.com/post/70809>  
 A gallery of some truly beautiful and inspiring home workspace setups.  
-<img src="https://cdn.fliggy.com/upic/n8IkCm.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/n8IkCm.jpg" width="800" />
 
 **Living in Australia: A Practical Perspective**  
 A Chinese developer shares their experience living and working in Australia, covering everything from salaries to the surprisingly short lunch breaks.

@@ -17,7 +17,7 @@ The VS Code team completely refactored their bracket pair colorization feature, 
 **Installing npm Packages Directly in the Browser Console**  
 <https://segmentfault.com/a/1190000040875211>  
 A very handy trick for quickly testing libraries without needing to set up a local project.  
-<img src="https://cdn.fliggy.com/upic/Tm0ata.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/Tm0ata.jpg" width="800" />
 
 **Product Ranking Practice in Meituan Search**  
 <https://tech.meituan.com/2021/11/19/exploration-and-practice-of-multi-business-commodities-ranking-in-meituan-search.html>  
@@ -28,17 +28,17 @@ A case study on how Meituan handles complex searches that span multiple business
 **TopNotch: Hide the MacBook Pro Notch**  
 <https://topnotch.app/>  
 I don’t have the machine to test it on yet, but the result looks very clean—it basically blacks out the menu bar to blend with the notch.  
-<img src="https://cdn.fliggy.com/upic/tMHnfC.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/tMHnfC.gif" width="800" />
 
 **KalidoKit: Sync Face and Body Tracking to Avatars**  
 <https://github.com/yeemachine/kalidokit>  
 The results are impressively smooth, especially considering it’s all running in the browser.  
-<img src="https://cdn.fliggy.com/upic/QLQfsY.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/QLQfsY.gif" width="800" />
 
 **xterm.js: A Terminal for the Web**  
 <https://xtermjs.org/>  
 Bringing a full, high-performance terminal experience to your web application.  
-<img src="https://cdn.fliggy.com/upic/sytU28.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/sytU28.jpg" width="800" />
 
 **microdiff: Lightweight and Fast Comparison Library**  
 <https://github.com/AsyncBanana/microdiff>  
@@ -64,5 +64,5 @@ console.log(diff(obj1, obj2));
 A V2EX thread on the pros and cons of Friday sharing sessions. Lots of interesting perspectives from different engineering cultures.
 
 **Insight into the Lifestyles of Gen Z (00s)**  
-[Download PDF](https://cdn.fliggy.com/upic/pM1UP2.pdf)  
+[Download PDF](https://cdn.tw93.fun/blog/upic/pM1UP2.pdf)  
 A report from Tencent that dives into the preferences, consumption habits, and values of the younger generation.

@@ -35,17 +35,17 @@ A look at how Meituan processes and learns from the millions of user reviews on 
 **GFPGAN: Restore Old Photos to HD**  
 <https://github.com/TencentARC/GFPGAN>  
 This is impressive. Restoring old photos used to be a costly professional service, and now AI is making it accessible to everyone.  
-<img src="https://cdn.fliggy.com/upic/vHFsTE.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/vHFsTE.jpg" width="800" />
 
 **Tabby: A More Modern Terminal**  
 <https://github.com/Eugeny/tabby>  
 Worth a try if you’re looking for something different from the traditional CLI experience, though I personally still prefer Hyper’s aesthetics.  
-<img src="https://cdn.fliggy.com/upic/XUeWzB.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/XUeWzB.jpg" width="800" />
 
 **SwiftPamphletApp: A Living Swift Manual**  
 <https://github.com/ming1016/SwiftPamphletApp>  
 Reminds me of the old CHM manuals we used for PHP back in the day—a great format for learning, if you have the discipline.  
-<img src="https://cdn.fliggy.com/upic/0jXPeB.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/0jXPeB.jpg" width="800" />
 
 ## Just Looking Around
 

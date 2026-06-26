@@ -13,7 +13,7 @@ date: 2021/11/02
 **Programming in a VR Environment**  
 <https://blog.immersed.team/working-from-orbit-39bf95a6d385>  
 The concept of "working from orbit" feels incredibly futuristic. Though I suspect I'd get motion-sick just as quickly as I'd write bugs.  
-<img src="https://cdn.fliggy.com/upic/5TbuDX.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/5TbuDX.jpg" width="800" />
 
 **How Bytedance Implements Micro-Frontends at Scale**  
 <https://juejin.cn/post/7016911648656982024>  
@@ -43,12 +43,12 @@ What is edge intelligence? This article breaks down the use cases and fundamenta
 **react-windows-ui: A Windows-Inspired React Component Library**  
 <https://github.com/virtualvivek/react-windows-ui>  
 The level of detail is impressive. You might just find a use for this aesthetic someday.  
-<img src="https://cdn.fliggy.com/upic/6GuLna.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/6GuLna.jpg" width="800" />
 
 **graphics: A Curated Collection of Geometric Shapes**  
 <https://tool.graphics/shapes>  
 Beautifully organized. It’s a great resource for design inspiration, especially for logos and landing pages.  
-<img src="https://cdn.fliggy.com/upic/CkLR96.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/CkLR96.jpg" width="800" />
 
 **The Joy of Debugging Web Apps with VS Code**  
 <https://mp.weixin.qq.com/s/gA-ZEOPQ-IKFV_npo74E7Q>  
@@ -57,22 +57,22 @@ A guide on using VS Code’s built-in debugger for browser JS. I personally stil
 **Dummy-Robot: A Portable Ultra-Mini Robotic Arm**  
 <https://github.com/peng-zhihui/Dummy-Robot>  
 Source code for the robotic arm project from Zhihui Jun that went viral recently. Honestly, watching his video is probably easier than parsing the code.  
-<a href=<https://www.bilibili.com/video/BV12341117rG> target="_blank"><img src="https://cdn.fliggy.com/upic/9xpp1c.jpg" width="800" /></a>
+<a href=<https://www.bilibili.com/video/BV12341117rG> target="_blank"><img src="https://cdn.tw93.fun/blog/upic/9xpp1c.jpg" width="800" /></a>
 
 **Flipper: A Platform for Debugging iOS and Android Apps**  
 <https://github.com/facebook/flipper>  
 Facebook's desktop tool for inspecting and interacting with mobile applications.  
-<img src="https://cdn.fliggy.com/upic/eDeBNB.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/eDeBNB.jpg" width="800" />
 
 **Uptime Kuma: A Stylish Self-Hosted Monitoring Tool**  
 <https://github.com/louislam/uptime-kuma>  
 A modern alternative to Uptime Robot that you can host yourself.  
-<img src="https://cdn.fliggy.com/upic/9DUQ8W.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/9DUQ8W.jpg" width="800" />
 
 **ShareDB: Real-Time Collaborative Data**  
 <https://github.com/share/sharedb>  
 The visual says it all—a robust library for building collaborative apps like Google Docs.  
-<img src="https://cdn.fliggy.com/upic/uEqlH7.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/uEqlH7.gif" width="800" />
 
 ## Just Looking Around
 

@@ -31,17 +31,17 @@ A peek behind the curtain of how Chrome DevTools is actually implemented within 
 **misbrands: The Most "Annoying" Stickers for Programmers**  
 <https://github.com/mkrl/misbrands>  
 A collection of intentionally mismatched logos and brand names. I’m thinking of printing some of these for my own gear.  
-<img src="https://cdn.fliggy.com/upic/X59z5u.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/X59z5u.jpg" width="800" />
 
 **MarkText: A Powerful Open-Source Markdown Editor**  
 <https://github.com/marktext/marktext>  
 With Typora moving to a paid model, MarkText is a fantastic free and open-source alternative for your technical writing.  
-<img src="https://cdn.fliggy.com/upic/08ZIBQ.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/08ZIBQ.jpg" width="800" />
 
 **OnlySwitch: Shortcuts for your Mac Menu Bar**  
 <https://github.com/jacklandrin/OnlySwitch>  
 An open-source alternative to OneSwitch that puts common system controls right at your fingertips.  
-<img src="https://cdn.fliggy.com/upic/FKGFkB.jpg" width=230/>
+<img src="https://cdn.tw93.fun/blog/upic/FKGFkB.jpg" width=230/>
 
 **PromiseKit: Promises for Swift & ObjC**  
 <https://github.com/mxcl/PromiseKit>  

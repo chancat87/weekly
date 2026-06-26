@@ -35,7 +35,7 @@ As we spend more time in JS frameworks, we often forget the small but delightful
 **DoraemonKit: A Platform for Full-Lifecycle App R&D**  
 <https://github.com/didi/DoraemonKit>  
 The marketing name is a bit vague, but essentially it’s a powerful "Swiss Army knife" overlay for debugging and testing apps on the fly.  
-<img src="https://cdn.fliggy.com/upic/tx4GIQ.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/tx4GIQ.jpg" width="800" />
 
 **petite-vue: A 5kb Subset of Vue for Progressive Enhancement**  
 <https://github.com/vuejs/petite-vue>  
@@ -59,7 +59,7 @@ An impressive look at how the next wave of frameworks is moving away from the VD
 **tiptap: The Headless Rich-Text Editor Framework**  
 <https://github.com/ueberdosis/tiptap>  
 A headless framework for building rich-text editors for almost any JavaScript framework. Highly recommended.  
-<img src="https://cdn.fliggy.com/upic/V5cCTX.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/V5cCTX.jpg" width="800" />
 
 **MonitorControl: Control External Monitor Brightness via macOS**  
 <https://github.com/MonitorControl/MonitorControl>  

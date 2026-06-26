@@ -25,24 +25,24 @@ Ever wondered what `??` actually does, or what the `!` means in `useContext(AppC
 **Record, Replay and Measure User Flows in Chrome**  
 <https://developer.chrome.com/docs/devtools/recorder/>  
 A powerful new native feature in DevTools that allows you to record user interactions and replay them for testing and performance measurement.  
-<img src="https://cdn.fliggy.com/upic/zwxHaI.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/zwxHaI.gif" width="800" />
 
 ## Trending Open Source
 
 **nnn: A Blazingly Fast Terminal File Manager**  
 <https://github.com/jarun/nnn>  
 Extremely lightweight and supports a ton of plugins. You can install it on Mac easily via `brew install nnn`.  
-<img src="https://cdn.fliggy.com/upic/qk94FZ.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/qk94FZ.gif" width="800" />
 
 **Hasty: JS Performance Benchmarking Tool**  
 <https://hasty.dev/>  
 A simple web-based tool for quickly comparing the performance of different JavaScript snippets.  
-<img src="https://cdn.fliggy.com/upic/SJptXD.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/SJptXD.jpg" width="800" />
 
 **Agora Flat: Open-Source Interactive Classroom**  
 <https://github.com/netless-io/flat>  
 A beautifully designed, fully open-source platform for building interactive online educational experiences.  
-<img src="https://cdn.fliggy.com/upic/v0bJnY.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/v0bJnY.jpg" width="800" />
 
 **VS Code Theme Generator: Build Your Own Theme with Code**  
 <https://github.com/Tyriar/vscode-theme-generator>  
@@ -61,19 +61,19 @@ const colorSet: IColorSet = {
 generateTheme('My Theme', colorSet, path.join(__dirname, 'theme.json'));
 ```
 
-<img src="https://cdn.fliggy.com/upic/1k0CSy.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/1k0CSy.jpg" width="800" />
 
 **Fig: Autocomplete for Your Terminal**  
 <https://github.com/withfig/autocomplete>  
 Adds visual, IDE-like autocomplete menus to your existing terminal. A huge quality-of-life improvement for CLI users.  
-<img src="https://cdn.fliggy.com/upic/f2ULwf.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/f2ULwf.gif" width="800" />
 
 ## Just Looking Around
 
 **Apple Introduces "App Privacy Report" in iOS 15.2**  
 <https://mp.weixin.qq.com/s/jo9sb2AfrnzZWpDDuqJnCw>  
 Users can now see exactly how often apps are accessing sensitive data like location and camera, as well as which background domains they are contacting. A big win for transparency.  
-<img src="https://cdn.fliggy.com/upic/Re6f2m.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/Re6f2m.jpg" width="800" />
 
 **A Handbook of Cognitive Biases**  
 [Read on Feishu](https://s75w5y7vut.feishu.cn/docs/doccn3BatnScBJe7wD7K3S5poFf)  

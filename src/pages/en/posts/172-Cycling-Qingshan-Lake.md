@@ -12,7 +12,7 @@ date: 2024/04/15
 
 **Image magnification feature added to Trending Weekly**  
 A smoother experience for those who like to see high-res images on desktop.  
-<img src="https://cdn.fliggy.com/upic/ScreenFlow.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/ScreenFlow.gif" width="800" />
 
 **How to read a paper**  
 <https://dub.sh/paper-read>  

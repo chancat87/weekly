@@ -27,12 +27,12 @@ Reads like a very thorough set of study notes prepared right before a major exam
 **ViteShot: Quick and Simple Component Screenshots**  
 <https://github.com/zenclabs/viteshot>  
 You can finally stop relying on heavy headless browsers for your UI automated snapshots.  
-<img src="https://cdn.fliggy.com/upic/L7CZll.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/L7CZll.gif" width="800" />
 
 **Filament: Google’s Lightweight Real-Time PBR Engine**  
 <https://github.com/google/filament>  
 A natively cross-platform physically-based rendering engine that supports everything from Android and iOS to WebGL2.  
-<img src="https://cdn.fliggy.com/upic/co4HTx.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/co4HTx.jpg" width="800" />
 
 **yt-dlp: A Powerful YouTube Video Downloader**  
 <https://github.com/yt-dlp/yt-dlp>  
@@ -41,7 +41,7 @@ A feature-rich evolution of the legendary youtube-dl. Truly the gold standard fo
 **devices.css: Render Modern Devices with Only CSS**  
 <http://marvelapp.github.io/devices.css/>  
 A great way to show off your web apps inside realistic device frames without any images.  
-<img src="https://cdn.fliggy.com/upic/evQYEL.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/evQYEL.gif" width="800" />
 
 **HyperFormula: An Excel-Style Calculation Library**  
 <https://github.com/handsontable/hyperformula>  

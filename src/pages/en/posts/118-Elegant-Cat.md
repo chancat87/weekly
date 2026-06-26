@@ -46,7 +46,7 @@ An incredible tool that lets you search for any word to find YouTube clips of na
 **SingleFile: Save a Webpage into a Single HTML**  
 <https://chrome.google.com/webstore/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle>  
 Saving the web as a "folder" often leads to broken images and styles. SingleFile bundles the entire page into a single HTML file that renders perfectly offline.  
-<img src="https://cdn.fliggy.com/upic/evpSas.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/evpSas.gif" width="800" />
 
 ## Just Looking Around
 

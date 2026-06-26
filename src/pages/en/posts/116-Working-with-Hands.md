@@ -31,22 +31,22 @@ A collection of 69 articles covering the essentials of A/V engineering—perfect
 **Language Reactor: Learn English through Video**  
 <https://chrome.google.com/webstore/detail/language-reactor/hoombieeljmmljlkjmnheibnpciblicm>  
 A powerful extension for YouTube and Netflix that adds bilingual subtitles and allows you to instantly look up word meanings. it turns entertainment into an effective learning tool.  
-<img src="https://cdn.fliggy.com/upic/mrE4N6.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/mrE4N6.png" width="800" />
 
 **Buzzing: Global Social Media in Chinese**  
 <https://www.buzzing.cc/>  
 Buzzing aggregates popular discussions from Reddit and Twitter and translates them into Chinese. it’s a brilliant way to keep up with global trends in your native language.  
-<img src="https://cdn.fliggy.com/upic/dwDLQh.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/dwDLQh.png" width="800" />
 
 **Tree.fm: Forest White Noise from Around the World**  
 <https://www.tree.fm/>  
 A minimalist site that plays ambient sounds from forests across the globe. it’s free and perfect for staying focused while you work.  
-<img src="https://cdn.fliggy.com/upic/TIjBer.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/TIjBer.jpg" width="800" />
 
 **Watermark Video Downloader**  
 <https://watermark.liumingye.cn/>  
 An online tool to download videos from popular platforms without watermarks. it’s smooth, fast, and very reliable.  
-<img src="https://cdn.fliggy.com/upic/QEARXG.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/QEARXG.png" width="800" />
 
 ## Just Looking Around
 

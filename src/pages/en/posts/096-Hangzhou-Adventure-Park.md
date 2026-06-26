@@ -27,17 +27,17 @@ An interesting look at a real-world micro-frontend solution that embraces the si
 **Minimal Theme for Twitter**  
 <https://chrome.google.com/webstore/detail/minimal-theme-for-twitter/pobhoodpcipjmedfenaigbeloiidbflp?hl=zh-CN>  
 If you use Twitter on the web, this extension is a must-have. it strips away the noise and creates a beautifully focused reading experience.  
-<img src="https://cdn.fliggy.com/upic/mhhXih.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/mhhXih.png" width="800" />
 
 **omni: The Power-User Browser Command Bar**  
 <https://chrome.google.com/webstore/detail/omni-bookmark-history-tab/mapjgeachilmcbbokkgcbgpbakaaeehi>  
 Manage your tabs, bookmarks, and history with a fast, spotlight-style command interface. perfect for navigating like a pro.  
-<img src="https://cdn.fliggy.com/upic/sFUkCs.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/sFUkCs.png" width="800" />
 
 **Nushell: A New Kind of Shell**  
 <https://www.nushell.sh/>  
 Nushell takes a structured data approach to the command line, making it much more powerful for modern workflows. I’ve been trying it out and the experience is very smooth.  
-<img src="https://cdn.fliggy.com/upic/0rHdOe.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/0rHdOe.jpg" width="800" />
 
 **Nginx Proxy Manager: Reimagining Nginx Management**  
 <https://nginxproxymanager.com/>  

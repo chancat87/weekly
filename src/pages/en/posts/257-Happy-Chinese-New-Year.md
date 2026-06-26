@@ -31,7 +31,7 @@ Then, the day before yesterday, I had dinner with a friend, and he also complain
 2. Further performance improvements: Smoother large document input and rendering, optimized Markdown highlighting and code block processing, with async cancellable formatting support.
 3. Enhanced reliability and data security: Export and other states now managed through sessions, safer image and text replacement, more stable local PPT images, improved storage path persistence.
 4. Details and architecture optimization: Completed multi-language and first-launch templates, more consistent window top behavior, modularized text processing chain and removed old network dependencies.
-<img src="https://cdn.fliggy.com/upic/5Zr6co.png" width="800">
+<img src="https://cdn.tw93.fun/blog/upic/5Zr6co.png" width="800">
 
 **LobsterAI: Your 24/7 personal AI agent for any task, now open source**
 <https://lobsterai.youdao.com>
@@ -74,11 +74,11 @@ Recently saw a very beautiful Mermaid renderer - clean and comfortable, designed
 ## Just for Fun
 
 **Showing off my cooking skills for the New Year's Eve dinner, wishing everyone a Happy New Year!**
-<video width="800px" preload loop autoplay controls muted><source src="https://cdn.fliggy.com/upic/4t4MCK.mp4" type="video/mp4"></video>
+<video width="800px" preload loop autoplay controls muted><source src="https://cdn.tw93.fun/blog/upic/4t4MCK.mp4" type="video/mp4"></video>
 
 **Aerial footage of Anchang Ancient Town**
 Hahaha, no crash, no crash, no crash! Filmed a water town, exactly how I imagined a Jiangnan water town ancient town should look. Paired with Zhi Li's "The End" - a perfect match.
-<video width="800px" preload loop autoplay controls muted><source src="https://cdn.fliggy.com/upic/Hyo4OC.mp4" type="video/mp4"></video>
+<video width="800px" preload loop autoplay controls muted><source src="https://cdn.tw93.fun/blog/upic/Hyo4OC.mp4" type="video/mp4"></video>
 
 **Apple Developer account finally approved**
 Great news!!! My Apple Developer account is finally approved - can't wait to make something new in 2026! I've been applying for 3 years, and for some reason kept getting "Contact us to continue the process, there may be an issue with your account." Even the support specialist couldn't solve it. Finally, I learned a trick from Xiaohongshu - just write to Tim Cook. It really works, super fast! Someone contacted me the next day to submit materials, and today it got approved!

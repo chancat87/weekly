@@ -40,12 +40,12 @@ Instead of using heavy images or iframes to show a website on an iPhone, try the
 **Movie Recommendation: Johnny Keep Walking! (年会不能停)**  
 <https://movie.douban.com/subject/35725869/>  
 The funniest film I’ve seen in a theater this past year. it’s a hilarious satire that anyone in the tech industry will appreciate.  
-<img src="https://cdn.fliggy.com/upic/LNbdsW.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/LNbdsW.png" width="800" />
 
 **Life Tip: Zeplus (泽普思) Medicated Plaster**  
 <https://www.zhihu.com/question/342965802>  
 I recommended this to my family after a doctor prescribed it for a wrist sprain. it’s much better than traditional, smelly plasters for joint pain. (Note: standard medical caveats apply—check for allergies or asthma first.)  
-<img src="https://cdn.fliggy.com/upic/1xUpkf.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/1xUpkf.png" width="800" />
 
 ## Random Thoughts: On the "Front-end Entertainment Circle"
 

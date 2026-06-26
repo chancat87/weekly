@@ -31,27 +31,27 @@ Highlights from the Annual Meeting of the Association for Computational Linguist
 **Taichi: High-Performance Graphics Language**  
 <https://github.com/taichi-dev/taichi>  
 A domain-specific language for computer graphics that’s both high-performance and incredibly expressive.  
-<img src="https://cdn.fliggy.com/upic/QWvzdr.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/QWvzdr.gif" width="800" />
 
 **Meyda: Real-Time Audio Feature Extraction in JS**  
 <https://meyda.js.org/>  
 Perfect for building music visualizers that react to rhythm and frequency in real-time.  
-<img src="https://cdn.fliggy.com/upic/94KEcE.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/94KEcE.gif" width="800" />
 
 **TOML: A Human-Centric Configuration Language**  
 <https://github.com/toml-lang/toml>  
 "Tom's Obvious, Minimal Language" aims to be more readable than JSON or YAML. it’s gaining a lot of traction, and I’m a big fan of its clarity.  
-<img src="https://cdn.fliggy.com/upic/uSr3ER.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/uSr3ER.jpg" width="800" />
 
 **DeepFaceLab: Face Swapping Powered by AI**  
 <https://github.com/iperov/DeepFaceLab>  
 A powerful tool for deepfake style face replacement. use it responsibly!  
-<img src="https://cdn.fliggy.com/upic/i87XP0.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/i87XP0.jpg" width="800" />
 
 **IoT For Beginners: A 12-Week Curriculum from Microsoft**  
 <https://github.com/microsoft/IoT-For-Beginners>  
 An excellent structured learning path for anyone looking to get started with Internet of Things hardware and software.  
-<img src="https://cdn.fliggy.com/upic/WKXHqG.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/WKXHqG.jpg" width="800" />
 
 ## Just Looking Around
 
@@ -60,7 +60,7 @@ An excellent structured learning path for anyone looking to get started with Int
 The key is being authentic, thorough, and down-to-earth. Ming shares some great advice on storytelling and finding a unique angle for your content.
 
 **Su Bingtian: A Scientific Reflection on the 100m Dash**  
-[Download PDF](https://cdn.fliggy.com/upic/rrEL1L.pdf)  
+[Download PDF](https://cdn.tw93.fun/blog/upic/rrEL1L.pdf)  
 Su Bingtian literally wrote a research paper on his own performance—a perfect example of applying a scientific mindset to athletics.
 
 **How to Understand an Entire Industry in Just One Week**  

@@ -27,12 +27,12 @@ Revisiting the Proxy object to discover some of its less obvious but incredibly 
 **Music for Programming: The Ultimate Focus Playlist**  
 <https://musicforprogramming.net/>  
 A highly curated set of tracks designed specifically to help you get into the flow and stay there. the site itself is a work of art.  
-<img src="https://cdn.fliggy.com/upic/9mG8yP.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/9mG8yP.jpg" width="800" />
 
 **TinyWow: The Swiss Army Knife for Files**  
 <https://tinywow.com/>  
 An incredibly powerful set of web tools for handling PDFs, images, and videos. free, fast, and very well-made.  
-<img src="https://cdn.fliggy.com/upic/8Knvv6.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/8Knvv6.jpg" width="800" />
 
 **Chinese Poetry: The Most Comprehensive Collection**  
 <https://github.com/chinese-poetry/chinese-poetry>  

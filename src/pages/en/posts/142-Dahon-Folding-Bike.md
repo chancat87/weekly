@@ -12,7 +12,7 @@ date: 2023/08/21
 
 **What Browser Do Engineers Use?**  
 I ran a survey among developers and IT enthusiasts last weekend. The results align with my expectations—Chrome dominates, with a strong showing for Firefox and Brave.  
-<img src="https://cdn.fliggy.com/upic/7Qts49.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/7Qts49.png" width="800" />
 
 **Designing Surprise in Games**  
 <https://zhuanlan.zhihu.com/p/648798752>  
@@ -21,24 +21,24 @@ A fascinating deep-dive into game planning and the mechanics of user surprise.
 **Web Development for Beginners**  
 <https://microsoft.github.io/Web-Dev-For-Beginners/>  
 Microsoft has released a 12-week, 24-lesson curriculum for absolute beginners. it uses project-based learning to teach the fundamentals of frontend development.  
-<img src="https://cdn.fliggy.com/upic/rzzQYG.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/rzzQYG.png" width="800" />
 
 ## Trending Tools
 
 **NPM Dependency Visualization**  
 <https://npmgraph.js.org/>  
 We all have a love-hate relationship with NPM dependencies. this tool helps you visualize the complex web of project dependencies, making them much easier to understand.  
-<img src="https://cdn.fliggy.com/upic/R1jQHn.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/R1jQHn.png" width="800" />
 
 **Film Hurricane (YSJF) Materials Library**  
 <https://www.ysjf.com/materialLibrary>  
 Film Hurricane has launched its own website featuring free video assets and editing software—a great resource for anyone learning video production.  
-<img src="https://cdn.fliggy.com/upic/N5cEM9.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/N5cEM9.png" width="800" />
 
 **Dollar Street: Global Income Visualization**  
 <https://gapminder.org/dollar-street>  
 Imagine everyone in the world lived on the same street, organized by income. This site uses photos and videos from hundreds of homes globally to show how income affects everyday objects and lives.  
-<img src="https://cdn.fliggy.com/upic/Bkfscs.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/Bkfscs.png" width="800" />
 
 **Ruan Yifeng’s TypeScript Tutorial**  
 <https://wangdoc.com/typescript/>  

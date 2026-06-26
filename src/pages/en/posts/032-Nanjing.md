@@ -35,7 +35,7 @@ Generates a unique ID based on a vast array of browser and system features. You 
 **Flutter Responsive Admin Panel**  
 <https://github.com/abuanwar072/Flutter-Responsive-Admin-Panel-or-Dashboard>  
 A beautiful example of how Flutter can be used to build sophisticated, responsive data dashboards.  
-<img src="https://cdn.fliggy.com/upic/194j2u.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/194j2u.gif" width="800" />
 
 **BackgroundMusic: Per-App Volume Control for macOS**  
 <https://github.com/kyleneideck/BackgroundMusic>  
@@ -65,14 +65,14 @@ struct Example: HookView {
 **mobile-app-automizer: Automated Release Workflows**  
 <https://github.com/automizer/mobile-app-automizer>  
 A custom tool for managing the build, upload, and versioning lifecycle for both Android and iOS applications.  
-<img src="https://cdn.fliggy.com/upic/eUi3o1.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/eUi3o1.gif" width="800" />
 
 ## Just Looking Around
 
 **Google I/O 2021 Technical Recaps**  
 [Watch on YouTube](https://www.youtube.com/playlist?list=PLOU2XLYxmsIJhsF3up2ueu2pRealr9raD)  
 The production quality is exceptional as always. Note the fantastic energy and clarity of the sign language interpreters!  
-<img src="https://cdn.fliggy.com/upic/HvoctW.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/HvoctW.gif" width="800" />
 
 **How flomo Aims to Change the Way We Think**  
 [Listen to the Podcast](https://www.xiaoyuzhoufm.com/episode/60098bf729de8062086ffad5)  

@@ -35,7 +35,7 @@ A collection of "hidden" address bar commands that can significantly speed up yo
 **pika: Open Source Mac Color Picker**  
 <https://github.com/superhighfives/pika>  
 A very clean and quick way to grab hex codes directly from your screen.  
-<img src="https://cdn.fliggy.com/upic/QcQhKA.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/QcQhKA.jpg" width="800" />
 
 **Real-Time Chinese Voice Cloning**  
 <https://github.com/babysor/Realtime-Voice-Clone-Chinese>  

@@ -54,12 +54,12 @@ If your Claude Code quota is used up, and Codex's too, and you need a cost-effec
 **Highly recommend Resend for email**
 <https://resend.com>
 If you need to add email registration functionality to your system, I highly recommend Resend. It has a free quota of 3,000 emails per month. It's simple to use. I also recommend pairing registration with Google Login, both using the Better Auth service for call encapsulation—very elegant.
-<img src="https://cdn.fliggy.com/upic/nuOjXI.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/nuOjXI.png" width="800" />
 
 ## Just Looking Around
 
 Friends, go to Taobao and JD to search for "Price Protection." There should be many price changes recently due to Double 11. I tried it and got back 141 RMB; not bad!
-<img src="https://cdn.fliggy.com/upic/uQSZdX.png" width="300" class="border"/>
+<img src="https://cdn.tw93.fun/blog/upic/uQSZdX.png" width="300" class="border"/>
 
 **Fang Sanwen talks with Duan Yongping: It’s important to do what you can love**
 <https://www.youtube.com/watch?v=1ikLMn2naSA>

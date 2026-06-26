@@ -4,7 +4,7 @@ date: 2021/10/26
 
 <img src="https://gw.alipayobjects.com/zos/k/ww/12ds024.jpg" width="800" />
 
-<small>I took a short break for the Mid-Autumn Festival, but my enthusiastic readers quickly [asked for updates](https://cdn.fliggy.com/upic/0jo5W9.jpg). Here it is! Taken during a visit to Lingyin Temple—every visit there reveals new surprises.</small>
+<small>I took a short break for the Mid-Autumn Festival, but my enthusiastic readers quickly [asked for updates](https://cdn.tw93.fun/blog/upic/0jo5W9.jpg). Here it is! Taken during a visit to Lingyin Temple—every visit there reveals new surprises.</small>
 
 > **Record the down-to-earth trending technologies seen every week, and publish them here after screening. If you find it good, you can follow this weekly to get update notifications.**
 
@@ -27,22 +27,22 @@ Haoel’s guide to technical presentations: focus on the problem, provide the so
 **Milkdown: A WYSIWYG Markdown Editor**  
 <https://milkdown.dev/>  
 If you’re a fan of Typora's "live preview" style, you’ll love this. It's a great choice if you're looking to build your own note-taking app.  
-<img src="https://cdn.fliggy.com/upic/Rtjmfb.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/Rtjmfb.gif" width="800" />
 
 **kbar: Add Alfred-Style Search to Your Web App**  
 <https://kbar.vercel.app/>  
 A fantastic way to add quick-command functionality to internal tools or documentation sites.  
-<img src="https://cdn.fliggy.com/upic/LZ4Ft4.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/LZ4Ft4.gif" width="800" />
 
 **mdvideo: Convert Markdown to Video**  
 <https://github.com/linqian02/mdvideo>  
 An interesting tool that turns your Markdown slides into video format. I really like this innovative approach to content generation.  
-<img src="https://cdn.fliggy.com/upic/bL1o9Q.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/bL1o9Q.gif" width="800" />
 
 **Pure CSS Dark/Light Mode Switcher**  
 <https://codepen.io/inescodes/pen/OJgWREj>  
 A clever implementation of a theme toggle using only CSS.  
-<img src="https://cdn.fliggy.com/upic/fSvBoR.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/fSvBoR.gif" width="800" />
 
 **Microsoft Power Fx: The Future of Low-Code**  
 <https://docs.microsoft.com/zh-cn/powerapps/>  

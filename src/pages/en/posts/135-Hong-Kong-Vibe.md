@@ -42,7 +42,7 @@ Keep your project structure clean and tidy. this extension nests configuration f
 **DragGAN: AI Photo Manipulation**  
 <https://github.com/XingangPan/DragGAN>  
 An incredible AI tool that lets you manipulate photographs—changing poses, shapes, expressions, and layouts—just by dragging points on the image. its precision is truly impressive.  
-<img src="https://cdn.fliggy.com/test/caaj4wf1/DragGAN.gif" width="400" />
+<img src="https://cdn.tw93.fun/blog/test/caaj4wf1/DragGAN.gif" width="400" />
 
 ## Just Looking Around
 

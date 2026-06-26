@@ -17,7 +17,7 @@ A guide to writing better TypeScript—your first step from AnyScript to true Ty
 **iMove Technical Breakdown**  
 <https://mp.weixin.qq.com/s/cfGdGp1VAVn_bUqXUspvJg>  
 A logic orchestration tool for JavaScript. It’s small, beautiful, and perfect for highly procedural scenarios (it even uses our open-source [FormRender](https://github.com/alibaba/form-render) for configuration).  
-<img src="https://cdn.fliggy.com/upic/YkhbkH.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/YkhbkH.jpg" width="800" />
 
 **Why Tailwind Isn't for Me**  
 <https://dev.to/jaredcwhite/why-tailwind-isn-t-for-me-5c90>  
@@ -31,7 +31,7 @@ PWAs have been around for 5 years. While the hype has cooled down slightly, espe
 
 **Multiavatar: Generative Avatar Maker with a Hint of AI**  
 <https://multiavatar.com/>  
-<img src="https://cdn.fliggy.com/upic/uTxkrH.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/uTxkrH.gif" width="800" />
 
 **EMP: A Micro-Frontends Solution**  
 <https://github.com/efoxTeam/emp/blob/main/README-zh_CN.md#-%E7%94%9F%E6%80%81%E6%80%BB%E6%8F%BD>  
@@ -44,7 +44,7 @@ A fun engine for frontend developers interested in the Internet of Things.
 **SerenityOS: A Unix-like Operating System for x86**  
 <https://github.com/SerenityOS/serenity>  
 Described as a "love letter to '90s user interfaces with a custom Unix-like core."  
-<img src="https://cdn.fliggy.com/upic/H9pI39.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/H9pI39.jpg" width="800" />
 
 ## iOS and Cross-Platform
 
@@ -62,7 +62,7 @@ A summary of 1688's progress in building on-device AI capabilities.
 
 **XQUIC and Multipath QUIC**  
 <https://mp.weixin.qq.com/s/3dnidnhCW-61PS5Stlb0Iw>  
-<img src="https://cdn.fliggy.com/upic/loY9YQ.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/loY9YQ.jpg" width="800" />
 
 ## Inspiration and Design
 

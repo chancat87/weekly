@@ -31,22 +31,22 @@ A deep dive into browser security and the technical definition of "Realms" withi
 **Pake: Minimalist Twitter Desktop Client**  
 <https://github.com/tw93/Pake>  
 Using Pake and some custom style injection from Thomas Wang, I’ve bundled a minimalist Twitter app. it strips away all the clutter and distraction of the official site, making for a much cleaner reading experience.  
-<img src="https://cdn.fliggy.com/upic/JKQcHf.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/JKQcHf.png" width="800" />
 
 **Mastodon: The Social Network that Can’t be Sold**  
 <https://github.com/mastodon/mastodon>  
 Mastodon is gaining massive traction as a self-hosted, decentralized alternative to Twitter. it’s a social network where you see what you choose, not what an algorithm thinks you want.  
-<img src="https://cdn.fliggy.com/upic/JfmHt1.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/JfmHt1.png" width="800" />
 
 **Quick Reference for Developers**  
 <https://wangchujiang.com/reference/index.html>  
 A beautifully designed collection of cheat sheets for almost every programming language and tool. it’s clean, fast, and highly practical.  
-<img src="https://cdn.fliggy.com/upic/myjLGW.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/myjLGW.png" width="800" />
 
 **The CS Self-Learning Guide**  
 <https://github.com/PKUFlyingPig/cs-self-learning>  
 An idealistic and incredibly thorough guide for anyone self-studying computer science. I wish I had seen this when I was a freshman—highly recommended for students and curious developers alike.  
-<img src="https://cdn.fliggy.com/upic/rdWKY0.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/rdWKY0.png" width="800" />
 
 ## Just Looking Around
 
@@ -63,4 +63,4 @@ Why do we have AA (No. 5), AAA (No. 7), and D (No. 1) batteries, but almost no N
 **Must Watch: "The Hunt" (Heon-teu)**  
 <https://movie.douban.com/subject/35160926/>  
 A top-tier Korean political thriller starring and directed by Lee Jung-jae. the plot is tight, the suspense is heavy, and it’s one of the best films I’ve seen in a long time.  
-<img src="https://cdn.fliggy.com/upic/OQpBr6.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/OQpBr6.png" width="800" />

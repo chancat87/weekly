@@ -27,7 +27,7 @@ After using Apple TV, I've become more curious about Netflix's engineering. thei
 **GitHub Year in Code**  
 <https://year-in-code.com/tw93>  
 A beautiful summary of your year on GitHub. This year, my focus shifted away from JS toward whatever language was best for the task at hand. Programming languages are just tools—use what feels right for the job.  
-<img src="https://cdn.fliggy.com/upic/grFVv0.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/grFVv0.png" width="800" />
 
 **Waku: The minimal React framework**  
 <https://github.com/dai-shi/waku>  
@@ -36,7 +36,7 @@ Waku is a minimalist React framework with full support for React Server Componen
 **gpt-crawler: Content crawling for GPTs**  
 <https://github.com/BuilderIO/gpt-crawler>  
 Crawl websites to generate knowledge files for your custom GPTs. You can crawl your blog to create a "digital twin." it uses Playwright and Crawlee for a simple yet effective implementation.  
-<img src="https://cdn.fliggy.com/upic/666rBC.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/666rBC.gif" width="800" />
 
 ## Just Looking Around
 
@@ -55,4 +55,4 @@ A new list for the 2024 reading plan! Here are a few that caught my eye:
 5. Munger's Way
 6. The Deep Learning Revolution
 
-<img src="https://cdn.fliggy.com/upic/lGDCUT.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/lGDCUT.png" width="800" />

@@ -4,7 +4,7 @@ date: 2026/05/11
 ---
 
 
-<img src="https://cdn.fliggy.com/pic/26722.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/pic/26722.jpg" width="800" />
 
 <small>The cover photo was taken last weekend. To get a feel for the strokes for my type design project Luo, I went looking for these kinds of stone-carved characters along the road by West Lake and snapped this shot.</small>
 
@@ -15,14 +15,14 @@ date: 2026/05/11
 **You Didn't Know GEO: AI Visibility Principles, Practices, and Trade-offs**
 <https://tw93.fun/en/2026-05-01/ai-visibility.html>
 A bunch of friends have @-ed me lately saying my open source tools are getting recommended unprompted when they ask AI questions. I hadn't done anything special, so I figured why not spend an hour structuring the content properly. After doing it I fired off a quick tweet, but the structure was messy. People seemed genuinely interested, so I decided to write it up as a proper article for reference and lookup.
-<img src="https://cdn.fliggy.com/pic/OMaEoa53.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/pic/OMaEoa53.png" width="800" />
 
 ## Trending Tools
 
 **Kami, the typesetting system that gives good content the layout it deserves, has been upgraded**
 <https://github.com/tw93/Kami>
 Kami has had several upgrades recently, including fixing Chinese garbled text in PPT, speeding up the engineering, expanding doc analogues to 8 categories, polishing many layout details, updating the built-in chart capabilities, and more. Welcome to update and try it out.
-<img src="https://cdn.fliggy.com/pic/rPlaVb01.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/pic/rPlaVb01.png" width="800" />
 
 **Waza, the engineer's 8 skill trees, has been updated**
 <https://github.com/tw93/Waza>
@@ -50,13 +50,13 @@ I'm also obsessive about startup speed, especially cold start. I want to build t
 Lastly, fixed full-screen crashes and freezes, multi-monitor race conditions, resize gaps, cursor reflow, links, selection, light theme readability, TUI copy, and many other detail issues.
 
 If this is your first time hearing about Kaku, welcome to give it a try. Still not mature, actively being polished. Any suggestions or bugs, please file an issue and I'll handle them.
-<video width="800px" preload="metadata" loop autoplay muted><source src="https://cdn.fliggy.com/pic/kaku14.mp4" type="video/mp4"></video>
+<video width="800px" preload="metadata" loop autoplay muted><source src="https://cdn.tw93.fun/blog/pic/kaku14.mp4" type="video/mp4"></video>
 
 ## Just Looking Around
 
 **M5 Pro in black finally arrived. Stunning. Very excited**
 16-inch M5 Pro / 48GB / 1TB black with standard glass. I think this config is a great fit for anyone considering a new machine.
-<video width="800px" preload="metadata" controls><source src="https://cdn.fliggy.com/pic/mac36.MP4" type="video/mp4"></video>
+<video width="800px" preload="metadata" controls><source src="https://cdn.tw93.fun/blog/pic/mac36.MP4" type="video/mp4"></video>
 
 **Picked up an iPhone SE3 to play with**
 How can such a small phone feel this refined? Just lovely to hold.
@@ -64,20 +64,20 @@ How can such a small phone feel this refined? Just lovely to hold.
 <table style="margin-top:-20px">
     <tr>
         <td width="33%">
-          <img src="https://cdn.fliggy.com/pic/IMG_099853.JPG" width="400" />
+          <img src="https://cdn.tw93.fun/blog/pic/IMG_099853.JPG" width="400" />
         </td>
         <td width="33%">
-            <img src="https://cdn.fliggy.com/pic/IMG_099901.JPG" width="400" />
+            <img src="https://cdn.tw93.fun/blog/pic/IMG_099901.JPG" width="400" />
         </td>
         <td width="33%">
-            <img src="https://cdn.fliggy.com/pic/IMG_100106.JPG" width="400" />
+            <img src="https://cdn.tw93.fun/blog/pic/IMG_100106.JPG" width="400" />
         </td>
     </tr>
 </table>
 
 **A neat UI bug debugging trick of mine**
 Sharing a really useful UI bug debugging approach. Back in my old-school coding days I often used screen-recording with slow-motion playback. AI struggles with this kind of thing, but humans get it instantly. Find the frame with the problem, and you basically know where the issue is. Then hand the screenshot to AI. Way better than logging or guessing.
-<img src="https://cdn.fliggy.com/pic/44JbuE11.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/pic/44JbuE11.png" width="800" />
 
 **Somehow it's been 4 years on Twitter, posted a little reflection**
 Joined X 4 years ago already. The journey has been really fun, and it's also been a great outlet for my urge to share tech and product stuff.

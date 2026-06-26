@@ -43,12 +43,12 @@ This is exactly what I dreamed of back in high school. It produces high-quality 
 **GitHub Copilot: Your AI Pair Programmer**  
 <https://copilot.github.com/>  
 The big announcement from GitHub. while there were similar products before, having this built directly into the ecosystem is a massive shift. I find it takes a bit of RAM, but the experience is worth trying.  
-<img src="https://cdn.fliggy.com/upic/FlzrDf.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/FlzrDf.gif" width="800" />
 
 **CakeBrew: A GUI for Homebrew**  
 <https://www.cakebrew.com/>  
 A fantastic way to visualize what you've actually installed via Homebrew. I finally know what's taking up all that space!  
-<img src="https://cdn.fliggy.com/upic/UYuH5O.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/UYuH5O.jpg" width="800" />
 
 **WorldWideWeb: Source Code for the World’s First Browser**  
 <https://github.com/cynthia/WorldWideWeb>  

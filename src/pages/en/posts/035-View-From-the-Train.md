@@ -31,22 +31,22 @@ A look at how Meituan unified their iOS, Android, and WeChat Mini Program develo
 **Captin: A Visual Indicator for Caps Lock on Mac**  
 <https://captin.mystrikingly.com/>  
 Since many major third-party input methods were recently removed from stores due to privacy concerns, I've been sticking to the native macOS input method. Switching Caps Lock can be a bit opaque—this tool makes it visible. I also recommend [SwitchKey](https://github.com/itsuhane/SwitchKey) for automatic language switching.  
-<img src="https://cdn.fliggy.com/upic/zRzkoU.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/zRzkoU.gif" width="800" />
 
 **Grafana: A Professional Data Visualization Dashboard**  
 <https://grafana.com/grafana/>  
 A powerful platform for building beautiful, real-time dashboards for monitoring and data analysis.  
-<img src="https://cdn.fliggy.com/upic/9LomU1.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/9LomU1.gif" width="800" />
 
 **pytorchvideo: Deep Learning for Video Content Understanding**  
 <https://github.com/facebookresearch/pytorchvideo>  
 A library from Facebook Research that can "predict" or understand what's happening in a video. The applications for this are endless.  
-<img src="https://cdn.fliggy.com/upic/RvQBqC.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/RvQBqC.gif" width="800" />
 
 **PINTR: Turn Your Photos into Abstract Line Art**  
 <https://javier.xyz/pintr/>  
 A fun tool that transforms any image into a unique composition of straight pencil lines.  
-<img src="https://cdn.fliggy.com/upic/STNHOn.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/STNHOn.jpg" width="800" />
 
 **react-three-fiber: A React Renderer for Three.js**  
 <https://github.com/pmndrs/react-three-fiber>  
@@ -61,7 +61,7 @@ A heartwarming thread where a user’s simple birthday post gathered a massive w
 **From Rome to Chang'an: Creating an Independent Game**  
 <https://www.gcores.com/articles/137634>  
 The author built an incredibly detailed simulation game centered around the layout and construction of Tang Dynasty Chang'an. Truly impressive work.  
-<img src="https://cdn.fliggy.com/upic/E3amod.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/E3amod.jpg" width="800" />
 
 **The Great Mac Thief Chase**  
 <https://www.douban.com/note/803274306/>  

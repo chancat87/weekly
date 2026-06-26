@@ -23,27 +23,27 @@ A comprehensive guide for the new generation of designers—covering everything 
 **Thorium: The Fastest Browser?**  
 <https://thorium.rocks/>  
 Based on Chromium, Thorium claims to be the fastest browser on Earth through heavy compiler optimization. I’ve tried it—it’s incredibly quick and supports Google sync. definitely one to watch.  
-<img src="https://cdn.fliggy.com/upic/sozcr9.png"   width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/sozcr9.png"   width="800" />
 
 **YesNo.wtf: Decision Making for the Indecisive**  
 <https://yesno.wtf/>  
 A hilarious tool that gives you a random "Yes" or "No" with a funny GIF background. perfect for when you're stuck on a decision.  
-<img src="https://cdn.fliggy.com/upic/W4TkvZ.png"   width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/W4TkvZ.png"   width="800" />
 
 **HTML-to-Markdown Converter**  
 <https://devtool.tech/html-md/>  
 An excellent tool for converting any webpage into perfectly formatted Markdown. it’s great for saving documentation or articles to your local notebook.  
-<img src="https://cdn.fliggy.com/upic/6WPlNb.png"   width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/6WPlNb.png"   width="800" />
 
 **Writing an OS in Rust**  
 <https://os.phil-opp.com/>  
 A fantastic blog that walks you through building a small operating system in Rust. each post is a tutorial with matching GitHub code—perfect for learning Rust by doing.  
-<img src="https://cdn.fliggy.com/upic/bzzi76.png"   width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/bzzi76.png"   width="800" />
 
 **LifeHacker: Modern Productivity Tips**  
 <https://lifehacker.com/>  
 A classic platform for life hacks, technical tips, and work/finance advice to improve your daily efficiency and quality of life.  
-<img src="https://cdn.fliggy.com/upic/cLKkD6.png"   width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/cLKkD6.png"   width="800" />
 
 ## Just Looking Around
 

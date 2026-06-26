@@ -3,7 +3,7 @@
 date: 2026/05/25
 ---
 
-<img src="https://cdn.fliggy.com/pic/26829.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/pic/26829.jpg" width="800" />
 
 <small>The cover photo is of a textured building I shot last weekend at Xiaohe Park. The sunlight happened to be perfect, paired with the green trees, it looked really nice.</small>
 
@@ -17,7 +17,7 @@ Finally, finally, Mole's Mac desktop version is out. The CLI will keep being fre
 
 If you've contributed code to Mole or sponsored me on GitHub, DM me and I'll send a 100% discount code.
 
-<video width="800px" preload="metadata" controls><source src="https://cdn.fliggy.com/pic/mole206.mp4" type="video/mp4"></video>
+<video width="800px" preload="metadata" controls><source src="https://cdn.tw93.fun/blog/pic/mole206.mp4" type="video/mp4"></video>
 
 **Mole CLI updated to 1.39**
 <https://github.com/tw93/Mole>
@@ -26,12 +26,12 @@ If you've contributed code to Mole or sponsored me on GitHub, DM me and I'll sen
 3. mo analyze: hardlinks are now deduped by inode, so FCP and other managed media no longer report tens of times inflated. mo status: available-memory math now aligns with Activity Monitor.
 4. mo touchid: PAM writes switched to atomic operations to preserve read-only permissions. mo optimize: removed Bluetooth reset to avoid accidentally kicking devices.
 5. Global NO_COLOR=1 support. When Trash isn't available, it now fails closed to prevent silent permanent deletion.
-<img src="https://cdn.fliggy.com/pic/XjXNoU39.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/pic/XjXNoU39.png" width="800" />
 
 **Kami now builds product landing pages**
 <https://github.com/tw93/Kami>
 Kami has shipped a bunch of updates lately. Beyond the original PDF generation, you can now tell it you want a landing page for product XX, and it'll build something in the same quiet style as the Mole site.
-<img src="https://cdn.fliggy.com/pic/XdDecf51.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/pic/XdDecf51.png" width="800" />
 
 **Waza has had a bunch of updates lately**
 <https://github.com/tw93/Waza>
@@ -50,12 +50,12 @@ I've always felt that adding rules to AI calls for restraint. Every rule you add
 **Lightpanda: a headless browser written from scratch in Zig**
 <https://github.com/lightpanda-io/browser>
 A headless browser written from scratch in Zig, designed for agents and automation. The pitch is -9x memory and +11x speed vs Chrome, compatible with the CDP protocol (Playwright/Puppeteer). Worth a look as browser infrastructure for the agent era.
-<img src="https://cdn.fliggy.com/pic/aQKcGc14.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/pic/aQKcGc14.png" width="800" />
 
 **Mise: Dev tools, env vars, and tasks in one CLI**
 <https://github.com/jdx/mise>
 A single tool that unifies runtime versions (nvm/asdf) + env vars (direnv) + tasks (make), all managed by a single mise.toml. Lightweight Rust binary. Worth a try if you're interested.
-<img src="https://cdn.fliggy.com/pic/demo34.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/pic/demo34.gif" width="800" />
 
 ## Just Looking Around
 
@@ -65,17 +65,17 @@ You have to chill it first, then it's really good. Don't drink the plain one, th
 <table style="margin-top:-20px">
     <tr>
         <td width="50%">
-          <img src="https://cdn.fliggy.com/pic/XcWaIV34.png" width="400" />
+          <img src="https://cdn.tw93.fun/blog/pic/XcWaIV34.png" width="400" />
         </td>
         <td width="50%">
-            <img src="https://cdn.fliggy.com/pic/PVaCgF40.png" width="400" />
+            <img src="https://cdn.tw93.fun/blog/pic/PVaCgF40.png" width="400" />
         </td>
     </tr>
 </table>
 
 **This eye drop I've been using is pretty good**
 If you often lose yourself in AICoding, grab a bottle of Hai-Lu eye drops, and have your watch remind you to stand up and walk around.
-<img src="https://cdn.fliggy.com/pic/ybMdQk09.png" width="400" />
+<img src="https://cdn.tw93.fun/blog/pic/ybMdQk09.png" width="400" />
 
 **Bought a few nice wooden things**
 First is a shoehorn, no more bending over to put on shoes. Second is a laptop riser, very useful, with anti-slip. Third is a small holder for aroma bottles. Fourth is the little brush I use to sweep up coffee grounds when I make coffee.
@@ -83,16 +83,16 @@ First is a shoehorn, no more bending over to put on shoes. Second is a laptop ri
 <table style="margin-top:-20px">
     <tr>
         <td width="25%">
-          <img src="https://cdn.fliggy.com/pic/gv97iD44.png" width="400" />
+          <img src="https://cdn.tw93.fun/blog/pic/gv97iD44.png" width="400" />
         </td>
         <td width="25%">
-            <img src="https://cdn.fliggy.com/pic/UXoeo050.png" width="400" />
+            <img src="https://cdn.tw93.fun/blog/pic/UXoeo050.png" width="400" />
         </td>
         <td width="25%">
-            <img src="https://cdn.fliggy.com/pic/NUPl0m57.png" width="400" />
+            <img src="https://cdn.tw93.fun/blog/pic/NUPl0m57.png" width="400" />
         </td>
     <td width="25%">
-            <img src="https://cdn.fliggy.com/pic/j7ICAj15.png" width="400" />
+            <img src="https://cdn.tw93.fun/blog/pic/j7ICAj15.png" width="400" />
         </td>
     </tr>
 </table>

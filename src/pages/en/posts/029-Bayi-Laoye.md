@@ -31,12 +31,12 @@ A great primer for anyone still trying to wrap their head around the microservic
 **lipgloss: A Beautiful Styling Library for the Terminal**  
 <https://github.com/charmbracelet/lipgloss>  
 I absolutely love the aesthetic of this library. It brings high-end design to the command line.  
-<img src="https://cdn.fliggy.com/upic/weUxcC.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/weUxcC.jpg" width="800" />
 
 **Open Source Goes to Mars**  
 <https://github.blog/2021-04-19-open-source-goes-to-mars/>  
 A very "trendy" recognition—if your code contributed to the Mars projects, you can now get a dedicated badge on your GitHub profile.  
-<img src="https://cdn.fliggy.com/upic/OxAE0J.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/OxAE0J.gif" width="800" />
 
 **Logica: Google’s New Logic-Based SQL Language**  
 <https://github.com/EvgSkv/logica>  
@@ -58,7 +58,7 @@ Prime(prime: x) :-
 **terminal-link: Create Clickable Links in the Terminal**  
 <https://github.com/sindresorhus/terminal-link>  
 I didn't realize this was even possible until now! I've been using different colors to represent links for years.  
-<img src="https://cdn.fliggy.com/upic/oHm45Q.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/oHm45Q.gif" width="800" />
 
 ## Just Looking Around
 

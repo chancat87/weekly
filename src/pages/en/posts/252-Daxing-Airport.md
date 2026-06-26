@@ -17,7 +17,7 @@ I spent the whole afternoon migrating Tw93 Weekly to an English version.
 The translations were largely powered by Gemini Flash, which turned out to be incredibly efficient. From now on, every issue will be published in both Chinese and English.
 
 Non-Chinese readers are very welcome to join — to get a glimpse into a Chinese engineer’s weekend life, explore interesting developer tools, and read my thoughts on AI along the way.
-<img src="https://cdn.fliggy.com/upic/JVw8PR.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/JVw8PR.png" width="800" />
 
 **Mole 1.8 is here**
 <https://github.com/tw93/Mole>
@@ -29,7 +29,7 @@ Update logs below, mainly focused on various optimizations and capability enhanc
 4. Installation Process Enhancement: `install.sh` improved for robustness, supports specifying version/edge installation and `--update`.
 5. Testing & Quality: Added 2000+ lines of tests, covering completion, browser cleanup, purge protection, cache cleanup, etc.
 6. Bug Fixes: Fixed pnpm Corepack hanging issue, fixed mo purge fd matching issue, improved macOS compatibility documentation.
-<img src="https://cdn.fliggy.com/upic/zylLy5.png" width="800">
+<img src="https://cdn.tw93.fun/blog/upic/zylLy5.png" width="800">
 
 **A Nice Log Viewing Tool: hl**
 <https://github.com/pamburus/hl>
@@ -80,7 +80,7 @@ I really like Ji Yichao, such a grounded tech expert, completely different from 
 
 **Qwen's 2025 Adventure Video is Interesting**
 A year of constantly upgrading and fighting monsters in the coding world, the video is made quite interestingly.
-<video width="800px" preload loop autoplay controls muted><source src="https://cdn.fliggy.com/upic/PwUHDf.MP4" type="video/mp4"></video>
+<video width="800px" preload loop autoplay controls muted><source src="https://cdn.tw93.fun/blog/upic/PwUHDf.MP4" type="video/mp4"></video>
 
 **Cloudflare's 2025 Internet Year in Review**
 <https://radar.cloudflare.com/year-in-review/2025>

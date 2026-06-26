@@ -20,7 +20,7 @@ After writing "The Claude Code You Don't Know: Architecture, Governance, and Eng
 **Mole Released Version 1.31**
 <https://github.com/tw93/mole>
 Mole released version v1.31.0 over the weekend, codenamed Makima. It features faster performance and more accurate system status reporting. Huge thanks to all the contributors! I also made a video so everyone can feel the power of open source.
-<video width="800px" preload loop autoplay controls muted><source src="https://cdn.fliggy.com/pic/mole04.mp4" type="video/mp4"></video>
+<video width="800px" preload loop autoplay controls muted><source src="https://cdn.tw93.fun/blog/pic/mole04.mp4" type="video/mp4"></video>
 
 ## Trending Tools
 
@@ -47,4 +47,4 @@ I had been debating whether to buy an ice maker, but since I'm the only one at h
 
 **Got a Singapore HSBC Card**
 If you already have HSBC accounts in mainland China and Hong Kong, you can ask your relationship manager to help you apply for a Singapore one. Although it kind of feels like a supermarket loyalty card. The registered mail didn't arrive for three months; after a phone call, they remade it and it arrived via express delivery in a week.
-<img src="https://cdn.fliggy.com/pic/KeRlkk25.png" width="400" />
+<img src="https://cdn.tw93.fun/blog/pic/KeRlkk25.png" width="400" />

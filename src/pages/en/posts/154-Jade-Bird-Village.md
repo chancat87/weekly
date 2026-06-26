@@ -27,12 +27,12 @@ A GitHub blog post analyzing the trends of 2023 and the explosive growth of AI i
 **Talbica: Periodic Table Visualization**  
 <https://talbica.com/>  
 A visual periodic table that includes photographs of the actual elements. seeing what rare elements look like is a treat for chemistry lovers.  
-<video width="800px" muted preload autoplay loop><source src="https://gw.alipayobjects.com/os/k/f7/yuansu.mp4" type="video/mp4" postor="https://cdn.fliggy.com/upic/TSgODn.png"></video>
+<video width="800px" muted preload autoplay loop><source src="https://gw.alipayobjects.com/os/k/f7/yuansu.mp4" type="video/mp4" postor="https://cdn.tw93.fun/blog/upic/TSgODn.png"></video>
 
 **TIME's Best Inventions of 2023**  
 <https://time.com/collection/best-inventions-2023/>  
 A curated list from TIME magazine. alongside staples like ChatGPT and Apple Vision Pro, it covers many fascinating inventions in other fields.  
-<img src="https://cdn.fliggy.com/upic/1JVnzm.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/1JVnzm.png" width="800" />
 
 **gpt-crawler: A GPT Crawler Project**  
 <https://github.com/BuilderIO/gpt-crawler>  
@@ -44,7 +44,7 @@ Crawl websites to build custom knowledge stores for your GPTs.
 **Netflix Recommendation: Money Heist (La Casa de Papel)**  
 <https://movie.douban.com/subject/35162581/>  
 If you asked for one Netflix recommendation, it’s this. a brilliant story of "The Professor" organizing 8 uniquely talented people for a heist. My favorite character is Berlin. A must-watch.  
-<img src="https://cdn.fliggy.com/upic/1lfRnD.jpg" width="400" />
+<img src="https://cdn.tw93.fun/blog/upic/1lfRnD.jpg" width="400" />
 
 **A Brief History of Western Art**  
 <https://zhuanlan.zhihu.com/p/654924503>  

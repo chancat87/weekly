@@ -22,24 +22,24 @@ A detailed guide covering mindset, monetization, optimization, topic selection, 
 **Inside the .git folder in one diagram**  
 <https://wizardzines.com/comics/inside-git/>  
 A clear visual breakdown of what's inside your `.git` directory.  
-<img src="https://cdn.fliggy.com/upic/inside-git.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/inside-git.png" width="800" />
 
 ## Trending Tools
 
 **Datawhale AI Learning**  
 <https://linklearner.com/>  
 Datawhale does excellent, scholarly work in AI education in China. they've recently launched a well-designed learning portal with open-source courses.  
-<img src="https://cdn.fliggy.com/upic/t3uFot.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/t3uFot.png" width="800" />
 
 **HyperDX: Open-source observability platform**  
 <https://github.com/hyperdxio/hyperdx>  
 HyperDX centralizes logs, metrics, traces, exceptions, and session replays, helping engineers debug production issues faster. the UI is very well-done.  
-<img src="https://cdn.fliggy.com/upic/search_splash.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/search_splash.png" width="800" />
 
 **sshx: Collaborative terminal for real-time sharing**  
 <https://sshx.io/>  
 A secure, web-based collaborative terminal that allows you to share your terminal on an infinite canvas with anyone. features remote cursors and chat—perfect for remote debugging or teaching.  
-<img src="https://cdn.fliggy.com/upic/212.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/212.png" width="800" />
 
 ## Just Looking Around
 

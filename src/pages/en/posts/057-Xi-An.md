@@ -31,12 +31,12 @@ A simple case study on how to leverage the speed of esbuild for Node.js Express 
 **Fleet: JetBrains’ Answer to VS Code**  
 <https://blog.jetbrains.com/zh-hans/blog/2021/11/29/fleet/>  
 This looks incredible. Currently in preview, it’s a massive shift for JetBrains towards a lightweight, high-performance editor.  
-<img src="https://cdn.fliggy.com/upic/TFHt6H.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/TFHt6H.jpg" width="800" />
 
 **Automa: An Extension for Browser Automation**  
 <https://github.com/Kholid060/automa>  
 I tested this out—it’s very effective for automating repetitive browser tasks without writing full scripts.  
-<img src="https://cdn.fliggy.com/upic/HkL4dd.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/HkL4dd.gif" width="800" />
 
 **CasaOS: A Slick Open Source Home Cloud System**  
 <https://www.casaos.io/>  
@@ -46,19 +46,19 @@ A great way to manage your home server or NAS with a very polish user interface.
 **LunarVim: An IDE Layer for Neovim**  
 <https://github.com/LunarVim/LunarVim>  
 If you want the power of Neovim with the "batteries-included" feel of a modern IDE.  
-<img src="https://cdn.fliggy.com/upic/4o1eQf.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/4o1eQf.jpg" width="800" />
 
 **NUWA: A Unified 3D Transformer Pipeline for Synthesis**  
 <https://github.com/microsoft/NUWA>  
 Impressive research from Microsoft on visual synthesis. check out the [paper](https://arxiv.org/abs/2111.12417) for the deep technical details.  
-<img src="https://cdn.fliggy.com/upic/YVyrnM.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/YVyrnM.gif" width="800" />
 
 ## Just Looking Around
 
 **Historical Figures Imagined in the Modern Day**  
 <https://mossandfog.com/artist-imagines-what-famous-historical-figures-would-look-like-today/>  
 A fun look at how classic works of art or sculptures might look if those people lived today.  
-<img src="https://cdn.fliggy.com/upic/MxLdl7.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/MxLdl7.jpg" width="800" />
 
 **The Vision Gaps in User-Centered Design**  
 <http://www.woshipm.com/user-research/5231618.html>  

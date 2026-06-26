@@ -28,17 +28,17 @@ I finally got access to the Arc browser. I’ve been using it for a week and it�
 **Umami: Simple, Privacy-Focused Analytics**  
 <https://github.com/umami-software/umami>  
 Umami is a fast, lightweight alternative to Google Analytics. Honestly, the user experience and dashboard clarity are far superior to GA for most personal and small-business needs.  
-<img src="https://cdn.fliggy.com/upic/ScreenFlow.gif" style="width:600px"/>
+<img src="https://cdn.tw93.fun/blog/upic/ScreenFlow.gif" style="width:600px"/>
 
 **cmdk: Fast Command Menu Component**  
 <https://github.com/pacocoursey/cmdk>  
 A beautifully designed, accessible command palette for React. it’s highly customizable and perfect for adding "Cmd+K" functionality to any app.  
-<img src="https://cdn.fliggy.com/upic/ViaRcI.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/ViaRcI.jpg" width="800" />
 
 **Million: The <1KB Virtual DOM**  
 <https://millionjs.org/>  
 Million is a light React-compatible alternative that clocks in at under 1KB. its performance is staggering—truly a masterclass in optimization.  
-<img src="https://cdn.fliggy.com/upic/8blTcY.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/8blTcY.jpg" width="800" />
 
 **Novu: Open-Source Notification Infrastructure**  
 <https://github.com/novuhq/novu>  

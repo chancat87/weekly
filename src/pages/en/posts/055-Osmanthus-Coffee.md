@@ -35,29 +35,29 @@ A "Xianxia" (Chinese fantasy) novel that teaches JavaScript concepts. An incredi
 **JS Obfuscator: Make Your Code Unreadable**  
 <https://obfuscator.io/>  
 Confuse your code so much that even you won't recognize it. Perfect for protecting sensitive logic in frontend projects.  
-<img src="https://cdn.fliggy.com/upic/LWAaOz.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/LWAaOz.gif" width="800" />
 
 **mobilePillowTalkLite: iOS Service Process Monitor**  
 <https://github.com/Co2333/mobilePillowTalkLite>  
 A tool for monitoring service processes and system activity on iOS devices.  
-<img src="https://cdn.fliggy.com/upic/V64bcm.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/V64bcm.jpg" width="800" />
 
 **Excalidraw: Virtual Hand-Drawn Whiteboard**  
 <https://github.com/excalidraw/excalidraw>  
 An excellent tool for sketching diagrams and wireframes with a charming hand-drawn aesthetic. Supports real-time collaboration.  
-<img src="https://cdn.fliggy.com/upic/SgpL4x.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/SgpL4x.jpg" width="800" />
 
 **Remark42: Lightweight Comment Plugin**  
 <https://remark42.com/demo/>  
 A self-hosted, lightweight commenting engine that’s very easy to drop into any existing blog system.  
-<img src="https://cdn.fliggy.com/upic/Rl4Eu3.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/Rl4Eu3.gif" width="800" />
 
 ## Just Looking Around
 
 **GitHub Copilot is Writing Chinese Articles Now**  
 <https://www.v2ex.com/t/814689#reply81>  
 The results are genuinely shocking. It seems AI is moving beyond just code and into creative writing faster than we expected.  
-<img src="https://cdn.fliggy.com/upic/Jyf6br.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/Jyf6br.jpg" width="800" />
 
 **Building Better Interactive Docs with Axure**  
 <http://www.woshipm.com/ucd/4377278.html>  

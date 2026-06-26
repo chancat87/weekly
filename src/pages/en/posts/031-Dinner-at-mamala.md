@@ -31,27 +31,27 @@ A deep technical dive into the Turing OS platform that powers AI serving across 
 **RPi OS Tutorials in Rust**  
 <https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials>  
 A very "trendy" way to learn operating system fundamentals: building one for a Raspberry Pi using Rust.  
-<img src="https://cdn.fliggy.com/upic/ZzivqL.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/ZzivqL.gif" width="800" />
 
 **playground-macos: macOS GUI Built with Frontend Tech**  
 <https://github.com/Renovamen/playground-macos>  
 Truly impressive—you can try the live demo at [portfolio.zxh.io](https://portfolio.zxh.io/).  
-<img src="https://cdn.fliggy.com/upic/Dmuo5D.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/Dmuo5D.gif" width="800" />
 
 **GetX: Lightweight State and Route Management for Flutter**  
 <https://github.com/jonataslaw/getx>  
 An all-in-one solution for Flutter that simplifies high-performance reactive state management and dependency injection.  
-<img src="https://cdn.fliggy.com/upic/ORcYpo.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/ORcYpo.jpg" width="800" />
 
 **slidev: Presentation Slides for Developers**  
 <https://github.com/slidevjs/slidev>  
 Write your presentations in Markdown and have them rendered as beautiful, web-based slides. Great for internal talks.  
-<img src="https://cdn.fliggy.com/upic/asxsQu.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/asxsQu.gif" width="800" />
 
 **terminal-kit: Interactive Terminal UI Package**  
 <https://github.com/cronvel/terminal-kit>  
 Build rich, interactive command-line interfaces with mouse support and sophisticated layouts.  
-<img src="https://cdn.fliggy.com/upic/B5rzQI.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/B5rzQI.gif" width="800" />
 
 **zx: A Better Way to Write Shell Scripts**  
 <https://github.com/google/zx>  

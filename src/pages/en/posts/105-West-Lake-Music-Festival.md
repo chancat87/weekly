@@ -27,7 +27,7 @@ A detailed exploration of how frontend errors occur and how to build robust moni
 **SigmaOS 1.0: The Space-Based Browser**  
 <https://sigmaos.com/>  
 A new browser that focuses on categories, spaces, and a "card-based" workflow even more than Arc does. definitely worth trying if you love exploring new productivity tools.
-<img src="https://cdn.fliggy.com/upic/5sgHad.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/5sgHad.gif" width="800" />
 
 **HyperUI: Polished Tailwind CSS Components**  
 <https://www.hyperui.dev/>  
@@ -37,7 +37,7 @@ I highly recommend Tailwind CSS for its simplicity and speed. HyperUI takes it f
 **DEVICES.CSS: Apple Devices in Pure CSS**  
 <https://devicescss.xyz/>  
 A fun library that lets you render realistic Apple devices (iPhones, Macs, etc.) using only CSS—no images required.  
-<img src="https://cdn.fliggy.com/upic/zxi2eJ.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/zxi2eJ.png" width="800" />
 
 **RegexLearn: Gamified Regex Learning**  
 <https://regexlearn.com/zh-cn>  

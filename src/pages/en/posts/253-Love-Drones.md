@@ -17,7 +17,7 @@ Mole 1.20 is out! This update adds a lot of fun stuff. You can check the changel
 I want to share some good news first. Through Mole, I unexpectedly got in touch with my tech idol, Paul Graham. Ten years ago, during my sophomore year, I found "Hackers & Painters" in the university library. It had a huge impact on me. At that time, I was constantly thinking about what kind of role I wanted to play. This book was a wake-up call: engineers aren't just geeks; they can also be painters with a sense of aesthetics. This influenced many of my subsequent works, where I strive to keep things simple, easy to use, and beautiful, while truly solving problems. Being able to connect with him through Mole is really magical to me.
 
 Of course, Mole's open-sourcing has been well-received by many programmers in the West, but it has also been accompanied by some doubts and baseless speculation. For example, because the author is Chinese, some people assumed the code was harmful, and there were even baseless accusations that the followers were bought. To be honest, it was a bit hurtful. However, the vast majority of programmers are very nice, enthusiastic, sincere, and spare no effort to help Mole become better, and are willing to share it with their friends. I always believe that the open-source world should be apolitical—free, friendly, and relaxed. Code itself is the fairest thing and has no stance. I also hope programmers from all over the world can communicate more. I also love traveling abroad, just limited by my spoken English, which I need to keep working on. I look forward to a true "global village".
-<img src="https://cdn.fliggy.com/upic/assBCv.jpeg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/assBCv.jpeg" width="800" />
 
 **MiaoYan released version 2.4.5, looking even better**
 <https://github.com/tw93/MiaoYan>
@@ -30,7 +30,7 @@ Performance and reliability have been continuously enhanced. Note content uses l
 In terms of file and layout management, **the sidebar now supports subfolders and expanded state maintenance**, making folder nesting more natural. Sidebar width and split-column initialization logic have been fixed to avoid layout issues left over from old versions. Added content protection when quickly switching split screens to prevent old content rollback.
 
 In addition, the export experience has been fully upgraded, adding progress prompts and title injection. PDF / Image / PPT export quality and consistency are significantly improved, and export effects in dark mode are now consistent with the preview. Preview style details have been synchronized, including alignment rules, removal of image link underlines, and softer directory prompts. Installation documents and release processes have also been updated, adding build scripts and export configurations, making maintenance and release clearer.
-<video width="800px" preload loop autoplay muted><source src="https://cdn.fliggy.com/upic/IB5tYM.mp4" type="video/mp4"></video>
+<video width="800px" preload loop autoplay muted><source src="https://cdn.tw93.fun/blog/upic/IB5tYM.mp4" type="video/mp4"></video>
 
 **If you also use the official ChatGPT client, try my configuration**
 I found a simple and useful trick. When you find your ChatGPT is too wordy and the output isn't crisp enough, I highly recommend going to Settings -> Personalization, setting the style to "Professional", and setting the traits like Emojis to "Less". This way, your ChatGPT's responses will be much more comfortable, very suitable for engineers. You can also add my custom instructions, which I find makes it much better.
@@ -47,17 +47,17 @@ Output Rules:
 Prohibit: Repeating the question, excessive pleasantries, meaningless "Okay" openings
 ```
 
-<img src="https://cdn.fliggy.com/upic/SwMyAv.png" width="800">
+<img src="https://cdn.tw93.fun/blog/upic/SwMyAv.png" width="800">
 
 **An interesting website check tool: Web-Check**
 <https://web-check.xyz>
 Recently I found an interesting website check tool called Web-Check, which has a bit of a hacker style. It can break down almost all the underlying information of a website for you: IP & server location, SSL & DNS records, Cookies, domain info, crawl rules, redirect history, open ports, Traceroute, DNSSEC, site performance, and associated hosts, etc. It has high information density, suitable for checking casually for fun.
-<img src="https://cdn.fliggy.com/upic/4yQluW.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/4yQluW.png" width="800" />
 
 **A free illustration site I use a lot**
 <https://storyset.com>
 The illustrations I've used in my shares over the past few years are almost never AI-generated; they all come from Storyset. It's free to use, supports custom color schemes, and can export clean SVGs, which render great when dropped directly into Keynote.
-<img src="https://cdn.fliggy.com/upic/zNv49C.png" width="800">
+<img src="https://cdn.tw93.fun/blog/upic/zNv49C.png" width="800">
 
 **Tricks for logging into Antigravity account in China**
 A friend found a way to log into the Antigravity account. Even if your address is US and age is appropriate, you might still fail to log in. I tried many methods but failed. Finally thought of using antigravity-tools for forwarding. Surprisingly it has a one-click open function. After logging in, click the one below—"One-Click Ventilation"—and it actually works directly. Very magical, sharing for friends in need.
@@ -66,16 +66,16 @@ A friend found a way to log into the Antigravity account. Even if your address i
 brew install --cask --no-quarantine antigravity-tools
 ```
 
-<img src="https://cdn.fliggy.com/upic/ookvbh.png" width="800">
+<img src="https://cdn.tw93.fun/blog/upic/ookvbh.png" width="800">
 
 ## Just looking around
 
 **Show you my drone recording**
 A rookie's second drone video. The background music is "Swift" by Nanqing Band, which I've been listening to a lot recently. It was all pretty beautiful until the end—you must watch until the end, the crash came very suddenly.
-<video width="800px" preload controls><source src="https://cdn.fliggy.com/upic/mgdMjR.mp4" type="video/mp4"></video>
+<video width="800px" preload controls><source src="https://cdn.tw93.fun/blog/upic/mgdMjR.mp4" type="video/mp4"></video>
 
 **Zhang Gong Guan's salt and pepper duck head is the best I've ever had, highly recommended!**
-<img src="https://cdn.fliggy.com/upic/4HzHk3.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/4HzHk3.png" width="800" />
 
 **If Apple releases this this year, I will definitely swap my iPhone Air for it!**
 Generated using Gemini's Banana, with my desk in the shot.
@@ -83,14 +83,14 @@ Generated using Gemini's Banana, with my desk in the shot.
 <table style="margin-top:-18px; margin-left:-4px">
     <tr>
         <td width="50%">
-          <img src="https://cdn.fliggy.com/upic/Po7v42.png" width="400" />
+          <img src="https://cdn.tw93.fun/blog/upic/Po7v42.png" width="400" />
         </td>
         <td width="50%">
-            <img src="https://cdn.fliggy.com/upic/AmekP9.png" width="400" />
+            <img src="https://cdn.tw93.fun/blog/upic/AmekP9.png" width="400" />
         </td>
    </tr>
 </table>
 
 **Brothers, go look at the reviews for this on Douban, you will find how absurd this world is**
 <https://movie.douban.com/subject/30205129/>
-<img src="https://cdn.fliggy.com/upic/kg2GBn.png" width="400" class="border"/>
+<img src="https://cdn.tw93.fun/blog/upic/kg2GBn.png" width="400" class="border"/>

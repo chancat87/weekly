@@ -4,7 +4,7 @@ date: 2021/05/04
 
 <img src="https://gw.alipayobjects.com/zos/k/app2/121231231ddds.gif" width="800" />
 
-<small>The cover shows a live [folk performance](https://cdn.fliggy.com/upic/sYBFaz.mp4) in a small bar. Click the image to see the video—the vibe was incredibly relaxing.</small>
+<small>The cover shows a live [folk performance](https://cdn.tw93.fun/blog/upic/sYBFaz.mp4) in a small bar. Click the image to see the video—the vibe was incredibly relaxing.</small>
 
 > **Record the down-to-earth trending technologies seen every week, and publish them here after screening. If you find it good, you can follow this weekly to get update notifications.**
 
@@ -49,20 +49,20 @@ A GPU-accelerated terminal emulator written in Rust—and yes, it plays Mario.
 **filepond: A Flexible File Upload Library**  
 <https://github.com/pqina/filepond>  
 Drag-and-drop file uploading with a beautiful UI and support for all major frameworks.  
-<img src="https://cdn.fliggy.com/upic/R0ThQS.gif" width=300/>
+<img src="https://cdn.tw93.fun/blog/upic/R0ThQS.gif" width=300/>
 
 **ytfzf: Search and Watch YouTube in the Terminal**  
 <https://github.com/pystardust/ytfzf>  
-<img src="https://cdn.fliggy.com/upic/yhDZOX.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/yhDZOX.gif" width="800" />
 
 **PaddleGAN: Trendy AI Image Processing from Baidu**  
 <https://github.com/PaddlePaddle/PaddleGAN>  
-<img src="https://cdn.fliggy.com/upic/3rttI6.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/3rttI6.gif" width="800" />
 
 **Svelte NodeGUI: High-Performance Desktop Apps**  
 <https://svelte.nodegui.org/>  
 Build cross-platform apps using Svelte and Node.js with native performance.  
-<img src="https://cdn.fliggy.com/upic/WJtQKD.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/WJtQKD.jpg" width="800" />
 
 ## Just Looking Around
 

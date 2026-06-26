@@ -113,4 +113,4 @@ Some folks worry that nobody will read what they write, so they hold back or jus
 
 That took 10 minutes to write. Done. Happy to hear how you learn new fields. The video below is a recording of the learning repo for the LLM training article I mentioned, the one coming out soon. It shows my "industrial-scale" way of learning. Kind of fun to look at.
 
-<video width="800px" preload controls muted><source src="https://cdn.fliggy.com/pic/llm45.mp4" type="video/mp4"></video>
+<video width="800px" preload controls muted><source src="https://cdn.tw93.fun/blog/pic/llm45.mp4" type="video/mp4"></video>

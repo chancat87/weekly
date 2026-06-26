@@ -28,7 +28,7 @@ On iPhone: I've also moved back to the native keyboard after experimenting with 
 **The Chinese Web Font Project**  
 <https://chinese-font.netlify.app/>  
 A brilliant collection of beautiful Chinese fonts for web developers. it provides CDN links for fonts like LxgwWenKai, handling on-demand loading and fast rendering automatically.  
-<img src="https://cdn.fliggy.com/upic/ZYWTzU.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/ZYWTzU.jpg" width="800" />
 
 **Queryable: Offline Natural Language Photo Search**  
 <https://queryable.app/>  
@@ -38,14 +38,14 @@ Search your photos with natural language entirely offline. No data leaves your d
 **Novu: Open-Source Notification Infrastructure**  
 <https://github.com/novuhq/novu>  
 A unified API for sending notifications across all channels—in-app, push, email, SMS, and chat. you can create custom workflows and conditions to ensure your messages land effectively.  
-<img src="https://cdn.fliggy.com/upic/sVoIpu.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/sVoIpu.gif" width="800" />
 
 ## Just Looking Around
 
 **How to Escape Poverty (Li Yongle)**  
 <https://youtube.com/watch?v=aBTDvlteZcs>  
 A classic lesson from Li Yongle on the difference between the poor and the rich, and how to break the cycle. simple, grounded, and very easy to follow.  
-<img src="https://cdn.fliggy.com/upic/eICc1b.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/eICc1b.jpg" width="800" />
 
 **Deekay’s Character Animations**  
 <https://deekaykwon.com/>  

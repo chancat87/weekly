@@ -41,12 +41,12 @@ Godot is a powerful engine for creating 2D and 3D games with a unified interface
 **Emojimix: Merge Your Favorite Emojis**  
 <https://tikolu.net/emojimix/>  
 A fun tool that lets you merge two emojis into weird and wonderful new ones. it’s a great way to generate unique sticker ideas.  
-<img src="https://cdn.fliggy.com/upic/C9ez0B.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/C9ez0B.png" width="800" />
 
 **Generative Image Dynamics**  
 <https://generative-dynamics.github.io/>  
 This research from Google transforms a single image into a seamless looping video or an interactive dynamic scene with very natural results.  
-<img src="https://cdn.fliggy.com/upic/tKvqX5.gif" width="800"/>
+<img src="https://cdn.tw93.fun/blog/upic/tKvqX5.gif" width="800"/>
 
 ## Just Looking Around
 

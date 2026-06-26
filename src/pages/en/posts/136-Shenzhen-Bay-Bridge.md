@@ -36,12 +36,12 @@ Integrate Midjourney into your own systems or chat tools via this API proxy for 
 **Chat2DB: The Intelligent SQL Client**  
 <https://github.com/chat2db/Chat2DB>  
 An AI-powered SQL client that helps non-technical users write queries and generate reports. it simplifies the process of interacting with databases significantly.  
-<a href="https://cdn.fliggy.com/upic/0wq7t5.mp4" target="_blank"><video width="800px" autoplay preload loop muted><source src="https://cdn.fliggy.com/upic/0wq7t5.mp4" type="video/mp4"></video></a>
+<a href="https://cdn.tw93.fun/blog/upic/0wq7t5.mp4" target="_blank"><video width="800px" autoplay preload loop muted><source src="https://cdn.tw93.fun/blog/upic/0wq7t5.mp4" type="video/mp4"></video></a>
 
 **Tech Brand Logo Collection (Figma)**  
 <https://figma.com/community/file/1246098308176329289/>  
 A collection of over 200 high-quality tech brand logos in Figma, ready for you to use or edit.  
-<img src="https://cdn.fliggy.com/upic/qRQHYj.png"  width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/qRQHYj.png"  width="800" />
 
 ## Just Looking Around
 

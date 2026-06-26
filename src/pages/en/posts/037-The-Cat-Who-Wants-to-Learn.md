@@ -31,7 +31,7 @@ Before reading the article: if you were asked to write a simple HTML-to-AST pars
 **fzf: A Command-Line Fuzzy Finder**  
 <https://github.com/junegunn/fzf>  
 An essential tool that makes finding files, history, and processes in your terminal blazingly fast.  
-<img src="https://cdn.fliggy.com/upic/VO9evM.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/VO9evM.jpg" width="800" />
 
 **lowdb: A Tiny JSON Database for Small Projects**  
 <https://github.com/typicode/lowdb>  

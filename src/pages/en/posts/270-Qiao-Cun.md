@@ -2,7 +2,7 @@
 date: 2026/06/15
 ---
 
-<img src="https://cdn.fliggy.com/pic/27034.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/pic/27034.jpg" width="800" />
 
 <small>The cover photo was taken over the weekend when I went to Qiao Cun for a meal, just a casual snap. Their food is great, the avocado and salmon are really tasty. Whenever a friend visits Hangzhou, I usually take them here or to Zhang's Mansion.</small>
 
@@ -13,7 +13,7 @@ date: 2026/06/15
 **If a friend of yours needs to update their resume soon, you have to recommend Kami to them**
 <https://github.com/tw93/Kami>
 If a friend of yours needs to update their resume soon, you have to recommend Kami to them. I tuned a dedicated version carefully, so Kami alone makes writing a resume genuinely handy, good-looking, and clear. Have them get their raw source material ready in Markdown, then tell the AI `/kami help me produce a resume`, tweak it once or twice, and it's pretty much done. It's not just layout, it also helps optimize and organize your resume content, looking at the talent profile from the perspective of a technical final-round interviewer.
-<img src="https://cdn.fliggy.com/pic/9MamaP33.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/pic/9MamaP33.png" width="800" />
 
 ## Product Releases
 
@@ -23,21 +23,21 @@ This release updates a ton of things, including support for users with accessibi
 
 It's been exactly one month since Mole's Mac version launched, written in my spare time, and the numbers are kind of fun. In total I wrote 110,000 lines of Swift, including 36,000 lines of test code and 1,983 unit tests, shipped 8 releases, added 145 new features, and supported 9 languages. It's the last day of the early-bird price and MOLEWEEKLY still works, so anyone interested is welcome to give it a try. More surprises to come.
 
-<video width="800px" preload="metadata" controls><source src="https://cdn.fliggy.com/pic/mole318.mp4" type="video/mp4"></video>
+<video width="800px" preload="metadata" controls><source src="https://cdn.tw93.fun/blog/pic/mole318.mp4" type="video/mp4"></video>
 
 **Kaku has finally updated to version 0.12 as well**
 Kaku even has its own little official site now <https://kaku.fun/>, go take a look. This update brings quite a few things: it now restores session history after you reopen a window, supports AI features you can use directly once logged in with the Codex backend, opens PDFs, images, audio and video, archives, and Office documents with the system default app, and when all panels are sitting at the shell prompt, Cmd+Q quits directly, plus other fun features. Go check out the Release.
-<img src="https://cdn.fliggy.com/pic/8fKF3s43.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/pic/8fKF3s43.png" width="800" />
 
 **Some fun recent updates to Pake**
 <http://github.com/tw93/Pake>
 Pake packages a web page into a lightweight desktop app with one command, supporting macOS, Windows, and Linux. Recently it added cmd+f content search, right-click download support, dots in desktop app names, clearer error messages when AppImage builds fail on Linux, a pnpm 11 compatibility fix, and more.
-<img src="https://cdn.fliggy.com/pic/pake128.gif" width="800">
+<img src="https://cdn.tw93.fun/blog/pic/pake128.gif" width="800">
 
 ## Just Chatting
 
 **I'm not an influencer, not a content creator, not a KOL, so what am I**
-<img src="https://cdn.fliggy.com/pic/jDQIRZ22.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/pic/jDQIRZ22.png" width="800" />
 My Twitter earnings are only a bit over 100 dollars each time, probably far less than most blue checkmarks, even lower than that friend who got burned twice by Tauri, which is kind of funny. Why so little? Haha, I should reflect on it, and along the way share my failure experience with everyone.
 
 First off, I'm not an influencer, not a content creator, not a KOL, nothing really, just an ordinary engineer who writes a bit of hobby code. Twitter, to me, is a way to sync the changelogs of my open-source products to everyone, and to share daily life posts about where I went, what I ate, what I watched. There's no traffic pressure at all, and no pressure to turn traffic into money, so if the earnings are small, so be it. That actually happens to make this an account I like more and more.

@@ -17,7 +17,7 @@ A fascinating article on how one developer used his WeChat export and hundreds o
 **The GPT-3 Moment for Computer Vision (CV)**  
 <https://mp.weixin.qq.com/s/1a-5qM4VrSV53k6VmuPUVA>  
 Where is CV research headed next? This article discusses whether computer vision is having its own "generative AI" moment.  
-<img src="https://cdn.fliggy.com/upic/xttVuh.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/xttVuh.gif" width="800" />
 
 **Video Frame Extraction with FFmpeg and Wasm**  
 <https://mp.weixin.qq.com/s/D4WIAL13ytjoM6fgl4nUPA>  
@@ -33,7 +33,7 @@ I used to install and uninstall Docker because it was so heavy for my Mac, but O
 **RapidAPI (formerly Paw): Pro API Client for Mac**  
 <https://paw.cloud/>  
 Many experienced Mac devs know Paw—it’s always been more performant and beautiful than Postman. it’s now renamed to RapidAPI and is free to use, making it a no-brainer for API testing and debugging.  
-<img src="https://cdn.fliggy.com/upic/FD39XN.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/FD39XN.png" width="800" />
 
 **Radio Garden: Tune into the World**  
 <http://radio.garden/>  
@@ -43,12 +43,12 @@ A stunning 3D visualization of the globe that lets you tune into live radio stat
 **Glarity: AI Web Summarizer**  
 <https://glarity.app/zh-hans>  
 A universal ChatGPT-powered extension for summarizing YouTube videos, Google results, GitHub repos, and any website. the UI is unobtrusive and the summaries are consistently high quality.  
-<img src="https://cdn.fliggy.com/upic/xJWbtt.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/xJWbtt.png" width="800" />
 
 **Aicolors: Generative Color Palettes**  
 <https://aicolors.co/>  
 A color palette tool that now supports generative AI descriptions. simply describe the vibe you're going for and it returns a coordinated palette with code ready for your project.  
-<img src="https://cdn.fliggy.com/upic/kGCHXQ.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/kGCHXQ.gif" width="800" />
 
 ## Just Looking Around
 

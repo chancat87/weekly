@@ -29,7 +29,7 @@ A case study on how one company cut their annual server bill from $1M to $200k b
 **How Do QR Codes Actually Work?**  
 <https://typefully.com/DanHollick/qr-codes-T7tLlNi>  
 A fascinating breakdown of the math and structure behind the squares we scan every day.  
-<img src="https://cdn.fliggy.com/upic/EF9y2K.jpg" width="800"/>
+<img src="https://cdn.tw93.fun/blog/upic/EF9y2K.jpg" width="800"/>
 
 ## Trending Open Source
 

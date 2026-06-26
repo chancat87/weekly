@@ -19,7 +19,7 @@ Pake V3.3.5 Smooth is out! Transforming webpages into desktop apps with an even 
 - ⚡ Easier for developers: Completely migrated to pnpm for faster installation. GitHub Actions integration makes it simpler for third-party calls to Pake.
 - 🚀 Advanced features unlocked: Enhanced WebAssembly support. Added `--keep-binary` option for more flexible complex app configurations.
 
-<img src="https://cdn.fliggy.com/upic/rC5uPp.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/rC5uPp.gif" width="800" />
 
 **Collection of technical internships abroad for Summer 2026**  
 <https://github.com/SimplifyJobs/Summer2026-Internships>  
@@ -51,12 +51,12 @@ OnyX is a free macOS system maintenance tool that supports verifying system disk
 **"Twilight of the Warriors: Walled In" is so good!**  
 <https://movie.douban.com/subject/36600459/>  
 It's been many years since I've seen such a heart-pounding action movie. It could be called the best Hong Kong action film of the last 10 years. Extremely cool; friends who haven't seen it should go watch it.  
-<img src="https://cdn.fliggy.com/upic/fZRpD7.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/fZRpD7.png" width="800" />
 
 ## Random Thoughts
 
 **Final solution for fixing your Mac**  
-<img src="https://cdn.fliggy.com/upic/haz5ei.png" width="800" />  
+<img src="https://cdn.tw93.fun/blog/upic/haz5ei.png" width="800" />  
 When your Mac has problems requiring a fix—like a black screen not turning on, or if you can't update the system no matter what and Recovery Mode fails—you can try DFU (Device Firmware Update) mode as a final resort. It works very well.
 
 You'll need another Mac computer connected via a USB-C cable. The auxiliary computer needs to use the port closest to the screen. On the Mac to be fixed, long-press the power button to turn it off. Install Apple Configurator on the auxiliary computer. Then comes the key part: on the Mac to be fixed, press and hold Right Shift + Left Control + Left Option + Power button for 10 seconds, then release the three keys EXCEPT the power button and keep holding it for about 7 seconds. It feels like pressing buttons on a slot machine; kudos to Apple for coming up with that. The DFU mode will appear in Apple Configurator on the auxiliary computer. Don't click "Restore" as it wipes the computer; find "Actions" -> "Advanced" -> "Revive Device" in the menu bar and wait.

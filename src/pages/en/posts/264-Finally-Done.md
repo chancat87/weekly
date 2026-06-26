@@ -13,7 +13,7 @@ date: 2026/04/06
 **How I Deep-Dive into a New Technical Domain in the AI Era**
 <https://tw93.fun/2026-04-06/learn.html>
 A follow-up to the learning writeup from last time, combined with the /learn skill inside Waza, walking through how I actually wrote that previous large model article. Hope it is useful to you.
-<img src="https://cdn.fliggy.com/pic/deep04.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/pic/deep04.png" width="800" />
 
 ## Building a Little Robot Dog
 
@@ -27,41 +27,41 @@ The first sign of life. I was so happy I couldn't describe it.
 
 **April 5, 12:07 AM: v0.1.0-beta1**
 Got the WiFi module, AI module, microcontroller module, and quad-leg module all running together. Tomorrow I'll attach the legs and tune the screen. Going to sleep right now!
-<video width="800px" preload="metadata" controls><source src="https://cdn.fliggy.com/pic/IMG_032613.mp4" type="video/mp4"></video>
+<video width="800px" preload="metadata" controls><source src="https://cdn.tw93.fun/blog/pic/IMG_032613.mp4" type="video/mp4"></video>
 
 **April 5, 1:45 PM: v0.1.0-beta2**
 Mechanical leg control is working. It can crouch, sleep, and walk. Still rough around the edges, but one of the leg motors from the order looks like it has a problem. Waiting on a replacement part.
-<video width="800px" preload="metadata" controls><source src="https://cdn.fliggy.com/pic/new01.mp4" type="video/mp4"></video>
+<video width="800px" preload="metadata" controls><source src="https://cdn.tw93.fun/blog/pic/new01.mp4" type="video/mp4"></video>
 
 **April 6, 10:33 AM: v0.1.0-beta3**
 All four legs are fully under control now. But I burned the screen during debugging. Waiting on shipping. Can't wait to release.
-<img src="https://cdn.fliggy.com/pic/IMG_0379.jpg06.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/pic/IMG_0379.jpg06.jpg" width="800" />
 
 **April 8, 11:37 PM: v0.1.0-beta4**
 The replacement screen arrived after work. Got it running, then tuned the temperature, CO2, infrared, and lighting sensors all in one go. Still working on WiFi provisioning. It's basically taking shape now, just need to seal and secure everything.
-<video width="800px" preload="metadata" controls><source src="https://cdn.fliggy.com/pic/IMG_043028.mp4" type="video/mp4"></video>
+<video width="800px" preload="metadata" controls><source src="https://cdn.tw93.fun/blog/pic/IMG_043028.mp4" type="video/mp4"></video>
 
 **April 11, 11:30 AM: v0.1.0 finally ships 🎉**
 Sealed up the battery pack and tied a few straps around it to keep things from falling apart. Got the WiFi and AI conversation module working too. Using DeepSeek makes it noticeably faster, response speed is decent. Next up: something with more advanced hardware.
-<video width="800px" preload="metadata" controls><source src="https://cdn.fliggy.com/pic/26F9D347-A9C8-4DCC-811A-033887BD049515.mp4" type="video/mp4"></video>
+<video width="800px" preload="metadata" controls><source src="https://cdn.tw93.fun/blog/pic/26F9D347-A9C8-4DCC-811A-033887BD049515.mp4" type="video/mp4"></video>
 
 **A few photos from different angles to mark the moment**
 
 <table style="margin-top:-20px">
     <tr>
         <td width="50%">
-           <img src="https://cdn.fliggy.com/pic/26410.jpg" width="600" />
+           <img src="https://cdn.tw93.fun/blog/pic/26410.jpg" width="600" />
         </td>
         <td width="50%">
-           <img src="https://cdn.fliggy.com/pic/IMG_050519.JPG" width="600" />
+           <img src="https://cdn.tw93.fun/blog/pic/IMG_050519.JPG" width="600" />
         </td>
     </tr>
     <tr>
         <td width="50%">
-           <img src="https://cdn.fliggy.com/pic/IMG_050736.JPG" width="600" />
+           <img src="https://cdn.tw93.fun/blog/pic/IMG_050736.JPG" width="600" />
         </td>
         <td width="50%">
-           <img src="https://cdn.fliggy.com/pic/IMG_050944.JPG" width="600" />
+           <img src="https://cdn.tw93.fun/blog/pic/IMG_050944.JPG" width="600" />
         </td>
     </tr>
 </table>
@@ -71,7 +71,7 @@ Sealed up the battery pack and tied a few straps around it to keep things from f
 **App Store Price: Look up app prices across different countries and regions**
 <https://app.vbr.me>
 A handy little tool. You can check what an app costs in any App Store region, like figuring out which country has the cheapest Claude subscription. I'll probably find a use for this soon.
-<img src="https://cdn.fliggy.com/pic/Pnc8XN58.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/pic/Pnc8XN58.png" width="800" />
 
 ## Random Thoughts
 
@@ -91,4 +91,4 @@ The second happened recently, during National Day. I had gotten two first-class 
 
 So if you are building a product, think about giving your users something far beyond what they expect in the moments when they really need it, rather than chasing clicks with tricks. When you do that, people will genuinely love your product and become your most loyal fans.
 
-<img src="https://cdn.fliggy.com/pic/lxEYPC26.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/pic/lxEYPC26.png" width="800" />

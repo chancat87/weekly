@@ -27,22 +27,22 @@ A breakdown of the essential concepts in modern web architecture, including Stat
 **GitHub Wrapped: Your Year in Code**  
 <https://wrapped.run/>  
 See a beautiful visualization of your GitHub activity from the past year. it’s a fun way to look back on what you’ve accomplished.  
-<img src="https://cdn.fliggy.com/upic/TPVbZG.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/TPVbZG.png" width="800" />
 
 **UIVerse: A Library of Unique Components**  
 <https://uiverse.io/>  
 A massive collection of creative, pre-styled UI components that you can easily copy and paste into your own projects to add some flair.  
-<img src="https://cdn.fliggy.com/upic/vnIkSq.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/vnIkSq.png" width="800" />
 
 **XMind Mindmap Gallery**  
 <https://xmind.app/share/?category=zh>  
 A gallery of interesting and informative mindmaps shared by users. it’s a great place to find inspiration for organizing your own complex thoughts and research.  
-<img src="https://cdn.fliggy.com/upic/hdyjV1.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/hdyjV1.png" width="800" />
 
 **Web Design Museum: Digital History**  
 <https://www.webdesignmuseum.org/>  
 Explore over 2,000 carefully selected websites, software, and logos from 1991 to the present. it’s a fascinating way to trace the evolution of digital design.  
-<img src="https://cdn.fliggy.com/upic/zp8ivk.jpeg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/zp8ivk.jpeg" width="800" />
 
 ## Just Looking Around
 
@@ -60,4 +60,4 @@ The first book I read in 2023 was Lei Jun’s "Xiaomi Entrepreneurship Thinking.
 **Code Effect of the Week: Sparkly Skull ✨**  
 <https://codepen.io/Mamboleoo/pen/yLbxYdx>  
 An incredible 3D effect built with Three.js from the ground up. the complexity and delicacy of the sparkly skull are truly mesmerizing—definitely check out the source code.  
-<img src="https://cdn.fliggy.com/upic/XOb0KT.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/XOb0KT.gif" width="800" />

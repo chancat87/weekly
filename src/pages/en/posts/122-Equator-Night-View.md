@@ -31,27 +31,27 @@ PHP is approaching its 30th birthday. this post reflects on its current state an
 **NASA's Eyes: A 3D Space Explorer**  
 <https://eyes.nasa.gov/>  
 A stunning 3D visualization of the solar system, planets, and satellites in real-time. it’s an incredible resource for space enthusiasts to explore the universe from their browser.  
-<img src="https://cdn.fliggy.com/upic/Ft2sjE.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/Ft2sjE.png" width="800" />
 
 **Drive & Listen: POV Driving Around the World**  
 <https://driveandlisten.herokuapp.com/>  
 Experience a relaxing drive through various world cities with real dashboard POVs and local radio stations. it’s surprisingly immersive and therapeutic.  
-<img src="https://cdn.fliggy.com/upic/9RsezP.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/9RsezP.gif" width="800" />
 
 **VisBug: A Design Tool for Browsers**  
 <https://chrome.google.com/webstore/detail/visbug/cdockenadnadldjbbgcallicgledbeoc>  
 A browser extension that lets you edit any webpage visually. move elements, edit text, and tweak styles with an interface that feels like Figma—perfect for quick debugging and design tweaks.  
-<img src="https://cdn.fliggy.com/upic/2kacaW.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/2kacaW.gif" width="800" />
 
 **Untools: Better Thinking Patterns**  
 <https://untools.co/>  
 A collection of mental models and thinking frameworks (like the Pyramid Principle or Second-Order Thinking) to help you solve problems and make better decisions.  
-<img src="https://cdn.fliggy.com/upic/jsnTLd.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/jsnTLd.gif" width="800" />
 
 **WakaTime: Track Your Coding Activity**  
 <https://wakatime.com/>  
 An automated time-tracking plugin for almost every IDE. it gives you a detailed breakdown of your coding hours, languages used, and projects worked on—great for productivity self-reflection.  
-<img src="https://cdn.fliggy.com/upic/BEf1VS.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/BEf1VS.png" width="800" />
 
 ## Just Looking Around
 

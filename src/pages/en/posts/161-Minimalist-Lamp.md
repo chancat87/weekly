@@ -34,7 +34,7 @@ Instead of just looking at new AI tools, it's interesting to see which ones have
 **Jan: Offline Desktop LLM**  
 <https://github.com/janhq/jan>  
 An open-source ChatGPT alternative that runs entirely offline on your computer. I particularly like its clean UI design.  
-<img src="https://cdn.fliggy.com/upic/kv0MZZ.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/kv0MZZ.gif" width="800" />
 
 ## Just Looking Around
 
@@ -46,7 +46,7 @@ A fascinating interview where Musk discusses Twitter, Tesla, and how his brain w
 **Douban's 2023 Movie List**  
 <https://movie.douban.com/annual/2023/>  
 A great place to find movies you might have missed last year. The section on filmmakers who passed away in 2023 is very touching.  
-<img src="https://cdn.fliggy.com/upic/qnIySt.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/qnIySt.png" width="800" />
 
 **How to Make Money in the Post-Information-Asymmetry Era**  
 <https://zhihu.com/question/268481226>  

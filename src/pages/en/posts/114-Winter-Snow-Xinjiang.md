@@ -27,22 +27,22 @@ A discussion on how designers and developers can collaborate more effectively to
 **Global Live HD Webcams**  
 <https://www.skylinewebcams.com/>  
 A fascinating site for armchair travelers. SkylineWebcams lets you watch live feeds from around the world—from the Western Wall in Jerusalem to volcanic eruptions in Etna and elephants in South Africa.  
-<img src="https://cdn.fliggy.com/upic/cOkvoA.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/cOkvoA.jpg" width="800" />
 
 **PoemPic: AI Poetry for your Photos**  
 <https://shipian.zsio.net/>  
 If you have a great photo but don’t know what to write, try PoemPic. it uses AI to analyze your image and find a matching poem. I tried it with some of my travel shots and the results were surprisingly poignant.  
-<img src="https://cdn.fliggy.com/upic/O26hgr.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/O26hgr.jpg" width="800" />
 
 **Data Explorer: GitHub Insights via SQL (Powered by AI)**  
 <https://ossinsight.io/explore/>  
 OSSInsight has released a new tool that lets you query GitHub data using natural language. it uses AI to turn your questions into complex SQL queries—perfect for digging into the fastest-growing projects of 2022.  
-<img src="https://cdn.fliggy.com/upic/72jIry.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/72jIry.jpg" width="800" />
 
 **URL Animations: Animating your Address Bar**  
 <https://lunarfang416.github.io/url-animations/>  
 While we usually animate the page, this library lets you control the browser's address bar. it uses `location.replace` and `setInterval` to create scrolling or changing URL effects. it’s a brilliant, if slightly chaotic, trick.  
-<img src="https://cdn.fliggy.com/upic/NobxTQ.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/NobxTQ.gif" width="800" />
 
 ## Just Looking Around
 
@@ -57,4 +57,4 @@ A treasure trove of design case studies and review documents from across the Chi
 **The Glory: A Masterclass in Revenge Dramas**  
 <https://movie.douban.com/subject/35314632/>  
 Highly recommend this Netflix series starring Song Hye-kyo. it’s beautifully shot, the dialogue is sharp, and the performances are top-tier. I watched most of it during my flight to Xinjiang.
-<img src="https://cdn.fliggy.com/upic/HKaKBg.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/HKaKBg.png" width="800" />

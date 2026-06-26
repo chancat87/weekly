@@ -27,7 +27,7 @@ A collection of English learning methods by Li Xiaolai—very practical and wort
 **screenshot-to-code: Convert Screenshots to Frontend Code**  
 <https://github.com/abi/screenshot-to-code>  
 An open-source tool that uses GPT-4 Vision to convert screenshots into real frontend code, and DALL-E 3 to generate similar-looking placeholder images. It even supports cloning a site from a URL. Once this matures, frontend devs can focus on even more meaningful problems.  
-<video width="800px" muted preload autoplay loop><source src="https://cdn.fliggy.com/upic/AUGGp2.mp4" type="video/mp4" poster="https://cdn.fliggy.com/upic/Gmfeg6.png"></video>
+<video width="800px" muted preload autoplay loop><source src="https://cdn.tw93.fun/blog/upic/AUGGp2.mp4" type="video/mp4" poster="https://cdn.tw93.fun/blog/upic/Gmfeg6.png"></video>
 
 **Chi's Inspiration Collection**  
 <https://uxchi.notion.site/881b4c0179a74935a3f607ad3521cdb5>  
@@ -44,12 +44,12 @@ A fun game for JS beginners. you control a robot's actions by writing functions 
 **"Until the End of the World" (Wong Ka Kui Version)**  
 <https://www.youtube.com/watch?v=uCNAvgjaKQw>  
 This KaKuiAI cover of the Slam Dunk theme is incredible. it’s a beautiful example of how AI can be used to honor legends—Slum Dunk fans and Beyond fans will love it.  
-<img src="https://cdn.fliggy.com/upic/WzLOLc.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/WzLOLc.png" width="800" />
 
 **Book Recommendation: Build (托尼·法德尔 - 《创造》)**  
 <https://book.douban.com/subject/36071759/>  
 Tony Fadell (the "father of the iPod") shares unconventional advice for engineers. how to pick a career, plan your life, become a good manager, design products, and start a company. "Getting things done" is the most important skill for a great engineer.  
-<img src="https://cdn.fliggy.com/upic/YOWZNW.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/YOWZNW.jpg" width="800" />
 
 **YouTube Channel: Traversy Media**  
 <https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA>  

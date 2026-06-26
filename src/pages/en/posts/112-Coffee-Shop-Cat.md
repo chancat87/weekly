@@ -18,12 +18,12 @@ I used Pake to bundle ZLibrary into a tiny, cross-platform desktop app for Mac, 
 **RunCat: CPU Usage as an Animation**  
 <https://kyome.io/runcat/index.html>  
 This classic utility is still being updated! it puts a cat (or other animals) in your menu bar that runs faster as your CPU usage increases. it’s a fun, visual way to keep an eye on your system load.  
-<img src="https://cdn.fliggy.com/upic/cvyVqr.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/cvyVqr.gif" width="800" />
 
 **CLAY.CSS: Jelly-Like Design Effects**  
 <https://codeadrian.github.io/clay.css/>  
 A delightful CSS library for creating 3D "claymorphism" effects. the jelly-like aesthetics and soft colors are a refreshing break from standard flat design.  
-<img src="https://cdn.fliggy.com/upic/rM09EH.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/rM09EH.png" width="800" />
 
 **Allinone.tools: The Online Utility Suite**  
 <https://allinone.tools/>  
@@ -66,4 +66,4 @@ A reflection on the social pressures of buying the "perfect" gifts for relatives
 **Code Effect of the Week: Nova - Points**  
 <https://codepen.io/prisoner849/pen/RwyzrVj>  
 A beautiful particle animation implemented with Three.js. the colors are vibrant and the performance is remarkably smooth.  
-<img src="https://cdn.fliggy.com/upic/dW2TqP.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/dW2TqP.gif" width="800" />

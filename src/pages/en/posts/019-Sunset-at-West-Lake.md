@@ -31,7 +31,7 @@ Detailed documentation on how Zhihu built its own mini-program runtime. It's a l
 **Mannequin.js: A Poseable Humanoid Model Library**  
 <https://boytchev.github.io/mannequin.js/>  
 A simple library with a very clear API—and a surprisingly humorous visual effect.  
-<img src="https://cdn.fliggy.com/upic/R8FaV4.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/R8FaV4.gif" width="800" />
 
 **SpaceX API**  
 <https://github.com/r-spacex/SpaceX-API>  

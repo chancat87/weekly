@@ -27,17 +27,17 @@ Deep insights from Zi Yi's "Front-End Reading" series. Since he’s become less 
 **Picsee: Screenshot & Image Management for Mac**  
 <https://picsee.chitaner.com/>  
 I’ve finally found the perfect image management tool. It handles full-page screenshots, image hosting, and organization—honestly the best free option on macOS right now.  
-<img src="https://cdn.fliggy.com/upic/XETRlc.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/XETRlc.jpg" width="800" />
 
 **cz-emoji-chinese: Stylish Git Commit Emojis in Chinese**  
 <https://github.com/tw93/cz-emoji-chinese>  
 I couldn’t find a good Chinese version of cz-emoji, so I made my own. I’ve used it for a year now and it really does make commits more fun.  
-<img src="https://cdn.fliggy.com/upic/5v0xCC.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/5v0xCC.gif" width="800" />
 
 **re3: The Reverse Engineered GTA III and Vice City**  
 <https://github.com/GTAmodding/re3>  
 Play the classics natively across Windows, Linux, and macOS.  
-<img src="https://cdn.fliggy.com/upic/poRyGW.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/poRyGW.jpg" width="800" />
 
 **CloudWeGo Kitex: Bytedance’s Go RPC Framework**  
 <https://github.com/cloudwego/kitex>  

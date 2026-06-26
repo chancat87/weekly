@@ -36,12 +36,12 @@ Perfect for someone like me who often struggles to find the "perfect" word to de
 **Ethereum Boilerplate: Full-Stack Ethereum Template**  
 <https://github.com/ethereum-boilerplate/ethereum-boilerplate>  
 A comprehensive starting point for anyone looking to build decentralized applications on Ethereum.  
-<img src="https://cdn.fliggy.com/upic/V6nqWK.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/V6nqWK.gif" width="800" />
 
 **Hacker Scripts: Based on a True Story**  
 <https://github.com/NARKOZ/hacker-scripts>  
 A hilarious (and legendary) collection of scripts used to automate... everything.  
-<img src="https://cdn.fliggy.com/upic/HRa1TP.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/HRa1TP.jpg" width="800" />
 
 **pnpm: Fast, Disk Space Efficient Package Manager**  
 <https://pnpm.io/>  
@@ -56,12 +56,12 @@ A 2D game engine built on top of Flutter. It looks perfect for building simple, 
 **Apple Now Supports Custom Product Pages in the App Store**  
 <https://help.apple.com/app-store-connect/#/dev3a2998d9f>  
 Developers can now create multiple versions of their product page with different screenshots and promotional text to highlight specific features for different audiences.  
-<img src="https://cdn.fliggy.com/upic/kKg9XY.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/kKg9XY.jpg" width="800" />
 
 **Building GitHub’s New Code Search Engine from Scratch**  
 <https://github.blog/2021-12-08-improving-github-code-search/>  
 A deep dive into the engineering effort behind the significantly faster and more powerful code search we now enjoy on GitHub.  
-<img src="https://cdn.fliggy.com/upic/qtD6OH.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/qtD6OH.jpg" width="800" />
 
 **On the Recent Hiring Frenzy in Inland China Factories**  
 <https://zhuanlan.zhihu.com/p/442111383>  
@@ -70,4 +70,4 @@ A look at the massive turnout for a battery manufacturing plant in Yibin, where 
 **Understanding the Log4Shell Vulnerability**  
 <https://sspai.com/post/70394>  
 What exactly was the absolute chaos caused by Log4Shell? This image pretty much sums it up.  
-<img src="https://cdn.fliggy.com/upic/27gmne.jpg" width=300/>
+<img src="https://cdn.tw93.fun/blog/upic/27gmne.jpg" width=300/>

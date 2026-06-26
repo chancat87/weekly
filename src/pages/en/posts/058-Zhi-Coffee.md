@@ -53,7 +53,7 @@ async def main():
 **Cyberwhistle: The Tesla Whistle**  
 <https://shop.tesla.com/product/cyberwhistle>  
 The official product page for Tesla's limited edition whistle. Even their e-commerce design is pretty slick.  
-<img src="https://cdn.fliggy.com/upic/VC4VD8.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/VC4VD8.jpg" width="800" />
 
 **xLua: Lua Support for C#**  
 <https://github.com/Tencent/xLua>  

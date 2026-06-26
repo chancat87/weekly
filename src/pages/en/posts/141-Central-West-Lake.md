@@ -23,22 +23,22 @@ HTMX paired with AI-assisted coding feels like a powerhouse combination. check o
 **Sweep: Your AI Junior Developer**  
 <https://github.com/sweepai/sweep>  
 Unlike Copilot, which suggests code line-by-line, Sweep reads your GitHub issues, scans your codebase, and submits full pull requests for features or bug fixes. it’s like having a digital intern for your project.  
-<video width="800px" muted preload autoplay loop><source src="https://cdn.fliggy.com/upic/CCPMgc.mp4" type="video/mp4" poster="https://cdn.fliggy.com/upic/VtPBqw.png"></video>
+<video width="800px" muted preload autoplay loop><source src="https://cdn.tw93.fun/blog/upic/CCPMgc.mp4" type="video/mp4" poster="https://cdn.tw93.fun/blog/upic/VtPBqw.png"></video>
 
 **MicroSculpture: Examining Insects in HD**  
 <http://microsculpture.net/>  
 Explore high-resolution microscopic photography of insects. the level of detail is incredible—though perhaps one to skip if you have a phobia!  
-<img src="https://cdn.fliggy.com/upic/aKKToP.gif"   width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/aKKToP.gif"   width="800" />
 
 **ClearURLs: Clean Your Address Bar**  
 <https://chrome.google.com/webstore/detail/clearurls/lckanjgmijmafbedllaakclkaicjfmnk>  
 Remove tracking and useless parameters from URLs before sharing them. A must-have for those who love clean, minimalist links.  
-<img src="https://cdn.fliggy.com/upic/FReMrC.png"   width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/FReMrC.png"   width="800" />
 
 **Little Big World: A Miniature Perspective**  
 <https://www.littlebigworld.de/episodes/>  
 Stunning tilt-shift drone and time-lapse photography that makes famous world cities look like intricate miniature models.  
-<img src="https://cdn.fliggy.com/upic/8cD62G.png"   width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/8cD62G.png"   width="800" />
 
 ## Just Looking Around
 

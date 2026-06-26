@@ -19,7 +19,7 @@ Finally finished my annual summary on the fifth day of the Lunar New Year. I'm u
 **Perhaps you need a lightweight, summonable DeepSeek desktop version**  
 <https://github.com/tw93/Pake>  
 Pake has optimized the DeepSeek display effect, including logo adjustment and style optimization. I suddenly realized the dark mode looks great. A bit of tweaking for my daily needs has made it very useful. You can find the download in the Pake application.  
-<img src="https://cdn.fliggy.com/uPic/L6Ej6Y21/.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/L6Ej6Y21/.png" width="800" />
 
 **Financial report breakdowns of interesting tech companies**  
 <https://www.appeconomyinsights.com/>  
@@ -28,26 +28,26 @@ Latest financial report breakdowns for Tesla, Microsoft, TSMC, Meta, Apple, and 
 <table style="border: none;margin-top:-12px">
     <tr>
         <td width="50%">
-          <img src="https://cdn.fliggy.com/uPic/12CxWw21/.png" width="400" />
+          <img src="https://cdn.tw93.fun/blog/upic/12CxWw21/.png" width="400" />
         </td>
         <td width="50%">
-            <img src="https://cdn.fliggy.com/uPic/kzS8GW21/.png" width="400" />
+            <img src="https://cdn.tw93.fun/blog/upic/kzS8GW21/.png" width="400" />
         </td>
     </tr>
         <tr>
         <td width="50%">
-          <img src="https://cdn.fliggy.com/uPic/7ly4o321/.png" width="400" />
+          <img src="https://cdn.tw93.fun/blog/upic/7ly4o321/.png" width="400" />
         </td>
         <td width="50%">
-            <img src="https://cdn.fliggy.com/uPic/XloqSe21/.png" width="400" />
+            <img src="https://cdn.tw93.fun/blog/upic/XloqSe21/.png" width="400" />
         </td>
     </tr>
             <tr>
         <td width="50%">
-          <img src="https://cdn.fliggy.com/uPic/TgZadV21/.png" width="400" />
+          <img src="https://cdn.tw93.fun/blog/upic/TgZadV21/.png" width="400" />
         </td>
         <td width="50%">
-            <img src="https://cdn.fliggy.com/uPic/GjNr0HqbgAAclUJ21/.jpeg" width="400" />
+            <img src="https://cdn.tw93.fun/blog/upic/GjNr0HqbgAAclUJ21/.jpeg" width="400" />
         </td>
     </tr>
 </table>
@@ -96,4 +96,4 @@ I've always been interested in simple, persistent things. I'm doing a small expe
 - One part buys Nasdaq, believing in current tech advantages.
 - One part buys ARKK, believing in Tesla, AI, Bitcoin, and space technologies.
 Doing this for 18 years will surely be interesting. Some friends suggested ARKK's Cathie Wood might not be the most reliable, so I might reduce that proportion slightly. I'll update the record as things change. (Not investment advice; just a fun experiment).  
-<img src="https://cdn.fliggy.com/uPic/258_3x_shots_so21.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/258_3x_shots_so21.png" width="800" />

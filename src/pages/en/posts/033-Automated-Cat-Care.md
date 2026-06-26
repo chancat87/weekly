@@ -31,22 +31,22 @@ A very clear and intuitive breakdown of the principles behind full-duplex commun
 **openhaystack: Build Your Own 'AirTags'**  
 <https://github.com/seemoo-lab/openhaystack>  
 An open-source framework for tracking personal Bluetooth devices using Apple's massive "Find My" network.  
-<img src="https://cdn.fliggy.com/upic/bWjIKL.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/bWjIKL.jpg" width="800" />
 
 **macOCR: An Extensible Text Recognition Tool**  
 <https://github.com/schappim/macOCR>  
 Great for developers looking to build their own OCR integrations. For out-of-the-box daily use, I still think [Bob](https://github.com/ripperhe/Bob) is the best choice on Mac.  
-<img src="https://cdn.fliggy.com/upic/nGNwz8.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/nGNwz8.gif" width="800" />
 
 **Motrix: A Full-Featured Download Manager**  
 <https://github.com/agalwood/Motrix>  
 Supports everything from HTTP and FTP to BitTorrent and Magnet links. Cross-platform and very polished.  
-<img src="https://cdn.fliggy.com/upic/VQn8nR.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/VQn8nR.jpg" width="800" />
 
 **Embedded Videos in GitHub READMEs**  
 <https://github.com/a327ex/SNKRX>  
 You can now drag and drop video files directly into the GitHub editor to embed them in your project documentation.  
-<img src="https://cdn.fliggy.com/upic/d9l8dh.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/d9l8dh.gif" width="800" />
 
 **secguide: Code Security Guides from Tencent**  
 <https://github.com/Tencent/secguide>  

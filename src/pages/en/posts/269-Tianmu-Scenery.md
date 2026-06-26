@@ -2,7 +2,7 @@
 date: 2026/06/07
 ---
 
-<img src="https://cdn.fliggy.com/pic/IMG_151828.JPG" width="800" />
+<img src="https://cdn.tw93.fun/blog/pic/IMG_151828.JPG" width="800" />
 
 <small>The cover photo was taken at Tianmu Scenery on Mount Tianmu in Lin'an, where I went the weekend before last. A really nice place, super cool in summer with plenty of fresh air. The Liuchun House up the mountain is delicious, highly recommend a visit, way fewer people than Jiuxi Yanshu.</small>
 
@@ -28,7 +28,7 @@ I'm working to round out Mole desktop's nice features as fast as I can. Just shi
 6. Clean is more useful while staying careful: Mole finds large directories like build, dist, target, and node_modules in your projects, but leaves them for you to review by default.
 7. Analyze scans faster: disk analysis adds concurrent computation, cache reuse, and subdirectory prewarming, so large directories open faster.
 
-<img src="https://cdn.fliggy.com/pic/2QNwTk40.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/pic/2QNwTk40.png" width="800" />
 
 **Kami, where good content deserves good layout, has shipped a bunch of updates**
 <http://kami.tw93.fun>
@@ -39,12 +39,12 @@ I'm working to round out Mole desktop's nice features as fast as I can. Just shi
 5. Since we're engineers, Kami also does automatic syntax highlighting for code, coloring it for you at build time with no external CSS needed.
 6. One more fun thing: although Kami is also a Skill, it's actually 70% code rather than Markdown. If you want to learn how to write a Skill that's obedient and useful by default, you're welcome to read the code, it might help <https://github.com/tw93/Kami>
 
-<video width="800px" preload="metadata" loop autoplay muted><source src="https://cdn.fliggy.com/pic/kami04.mp4" type="video/mp4"></video>
+<video width="800px" preload="metadata" loop autoplay muted><source src="https://cdn.tw93.fun/blog/pic/kami04.mp4" type="video/mp4"></video>
 
 **Made a nice website for Kaku**
 <http://kaku.fun>
 Finally done, built using the Kami skill, with a lot of docs filled in, and it supports both Chinese and English. Little Kaku finally has its own website, go take a look. Also, Kaku 0.12 is out, remember to update~
-<img src="https://cdn.fliggy.com/pic/Jyw4Z940.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/pic/Jyw4Z940.png" width="800" />
 
 ## Just Looking Around
 
@@ -55,20 +55,20 @@ Here's the kicker: somehow while browsing PDD I stumbled onto these Buddha-statu
 <table style="margin-top:-20px">
     <tr>
         <td width="38%">
-          <img src="https://cdn.fliggy.com/pic/HM8cAV17.png" width="400" />
+          <img src="https://cdn.tw93.fun/blog/pic/HM8cAV17.png" width="400" />
         </td>
         <td width="38%">
-            <img src="https://cdn.fliggy.com/pic/2OEw9N23.png" width="400" />
+            <img src="https://cdn.tw93.fun/blog/pic/2OEw9N23.png" width="400" />
         </td>
         <td width="24%">
-            <img src="https://cdn.fliggy.com/pic/nBYIfw31.png" width="400" />
+            <img src="https://cdn.tw93.fun/blog/pic/nBYIfw31.png" width="400" />
         </td>
     </tr>
 </table>
 
 **Can't believe I only just watched "A Love Letter to Grandma", highly recommend**
 Over the weekend I went to see the film "A Love Letter to Grandma". It's about to leave theaters, really good and really moving, the best film I've seen in a cinema in the past couple of years. The young actors were cast really well. If you haven't seen it, definitely go when you have time!
-<img src="https://cdn.fliggy.com/pic/HgIK5M29.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/pic/HgIK5M29.png" width="800" />
 
 ## Just Saying Thanks
 

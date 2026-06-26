@@ -13,7 +13,7 @@ date: 2022/05/24
 **Highlights from Google I/O '22**  
 <https://sspai.com/post/73161>  
 The Pixel Watch looks incredibly sleek—shame about the regional availability, though.  
-<img src="https://cdn.fliggy.com/upic/yGJv98.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/yGJv98.jpg" width="800" />
 
 **State of CSS 2022**  
 <https://web.dev/state-of-css-2022/>  

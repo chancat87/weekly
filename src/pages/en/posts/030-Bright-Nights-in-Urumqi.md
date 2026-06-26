@@ -35,17 +35,17 @@ Perfect for developers or admins who want to push messages to their devices via 
 **npkill: Easily Delete node_modules from Your Projects**  
 <https://github.com/voidcosmos/npkill>  
 When you’re running low on disk space, this tool is a literal lifesaver for clearing out those heavy dependencies.  
-<img src="https://cdn.fliggy.com/upic/vlDnQv.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/vlDnQv.gif" width="800" />
 
 **vardbg: A Beautiful and Concise Python Debugger**  
 <https://github.com/CCExtractor/vardbg>  
 Modern GUI-based tools are becoming incredibly polished. This one is a great example for the Python world.  
-<img src="https://cdn.fliggy.com/upic/WVTTxD.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/WVTTxD.gif" width="800" />
 
 **Files: A Modern File Explorer for Windows**  
 <https://github.com/files-community/Files>  
 For the Windows users out there (even if we are few)—this is a much more "trendy" way to manage your files.  
-<img src="https://cdn.fliggy.com/upic/ndBwTm.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/ndBwTm.jpg" width="800" />
 
 **LuckDraw: A Cross-Platform Lottery Component**  
 <https://100px.net/>  

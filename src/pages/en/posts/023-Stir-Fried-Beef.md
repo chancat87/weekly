@@ -34,11 +34,11 @@ Vite 1.0 was technically a prototype; version 2.0 is the first truly stable, pro
 **Read GitHub Source in VS Code in 1 Second**  
 <https://github.com/conwnet/github1s>  
 Just add "1s" after "github" in any repo URL to open it in a browser-based VS Code environment.  
-<img src="https://cdn.fliggy.com/upic/vOeQUf.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/vOeQUf.gif" width="800" />
 
 **Beaker Browser: An Experimental Peer-to-Peer Browser**  
 <https://beakerbrowser.com/>  
-<img src="https://cdn.fliggy.com/upic/WBwYa4.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/WBwYa4.gif" width="800" />
 
 **json-schema-to-ts: Infer TS Types from JSON Schema**  
 <https://github.com/ThomasAribart/json-schema-to-ts>
@@ -58,11 +58,11 @@ const dogSchema = {
 **Tidy.js: A Data Tidying Utility**  
 <https://pbeshai.github.io/tidy/>  
 A powerful supplement to native JavaScript array methods for complex data processing.  
-<img src="https://cdn.fliggy.com/upic/VP2Vrk.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/VP2Vrk.jpg" width="800" />
 
 **Remotion: Create Videos Programmatically with React**  
 <https://github.com/JonnyBurger/remotion>  
-<img src="https://cdn.fliggy.com/upic/3sigEi.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/3sigEi.png" width="800" />
 
 **Supercookie: Browser Fingerprinting via Favicons**  
 <https://github.com/jonasstrehle/supercookie>  

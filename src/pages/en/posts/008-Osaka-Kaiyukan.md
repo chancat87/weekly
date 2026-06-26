@@ -39,7 +39,7 @@ A clever look at using emoji shapes to create interesting text-wrap effects.
 **Gazepass: Passwordless Login API**  
 <https://gazepass.com/>  
 Following the *Face ID and Touch ID for the Web* trend, someone has already productized it. The implementation is impressive.  
-<img src="https://cdn.fliggy.com/upic/WZe3kK.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/WZe3kK.gif" width="800" />
 
 **RSSHub: RSS Everything**  
 <https://github.com/DIYgod/RSSHub>  

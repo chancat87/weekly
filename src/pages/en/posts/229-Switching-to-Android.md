@@ -2,23 +2,23 @@
 date: 2025/07/14
 ---
 
-<img src="https://cdn.fliggy.com/uPic/22922.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/22922.jpg" width="800" />
 
 <small>The cover image was taken at a fruit tree outside the Sky Garden restaurant "fine by FINE" at Oōli B1OCK. It had just finished raining. This restaurant has great style and delicious food; their Sukiyaki Beef Pasta is the best I've ever had. You should try it when you have time.</small>
 
 <table style="margin-top:-10px">
     <tr>
     <td width="31%">
-          <img src="https://cdn.fliggy.com/uPic/IMG_20250712_21314322.jpg" width="600" />
+          <img src="https://cdn.tw93.fun/blog/upic/IMG_20250712_21314322.jpg" width="600" />
         </td>
         <td width="31%">
-          <img src="https://cdn.fliggy.com/uPic/IMG_20250712_21291322.jpg" width="600" />
+          <img src="https://cdn.tw93.fun/blog/upic/IMG_20250712_21291322.jpg" width="600" />
         </td>
         <td width="19%">
-            <img src="https://cdn.fliggy.com/uPic/IMG_20250712_21295922.jpg" width="360" />
+            <img src="https://cdn.tw93.fun/blog/upic/IMG_20250712_21295922.jpg" width="360" />
         </td>
         <td width="19%">
-            <img src="https://cdn.fliggy.com/uPic/IMG_20250712_21305522.jpg" width="360" />
+            <img src="https://cdn.tw93.fun/blog/upic/IMG_20250712_21305522.jpg" width="360" />
         </td>
     </tr>
 </table>
@@ -32,16 +32,16 @@ As a ten-year iPhone user, I've been on Android for about a month now, choosing 
 <table style="margin-top:-10px">
     <tr>
     <td width="25%">
-          <img src="https://cdn.fliggy.com/uPic/IMG_438722.JPG" width="400" />
+          <img src="https://cdn.tw93.fun/blog/upic/IMG_438722.JPG" width="400" />
         </td>
         <td width="25%">
-          <img src="https://cdn.fliggy.com/uPic/IMG_439522.JPG" width="400" />
+          <img src="https://cdn.tw93.fun/blog/upic/IMG_439522.JPG" width="400" />
         </td>
         <td width="25%">
-            <img src="https://cdn.fliggy.com/uPic/IMG_439022.JPG" width="400" />
+            <img src="https://cdn.tw93.fun/blog/upic/IMG_439022.JPG" width="400" />
         </td>
         <td width="25%">
-            <img src="https://cdn.fliggy.com/uPic/IMG_439622.JPG" width="400" />
+            <img src="https://cdn.tw93.fun/blog/upic/IMG_439622.JPG" width="400" />
         </td>
     </tr>
 </table>

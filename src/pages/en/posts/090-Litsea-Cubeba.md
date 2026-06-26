@@ -27,27 +27,27 @@ A fresh take on micro-frontends based on iframes, aiming to solve the isolation 
 **wezterm: GPU-Accelerated Terminal Emulator**  
 <https://github.com/wez/wezterm>  
 This thing is incredibly fast. I’m still a fan of Hyper’s aesthetics, but I might migrate once I get my config dialed in on WezTerm.  
-<img src="https://cdn.fliggy.com/upic/ysTGBv.jpg" width="800" style="margin-left:-34px;margin-top:0px"/>
+<img src="https://cdn.tw93.fun/blog/upic/ysTGBv.jpg" width="800" style="margin-left:-34px;margin-top:0px"/>
 
 **SmsForwarder: Android SMS & Notification Relay**  
 <https://github.com/pppscn/SmsForwarder>  
 Monitor your Android phone’s SMS, calls, and app notifications, and relay them to another device based on custom rules.  
-<img src="https://cdn.fliggy.com/upic/zIgrgL.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/zIgrgL.jpg" width="800" />
 
 **vue-color-avatar: Vector Avatar Generator**  
 <https://github.com/Codennnn/vue-color-avatar>  
 A beautifully designed web tool for creating custom vector avatars.  
-<img src="https://cdn.fliggy.com/upic/LgokEu.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/LgokEu.jpg" width="800" />
 
 **regex-vis: Visual Regex Editor**  
 <https://github.com/Bowen7/regex-vis>  
 Finally, a way to visualize and edit complex regular expressions without losing your mind.  
-<img src="https://cdn.fliggy.com/upic/YeJsPw.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/YeJsPw.jpg" width="800" />
 
 **wechat-backup: Save your Chat History Locally**  
 <https://github.com/greycodee/wechat-backup>  
 A vital tool for freeing up storage on your phone by backing up and archiving your WeChat messages to your hard drive.  
-<img src="https://cdn.fliggy.com/upic/mweDMB.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/mweDMB.jpg" width="800" />
 
 **Administrative Divisions of China: Comprehensive Dataset**  
 <https://github.com/modood/Administrative-divisions-of-China>  
@@ -68,4 +68,4 @@ A data-driven interactive map that helps you choose a U.S. city based on jobs, h
 **15 Inspirational Modern Logo Designs**  
 <https://marketsplash.com/modern-logo-design/>  
 A curated gallery of branding that gets it right.  
-<img src="https://cdn.fliggy.com/upic/CLzAbN.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/CLzAbN.jpg" width="800" />

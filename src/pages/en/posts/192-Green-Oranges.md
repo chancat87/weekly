@@ -18,7 +18,7 @@ The most attractive feature for me is the Edge-like vertical tabs. it's a solid 
 **OPEN CULTURE: Online learning for humanities and social sciences**  
 <https://openculture.com/>  
 If you're interested in humanities and social sciences, OPEN CULTURE is a goldmine. TONS of high-quality cultural and educational content, including 1,700 free online courses, videos, and reading materials.  
-<img src="https://cdn.fliggy.com/upic/1725198517.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/1725198517.png" width="800" />
 
 **Telegraph-Image: Free image hosting solution**  
 <https://github.com/cf-pages/Telegraph-Image>  
@@ -30,7 +30,7 @@ If you need an external image host, you can use Telegraph-Image via Cloudflare P
 **Lecture by Li Mu: Practical Experience and Future Predictions for LLMs**  
 <https://www.youtube.com/watch?v=ziHUcDh0DwM>  
 If you're interested in AI's future and LLM experience, check out Li Mu's lecture at SJTU. it's very insightful and has a certain "technical proximity" compared to purely foreign content.  
-<img src="https://cdn.fliggy.com/upic/1725198456.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/1725198456.png" width="800" />
 
 **"Did you lose your AirPods?" - An interesting story**  
 <https://news.ycombinator.com/item?id=41334207>  
@@ -42,7 +42,7 @@ A great story on Hacker News about how the author helped a friend find the owner
 **Book Recommendation: The Gardener and the Carpenter**  
 <https://book.douban.com/subject/34481379/>  
 If you have children, "The Gardener and the Carpenter" is a must-read, especially relevant for Chinese parents.  
-<img src="https://cdn.fliggy.com/upic/1725198590.JPG" width="500" />
+<img src="https://cdn.tw93.fun/blog/upic/1725198590.JPG" width="500" />
 
 **YouTube Channel: Two Minute Papers**  
 <https://youtube.com/@TwoMinutePapers>  

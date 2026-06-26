@@ -31,17 +31,17 @@ Keep this as a reference for the next time you need to manage your containers wi
 **stats: macOS System Monitor for the Menu Bar**  
 <https://github.com/exelban/stats>  
 A great open-source alternative for tracking CPU, RAM, and network usage directly in your menu bar.  
-<img src="https://cdn.fliggy.com/upic/zRLMd2.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/zRLMd2.jpg" width="800" />
 
 **mitmproxy: SSL/TLS Proxy and Packet Capture**  
 <https://github.com/mitmproxy/mitmproxy>  
 An interactive man-in-the-middle proxy. It’s perfect for inspecting App API calls.  
-<img src="https://cdn.fliggy.com/upic/m7aeau.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/m7aeau.gif" width="800" />
 
 **Flat: Open Source Web/Desktop Classroom Platform**  
 <https://github.com/netless-io/flat>  
 A polished and open-sourced virtual classroom for web and desktop, powered by Agora.  
-<img src="https://cdn.fliggy.com/upic/3N3IEY.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/3N3IEY.jpg" width="800" />
 
 **JSZip: Creating and Editing .zip Files in JavaScript**  
 <https://stuk.github.io/jszip/>  
@@ -50,7 +50,7 @@ A robust library for handling zipping and unzipping logic directly in your front
 **The 2021 JavaScript Ecosystem Survey Report**  
 <https://www.jetbrains.com/lp/devecosystem-2021/javascript/>  
 The annual deep dive from JetBrains. Their [Python report](https://www.jetbrains.com/lp/devecosystem-2021/python/) is also worth a look.  
-<img src="https://cdn.fliggy.com/upic/if7vg4.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/if7vg4.jpg" width="800" />
 
 ## Just Looking Around
 

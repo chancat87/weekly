@@ -48,4 +48,4 @@ I prioritize Claude Code ($20/month)—fast and decisive, like a young engineer.
 **Happy 1024**
 <https://cdn.tw93.fun/>
 1024. I modified some previously hand-written code into this. I wish that the code you write hereafter is always what you want to write—be a hacker and a painter.
-<img src="https://cdn.fliggy.com/upic/uWHZTn.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/uWHZTn.png" width="800" />

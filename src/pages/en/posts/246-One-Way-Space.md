@@ -14,7 +14,7 @@ date: 2025/11/24
 <https://github.com/tw93/Mole>
 This time released the tenth version, continuing safety hardening, and adding a new "system status" view. Combined with the previous cleanup, uninstall, disk insight, and system optimization, it basically covers most of the functions for Mac maintenance. It's approximately equal to the combined power of CleanMyMac + AppCleaner + DaisyDisk + Sensei + iStat. Introducing the 5 major functions of Mole:
 
-<img src="https://cdn.fliggy.com/upic/ZZnxdX.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/ZZnxdX.gif" width="800" />
 
 - `mo clean`: used to dig out various garbage, caches, and orphaned files in your Mac like a mole. The first use can clear out a lot of useless space.
 - `mo uninstall`: very thoroughly uninstalls your software. Besides the app itself, it can also clear out various registry items, startup items, configuration files, etc.

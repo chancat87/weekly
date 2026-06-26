@@ -31,12 +31,12 @@ A transcript of Wang Lei's GMTC talk on the Serverless shift in large-scale fron
 **LyricsX: A Lyrics Plugin for Apple Music**  
 <https://github.com/ddddxxx/LyricsX>  
 If you're an Apple Music enthusiast like me, this is a must-have for the desktop experience.  
-<img src="https://cdn.fliggy.com/upic/SwQSUK.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/SwQSUK.jpg" width="800" />
 
 **Gray: Custom Dark/Light Modes per App on macOS**  
 <https://github.com/zenangst/Gray>  
 For when you want to force a specific app into light mode while the rest of your system is in dark mode (or vice-versa).  
-<img src="https://cdn.fliggy.com/upic/KAlMvN.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/KAlMvN.jpg" width="800" />
 
 **Vapor: Server-Side Swift Framework**  
 <https://github.com/vapor/vapor>  
@@ -62,7 +62,7 @@ My current preferred blocker. It’s lightweight and highly effective without dr
 **Smartisan-Inspired Markdown Theme**  
 <https://nihaojob.github.io/markdown-css-smartisan/examples/index.html>  
 The aesthetic of the old Smartisan OS was legendary, and this port to Markdown is just beautiful.  
-<img src="https://cdn.fliggy.com/upic/Xwe3VV.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/Xwe3VV.jpg" width="800" />
 
 ## Just Looking Around
 

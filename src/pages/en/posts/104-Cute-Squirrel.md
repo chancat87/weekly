@@ -31,12 +31,12 @@ Node.js 18 brought some significant improvements. here are 11 features that ever
 **vChewing: Open Source Chinese Input Method for macOS**  
 <https://github.com/vChewing/vChewing-macOS>  
 I have massive respect for developers who dedicate their time to building tools as pure and fundamental as an input method.  
-<img src="https://cdn.fliggy.com/upic/cEKZKX.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/cEKZKX.jpg" width="800" />
 
 **Inject: Hot Reloading for Swift Apps**  
 <https://github.com/krzysztofzablocki/Inject>  
 Watching the demo for this was a total "wow" moment. it’s a game-changer for Swift developers looking to speed up their UI iteration.  
-<img src="https://cdn.fliggy.com/upic/oiGVfK.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/oiGVfK.gif" width="800" />
 
 **Trix: A Polished Rich Text Editor**  
 <https://trix-editor.org/>  
@@ -46,7 +46,7 @@ A very clean and capable rich text editor designed for the web. the editing expe
 **Mac Mouse Fix: Refine your Mouse Experience**  
 <https://mousefix.org/>  
 A utility that brings smooth scrolling and improved gestures to standard mice on macOS. unfortunately, I don’t use a mouse with my Mac, but the demo looks great!  
-<img src="https://cdn.fliggy.com/upic/95JbxO.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/95JbxO.gif" width="800" />
 
 ## Just Looking Around
 

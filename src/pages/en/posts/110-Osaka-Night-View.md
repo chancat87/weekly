@@ -27,22 +27,22 @@ An introduction to Logan, a unified logging service that supports App, Web, Mini
 **He3: The Ultimate Developer’s Toolbox**  
 <https://he3.app/zh/>  
 I’ve been looking for a modern, polished alternative to FeHelper, and He3 is exactly that. it’s a beautifully designed collection of essential developer tools.  
-<img src="https://cdn.fliggy.com/upic/BsqNTk.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/BsqNTk.png" width="800" />
 
 **mage-ai: Data Engineering Pipelines**  
 <https://github.com/mage-ai/mage-ai>  
 Mage is a modern open-source tool for transforming and integrating data. the product design is top-notch and it aims to give data teams "superpowers" for their workflows.  
-<img src="https://cdn.fliggy.com/upic/6mmf9V.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/6mmf9V.gif" width="800" />
 
 **supabase: The Open Source Firebase Alternative**  
 <https://github.com/supabase/supabase>  
 Supabase provides the full BaaS (Backend as a Service) experience: database, auth, storage, edge functions, and more. it’s highly visual and incredibly powerful for rapid product development.  
-<img src="https://cdn.fliggy.com/upic/6aZE6Y.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/6aZE6Y.png" width="800" />
 
 **n8n: Workflow Automation**  
 <https://github.com/n8n-io/n8n>  
 A node-based workflow automation tool that’s great for creating complex logic and third-party integrations. it’s also self-hostable, which is a huge plus for data privacy.  
-<img src="https://cdn.fliggy.com/upic/eZ0K1t.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/eZ0K1t.png" width="800" />
 
 ## Just Looking Around
 
@@ -60,4 +60,4 @@ A series of interviews from *Caijing Eleven* on how smaller cities across China 
 **Code Effect of the Week: Parallax Scroll Animation**  
 <https://codepen.io/isladjan/pen/abdyPBw>  
 Apple-style parallax scrolling is a timeless way to present new products. this Gsap-powered implementation is smooth and very professional—perfect for feature intro pages.  
-<img src="https://cdn.fliggy.com/upic/7xRitI.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/7xRitI.gif" width="800" />

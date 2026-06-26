@@ -43,12 +43,12 @@ Evan You’s roadmap and status update from VueConf US 2021.
 **Headless UI: Unstyled, Accessible UI Components for Tailwind CSS**  
 <https://headlessui.dev/>  
 Beautifully built and incredibly versatile. Their approach to cross-platform compatibility is a masterclass in modern UI design.  
-<img src="https://cdn.fliggy.com/upic/AAAk4n.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/AAAk4n.jpg" width="800" />
 
 **Docker-OSX: Run macOS inside a Docker Container**  
 <https://github.com/sickcodes/Docker-OSX>  
 A wild and impressive project for when you need to run Apple’s OS in a virtualized environment.  
-<img src="https://cdn.fliggy.com/upic/5aONid.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/5aONid.jpg" width="800" />
 
 ## Just Looking Around
 
@@ -63,11 +63,11 @@ From collection and processing to application and deletion—why governing the e
 **Neuralink: Brain-Controlled Gaming is Here**  
 <https://www.jiqizhixin.com/articles/2021-04-09-4>  
 Musk’s latest update shows a monkey playing video games with its mind. Truly incredible (and slightly terrifying) progress.  
-<img src="https://cdn.fliggy.com/upic/Hdp6wY.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/Hdp6wY.gif" width="800" />
 
 **The Underground Market for Face Recognition "Cracks"**  
 As face data becomes more prevalent, the tools to exploit it are also becoming more sophisticated. a wake-up call for biometric security.  
-<img src="https://cdn.fliggy.com/upic/BcTGE1.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/BcTGE1.gif" width="800" />
 
 **Threat Modeling in Practice**  
 <https://tech.meituan.com/2021/04/08/threat-modeling-security.html>  

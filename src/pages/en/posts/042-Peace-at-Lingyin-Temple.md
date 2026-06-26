@@ -4,7 +4,7 @@ date: 2021/09/07
 
 <img src="https://gw.alipayobjects.com/zos/k/10/MRNoEz.jpg" width="800" />
 
-<small>The cover photo was taken during a peaceful walk at Lingyin Temple. It perfectly captures that feeling of inner quiet and sincerity. I recorded a short clip of the [temple chanting](https://cdn.fliggy.com/upic/IVJL92.m4a)—it’s very calming if you listen with headphones at a low volume.</small>
+<small>The cover photo was taken during a peaceful walk at Lingyin Temple. It perfectly captures that feeling of inner quiet and sincerity. I recorded a short clip of the [temple chanting](https://cdn.tw93.fun/blog/upic/IVJL92.m4a)—it’s very calming if you listen with headphones at a low volume.</small>
 
 > **Record the down-to-earth trending technologies seen every week, and publish them here after screening. If you find it good, you can follow this weekly to get update notifications.**
 
@@ -35,22 +35,22 @@ How Meituan refactored their app views to make them more friendly for automated 
 **X-TRACK: Open Source GPS Bike Computer**  
 <https://github.com/FASTSHIFT/X-TRACK>  
 This is seriously cool—a custom-built bike computer with offline maps, GPX exports, and real-time tracking. You can see the full build on [Bilibili](https://www.bilibili.com/video/BV1GB4y1K7VV).  
-<img src="https://cdn.fliggy.com/upic/gJEGVS.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/gJEGVS.jpg" width="800" />
 
 **Transmat: Google’s Core Library for Cross-Window Data Sharing**  
 <https://google.github.io/transmat/>  
 Leverages the DataTransfer API to facilitate seamless data transfer between different web applications via standard interactions like copy-paste.  
-<img src="https://cdn.fliggy.com/upic/CuiZjq.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/CuiZjq.gif" width="800" />
 
 **npmx: An Enhanced CLI for npm**  
 <https://github.com/terminal-junkies/npmx>  
 A streamlined way to search, install, and run packages from the terminal. Maybe it's time someone built a tnpmx for the internal ecosystem!  
-<img src="https://cdn.fliggy.com/upic/L4TiI9.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/L4TiI9.gif" width="800" />
 
 **KeyCastr: Show Keypresses on the Mac Screen**  
 <https://github.com/keycastr/keycastr>  
 Perfect for screencasts and presentations when you want people to see exactly which shortcuts you're using. I used this myself for my recent tool-finding demo.  
-<img src="https://cdn.fliggy.com/upic/0jQ3ap.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/0jQ3ap.jpg" width="800" />
 
 ## Just Looking Around
 

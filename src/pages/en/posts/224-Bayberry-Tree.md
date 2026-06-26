@@ -2,7 +2,7 @@
 date: 2025/06/09
 ---
 
-<img src="https://cdn.fliggy.com/uPic/22423.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/22423.jpg" width="800" />
 
 <small>The cover photo was taken in the neighborhood, where I saw a bayberry tree with some decent-looking fruit. It's been a long time since I've seen bayberries growing on a tree. As a child, we'd soak them in salt water first, then add sugar; I can already taste the sourness just thinking about it.</small>
 
@@ -13,22 +13,22 @@ date: 2025/06/09
 **NewsNow: A news aggregation ranking platform**  
 <https://newsnow.busiyi.world/>  
 I prefer checking V2EX's "Hottest" and GitHub Trends; browsing them occasionally is quite fun.  
-<img src="https://cdn.fliggy.com/uPic/4qIKMk23.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/4qIKMk23.png" width="800" />
 
 **Google Colab for fine-tuning LLMs**  
 <https://github.com/unslothai/notebooks>  
 Someone has categorized and organized online running versions of Google Colab for current open-source LLMs. You can use these instructional notebooks to preprocess data, train, evaluate, and save your models.  
-<img src="https://cdn.fliggy.com/uPic/MQtNTd23.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/MQtNTd23.png" width="800" />
 
 **One-click website theme switching**  
 <https://theme-toggle.rdsx.dev/>  
 The one-click light/dark theme toggle effect on this site is great. Using the View Transitions API, you can just copy the code to use it, saving the effort of writing your own adapter.  
-<img src="https://cdn.fliggy.com/uPic/v0zELh23.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/v0zELh23.png" width="800" />
 
 **Proposal for standardization using `llms.txt` files**  
 <https://llmstxt.org/>  
 A proposal for using `llms.txt` files to provide information that helps LLMs use a website during inference. This is a great idea—original content is meant for people, but if it's for AI, do we need a separate version? I think it's very necessary.  
-<img src="https://cdn.fliggy.com/uPic/oRfUBN23.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/oRfUBN23.png" width="800" />
 
 ## Just Looking Around
 
@@ -50,13 +50,13 @@ Wanting to avoid being trapped by the Apple ecosystem, I got an OPPO Find X8s, a
 <table style="margin-top:-20px">
     <tr>
         <td width="33%">
-          <img src="https://cdn.fliggy.com/uPic/IMG_436823.jpg" width="400" />
+          <img src="https://cdn.tw93.fun/blog/upic/IMG_436823.jpg" width="400" />
         </td>
         <td width="33%">
-            <img src="https://cdn.fliggy.com/uPic/IMG_436723.jpg" width="400" />
+            <img src="https://cdn.tw93.fun/blog/upic/IMG_436723.jpg" width="400" />
         </td>
         <td width="33%">
-            <img src="https://cdn.fliggy.com/uPic/IMG_436923.jpg" width="400" />
+            <img src="https://cdn.tw93.fun/blog/upic/IMG_436923.jpg" width="400" />
         </td>
     </tr>
 </table>

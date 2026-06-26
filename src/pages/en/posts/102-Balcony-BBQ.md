@@ -27,12 +27,12 @@ A look at the technical architecture of Next.js’s new Rust-based bundler and w
 **Storyset: Customizable Animated Illustrations**  
 <https://storyset.com/>  
 A massive collection of free, high-quality illustrations that you can customize and even export as animated code for your web projects.  
-<img src="https://cdn.fliggy.com/upic/Gao25g.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/Gao25g.jpg" width="800" />
 
 **Shapefest: 3D Hands and Objects Library**  
 <https://www.shapefest.com/>  
 A huge library of free 3D models with a playful, high-quality aesthetic—perfect for adding depth to your UI designs.  
-<img src="https://cdn.fliggy.com/upic/N9ljik.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/N9ljik.jpg" width="800" />
 
 **Telegraph: Minimalist Anonymous Publishing**  
 <https://telegra.ph/>  

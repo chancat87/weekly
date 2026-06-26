@@ -31,12 +31,12 @@ Food delivery traffic peaks sharply during lunch and dinner. This article explor
 **XUAN-Bike: An Open-Source Self-Driving Bicycle**  
 <https://github.com/peng-zhihui/XUAN-Bike>  
 Source code for the hard-core engineering project mentioned in the "Looking Around" section below.  
-<img src="https://cdn.fliggy.com/upic/ViJdbS.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/ViJdbS.jpg" width="800" />
 
 **NvChad: A Beautiful Neovim Configuration**  
 <https://github.com/siduck76/NvChad>  
 An exceptionally polished configuration that turns Neovim into a modern development environment.  
-<img src="https://cdn.fliggy.com/upic/vy5qpp.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/vy5qpp.jpg" width="800" />
 
 **Chinese Poetry: The Ultimate Classical Poetry Database**  
 <https://github.com/chinese-poetry/chinese-poetry>  
@@ -49,7 +49,7 @@ If you're starting a new Node.js project, Prisma is well worth considering for i
 **GoTTY: Share Your Terminal as a Web App**  
 <https://github.com/sorenisanerd/gotty>  
 A simple way to broadcast a terminal session to anyone through a standard web browser.  
-<img src="https://cdn.fliggy.com/upic/sxHxXO.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/sxHxXO.gif" width="800" />
 
 ## Just Looking Around
 

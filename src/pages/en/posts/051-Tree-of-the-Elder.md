@@ -27,22 +27,22 @@ A developer from Bytedance traces the entire journey from a code push to the fin
 **cloc: Count Your Lines of Code**  
 <https://github.com/kentcdodds/cloc>  
 A handy tool for quickly getting stats on the scale and composition of your codebase.  
-<img src="https://cdn.fliggy.com/upic/M3iJhM.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/M3iJhM.jpg" width="800" />
 
 **Pure CSS Data Cable**  
 <https://codepen.io/comehope/pen/RBjdzZ>  
 A clever demonstration of what’s possible with CSS. While most would just use an image, this version is entirely programmatic.  
-<img src="https://cdn.fliggy.com/upic/MDe5HR.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/MDe5HR.jpg" width="800" />
 
 **Appsmith: Low-Code Platform for Internal Tools**  
 <https://github.com/appsmithorg/appsmith>  
 A powerful model-driven framework for building business applications and admin panels with minimal code.  
-<img src="https://cdn.fliggy.com/upic/mqpjlh.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/mqpjlh.jpg" width="800" />
 
 **Footnotes Now Supported in GitHub Markdown**  
 <https://github.blog/changelog/2021-09-30-footnotes-now-supported-in-markdown-fields/>  
 GitHub adds support for formal footnotes in all Markdown fields—a great addition for technical documentation.  
-<img src="https://cdn.fliggy.com/upic/3mtTMX.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/3mtTMX.gif" width="800" />
 
 **MockingBird: Real-Time Voice Cloning for Mandarin**  
 <https://github.com/babysor/MockingBird>  

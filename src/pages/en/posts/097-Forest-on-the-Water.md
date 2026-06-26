@@ -27,27 +27,27 @@ An interesting take on the utility and limits of low-code tools. I was surprised
 **CodeFormer: Restore Old Photos to Perfection**  
 <https://github.com/sczhou/CodeFormer>  
 The results from this project are staggering. you could probably open a successful photo restoration shop in a small town using nothing but this tool.  
-<img src="https://cdn.fliggy.com/upic/bhgL27.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/bhgL27.png" width="800" />
 
 **SurrealDB: The Cloud-Native Database of the Future**  
 <https://github.com/surrealdb/surrealdb>  
 A scalable, modern database that supports everything from relational to graph and document models. its performance and feature set are very impressive.  
-<img src="https://cdn.fliggy.com/upic/o8FZqS.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/o8FZqS.png" width="800" />
 
 **ksyun: The Stylish Kingsoft Cloud Font**  
 <https://design.ksyun.com/font>  
 A very clean and modern technical font from the Kingsoft Cloud team. perfect for code and technical documentation.  
-<img src="https://cdn.fliggy.com/upic/ZqPq1u.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/ZqPq1u.png" width="800" />
 
 **Pixel-Art-React: Pixel Styling with CSS**  
 <https://github.com/jvalen/pixel-art-react>  
 Did you know you can create complex pixel-art animations using only CSS box-shadows? this project shows you how.  
-<img src="https://cdn.fliggy.com/upic/pcihs8.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/pcihs8.png" width="800" />
 
 **Xcodesapp: The Simplest Way to Switch Xcode Versions**  
 <https://github.com/RobotsAndPencils/XcodesApp>  
 A life-saver for iOS developers. it allows you to easily download and manage multiple versions of Xcode on a single machine.  
-<img src="https://cdn.fliggy.com/upic/rLyNML.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/rLyNML.png" width="800" />
 
 ## Just Looking Around
 

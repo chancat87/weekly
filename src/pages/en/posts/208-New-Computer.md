@@ -30,7 +30,7 @@ I used the native input method for about a year with mixed results. Six months a
 **Browser: Staying with Arc**  
 <https://arc.net/>  
 I used Edge for its vertical tabs last year, but after sticking with Arc for a while, it became second nature despite the initial complexity. I love hiding the sidebar with a shortcut—very elegant interaction once you master it.  
-<img src="https://cdn.fliggy.com/upic/1736692384.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/1736692384.png" width="800" />
 
 ## Useful Software
 

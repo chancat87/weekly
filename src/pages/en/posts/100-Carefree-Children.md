@@ -31,22 +31,22 @@ JavaScript is evolving faster than ever. here’s a look at the latest features 
 **Pake: Bundle any Webpage into a Mac App with Rust**  
 <https://github.com/tw93/Pake>  
 I’ve open-sourced the tool I used to bundle the WeChat Reading Mac app. it’s built on Tauri and makes it incredibly easy to turn your favorite websites into standalone desktop applications.  
-<img src="https://cdn.fliggy.com/upic/9Y3lrP.jpg" width="800"/>
+<img src="https://cdn.tw93.fun/blog/upic/9Y3lrP.jpg" width="800"/>
 
 **duf: A Better 'df' Replacement**  
 <https://github.com/muesli/duf>  
 A modern, colorful, and more intuitive command-line tool for checking disk usage.  
-<img src="https://cdn.fliggy.com/upic/eR6Xnp.jpg" width="800"/>
+<img src="https://cdn.tw93.fun/blog/upic/eR6Xnp.jpg" width="800"/>
 
 **Boring Avatars: Tiny, Beautiful Placeholders**  
 <https://boringavatars.com/>  
 A tiny JavaScript library that generates custom, SVG-based avatars from any username and a color palette. perfect for dashboards and social apps.  
-<img src="https://cdn.fliggy.com/upic/E7x6G9.png" width="800"/>
+<img src="https://cdn.tw93.fun/blog/upic/E7x6G9.png" width="800"/>
 
 **Apple Design Resources**  
 <https://developer.apple.com/design/resources/>  
 Did you know you can download official Apple design assets (fonts, icons, device frames) directly from their developer site? it’s a great way to ensure your apps feel right at home on iOS and macOS.  
-<img src="https://cdn.fliggy.com/upic/NdMpVh.png" width="800"/>
+<img src="https://cdn.tw93.fun/blog/upic/NdMpVh.png" width="800"/>
 
 **sharing: Share Files between OSes via Terminal**  
 <https://github.com/parvardegr/sharing>  

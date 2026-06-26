@@ -27,22 +27,22 @@ An open-source book on "Modern C++" featuring 10 themes across 83 chapters. it�
 **"Hacking" the Official ChatGPT for API Use**  
 <https://github.com/transitive-bullshit/chatgpt-api>  
 I was wondering if there was a way to use the official GPT-4, Plugins, and Web Browsing capabilities via an API. I found a project that uses Puppeteer (headless browser) to handle authentication and message passing. it’s a fascinating way to bypass API limitations for personal projects.  
-<a href="https://cdn.fliggy.com/upic/AVY7AT.mp4" target="_blank"><video width="800px" autoplay preload loop muted><source src="https://cdn.fliggy.com/upic/AVY7AT.mp4" type="video/mp4"></video></a>
+<a href="https://cdn.tw93.fun/blog/upic/AVY7AT.mp4" target="_blank"><video width="800px" autoplay preload loop muted><source src="https://cdn.tw93.fun/blog/upic/AVY7AT.mp4" type="video/mp4"></video></a>
 
 **Godly: High-End Web Design Inspiration**  
 <https://godly.website/>  
 If you're stuck on a design, head over to Godly. it curates modern, highly interactive web designs with detailed breakdowns of the effects used. it’s an absolute goldmine for designers and frontend developers.  
-<a href="https://cdn.fliggy.com/upic/ChBhhI.mp4" target="_blank"><video width="800px" autoplay preload loop muted><source src="https://cdn.fliggy.com/upic/ChBhhI.mp4" type="video/mp4"></video></a>
+<a href="https://cdn.tw93.fun/blog/upic/ChBhhI.mp4" target="_blank"><video width="800px" autoplay preload loop muted><source src="https://cdn.tw93.fun/blog/upic/ChBhhI.mp4" type="video/mp4"></video></a>
 
 **LeiaPix: Transform Photos into 3D Animations**  
 <https://convert.leiapix.com/>  
 A tool that creates a surprising sense of depth by turning 2D images into 3D animations. you can export the results as MP4 or GIF.  
-<img src="https://cdn.fliggy.com/upic/jKRFzc.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/jKRFzc.gif" width="800" />
 
 **Just Focus: A Minimalist Rest Reminder**  
 <https://getjustfocus.com/>  
 I’ve been looking for a tool to prevent eye strain. Just Focus is a free Pomodoro-style timer that shows a full-screen view when it’s time to rest, and provides daily stats to help you review your productivity.  
-<img src="https://cdn.fliggy.com/upic/HuXRgi.png" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/HuXRgi.png" width="800" />
 
 ## Just Looking Around
 

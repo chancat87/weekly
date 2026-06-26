@@ -35,12 +35,12 @@ A transcript on what makes for a good CR, common pitfalls, and how to build a he
 **heti: Enhance the Typography of Chinese Web Content**  
 <https://sivan.github.io/heti/>  
 English layout is one thing, but Chinese typography has its own unique aesthetic challenges. this library helps you get it right.  
-<img src="https://cdn.fliggy.com/upic/i2Z2IG.gif" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/i2Z2IG.gif" width="800" />
 
 **Cutter: A Modern Reverse Engineering Platform**  
 <https://github.com/rizinorg/cutter>  
 Traditionally, RE tools have felt very dated. Cutter brings a modern, high-quality UI to the table while remaining incredibly powerful.  
-<img src="https://cdn.fliggy.com/upic/3lbxKG.jpg" width="800" />
+<img src="https://cdn.tw93.fun/blog/upic/3lbxKG.jpg" width="800" />
 
 **Deep Links: Generate Anchors for any Text on your Site**  
 <https://github.com/WesleyAC/deeplinks>  

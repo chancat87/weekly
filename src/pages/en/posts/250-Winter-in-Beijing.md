@@ -35,7 +35,7 @@ If you use Gemini CLI for Coding, you can check out these tips. The author lists
 **The mouse-following effects on cursify are quite rich**
 <https://cursify.vercel.app/components>
 You can appropriately put this kind of functionality on your website, but be careful not to let the effect overshadow the content. You can click around to see the effects.
-<img src="https://cdn.fliggy.com/upic/fn0h3G.png" width="800">
+<img src="https://cdn.tw93.fun/blog/upic/fn0h3G.png" width="800">
 
 ## Just Looking Around
 
