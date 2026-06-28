@@ -47,7 +47,7 @@ It started with an email I received from a Russian teenager, along with a record
 
 ## Just Writing
 
-**Walking ahead, or being pushed along**
+### Walking ahead, or being pushed along
 
 <img src="https://cdn.tw93.fun/uPic/Group26.png" width="800" />
 
