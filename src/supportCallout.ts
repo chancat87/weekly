@@ -1,12 +1,12 @@
 export const SUPPORT_CALLOUT = {
-  zh: "觉得不错，请 Tw93 喝冰可乐 🥤",
-  en: "Buy me a coke 🥤",
-  link: "https://cats.tw93.fun?name=潮流周刊",
+  zh: "试试我做的 Mac 清理工具 Mole",
+  en: "Try Mole, my Mac cleaner",
+  link: { zh: "https://mole.fit/zh", en: "https://mole.fit" },
 };
 
 export const renderSupportCalloutForRSS = (lang: "zh" | "en" = "zh") => {
   const cta = SUPPORT_CALLOUT[lang] ?? SUPPORT_CALLOUT.zh;
-  const { link } = SUPPORT_CALLOUT;
+  const link = SUPPORT_CALLOUT.link[lang] ?? SUPPORT_CALLOUT.link.zh;
   return `
     <hr style="border:none;border-top:0.5px solid rgba(0,0,0,0.08);margin:26px 0 14px;" />
     <p style="text-align:left;margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">

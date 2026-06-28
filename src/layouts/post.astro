@@ -273,6 +273,7 @@ const giscusTheme = `${Astro.url.origin}/styles/giscus-light.css`;
 
     .heti .pay-button:hover {
       border-block-end: none;
+      padding-block-end: 0;
       opacity: 0.9;
       transform: translateY(-1px);
     }
@@ -325,7 +326,7 @@ const giscusTheme = `${Astro.url.origin}/styles/giscus-light.css`;
         <div class='flex align-middle justify-center mt-4 pay-button-wrapper'>
           <a
             class='inline-block items-center rounded px-5 py-3 text-sm font-medium pay-button'
-            href={SUPPORT_CALLOUT.link}
+            href={SUPPORT_CALLOUT.link[lang]}
             target='_blank'
             rel='noreferrer'>{SUPPORT_CALLOUT[lang]}</a
           >
