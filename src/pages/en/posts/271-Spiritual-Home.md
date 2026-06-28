@@ -47,9 +47,9 @@ It started with an email I received from a Russian teenager, along with a record
 
 ## Just Writing
 
-<img src="https://cdn.tw93.fun/uPic/Group26.png" width="800" />
-
 **Walking ahead, or being pushed along**
+
+<img src="https://cdn.tw93.fun/uPic/Group26.png" width="800" />
 
 Lately I've had a feeling: engineers who have already transformed into AI engineers, versus those in traditional roles at traditional big companies who haven't yet realized they need to transform, give off a vibe like the software engineers at the dawn of the internet versus the engineers working in the China Mobile / Unicom / Telecom direction at the same time. It's also a lot like the difference between people using smartphones and people using feature phones around 2011.
 
