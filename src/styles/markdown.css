@@ -386,7 +386,7 @@ blockquote blockquote {
   color: #1d9bf0;
 }
 
-.heti a:hover {
+.heti a:not(.pay-button):hover {
   padding-block-end: 1px;
   border-block-end: 1px solid currentColor;
   text-decoration: none;
