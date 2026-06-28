@@ -1,6 +1,6 @@
 export const SUPPORT_CALLOUT = {
-  zh: "试试我做的 Mac 清理工具 Mole",
-  en: "Try Mole, my Mac cleaner",
+  zh: "❤️ 支持作者",
+  en: "❤️ Support me",
   link: { zh: "https://mole.fit/zh", en: "https://mole.fit" },
 };
 
