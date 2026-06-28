@@ -24,6 +24,32 @@ function getImageMetadata() {
   }
 }
 
+// Build an optimized image URL based on the source host:
+// - cdn.tw93.fun (Cloudflare R2): wrap with /cdn-cgi/image/ transformation (auto webp/avif).
+//   R2 does NOT support Aliyun's ?x-oss-process= params, so they must not be used here.
+// - live Aliyun OSS CDNs: keep appending ?x-oss-process= params (still valid on those hosts).
+// - github raw / camo / anything else: no URL-based optimization available, return unchanged.
+const CF_DOMAIN = "cdn.tw93.fun";
+const CF_TRANSFORM = "width=2000,quality=80,format=auto,fit=scale-down";
+const OSS_DOMAIN_REGEX =
+  /^https:\/\/(?:cdn\.alipayobjects\.com|gw\.alipayobjects\.com|gw\.alicdn\.com|img\.alicdn\.com)\//;
+const OSS_PROCESS =
+  "x-oss-process=image/auto-orient,1/resize,w_2000/format,webp";
+
+function optimizeImageUrl(url) {
+  const cfPrefix = `https://${CF_DOMAIN}/`;
+  if (url.startsWith(cfPrefix)) {
+    if (url.includes("/cdn-cgi/image/")) return url;
+    return `${cfPrefix}cdn-cgi/image/${CF_TRANSFORM}/${url.slice(cfPrefix.length)}`;
+  }
+  if (OSS_DOMAIN_REGEX.test(url)) {
+    if (url.includes("x-oss-process")) return url;
+    const separator = url.includes("?") ? "&" : "?";
+    return `${url}${separator}${OSS_PROCESS}`;
+  }
+  return url;
+}
+
 const getHeroImage = (tree) => {
   let heroUrl = null;
   visit(tree, "raw", (node) => {
@@ -35,8 +61,7 @@ const getHeroImage = (tree) => {
         /https:\/\/(?:cdn\.(?:fliggy\.com|alipayobjects\.com)|gw\.(?:alipayobjects\.com|alicdn\.com)|img\.alicdn\.com|raw\.githubusercontent\.com|camo\.githubusercontent\.com|cdn\.tw93\.fun)/;
       const skipRegex = /\.(?:gif|svg|GIF|SVG)(?:\?.*)?$/;
       if (url.match(domainRegex) && !url.match(skipRegex)) {
-        const separator = url.includes("?") ? "&" : "?";
-        heroUrl = `${url}${separator}x-oss-process=image/auto-orient,1/resize,w_2000/format,webp`;
+        heroUrl = optimizeImageUrl(url);
       }
     }
   });
@@ -81,7 +106,6 @@ export default function rehypeCustomizeImageSrc() {
 
         imageIndex++;
         const isFirstImage = imageIndex === 1;
-        const separator = p1.includes("?") ? "&" : "?";
         const meta = imageMetadata[p1];
 
         // Extract original width/height if they exist
@@ -94,7 +118,7 @@ export default function rehypeCustomizeImageSrc() {
           ? originalHeightMatch[1].replace("px", "")
           : null;
 
-        let newAttrs = `src="${p1}${separator}x-oss-process=image/auto-orient,1/resize,w_2000/format,webp" data-lightense-src="${p1}" data-pswp-src="${p1}"`;
+        let newAttrs = `src="${optimizeImageUrl(p1)}" data-lightense-src="${p1}" data-pswp-src="${p1}"`;
 
         // Use metadata for aspect-ratio and lightbox, user-specified for display size
         const metaWidth = meta?.width;
