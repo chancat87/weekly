@@ -157,8 +157,10 @@
       // Only include images with proper data attributes or valid src
       const src = element.getAttribute('data-pswp-src') || element.src;
 
-      // Skip SVGs and GIFs
-      if (src && (src.toLowerCase().includes('.svg') || src.toLowerCase().includes('.gif'))) {
+      // Skip SVGs (vector, no raster size); GIFs are allowed so animated images can zoom.
+      // GIFs keep their original src (rehype leaves them un-rewritten, so the animation is
+      // preserved) and fall back to naturalWidth/naturalHeight below for lightbox sizing.
+      if (src && src.toLowerCase().includes('.svg')) {
         return null;
       }
 
