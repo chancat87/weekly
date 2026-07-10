@@ -1,5 +1,6 @@
 ---
 date: 2026/07/06
+image: https://cdn.tw93.fun/uPic/27209.png
 ---
 
 <video width="800px" preload="metadata" loop autoplay muted><source src="https://cdn.tw93.fun/uPic/hehua54.mp4" type="video/mp4"  poster="https://cdn.tw93.fun/uPic/27209.png"></video>
