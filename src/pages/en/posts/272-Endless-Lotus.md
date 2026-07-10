@@ -26,7 +26,7 @@ It basically lets you vibe out your own desktop app by talking, to solve your ow
 <img src="https://cdn.tw93.fun/uPic/YgphuJ15.png" width="800" />
 
 **sensory-ui: what if your component library had sound effects?**
-<https://dinkyfiles.com/>
+<https://www.sensory-ui.com/#showcase>
 What would it feel like if your component library had sound effects? This is really fun and worth playing with, giving your shadcn/ui some audio.
 <img src="https://cdn.tw93.fun/uPic/qs75CX03.png" width="800" />
 
