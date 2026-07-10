@@ -84,7 +84,7 @@ const translationLabel = lang === 'en' ? '切换到中文' : 'Switch to English'
 const giscusTheme = `${Astro.url.origin}/styles/giscus-light.css`;
 ---
 
-<BaseLayout title={`${SITE.title}${title}`} content={content} pageURL={currentUrl}>
+<BaseLayout title={lang === 'en' ? `${t('site.title')} ${title}` : `${SITE.title}${title}`} content={content} pageURL={currentUrl}>
   <meta slot='head' data-pagefind-meta={`url:${currentUrl}`} />
   {heroImage && <link rel='preload' as='image' href={heroImage} slot='head' fetchpriority='high' />}
   <!-- Post-specific styles -->

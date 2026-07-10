@@ -1,18 +1,23 @@
 ---
 import { SITE } from '@/config';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
 export interface Props {
   content: any;
   pageURL: URL | string;
 }
-const { icon, keywords, author, twitterId, homePage, title, siteImage, description: siteDescription } = SITE;
+const { icon, keywords, author, twitterId, homePage, siteImage } = SITE;
 const { content = {}, pageURL } = Astro.props;
 const { title: contentTitle, socialImage, description: contentDescription, image } = content;
 
-const pageTitle = contentTitle ? `${title}${contentTitle}` : title;
+// Site name follows the page language so English pages share as "Weekly ..."
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const title = t('site.title');
+const pageTitle = contentTitle ? (lang === 'en' ? `${title} ${contentTitle}` : `${title}${contentTitle}`) : title;
 // Check if this is an article page
 const isArticle = contentTitle && content.date;
 const imageSrc = isArticle ? (socialImage || siteImage) : siteImage;
-const description = contentDescription || siteDescription;
+const description = contentDescription || t('site.description');
 const preloadImage = image ? `${image}?x-oss-process=image/resize,w_1200/format,webp` : false;
 const canonicalURL = new URL(pageURL, homePage).href;
 
@@ -48,7 +53,7 @@ const structuredData = isArticle
       '@context': 'https://schema.org',
       '@type': 'WebSite',
       name: title,
-      description: siteDescription,
+      description: t('site.description'),
       url: homePage,
       author: {
         '@type': 'Person',
