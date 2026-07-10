@@ -9,9 +9,10 @@ const { icon } = SITE;
 <meta charset='utf-8' />
 <meta name='viewport' content='width=device-width' />
 
-<!-- DNS Prefetch and Preconnect for performance -->
-<link rel='dns-prefetch' href='https://giscus.app' />
-<link rel='preconnect' href='https://giscus.app' crossorigin />
+<!-- Preconnect to the origins on the critical path: card/post images and font files -->
+<link rel='preconnect' href='https://cdn.tw93.fun' />
+<link rel='preconnect' href='https://gw.alipayobjects.com' />
+<link rel='preconnect' href='https://gw.alipayobjects.com' crossorigin />
 
 <link rel='icon' href='/favicon.ico' />
 <link rel='icon' type='image/png' sizes='32x32' href='/icon-32.png' />
@@ -21,4 +22,6 @@ const { icon } = SITE;
 <!-- Canonical URL is handled in HeadSEO.astro (included via BaseLayout) -->
 
 <!-- Note: This CSS loads font subsets ONLY. The 8.6MB fallback has been removed for performance. -->
-<link rel='stylesheet' href='/fonts/jinkai.css' />
+<!-- Loaded async: every @font-face inside uses font-display swap, so it must not block first paint -->
+<link rel='preload' href='/fonts/jinkai.css' as='style' onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel='stylesheet' href='/fonts/jinkai.css' /></noscript>

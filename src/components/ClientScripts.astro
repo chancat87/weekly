@@ -76,6 +76,26 @@
       true
     );
 
+    // Play videos only while in the viewport (autoplay is stripped at build
+    // time into data-autoplay so off-screen videos are never fully downloaded)
+    const deferredVideos = document.querySelectorAll<HTMLVideoElement>('video[data-autoplay]');
+    if (deferredVideos.length > 0) {
+      const videoObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const video = entry.target as HTMLVideoElement;
+            if (entry.isIntersecting) {
+              video.play().catch(() => {});
+            } else if (!video.paused) {
+              video.pause();
+            }
+          });
+        },
+        { rootMargin: '200px 0px' }
+      );
+      deferredVideos.forEach((video) => videoObserver.observe(video));
+    }
+
     // Lazy load images after the first two
     const images = document.querySelectorAll('#write img');
     images.forEach((img, index) => {

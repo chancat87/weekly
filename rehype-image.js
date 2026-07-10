@@ -156,8 +156,14 @@ export default function rehypeCustomizeImageSrc() {
         return `<img ${newAttrs} ${otherAttrs} />`;
       });
 
-      // 2. Video tags processing removed to prevent automatic poster injection from first image as it was causing confusion.
-      // If a poster is needed, it should be manually specified in the markdown.
+      // 2. Defer video playback: a bare `autoplay` attribute makes the browser
+      // ignore preload="metadata" and download every video on page load.
+      // Swap it for data-autoplay; ClientScripts plays/pauses videos via
+      // IntersectionObserver so only in-viewport videos are fetched.
+      node.value = node.value.replace(
+        /<video([^>]*?)\sautoplay([^>]*)>/g,
+        '<video$1 data-autoplay$2>',
+      );
     });
   };
 }
