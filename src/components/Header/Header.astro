@@ -118,9 +118,11 @@ const translatePath = useLocalizedPath(lang);
 </style>
 
 <style is:global>
-  @media (min-width: 1412px) {
-    .xl\:max-w-7xl {
-      max-width: 1338px;
+  /* Keep ascending breakpoint order: these have equal specificity to each
+     other, so the widest matching breakpoint must come last to win. */
+  @media (min-width: 768px) {
+    .md\:max-w-2xl {
+      max-width: 659px;
     }
   }
 
@@ -130,9 +132,9 @@ const translatePath = useLocalizedPath(lang);
     }
   }
 
-  @media (min-width: 768px) {
-    .md\:max-w-2xl {
-      max-width: 659px;
+  @media (min-width: 1412px) {
+    .xl\:max-w-7xl {
+      max-width: 1338px;
     }
   }
 </style>
