@@ -18,7 +18,7 @@ Pretty funny. Codex usage limits seem to reset whenever @thsottiaux announces on
 **Trees: a beautiful file tree rendering library**
 <https://trees.software/>
 The file tree rendering looks really good. I like simple, beautiful things like this. If you're building a file tree for an editor sidebar, this is worth studying.
-<img src="https://cdn.tw93.fun/uPic/lEQhIy33.png" width="500" />
+<img src="https://cdn.tw93.fun/uPic/lEQhIy33.png" width="800" />
 
 **Bark: an open-source tool for pushing messages to your own iPhone**
 <https://github.com/Finb/Bark>
