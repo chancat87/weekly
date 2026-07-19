@@ -34,6 +34,7 @@ GROK_API_KEY=your_key node scripts/translate_posts.js
 
 - Frontmatter: `date` (format `YYYY/MM/DD`) is required; `image` is optional. The post title comes from the filename, not frontmatter.
 - Chinese posts: `src/pages/posts/{issue-number}-{Chinese-title}.md`; English posts live in `src/pages/en/posts/` keyed by the same issue-number prefix. Do not mix languages in a single file.
+- The site ships two language surfaces. Before changing any page-level metadata (share/OG title, description, social card), list both the Chinese and English copies plus the share-card fields, and sync all of them; the English site keeping a Chinese share title is the known failure this rule exists for.
 - Preserve the author's voice: do not make colloquial phrasing formal, do not add emoji unless the original has them.
 
 ## Working Rules
@@ -46,7 +47,7 @@ GROK_API_KEY=your_key node scripts/translate_posts.js
 
 ## Verification
 
-- Site or content changes: run `pnpm build`.
+- Site or content changes: run `pnpm build`. For image-processing, translation, or frontmatter edits, also run `pnpm dev` and inspect the affected pages yourself; a green build does not mean the page still looks right, and push is production.
 - Image-related changes: run `pnpm image:probe` or rely on the `prebuild` step.
 - Translation changes: verify `GROK_API_KEY` is provided before running `scripts/translate_posts.js`, then inspect generated English Markdown before committing.
 - Local visual checks: run `pnpm dev` and inspect the affected page.
