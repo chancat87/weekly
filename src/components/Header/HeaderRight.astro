@@ -14,7 +14,7 @@ const translatePath = useLocalizedPath(lang);
   <HeaderLink href={blogPage} target='_blank' class='hidden md:inline-flex'>{t('nav.home')}</HeaderLink>
   <HeaderLink href={`https://twitter.com/${twitterId}`} target='_blank' class='lg:inline-flex hidden'>{t('nav.twitter')}</HeaderLink>
   <HeaderLink href={`https://github.com/${githubId}`} target='_blank' class='hidden md:inline-flex'>{t('nav.github')}</HeaderLink>
-  <HeaderLink href={translatePath('/about')} class='hidden md:inline-flex'>{t('nav.about')}</HeaderLink>
+  <HeaderLink href={translatePath('/about')} class='hidden md:inline-flex'>About</HeaderLink>
   <HeaderLink href={lang === 'en' ? '/en/rss.xml' : '/rss.xml'} target='_blank' class='hidden md:inline-flex' title='RSS'>RSS</HeaderLink>
 
   <Search />
