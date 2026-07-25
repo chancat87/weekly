@@ -1,0 +1,72 @@
+---
+import '../styles/markdown.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from './Header/Header.astro';
+import { SITE } from '@/config';
+import { FAQ } from '@/data/faq';
+import { useTranslations } from '../i18n/utils';
+import { Content as AboutZh } from '@/data/about.zh.md';
+import { Content as AboutEn } from '@/data/about.en.md';
+
+export interface Props {
+  lang: 'zh' | 'en';
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const isEn = lang === 'en';
+
+const heading = isEn ? 'About Weekly' : '关于潮流周刊';
+const description = isEn
+  ? 'What Weekly (潮流周刊) is, how often it ships, how to subscribe, how to quote it, and the machine-readable endpoints available to AI agents and developers.'
+  : '潮流周刊是什么、多久更新、如何订阅、如何引用，以及给 AI Agent 与开发者准备的机器可读入口。';
+const pageURL = `${SITE.homePage}${isEn ? '/en/about' : '/about'}`;
+const faq = FAQ[lang];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  '@id': `${pageURL}#faq`,
+  inLanguage: isEn ? 'en' : 'zh-Hans',
+  name: heading,
+  mainEntity: faq.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+};
+---
+
+<BaseLayout
+  title={isEn ? `${t('site.title')} About` : `${SITE.title}关于`}
+  description={description}
+  pageURL={pageURL}
+  markdownUrl={isEn ? '/en/about.md' : '/about.md'}
+>
+  <script slot='head' type='application/ld+json' set:html={JSON.stringify(faqSchema)} />
+
+  <Header />
+  <main class='mx-auto mb-16 -mt-2 w-full box-border max-w-xl sm:px-3 px-4 md:px-0 md:max-w-2xl lg:max-w-3xl'>
+    <article class='markdown-body heti'>
+      <h1>{heading}</h1>
+      {isEn ? <AboutEn /> : <AboutZh />}
+      <h2>{isEn ? 'Frequently asked questions' : '常见问题'}</h2>
+      {
+        faq.map((item) => (
+          <Fragment>
+            <h3>{item.q}</h3>
+            <p>{item.a}</p>
+          </Fragment>
+        ))
+      }
+    </article>
+  </main>
+</BaseLayout>
+
+<style>
+  article :global(h1) {
+    margin-block-start: 0;
+    margin-bottom: 24px;
+    line-height: 1.2;
+  }
+</style>

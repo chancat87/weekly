@@ -4,8 +4,17 @@ Allow: /
 Disallow: /pagefind/
 Disallow: /_astro/
 
-# Sitemap
+# Sitemap and structured data feeds
 Sitemap: https://weekly.tw93.fun/sitemap-index.xml
+Schemamap: https://weekly.tw93.fun/schemamap.xml
+
+# Machine-readable entry points for agents
+# Navigation index:  https://weekly.tw93.fun/llms.txt
+# Agent guide:       https://weekly.tw93.fun/llms.md
+# Markdown mirror:   https://weekly.tw93.fun/index.md (append .md to any page)
+# JSON API:          https://weekly.tw93.fun/api/index.json
+# OpenAPI 3.1:       https://weekly.tw93.fun/openapi.json
+# JSON-LD feed:      https://weekly.tw93.fun/feeds/posts.jsonl
 
 # Search engines
 User-agent: Googlebot

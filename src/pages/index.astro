@@ -10,7 +10,7 @@ const posts = Object.values(import.meta.glob('./posts/*.md', { eager: true })) a
 const allPosts = sortPosts(posts);
 ---
 
-<BaseLayout title={SITE.title} description={SITE.description} pageURL={SITE.homePage}>
+<BaseLayout title={SITE.title} description={SITE.description} pageURL={SITE.homePage} markdownUrl='/index.md'>
   <style slot='head'>
     /* Enhanced card hover effects */
     .card-content:hover {

@@ -35,6 +35,12 @@ function getTwitterImage(num) {
 function defaultLayoutPlugin() {
   return function (tree, file) {
     const filePath = file.history[0];
+    // Only issue Markdown gets the post layout and the derived post metadata.
+    // Prose imported elsewhere (src/data/*.md) renders inside its own page.
+    if (!/[\/\\]pages[\/\\](en[\/\\])?posts[\/\\]/.test(filePath)) {
+      return;
+    }
+
     const { frontmatter } = file.data.astro;
     frontmatter.layout = "@layouts/post.astro";
 

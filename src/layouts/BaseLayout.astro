@@ -13,6 +13,8 @@ export interface Props {
   pageURL?: string;
   content?: any;
   includeScripts?: boolean;
+  /** Markdown twin of this page, advertised to agents as rel=alternate. */
+  markdownUrl?: string;
 }
 
 const {
@@ -23,6 +25,7 @@ const {
   pageURL = SITE.homePage,
   content = {},
   includeScripts = true,
+  markdownUrl,
 } = Astro.props;
 
 import { getLangFromUrl, useTranslations, useLocalizedPath } from '../i18n/utils';
@@ -43,7 +46,7 @@ const seoContent = {
 <html lang={lang === 'en' ? 'en' : 'zh-CN'}>
   <head>
     <HeadCommon />
-    <HeadSEO content={seoContent} pageURL={pageURL} />
+    <HeadSEO content={seoContent} pageURL={pageURL} markdownUrl={markdownUrl} />
     <meta name='generator' content={Astro.generator} />
     <title>{title}</title>
     <slot name='head' />

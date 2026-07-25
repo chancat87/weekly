@@ -13,7 +13,12 @@ const allPosts = sortPosts(posts);
 const t = useTranslations('en');
 ---
 
-<BaseLayout title={t('site.title')} description={t('site.description')} pageURL={`${SITE.homePage}/en`}>
+<BaseLayout
+  title={t('site.title')}
+  description={t('site.description')}
+  pageURL={`${SITE.homePage}/en`}
+  markdownUrl='/en/index.md'
+>
   <style slot='head'>
     /* Enhanced card hover effects */
     .card-content:hover {
