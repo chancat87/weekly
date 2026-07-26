@@ -43,14 +43,7 @@ He describes a way of working with an LLM that he finds genuinely useful: lean b
 
 **Dan Shipper's take on Claude Opus 5, which I mostly agree with**
 <https://x.com/danshipper/status/2080700057892815114>
-They spent a week testing Opus 5 across coding, writing, knowledge work, and their own agents, and their first reaction was that it's a hard model to like: it butts heads with your instructions, stops before the work is done, and doesn't play well with the skills and plugins they already had. Then they deleted those skills and rebuilt from scratch, and Opus 5 got a lot better, with some genuinely impressive moments. A few of his conclusions:
-
-- It's like a "poor man's Fable," with all of Fable's personality quirks and none of its genius.
-- It breaks backward compatibility, so be careful dropping it into the skills and workflows you already have. It often knocks off early, or just ignores what you asked for.
-- Building from zero works better. This is a model you need to spend time rebuilding your workflows around, and it's worth it if you do.
-- Medium or low thinking actually works better. The more thinking time you give it, the more likely those annoying habits show up. Don't switch to Sonnet the moment it feels slow, try low thinking first.
-
-His workflow only has two slots: the hardest work goes to a genius model, currently Fable, and everything else goes to a smart, fast general model, currently GPT-5.6. Opus 5 has the temperament of a genius model without the ceiling, so it's stuck in an awkward middle spot.
+They spent a week testing Opus 5 across coding, writing, knowledge work, and their own agents, and their first reaction was that it's a hard model to like: it works against your instructions, stops before the job is done, and doesn't fit the skills and plugins they already had. Then they deleted the old skills and rebuilt from scratch, and it got a lot better, so his advice is to not force it into an existing workflow, and to run it at medium or low thinking rather than maxed out. He still sends the hardest work to Fable and everything else to GPT-5.6, and he calls Opus 5 a "poor man's Fable," a model with the temperament of a genius but not the ceiling, stuck in an awkward middle spot.
 
 **5 Trends That Defined AI Engineering at World's Fair 2026**
 <https://www.latent.space/p/aiewf26trends>
