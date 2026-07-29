@@ -5,6 +5,7 @@ import AstroLogo from '../components/Header/AstroLogo.astro';
 import LeftSidebar from '../components/LeftSidebar.astro';
 import Search from '../components/Header/Search.astro';
 import ReaderModeToggle from '../components/ReaderModeToggle.astro';
+import ParagraphShare from '../components/ParagraphShare.astro';
 import { SITE, GISCUS_CONFIG } from '@/config';
 import { SUPPORT_CALLOUT } from '@/supportCallout';
 import { parseTitle, sortPosts, getIndex, toNumericUrl, extractTitlePart, getSlugParts } from '@/util';
@@ -379,4 +380,5 @@ const giscusTheme = `${Astro.url.origin}/styles/giscus-light.css`;
       }
     </div>
   </main>
+  <ParagraphShare />
 </BaseLayout>

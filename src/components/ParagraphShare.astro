@@ -1,0 +1,158 @@
+---
+// Select text in a post to get a share link (#q=<snippet>); opening that link
+// scrolls to the paragraph containing the snippet and highlights it.
+---
+
+<script>
+  const article = document.getElementById('write');
+
+  if (article) {
+    const isEn = document.documentElement.lang === 'en';
+    const BLOCKS = 'p, li, blockquote, h2, h3, h4, small';
+    const norm = (s: string) => s.replace(/\s+/g, ' ').trim();
+    const isTouch = () => matchMedia('(pointer: coarse)').matches;
+
+    // Locate the shared paragraph from the #q= hash and highlight it
+    const match = location.hash.match(/^#q=(.+)$/);
+    if (match) {
+      let query = '';
+      try {
+        query = norm(decodeURIComponent(match[1]));
+      } catch {}
+      if (query) {
+        const target = Array.from(article.querySelectorAll<HTMLElement>(BLOCKS)).find((el) =>
+          norm(el.textContent || '').includes(query)
+        );
+        if (target) {
+          target.classList.add('para-share-target');
+          target.scrollIntoView({ block: 'center' });
+          // Images above may finish loading later and push the paragraph away
+          window.addEventListener('load', () => target.scrollIntoView({ block: 'center' }));
+        }
+      }
+    }
+
+    const btn = document.createElement('button');
+    btn.id = 'para-share-btn';
+    btn.type = 'button';
+    btn.textContent = isEn ? 'Share' : '分享此段';
+    btn.hidden = true;
+    document.body.appendChild(btn);
+
+    const toast = document.createElement('div');
+    toast.id = 'para-share-toast';
+    document.body.appendChild(toast);
+    let toastTimer: ReturnType<typeof setTimeout>;
+    const showToast = (msg: string) => {
+      toast.textContent = msg;
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.remove('show'), 2000);
+    };
+
+    const hide = () => {
+      btn.hidden = true;
+    };
+
+    const getArticleSelection = () => {
+      const sel = window.getSelection();
+      if (!sel || sel.isCollapsed || sel.rangeCount === 0) return null;
+      const range = sel.getRangeAt(0);
+      if (!article.contains(range.commonAncestorContainer)) return null;
+      if (norm(sel.toString()).length < 4) return null;
+      return range;
+    };
+
+    const show = () => {
+      const range = getArticleSelection();
+      if (!range) return hide();
+      const rect = range.getBoundingClientRect();
+      btn.hidden = false;
+      // Below the selection on touch so the system callout menu stays clear
+      const top = isTouch() ? rect.bottom + 12 : rect.top - btn.offsetHeight - 10;
+      btn.style.top = `${top + scrollY}px`;
+      btn.style.left = `${Math.max(12, rect.left + rect.width / 2 - btn.offsetWidth / 2 + scrollX)}px`;
+    };
+
+    document.addEventListener('pointerup', () => setTimeout(show, 0));
+    document.addEventListener('selectionchange', () => {
+      const sel = window.getSelection();
+      if (!sel || sel.isCollapsed) hide();
+    });
+
+    // Keep the selection alive when tapping the button
+    btn.addEventListener('pointerdown', (e) => e.preventDefault());
+    btn.addEventListener('click', async () => {
+      const range = getArticleSelection();
+      if (!range) return hide();
+      // Clamp the snippet to the first paragraph so the lookup always matches
+      const startEl =
+        range.startContainer instanceof Element ? range.startContainer : range.startContainer.parentElement;
+      const startBlock = startEl?.closest(BLOCKS);
+      const clamped = range.cloneRange();
+      if (startBlock && !startBlock.contains(range.endContainer)) {
+        clamped.setEnd(startBlock, startBlock.childNodes.length);
+      }
+      const snippet = norm(clamped.toString()).slice(0, 80);
+      if (!snippet) return hide();
+      const url = `${location.origin}${location.pathname}#q=${encodeURIComponent(snippet)}`;
+      try {
+        if (isTouch() && navigator.share) {
+          await navigator.share({ title: document.title, url });
+        } else {
+          await navigator.clipboard.writeText(url);
+          showToast(isEn ? 'Link copied' : '链接已复制');
+        }
+      } catch {}
+      hide();
+      window.getSelection()?.removeAllRanges();
+    });
+  }
+</script>
+
+<style is:global>
+  .para-share-target {
+    background: color-mix(in srgb, var(--theme-accent) 14%, transparent);
+    border-radius: 6px;
+    box-shadow: 0 0 0 6px color-mix(in srgb, var(--theme-accent) 14%, transparent);
+  }
+
+  #para-share-btn {
+    position: absolute;
+    z-index: 60;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 999px;
+    font-size: 13px;
+    line-height: 1.5;
+    background: var(--theme-text);
+    color: var(--theme-bg);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.18);
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  #para-share-toast {
+    position: fixed;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%) translateY(8px);
+    z-index: 60;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    background: var(--theme-text);
+    color: var(--theme-bg);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.18);
+    opacity: 0;
+    pointer-events: none;
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  #para-share-toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+</style>
