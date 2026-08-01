@@ -1,6 +1,6 @@
 ---
-// Select text in a post to get a share link (#q=<snippet>); opening that link
-// scrolls to the paragraph containing the snippet and highlights it.
+// Select text in a post body to copy a deep link; opening that link scrolls to
+// the matching paragraph and highlights it.
 ---
 
 <script>
@@ -8,41 +8,67 @@
 
   if (article) {
     const isEn = document.documentElement.lang === 'en';
-    const BLOCKS = 'p, li, blockquote, h2, h3, h4, small';
+    const BLOCKS = 'p, li, small';
     const norm = (s: string) => s.replace(/\s+/g, ' ').trim();
     const isTouch = () => matchMedia('(pointer: coarse)').matches;
+    // Keep only leaf blocks so list items and their child paragraphs cannot
+    // compete for the same shared text.
+    const shareBlocks = Array.from(
+      article.querySelectorAll<HTMLElement>(BLOCKS),
+    ).filter((block) => !block.querySelector(BLOCKS));
 
-    // Locate the shared paragraph from the #q= hash and highlight it
-    const match = location.hash.match(/^#q=(.+)$/);
-    if (match) {
-      let query = '';
-      try {
-        query = norm(decodeURIComponent(match[1]));
-      } catch {}
-      if (query) {
-        const target = Array.from(article.querySelectorAll<HTMLElement>(BLOCKS)).find((el) =>
-          norm(el.textContent || '').includes(query)
+    // New links carry a block position plus a text check. Legacy #q= links are
+    // still supported, but ambiguous or title-shaped matches fail closed.
+    const hashParams = new URLSearchParams(location.hash.slice(1));
+    const query = norm(hashParams.get('q') || '');
+    if (query) {
+      const blockNumber = Number.parseInt(hashParams.get('p') || '', 10);
+      const indexedTarget = Number.isInteger(blockNumber)
+        ? shareBlocks[blockNumber - 1]
+        : undefined;
+      const titleText = norm(
+        article.querySelector<HTMLElement>(
+          '.content-title [data-pagefind-meta="title"]',
+        )?.textContent || '',
+      );
+      let target =
+        indexedTarget && norm(indexedTarget.textContent || '').includes(query)
+          ? indexedTarget
+          : undefined;
+
+      if (!target && !titleText.includes(query)) {
+        const matches = shareBlocks.filter((block) =>
+          norm(block.textContent || '').includes(query),
         );
-        if (target) {
-          target.classList.add('para-share-target');
-          target.scrollIntoView({ block: 'center' });
-          // Images above may finish loading later and push the paragraph away
-          window.addEventListener('load', () => target.scrollIntoView({ block: 'center' }));
-        }
+        if (matches.length === 1) target = matches[0];
+      }
+
+      if (target) {
+        target.classList.add('para-share-target');
+        target.scrollIntoView({ block: 'center' });
+        // Images above may finish loading later and push the paragraph away.
+        window.addEventListener('load', () =>
+          target.scrollIntoView({ block: 'center' }),
+        );
       }
     }
 
     const btn = document.createElement('button');
     btn.id = 'para-share-btn';
     btn.type = 'button';
-    btn.textContent = isEn ? 'Share' : '分享此段';
+    btn.textContent = isEn ? 'Copy paragraph link' : '复制此段链接';
     btn.hidden = true;
     document.body.appendChild(btn);
 
     const toast = document.createElement('div');
     toast.id = 'para-share-toast';
+    toast.setAttribute('role', 'status');
+    toast.setAttribute('aria-live', 'polite');
+    toast.setAttribute('aria-atomic', 'true');
     document.body.appendChild(toast);
     let toastTimer: ReturnType<typeof setTimeout>;
+    let selectionTimer: ReturnType<typeof setTimeout>;
+    let lastInput: 'pointer' | 'keyboard' = 'pointer';
     const showToast = (msg: string) => {
       toast.textContent = msg;
       toast.classList.add('show');
@@ -54,58 +80,86 @@
       btn.hidden = true;
     };
 
-    const getArticleSelection = () => {
+    const getShareSelection = () => {
       const sel = window.getSelection();
       if (!sel || sel.isCollapsed || sel.rangeCount === 0) return null;
       const range = sel.getRangeAt(0);
-      if (!article.contains(range.commonAncestorContainer)) return null;
-      if (norm(sel.toString()).length < 4) return null;
-      return range;
+      const startBlock = shareBlocks.find((block) =>
+        block.contains(range.startContainer),
+      );
+      const endBlock = shareBlocks.find((block) =>
+        block.contains(range.endContainer),
+      );
+      const snippet = norm(sel.toString()).slice(0, 80);
+      if (!startBlock || startBlock !== endBlock || snippet.length < 4)
+        return null;
+      return { range, block: startBlock, snippet };
     };
 
-    const show = () => {
-      const range = getArticleSelection();
-      if (!range) return hide();
-      const rect = range.getBoundingClientRect();
+    const show = (focusButton = false) => {
+      const selection = getShareSelection();
+      if (!selection) return hide();
+      const rects = Array.from(selection.range.getClientRects()).filter(
+        (rect) => rect.width || rect.height,
+      );
+      const rect =
+        rects[rects.length - 1] || selection.range.getBoundingClientRect();
       btn.hidden = false;
-      // Below the selection on touch so the system callout menu stays clear
-      const top = isTouch() ? rect.bottom + 12 : rect.top - btn.offsetHeight - 10;
+      const edge = 12;
+      const gap = 10;
+      const maxLeft = Math.max(edge, innerWidth - btn.offsetWidth - edge);
+      const desiredLeft = rect.left + rect.width / 2 - btn.offsetWidth / 2;
+      const left = Math.max(edge, Math.min(desiredLeft, maxLeft));
+      let top = isTouch()
+        ? rect.bottom + gap
+        : rect.top - btn.offsetHeight - gap;
+
+      if (isTouch() && top + btn.offsetHeight > innerHeight - edge)
+        top = rect.top - btn.offsetHeight - gap;
+      if (!isTouch() && top < edge) top = rect.bottom + gap;
+      top = Math.max(
+        edge,
+        Math.min(top, innerHeight - btn.offsetHeight - edge),
+      );
       btn.style.top = `${top + scrollY}px`;
-      btn.style.left = `${Math.max(12, rect.left + rect.width / 2 - btn.offsetWidth / 2 + scrollX)}px`;
+      btn.style.left = `${left + scrollX}px`;
+      if (focusButton) btn.focus({ preventScroll: true });
     };
 
-    document.addEventListener('pointerup', () => setTimeout(show, 0));
+    document.addEventListener(
+      'pointerdown',
+      () => (lastInput = 'pointer'),
+      true,
+    );
+    document.addEventListener('keydown', () => (lastInput = 'keyboard'), true);
+    document.addEventListener('pointerup', () => setTimeout(() => show(), 0));
     document.addEventListener('selectionchange', () => {
       const sel = window.getSelection();
-      if (!sel || sel.isCollapsed) hide();
+      clearTimeout(selectionTimer);
+      if (!sel || sel.isCollapsed) return hide();
+      selectionTimer = setTimeout(() => show(lastInput === 'keyboard'), 0);
     });
+    window.addEventListener('scroll', hide, { passive: true });
+    window.addEventListener('resize', hide);
 
-    // Keep the selection alive when tapping the button
+    // Keep the selection alive when tapping the button.
     btn.addEventListener('pointerdown', (e) => e.preventDefault());
     btn.addEventListener('click', async () => {
-      const range = getArticleSelection();
-      if (!range) return hide();
-      // Clamp the snippet to the first paragraph so the lookup always matches
-      const startEl =
-        range.startContainer instanceof Element ? range.startContainer : range.startContainer.parentElement;
-      const startBlock = startEl?.closest(BLOCKS);
-      const clamped = range.cloneRange();
-      if (startBlock && !startBlock.contains(range.endContainer)) {
-        clamped.setEnd(startBlock, startBlock.childNodes.length);
-      }
-      const snippet = norm(clamped.toString()).slice(0, 80);
-      if (!snippet) return hide();
-      const url = `${location.origin}${location.pathname}#q=${encodeURIComponent(snippet)}`;
+      const selection = getShareSelection();
+      if (!selection) return hide();
+      const blockNumber = shareBlocks.indexOf(selection.block) + 1;
+      const url = `${location.origin}${location.pathname}#p=${blockNumber}&q=${encodeURIComponent(selection.snippet)}`;
       try {
-        if (isTouch() && navigator.share) {
-          await navigator.share({ title: document.title, url });
-        } else {
-          await navigator.clipboard.writeText(url);
-          showToast(isEn ? 'Link copied' : '链接已复制');
-        }
-      } catch {}
-      hide();
-      window.getSelection()?.removeAllRanges();
+        if (!navigator.clipboard?.writeText)
+          throw new Error('Clipboard API unavailable');
+        await navigator.clipboard.writeText(url);
+        showToast(isEn ? 'Paragraph link copied' : '此段链接已复制');
+        hide();
+        window.getSelection()?.removeAllRanges();
+      } catch {
+        showToast(isEn ? "Couldn't copy. Try again" : '复制失败，请重试');
+        show(lastInput === 'keyboard');
+      }
     });
   }
 </script>
@@ -114,13 +168,15 @@
   .para-share-target {
     background: color-mix(in srgb, var(--theme-accent) 14%, transparent);
     border-radius: 6px;
-    box-shadow: 0 0 0 6px color-mix(in srgb, var(--theme-accent) 14%, transparent);
+    box-shadow: 0 0 0 6px
+      color-mix(in srgb, var(--theme-accent) 14%, transparent);
   }
 
   #para-share-btn {
     position: absolute;
     z-index: 60;
     padding: 6px 14px;
+    min-height: 36px;
     border: none;
     border-radius: 999px;
     font-size: 13px;
@@ -139,6 +195,7 @@
     transform: translateX(-50%) translateY(8px);
     z-index: 60;
     padding: 8px 16px;
+    max-width: calc(100vw - 24px);
     border-radius: 999px;
     font-size: 13px;
     background: var(--theme-text);
@@ -154,5 +211,18 @@
   #para-share-toast.show {
     opacity: 1;
     transform: translateX(-50%) translateY(0);
+  }
+
+  @media (pointer: coarse) {
+    #para-share-btn {
+      min-height: 44px;
+      padding: 10px 16px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #para-share-toast {
+      transition: none;
+    }
   }
 </style>
