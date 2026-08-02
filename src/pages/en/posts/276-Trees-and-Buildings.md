@@ -32,7 +32,7 @@ This image-to-threejs tool is nicely done and cuts the cost of writing threejs a
 **This 3D organ viewer is well done**
 <https://anatomy-livid.vercel.app/>
 Worth a look if you're in biology or medicine, or just into biology. Feels professional and educational.
-<img src="https://cdn.tw93.fun/uPic/USjFHx48.jpg" width="800" />
+<img src="https://cdn.tw93.fun/uPic/uVLcvk48.png" width="800" />
 
 **UU Remote: this remote tool is seriously good**
 <https://uuyc.163.com/>
