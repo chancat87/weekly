@@ -5,8 +5,6 @@ description: Use this skill for Weekly GitHub issue, PR, and publishing operatio
 
 # Weekly GitHub Operations
 
-Use this skill when working with GitHub issues, pull requests, or publishing tasks for Weekly.
-
 ## Golden Rule
 
 Always inspect live GitHub state with `gh` before acting.
@@ -14,11 +12,6 @@ Always inspect live GitHub state with `gh` before acting.
 ## Common Commands
 
 ```bash
-gh issue view 123
-gh issue list --state open
-gh pr view 123
-gh pr diff 123
-gh run list --limit 10
 gh run list --workflow=build.yml --limit 10
 gh run list --workflow=translate-posts.yml --limit 10
 ```
