@@ -4,16 +4,24 @@ import AstroLogo from './AstroLogo.astro';
 import HeaderRight from './HeaderRight.astro';
 import { getLangFromUrl, useTranslations, useLocalizedPath } from '../../i18n/utils';
 
+export interface Props {
+  /** `feed` matches the homepage card grid width; `page` keeps the article/about width. */
+  layout?: 'feed' | 'page';
+}
+
+const { layout = 'page' } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useLocalizedPath(lang);
+
+const navClass =
+  layout === 'feed'
+    ? 'nav-wrapper nav-feed feed-container mx-auto'
+    : 'nav-wrapper mx-auto xl:max-w-7xl w-full lg:max-w-5xl md:max-w-2xl max-w-xl box-border md:px-0 sm:px-3 px-4';
 ---
 
 <header>
-  <nav
-    class='nav-wrapper mx-auto xl:max-w-7xl w-full lg:max-w-5xl md:max-w-2xl max-w-xl box-border md:px-0 sm:px-3 px-4'
-    title={t('site.title')}
-  >
+  <nav class={navClass} title={t('site.title')}>
     <div class='logo flex content-logo'>
       <a href={translatePath('/')} class='logo-image' aria-label={t('site.title')}>
         <AstroLogo size={40} class='pswp-ignore' />
@@ -80,7 +88,14 @@ const translatePath = useLocalizedPath(lang);
 
   @media (max-width: 800px) {
     .nav-wrapper {
-      margin: 5px 0;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    /* The feed header keeps its own centred width so it stays aligned with the cards. */
+    .nav-wrapper:not(.nav-feed) {
+      margin-left: 0;
+      margin-right: 0;
       max-width: 100%;
       width: 100%;
     }

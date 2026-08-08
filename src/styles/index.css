@@ -430,3 +430,35 @@ h2.heading {
 .markdown-body video {
   border-radius: var(--radius);
 }
+
+/* Homepage feed width. Shared by the header and the card grid so the logo
+   always lines up with the first card. Breakpoints mirror tailwind.config.cjs. */
+.feed-container {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 36rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .feed-container {
+    max-width: 840px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .feed-container {
+    max-width: 1180px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .feed-container {
+    max-width: 1386px;
+  }
+}
