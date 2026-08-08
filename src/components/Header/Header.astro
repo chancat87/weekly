@@ -14,10 +14,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useLocalizedPath(lang);
 
-const navClass =
-  layout === 'feed'
-    ? 'nav-wrapper nav-feed feed-container mx-auto'
-    : 'nav-wrapper mx-auto xl:max-w-7xl w-full lg:max-w-5xl md:max-w-2xl max-w-xl box-border md:px-0 sm:px-3 px-4';
+const navClass = `nav-wrapper mx-auto ${layout === 'feed' ? 'feed-container' : 'page-container'}`;
 ---
 
 <header>
@@ -91,14 +88,6 @@ const navClass =
       margin-top: 5px;
       margin-bottom: 5px;
     }
-
-    /* The feed header keeps its own centred width so it stays aligned with the cards. */
-    .nav-wrapper:not(.nav-feed) {
-      margin-left: 0;
-      margin-right: 0;
-      max-width: 100%;
-      width: 100%;
-    }
   }
 
   :root {
@@ -128,28 +117,6 @@ const navClass =
   @media (min-width: 800px) {
     .search-item {
       max-width: 400px;
-    }
-  }
-</style>
-
-<style is:global>
-  /* Keep ascending breakpoint order: these have equal specificity to each
-     other, so the widest matching breakpoint must come last to win. */
-  @media (min-width: 768px) {
-    .md\:max-w-2xl {
-      max-width: 659px;
-    }
-  }
-
-  @media (min-width: 1080px) {
-    .lg\:max-w-5xl {
-      max-width: 998px;
-    }
-  }
-
-  @media (min-width: 1412px) {
-    .xl\:max-w-7xl {
-      max-width: 1338px;
     }
   }
 </style>

@@ -462,3 +462,30 @@ h2.heading {
     max-width: 1386px;
   }
 }
+
+/* About page width. Shared by the header and the article so the logo lines up
+   with the heading. Content grows with the viewport up to the 659px reading
+   measure and stops there, with no jump at either breakpoint. */
+.page-container {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 691px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .page-container {
+    max-width: 699px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-container {
+    max-width: 659px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

@@ -46,7 +46,7 @@ const faqSchema = {
   <script slot='head' type='application/ld+json' set:html={JSON.stringify(faqSchema)} />
 
   <Header />
-  <main class='mx-auto mb-16 -mt-2 w-full box-border max-w-xl sm:px-3 px-4 md:px-0 md:max-w-2xl lg:max-w-3xl'>
+  <main class='page-container mx-auto mb-16 -mt-2'>
     <article class='markdown-body heti'>
       <h1>{heading}</h1>
       {isEn ? <AboutEn /> : <AboutZh />}
