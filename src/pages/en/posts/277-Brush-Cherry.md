@@ -25,7 +25,7 @@ Impressive, and it's free and open source. This tool wraps your iPhone screen re
 Found via a case Paidax shared on Twitter. "Try clothes on, anywhere online" is such a great idea. I think it could spark a ton of ideas for e-commerce, way better than the tech that came before it.
 <video width="800px" preload="metadata" autoplay controls><source src="https://cdn.tw93.fun/uPic/VPEz98liVxKD7unj32.mp4" type="video/mp4"></video>
 
-**A Chronicle of the US Stock Market**
+**An Online Chronicle of the US Stock Market**
 <https://historyofmarket.com/>
 The material in this US stock market chronicle is incredibly rich, covering the S&P 500, Nasdaq, semiconductors, information technology, finance, the Magnificent Seven, the top 10, and more. When I have time, I'm definitely going to dig through it properly.
 <img src="https://cdn.tw93.fun/uPic/ZgG0N430.png" width="800" />
@@ -57,7 +57,7 @@ An Oppo Mini. Set your expectations right, app compatibility isn't as good as an
     </tr>
 </table>
 
-**Being an indie developer isn't just about developing**
+**Let's talk about how being an indie developer isn't just about developing**
 
 I've seen a lot of reflections on indie development lately, so I thought I'd use Mole's journey from an open-source CLI to a paid Mac app to share my thinking and what's actually worked. Hope it helps.
 
