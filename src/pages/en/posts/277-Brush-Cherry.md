@@ -23,7 +23,7 @@ Impressive, and it's free and open source. This tool wraps your iPhone screen re
 **Saw a really good AI outfit-swap plugin on Twitter, impressive stuff**
 <https://anywear.decart.ai/>
 Found via a case Paidax shared on Twitter. "Try clothes on, anywhere online" is such a great idea. I think it could spark a ton of ideas for e-commerce, way better than the tech that came before it.
-<video width="800px" preload="metadata" autoplay controls><source src="https://cdn.tw93.fun/uPic/VPEz98liVxKD7unj32.mp4" type="video/mp4"></video>
+<video width="800px" preload="metadata" controls><source src="https://cdn.tw93.fun/uPic/VPEz98liVxKD7unj32.mp4" type="video/mp4"></video>
 
 **An Online Chronicle of the US Stock Market**
 <https://historyofmarket.com/>
