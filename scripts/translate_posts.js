@@ -7,6 +7,7 @@ import fs from "fs";
 import path from "path";
 import axios from "axios";
 import { fileURLToPath } from "url";
+import { canonicalIssueFilename, indexIssueFiles } from "./weekly-content.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -30,11 +31,6 @@ Rules:
 5. Output: Return ONLY the translated Markdown content, no explanations or conversational text.`;
 
 async function translateContent(content) {
-  if (!API_KEY) {
-    console.error("❌ ERROR: GROK_API_KEY is not set.");
-    return null;
-  }
-
   try {
     const response = await axios.post(
       API_URL,
@@ -55,13 +51,27 @@ async function translateContent(content) {
       },
     );
 
-    return response.data.choices[0].message.content;
+    const translated = response.data?.choices?.[0]?.message?.content;
+    if (!translated?.trim()) {
+      throw new Error("translation API returned no content");
+    }
+    return translated;
   } catch (error) {
-    console.error(
-      "❌ Translation API failed:",
-      error.response?.data || error.message,
+    throw new Error(
+      `Translation API failed: ${error.response?.status ?? error.message}`,
     );
-    return null;
+  }
+}
+
+export function missingTranslationIssues(sourceByIssue, targetByIssue) {
+  return [...sourceByIssue.keys()].filter((issue) => !targetByIssue.has(issue));
+}
+
+export function assertTranslationCanRun(missingIssues, apiKey) {
+  if (missingIssues.length > 0 && !apiKey) {
+    throw new Error(
+      `GROK_API_KEY is required for missing English issues: ${missingIssues.join(", ")}`,
+    );
   }
 }
 
@@ -87,20 +97,19 @@ async function run() {
   }
 
   const files = fs.readdirSync(SOURCE_DIR).filter((f) => f.endsWith(".md"));
+  const sourceByIssue = indexIssueFiles(files, "Chinese posts");
+  const targetByIssue = indexIssueFiles(
+    fs.readdirSync(TARGET_DIR).filter((f) => f.endsWith(".md")),
+    "English posts",
+  );
+  const missingIssues = missingTranslationIssues(sourceByIssue, targetByIssue);
+  assertTranslationCanRun(missingIssues, API_KEY);
   let processedCount = 0;
 
   console.log(`🔍 Checking ${files.length} posts for missing translations...`);
 
-  for (const file of files) {
-    const issueNumber = file.split("-")[0];
-
-    // Check if any English file with this issue number already exists
-    const targetFiles = fs.readdirSync(TARGET_DIR);
-    const existingTranslation = targetFiles.find((f) =>
-      f.startsWith(`${issueNumber}-`),
-    );
-
-    if (existingTranslation) {
+  for (const [issueNumber, file] of sourceByIssue) {
+    if (targetByIssue.has(issueNumber)) {
       continue;
     }
 
@@ -111,41 +120,48 @@ async function run() {
     const { frontmatter, body, hasFrontmatter } = parseFrontmatter(rawContent);
 
     if (!body.trim()) {
-      console.log(`⚠️  Skipping empty body: ${file}`);
-      continue;
+      throw new Error(`Cannot translate empty post body: ${file}`);
     }
 
     const translatedBody = await translateContent(body);
-
-    if (translatedBody) {
-      // Reconstruct valid file content
-      let finalContent = "";
-      if (hasFrontmatter) {
-        finalContent = `---\n${frontmatter}\n---\n\n${translatedBody.trim()}\n`;
-      } else {
-        finalContent = `${translatedBody.trim()}\n`;
-      }
-
-      // Use the same filename for simplicity to maintain 1:1 mapping easily,
-      // or we could translate the filename. For automation, same filename is safer/easier to track.
-      // However, the original script tried to slugify the title.
-      // Let's stick to the original filename to avoid duplicates if title changes.
-      const targetPath = path.join(TARGET_DIR, file);
-
-      fs.writeFileSync(targetPath, finalContent);
-      console.log(`✅ Saved translation to: src/pages/en/posts/${file}`);
-      processedCount++;
+    let finalContent = "";
+    if (hasFrontmatter) {
+      finalContent = `---\n${frontmatter}\n---\n\n${translatedBody.trim()}\n`;
+    } else {
+      finalContent = `${translatedBody.trim()}\n`;
     }
+
+    // Issue identity is numeric. English filenames always use the canonical
+    // three-digit prefix, even when the Chinese source uses 01- or 99-.
+    const targetFilename = canonicalIssueFilename(file, 3);
+    const targetPath = path.join(TARGET_DIR, targetFilename);
+
+    fs.writeFileSync(targetPath, finalContent);
+    targetByIssue.set(issueNumber, targetFilename);
+    console.log(
+      `✅ Saved translation to: src/pages/en/posts/${targetFilename}`,
+    );
+    processedCount++;
 
     // Rate limiting (gentle)
     await new Promise((r) => setTimeout(r, 2000));
   }
 
-  if (processedCount === 0) {
+  const stillMissing = missingTranslationIssues(sourceByIssue, targetByIssue);
+  if (stillMissing.length > 0) {
+    throw new Error(
+      `English translations still missing: ${stillMissing.join(", ")}`,
+    );
+  } else if (processedCount === 0) {
     console.log("\n✨ All posts have English translations. Nothing to do.");
   } else {
     console.log(`\n🎉 Successfully translated ${processedCount} posts.`);
   }
 }
 
-run();
+if (process.argv[1] && path.resolve(process.argv[1]) === __filename) {
+  run().catch((error) => {
+    console.error(`❌ Translation failed: ${error.message}`);
+    process.exitCode = 1;
+  });
+}

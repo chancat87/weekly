@@ -13,7 +13,6 @@ Always inspect live GitHub state with `gh` before acting.
 
 ```bash
 gh run list --workflow=build.yml --limit 10
-gh run list --workflow=translate-posts.yml --limit 10
 ```
 
 ## Safety Rules

@@ -1,13 +1,22 @@
-name: Build README
+name: Build weekly content
 
 on:
   push:
+    branches: [main]
   workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
 
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-content-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   build:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo
@@ -16,28 +25,30 @@ jobs:
           fetch-depth: 0
           ref: ${{ github.ref }}
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
         with:
-          node-version: "18"
+          version: "10"
 
-      - uses: actions/cache@v3
-        name: Configure npm caching
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          node-version: "20"
+          cache: pnpm
 
       - name: Install Node.js dependencies
-        run: npm install
+        run: pnpm install --frozen-lockfile
 
-      - name: Update README
+      - name: Translate missing posts
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GROK_API_KEY: ${{ secrets.GROK_API_KEY }}
+        run: node scripts/translate_posts.js
+
+      - name: Regenerate and verify content
         run: |
-          node build.js
-          cat README.md
+          pnpm sync:content
+          pnpm test:unit
+          pnpm check:content
 
       - name: Commit and push if changed
         run: |
@@ -47,8 +58,8 @@ jobs:
           git config user.email "tw93@qq.com"
           git config user.name "Tw93-bot"
 
-          # 添加所有变更
-          git add -A
+          # 只暂存这条内容管线拥有的翻译与生成物
+          git add src/pages/en/posts/ README.md RECENT.md public/posts.json public/skills/weekly-issues/SKILL.md
 
           # 检查是否有变更
           if git diff-index --quiet HEAD --; then

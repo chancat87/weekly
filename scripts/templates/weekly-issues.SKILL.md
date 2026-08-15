@@ -27,32 +27,7 @@ GET https://weekly.tw93.fun/api/posts.json
 Returns every issue, newest first. This sample is generated from the current archive:
 
 ```json
-{
-  "count": 277,
-  "englishCount": 277,
-  "latestIssue": 277,
-  "issues": [
-    {
-      "issue": 277,
-      "title": "第 277 期 - 小叶赤楠",
-      "name": "小叶赤楠",
-      "language": "zh-Hans",
-      "date": "2026/08/10",
-      "description": "封面图拍摄于我书桌音箱上放的非常小的盆栽，叫做小叶赤楠，非常有生命力的样子，挺适合放到室内养，不过有一点点小叶子容易掉，但是视觉还是很不错，我喜欢我的书房有点儿生命力。",
-      "coverImage": "https://cdn.tw93.fun/uPic/27756.jpg",
-      "url": "https://weekly.tw93.fun/posts/277",
-      "markdownUrl": "https://weekly.tw93.fun/posts/277.md",
-      "jsonUrl": "https://weekly.tw93.fun/api/posts/277.json",
-      "translation": {
-        "language": "en",
-        "title": "277. Brush Cherry",
-        "url": "https://weekly.tw93.fun/en/posts/277",
-        "markdownUrl": "https://weekly.tw93.fun/en/posts/277.md",
-        "jsonUrl": "https://weekly.tw93.fun/api/en/posts/277.json"
-      }
-    }
-  ]
-}
+{{LATEST_ISSUE_SAMPLE}}
 ```
 
 For a compact human-readable index of the whole archive, fetch `https://weekly.tw93.fun/index.md`.
@@ -62,15 +37,15 @@ For a compact human-readable index of the whole archive, fetch `https://weekly.t
 Append `.md` to any issue URL to get the Markdown source:
 
 ```
-GET https://weekly.tw93.fun/posts/277.md      # Chinese
-GET https://weekly.tw93.fun/en/posts/277.md   # English
+GET https://weekly.tw93.fun/posts/{{LATEST_ISSUE}}.md      # Chinese
+GET https://weekly.tw93.fun/en/posts/{{LATEST_ISSUE}}.md   # English
 ```
 
 Or take metadata and body together as JSON:
 
 ```
-GET https://weekly.tw93.fun/api/posts/277.json
-GET https://weekly.tw93.fun/api/en/posts/277.json
+GET https://weekly.tw93.fun/api/posts/{{LATEST_ISSUE}}.json
+GET https://weekly.tw93.fun/api/en/posts/{{LATEST_ISSUE}}.json
 ```
 
 The JSON response carries `contentMarkdown` (the full Markdown body), `translation`, `newerIssue` and `olderIssue`.
