@@ -58,7 +58,7 @@ GROK_API_KEY=your_key node scripts/translate_posts.js
 
 ## Verification
 
-- Site or content changes: run `pnpm build`. For image-processing, translation, or frontmatter edits, also run `pnpm dev` and inspect the affected pages yourself; a green build does not mean the page still looks right, and push is production. Check user-visible feedback (toast, copy-success message, share title) at a mobile width and a desktop width; the desktop-only pass is how the share feature shipped with an unshareable title and no copy-success toast on mobile.
+- Site or content changes: run `pnpm build`. For image-processing, translation, frontmatter, Markdown tables, video, horizontal layout, or viewport-triggered behavior, also run `pnpm dev` and inspect the actual affected posts yourself; a green build does not mean the page still looks or behaves right, and push is production. Check the Chinese and English twins when both exist, plus user-visible feedback (media playback, table headers/scroll, toast, copy-success message, share title) at a mobile width and a desktop width; a desktop-only or source-only pass is not runtime proof.
 - Image-related changes: run `pnpm image:probe` or rely on the `prebuild` step.
 - Translation changes: verify `GROK_API_KEY` is provided before running `scripts/translate_posts.js`, then inspect generated English Markdown before committing.
 - Content/index changes: run `pnpm test`; it checks bilingual issue parity, canonical filename prefixes, `public/posts.json`, and the generated public Skill.
