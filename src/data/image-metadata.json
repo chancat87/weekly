@@ -1,4 +1,9 @@
 {
+  "https://cdn.fliggy.com/pic/mEPOJg41.png": {
+    "width": 1144,
+    "height": 633,
+    "mime": "image/png"
+  },
   "https://cdn.tw93.fun/blog/pic/26410.jpg": {
     "width": 4032,
     "height": 3024,
@@ -167,6 +172,11 @@
   "https://cdn.tw93.fun/blog/pic/lxEYPC26.png": {
     "width": 2048,
     "height": 1536,
+    "mime": "image/png"
+  },
+  "https://cdn.tw93.fun/blog/pic/mole-mac-cover.png": {
+    "width": 1500,
+    "height": 600,
     "mime": "image/png"
   },
   "https://cdn.tw93.fun/blog/pic/nBYIfw31.png": {
@@ -2879,9 +2889,19 @@
     "height": 3263,
     "mime": "image/jpeg"
   },
+  "https://cdn.tw93.fun/uPic/27853.JPG": {
+    "width": 5712,
+    "height": 4284,
+    "mime": "image/jpeg"
+  },
   "https://cdn.tw93.fun/uPic/4YjJGQ44.png": {
     "width": 1080,
     "height": 789,
+    "mime": "image/png"
+  },
+  "https://cdn.tw93.fun/uPic/5Ez4qx34.png": {
+    "width": 3408,
+    "height": 1848,
     "mime": "image/png"
   },
   "https://cdn.tw93.fun/uPic/5SlEcC34.png": {
@@ -3019,6 +3039,11 @@
     "height": 819,
     "mime": "image/png"
   },
+  "https://cdn.tw93.fun/uPic/ibxdqH09.png": {
+    "width": 4026,
+    "height": 2290,
+    "mime": "image/png"
+  },
   "https://cdn.tw93.fun/uPic/jHmQi002.png": {
     "width": 3052,
     "height": 2014,
@@ -3074,6 +3099,11 @@
     "height": 2290,
     "mime": "image/png"
   },
+  "https://cdn.tw93.fun/uPic/rE53aI00.png": {
+    "width": 1080,
+    "height": 607,
+    "mime": "image/png"
+  },
   "https://cdn.tw93.fun/uPic/s9fJmu55.png": {
     "width": 3022,
     "height": 2200,
@@ -3092,6 +3122,16 @@
   "https://cdn.tw93.fun/uPic/uVLcvk48.png": {
     "width": 5344,
     "height": 3044,
+    "mime": "image/png"
+  },
+  "https://cdn.tw93.fun/uPic/uYtRtK52.png": {
+    "width": 1440,
+    "height": 900,
+    "mime": "image/png"
+  },
+  "https://cdn.tw93.fun/uPic/ysicE547.png": {
+    "width": 2942,
+    "height": 1532,
     "mime": "image/png"
   },
   "https://cdn.tw93.fun/uPic/zHKfAj50.png": {
