@@ -30,7 +30,7 @@ Ding built a tool that collects product launch videos currently being shared on 
 **Give your AI a brain.md**
 <https://projectbrain.md/>
 The idea is interesting. The author says AI forgets everything unless you give it a brain, and brain.md is that brain.
-<img src="https://cdn.tw93.fun/uPic/ZgG0N430.png" width="800" />
+<img src="https://cdn.fliggy.com/pic/9RcLFg00.png" width="800" />
 
 **nowdex: quickly check your agent usage**
 <https://apps.apple.com/cn/app/nowdex/id6791450777>
