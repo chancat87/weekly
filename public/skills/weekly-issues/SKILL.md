@@ -28,27 +28,27 @@ Returns every issue, newest first. This sample is generated from the current arc
 
 ```json
 {
-  "count": 281,
-  "englishCount": 281,
-  "latestIssue": 281,
+  "count": 282,
+  "englishCount": 282,
+  "latestIssue": 282,
   "issues": [
     {
-      "issue": 281,
-      "title": "第 281 期 - 越王的剑",
-      "name": "越王的剑",
+      "issue": 282,
+      "title": "第 282 期 - 夜雾上海",
+      "name": "夜雾上海",
       "language": "zh-Hans",
-      "date": "2026/09/07",
-      "description": "封面图拍摄于周末浙江博物馆，本来想去看四大兽首的展览，结果人很多，就去看常规的场馆了，发现了非常美的东西，这把越王勾践儿子的佩剑就非常好看，感叹当时的越国审美真好。",
-      "coverImage": "https://cdn.fliggy.com/pic/28133.jpg",
-      "url": "https://weekly.tw93.fun/posts/281",
-      "markdownUrl": "https://weekly.tw93.fun/posts/281.md",
-      "jsonUrl": "https://weekly.tw93.fun/api/posts/281.json",
+      "date": "2026/09/14",
+      "description": "封面图拍摄于前几周在上海雾天快天黑的一张照片，很有感觉，标题应该叫做雾上海更有感觉。",
+      "coverImage": "https://cdn.fliggy.com/pic/28229.jpg",
+      "url": "https://weekly.tw93.fun/posts/282",
+      "markdownUrl": "https://weekly.tw93.fun/posts/282.md",
+      "jsonUrl": "https://weekly.tw93.fun/api/posts/282.json",
       "translation": {
         "language": "en",
-        "title": "281. Sword of the Yue King",
-        "url": "https://weekly.tw93.fun/en/posts/281",
-        "markdownUrl": "https://weekly.tw93.fun/en/posts/281.md",
-        "jsonUrl": "https://weekly.tw93.fun/api/en/posts/281.json"
+        "title": "282. Night Fog Shanghai",
+        "url": "https://weekly.tw93.fun/en/posts/282",
+        "markdownUrl": "https://weekly.tw93.fun/en/posts/282.md",
+        "jsonUrl": "https://weekly.tw93.fun/api/en/posts/282.json"
       }
     }
   ]
@@ -62,15 +62,15 @@ For a compact human-readable index of the whole archive, fetch `https://weekly.t
 Append `.md` to any issue URL to get the Markdown source:
 
 ```
-GET https://weekly.tw93.fun/posts/281.md      # Chinese
-GET https://weekly.tw93.fun/en/posts/281.md   # English
+GET https://weekly.tw93.fun/posts/282.md      # Chinese
+GET https://weekly.tw93.fun/en/posts/282.md   # English
 ```
 
 Or take metadata and body together as JSON:
 
 ```
-GET https://weekly.tw93.fun/api/posts/281.json
-GET https://weekly.tw93.fun/api/en/posts/281.json
+GET https://weekly.tw93.fun/api/posts/282.json
+GET https://weekly.tw93.fun/api/en/posts/282.json
 ```
 
 The JSON response carries `contentMarkdown` (the full Markdown body), `translation`, `newerIssue` and `olderIssue`.
