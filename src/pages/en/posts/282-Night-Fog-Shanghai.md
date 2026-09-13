@@ -37,11 +37,11 @@ A big piece of weekend news in the AI circle. Dario publicly called for slowing 
 
 **Come listen to Dou Wei's Higher Animals~**
 Dug up an old CD of the 1994 Chinese Rock Power concert. Come listen to Dou Wei's Higher Animals~
-<video width="800px" preload="metadata" preload controls><source src="https://cdn.fliggy.com/pic/IMG_3359-hq05.mp4" type="video/mp4"></video>
+<video width="400px" preload="metadata" preload controls><source src="https://cdn.fliggy.com/pic/IMG_3359-hq05.mp4" type="video/mp4"></video>
 
 **iOS third-party keyboards got a new feature, no more jumping out for voice**
 iOS third-party keyboards got a new feature. Finally, finally, using voice no longer jumps you over to the app for a flash. Usually you just turn on floating window mode in the keyboard settings. This is the WeChat Keyboard setting. If you use it, give it a try, so much more convenient.
-<img src="https://cdn.fliggy.com/pic/f7tdIy40.png" width="340" />
+<img src="https://cdn.fliggy.com/pic/f7tdIy40.png" width="400px" />
 
 **Just writing: suddenly felt like chatting with you all about how I think about document layout**
 <img src="https://cdn.fliggy.com/pic/nWz9ET59.png" width="800" />
