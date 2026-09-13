@@ -44,7 +44,6 @@ iOS third-party keyboards got a new feature. Finally, finally, using voice no lo
 <img src="https://cdn.fliggy.com/pic/f7tdIy40.png" width="400px" />
 
 **Just writing: suddenly felt like chatting with you all about how I think about document layout**
-<img src="https://cdn.fliggy.com/pic/nWz9ET59.png" width="800" />
 
 Suddenly felt like chatting with you all about how I think about document layout.
 
