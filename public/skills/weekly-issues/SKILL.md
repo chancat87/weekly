@@ -28,27 +28,27 @@ Returns every issue, newest first. This sample is generated from the current arc
 
 ```json
 {
-  "count": 282,
-  "englishCount": 282,
-  "latestIssue": 282,
+  "count": 283,
+  "englishCount": 283,
+  "latestIssue": 283,
   "issues": [
     {
-      "issue": 282,
-      "title": "第 282 期 - 夜雾上海",
-      "name": "夜雾上海",
+      "issue": 283,
+      "title": "第 283 期 - 经典电影",
+      "name": "经典电影",
       "language": "zh-Hans",
-      "date": "2026/09/14",
-      "description": "封面图拍摄于前几周在上海雾天快天黑的一张照片，很有感觉，标题应该叫做雾上海更有感觉。",
-      "coverImage": "https://cdn.fliggy.com/pic/28229.jpg",
-      "url": "https://weekly.tw93.fun/posts/282",
-      "markdownUrl": "https://weekly.tw93.fun/posts/282.md",
-      "jsonUrl": "https://weekly.tw93.fun/api/posts/282.json",
+      "date": "2026/09/21",
+      "description": "封面图拍摄于这周六去电影院看《肖申克的救赎》的时候，非常感动，也很有感触，仿佛体会到了 1994 年人们在电影院看它的那种感觉。",
+      "coverImage": "https://cdn.fliggy.com/pic/IMG_355245.JPG",
+      "url": "https://weekly.tw93.fun/posts/283",
+      "markdownUrl": "https://weekly.tw93.fun/posts/283.md",
+      "jsonUrl": "https://weekly.tw93.fun/api/posts/283.json",
       "translation": {
         "language": "en",
-        "title": "282. Night Fog Shanghai",
-        "url": "https://weekly.tw93.fun/en/posts/282",
-        "markdownUrl": "https://weekly.tw93.fun/en/posts/282.md",
-        "jsonUrl": "https://weekly.tw93.fun/api/en/posts/282.json"
+        "title": "283. Classic Films",
+        "url": "https://weekly.tw93.fun/en/posts/283",
+        "markdownUrl": "https://weekly.tw93.fun/en/posts/283.md",
+        "jsonUrl": "https://weekly.tw93.fun/api/en/posts/283.json"
       }
     }
   ]
@@ -62,15 +62,15 @@ For a compact human-readable index of the whole archive, fetch `https://weekly.t
 Append `.md` to any issue URL to get the Markdown source:
 
 ```
-GET https://weekly.tw93.fun/posts/282.md      # Chinese
-GET https://weekly.tw93.fun/en/posts/282.md   # English
+GET https://weekly.tw93.fun/posts/283.md      # Chinese
+GET https://weekly.tw93.fun/en/posts/283.md   # English
 ```
 
 Or take metadata and body together as JSON:
 
 ```
-GET https://weekly.tw93.fun/api/posts/282.json
-GET https://weekly.tw93.fun/api/en/posts/282.json
+GET https://weekly.tw93.fun/api/posts/283.json
+GET https://weekly.tw93.fun/api/en/posts/283.json
 ```
 
 The JSON response carries `contentMarkdown` (the full Markdown body), `translation`, `newerIssue` and `olderIssue`.
