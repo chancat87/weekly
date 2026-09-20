@@ -80,8 +80,6 @@ I'll probably keep going to 400, 500, 600, maybe even test every commonly used a
 
 **I've decided: whenever a good old film comes back to the cinema, I'm going**
 
-<img src="https://cdn.fliggy.com/pic/IMG_354518.JPG" width="800" />
-
 I went to see The Shawshank Redemption on Saturday afternoon, and it felt completely different from watching it on a computer or TV. So absorbing, such a pleasure, almost as if I could feel what it was like to see it in a cinema back in 1994.
 
 I'd seen it a few times, but by the time I walked in, I'd forgotten most of the plot details. It felt so good to remember them gradually as the film went on.
