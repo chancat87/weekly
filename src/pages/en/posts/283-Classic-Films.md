@@ -60,7 +60,7 @@ I'm in the mood to buy some snacks. What are the tastiest snacks, drinks, little
 **Started using Threads these past few days and liked it more than I expected**
 <https://threads.com/@tw93.fun>
 I started using Threads these past few days and liked it more than I expected. It feels so much like Twitter when I first joined around 2022. It feels full of real people, lots of younger people, no one selling anxiety, and a strong sense of community. I rarely see anything that immediately reads as AI-written. If you'd like another place to chat, come have a look, and if you're already on Threads, come say hi~
-<img src="https://cdn.fliggy.com/pic/39jcpx32.png" width="340" />
+<img src="https://cdn.fliggy.com/pic/39jcpx32.png" width="800" />
 
 **Lately I've been doing something "dumb," perhaps exactly the sort of repetitive work engineers in the AI era really don't want to do.**
 
@@ -76,7 +76,7 @@ It changed some assumptions I had, too. I used to think software engineering sho
 
 I'll probably keep going to 400, 500, 600, maybe even test every commonly used app with Mole and add rules for the details these unconventional apps leave behind. Perhaps doing these "dumb things" is what can make Mole the best Mac cleanup and optimization tool in the world.
 
-<video width="800px" preload="metadata" controls muted loop><source src="https://cdn.fliggy.com/pic/moleshougong17.mp4" type="video/mp4"></video>
+<video width="800px" preload="metadata" preload muted loop><source src="https://cdn.fliggy.com/pic/moleshougong17.mp4" type="video/mp4"></video>
 
 **I've decided: whenever a good old film comes back to the cinema, I'm going**
 
