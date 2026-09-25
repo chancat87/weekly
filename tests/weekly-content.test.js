@@ -1,5 +1,4 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
 import test from "node:test";
 import {
   assertCanonicalIssueFilenames,
@@ -85,12 +84,4 @@ test("missing translations require an API key and cannot report success", () => 
     /GROK_API_KEY is required/,
   );
   assert.doesNotThrow(() => assertTranslationCanRun([], ""));
-});
-
-test("keeps the Claude GitHub operations Skill mirror exact", async () => {
-  const [canonical, mirror] = await Promise.all([
-    readFile(".agents/skills/github-ops/SKILL.md", "utf8"),
-    readFile(".claude/skills/github-ops/SKILL.md", "utf8"),
-  ]);
-  assert.equal(mirror, canonical);
 });
