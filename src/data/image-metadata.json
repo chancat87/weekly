@@ -1,4 +1,29 @@
 {
+  "https://cdn.fliggy.com/pic/01-cover38.png": {
+    "width": 1242,
+    "height": 1660,
+    "mime": "image/png"
+  },
+  "https://cdn.fliggy.com/pic/02-ready-to-use07.png": {
+    "width": 1242,
+    "height": 1660,
+    "mime": "image/png"
+  },
+  "https://cdn.fliggy.com/pic/03-ai-workflows33.png": {
+    "width": 1242,
+    "height": 1660,
+    "mime": "image/png"
+  },
+  "https://cdn.fliggy.com/pic/04-recent-updates58.png": {
+    "width": 1242,
+    "height": 1660,
+    "mime": "image/png"
+  },
+  "https://cdn.fliggy.com/pic/1790554887771_d32.png": {
+    "width": 2894,
+    "height": 1888,
+    "mime": "image/png"
+  },
   "https://cdn.fliggy.com/pic/27936.jpg": {
     "width": 5712,
     "height": 4284,
@@ -10,6 +35,11 @@
     "mime": "image/jpeg"
   },
   "https://cdn.fliggy.com/pic/28229.jpg": {
+    "width": 5712,
+    "height": 4284,
+    "mime": "image/jpeg"
+  },
+  "https://cdn.fliggy.com/pic/28507.jpg": {
     "width": 5712,
     "height": 4284,
     "mime": "image/jpeg"
@@ -29,6 +59,11 @@
     "height": 918,
     "mime": "image/png"
   },
+  "https://cdn.fliggy.com/pic/76shots_so59.png": {
+    "width": 1500,
+    "height": 500,
+    "mime": "image/png"
+  },
   "https://cdn.fliggy.com/pic/7ARP8b14.png": {
     "width": 1200,
     "height": 706,
@@ -37,6 +72,16 @@
   "https://cdn.fliggy.com/pic/9RcLFg00.png": {
     "width": 3084,
     "height": 1906,
+    "mime": "image/png"
+  },
+  "https://cdn.fliggy.com/pic/Ad6mcD56.png": {
+    "width": 1920,
+    "height": 1200,
+    "mime": "image/png"
+  },
+  "https://cdn.fliggy.com/pic/B8GpGZ07.png": {
+    "width": 2330,
+    "height": 1000,
     "mime": "image/png"
   },
   "https://cdn.fliggy.com/pic/GAcV7J53.png": {
@@ -99,6 +144,11 @@
     "height": 1138,
     "mime": "image/png"
   },
+  "https://cdn.fliggy.com/pic/lD4jm700.png": {
+    "width": 3428,
+    "height": 1920,
+    "mime": "image/png"
+  },
   "https://cdn.fliggy.com/pic/mEPOJg41.png": {
     "width": 1144,
     "height": 633,
@@ -127,6 +177,11 @@
   "https://cdn.fliggy.com/pic/wHYXlg48.png": {
     "width": 2516,
     "height": 1836,
+    "mime": "image/png"
+  },
+  "https://cdn.fliggy.com/pic/xShacl59.png": {
+    "width": 1920,
+    "height": 1200,
     "mime": "image/png"
   },
   "https://cdn.fliggy.com/pic/xzkNlp10.png": {
